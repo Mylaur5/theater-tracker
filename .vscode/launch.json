@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Launch Edge against localhost",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    },
+    {
+      "name": "Python Debug (breakpoints)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "justMyCode": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Launch Firefox against localhost",
+      "type": "firefox",
+      "request": "launch",
+      "reAttach": true,
+      "firefoxExecutable": "C:\\Program Files\\WindowsApps\\Mozilla.Firefox_132.0.0.0_x64__n80bbvh6b1yt2\\VFS\\ProgramFiles\\Firefox Package Root",
+      "url": "http://localhost:3000",
+      "pathMappings": [
+        {
+          "url": "http://localhost:3000",
+          "path": "${workspaceFolder}/frontend/src"
+        }
+      ]
+    }
+  ]
+}
