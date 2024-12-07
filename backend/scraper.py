@@ -5,6 +5,9 @@ import re
 from bs4 import BeautifulSoup
 import time
 
+#TODO Unspaghetti the code: regroup everything into functions
+#TODO Add proper documentation comments
+
 # Measure time
 start_time = time.time()
 
