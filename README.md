@@ -19,13 +19,13 @@ Theater Tracker is a web application that tracks various elements and characters
    cd backend
 ```
 2. Create a virtual environment
-```
-   python -m venv venv
+```bash
+   python -m venv .venv
 ```
 3. Activate the virtual environment:
  - On Windows:
-```bash
-   venv\Scripts\activate
+```powershell
+   .venv\Scripts\activate
 ```
 - On macOS/Linux:
 ```sh
@@ -57,6 +57,8 @@ Start the Flask server:
 ```bash
 python app.py
 ```
+
+
 
 ### Frontend
 
