@@ -1,3 +1,5 @@
 {
     "editor.formatOnSave": true,
+    "python.pythonPath": "${workspaceFolder}/backend/.venv/Scripts/python.exe" // For Windows
+    // "python.pythonPath": "${workspaceFolder}/backend/.venv/bin/python" // For macOS/Linux
 }

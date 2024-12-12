@@ -1,9 +1,11 @@
 from flask import Flask, jsonify, request, send_from_directory
 from werkzeug.utils import secure_filename
+from flask_cors import CORS
 import json
 import os
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Path to store the uploaded files
 UPLOAD_FOLDER = os.path.join(app.root_path, 'uploads')
@@ -14,7 +16,10 @@ if not os.path.exists(UPLOAD_FOLDER):
 # Route to serve the season data
 @app.route('/seasons', methods=['GET'])
 def get_seasons():
-	file_path = os.path.join(os.path.dirname(__file__), 'data',	'seasons_data.json')
+	file_path = os.path.join(os.path.dirname(__file__), 'data',
+		'seasons_data_version_5.1.json')
+	if not os.path.exists(file_path):
+		return jsonify({"error": "File not found"}), 404
 	with open(file_path, 'r') as f:
 		data = json.load(f)
 	return jsonify(data)

@@ -1,1 +1,1 @@
-<h1 class="font-bold bg-red-500"> Hi </h1>
+<h1 class="text-center text-4xl font-bold">Theater Tracker</h1>

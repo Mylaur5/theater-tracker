@@ -6,6 +6,6 @@
 	],
 	"settings": {
 		"terminal.integrated.defaultProfile.windows": "PowerShell",
-		"terminal.integrated.cwd": "${workspaceFolder}/frontend"
+		"terminal.integrated.cwd": "${workspaceFolder}/frontend",
 	}
 }
