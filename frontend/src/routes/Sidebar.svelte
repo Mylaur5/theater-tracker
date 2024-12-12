@@ -48,12 +48,12 @@
 <!-- svelte-ignore a11y_mouse_events_have_key_events -->
 <div
 	role="menu"
-	class="flex h-full {hidden ? 'w-16' : 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all"
+	class="flex h-full {hidden ? 'w-16' : 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
 	onmouseover={openSidebar}
 	onmouseout={closeSidebar}
 	tabindex="0"
 >
-	<a class="group mt-3 flex w-full items-center px-4" href="/">
+	<a class="group mt-3 flex w-full items-center px-3" href="/">
 		<img
 			alt="UI Imaginarium Theater"
 			src={UIImaginariumTheater}
@@ -73,7 +73,7 @@
 	<hr class="mt-3 flex flex-col items-center border-t border-gray-700" />
 	{#each menuItems as item}
 		<a
-			class="group mt-2 flex h-12 w-full items-center transition-all duration-300 rounded px-4
+			class="group mt-2 flex h-12 w-full items-center rounded px-4
 		{selected === item.id ? '' : 'hover:'}bg-gray-700
 		{selected === item.id ? '' : 'hover:'}text-gray-{selected === item.id ? '200' : '300'}"
 			href={item.href}
@@ -81,12 +81,16 @@
 				selected = item.id;
 			}}
 		>
-			<Icon src={item.icon} size={24} className="group-hover:scale-110"/>
-			<span class="ml-2 text-sm font-medium group-hover:scale-105" class:hidden>{item.label}</span>
+			<div class="group flex justify-center items-center group-hover:scale-110">
+				<Icon src={item.icon} size={24}/>
+				<span class="ml-2 text-sm font-medium" class:hidden>{item.label}</span>
+			</div>
 		</a>
 	{/each}
 	<a class="group mt-auto flex h-16 w-full items-center bg-gray-800 px-4 hover:bg-gray-700 hover:text-gray-300" href="#">
-		<Icon src={BsPersonCircle} size="24" className="group-hover:scale-110"/>
-		<span class="ml-2 text-sm font-medium group-hover:scale-105" class:hidden>Accounts</span>
+		<div class="group flex justify-center items-center group-hover:scale-110">
+			<Icon src={BsPersonCircle} size="24"/>
+			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
+		</div>
 	</a>
 </div>
