@@ -4,11 +4,16 @@ Theater Tracker is a web application that tracks various elements and characters
 
 ## Requirements
 
-- Node.js (version 14 or higher)
 - Python (version 3.8 or higher)
+- Node.js (version 14 or higher)
 - npm (version 6 or higher)
-- Tailwind CSS
+
+## Dependencies
+
 - Svelte
+- Tailwind CSS
+- Font: https://www.cufonfonts.com/font/hywenhei
+- Icons: https://leshak.github.io/svelte-icons-pack
 
 ## Installation
 

@@ -14,16 +14,8 @@
 	</section>
 </main>
 
-<!-- <style>
-	main {
-		display: grid;
-		grid-template-areas:
-		'sidebar section';
-		grid-template-rows: 1fr auto;
-		grid-template-columns: 1fr auto;
+<style>
+	* {
+		font-family: 'HYWenHei 85W';
 	}
-
-	section, footer {
-
-	}
-</style> -->
+</style>
