@@ -3,8 +3,8 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-    font-family: 'HYWenHei 85W';
-    font-style: normal;
+    font-family: 'Genshin Impact';
+    src: url('/fonts/Genshin_Impact_Font.ttf') format('truetype');
     font-weight: normal;
-    src: local('HYWenHei 85W'), url('lib/fonts/zhcn.woff') format('woff');
+    font-style: normal;
 }

@@ -16,6 +16,6 @@
 
 <style>
 	* {
-		font-family: 'HYWenHei 85W';
+		font-family: 'Genshin Impact';
 	}
 </style>

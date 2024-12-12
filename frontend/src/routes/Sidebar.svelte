@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { Icon } from 'svelte-icons-pack';
 	import { RiWeatherBlazeFill } from 'svelte-icons-pack/ri';
 	import { BsPersonVcard, BsUpload, BsPersonCircle } from 'svelte-icons-pack/bs';
@@ -66,7 +67,10 @@
 			data-relevant="0"
 			class="transition-transform duration-300 group-hover:scale-125"
 		/>
-		<span class="ml-2 text-nowrap text-sm font-bold transition-all duration-300 group-hover:scale-110 group-hover:text-white" class:hidden>
+		<span
+			class="ml-2 text-nowrap text-sm font-bold transition-all duration-300 group-hover:scale-110 group-hover:text-white"
+			class:hidden
+		>
 			Theater Tracker
 		</span>
 	</a>
@@ -94,3 +98,15 @@
 		</div>
 	</a>
 </div>
+
+<style>
+	@font-face {
+		font-family: 'Genshin Impact';
+		src: url('/fonts/Genshin_Impact_Font.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+	body {
+		font-family: 'Genshin Impact', sans-serif;
+	}
+</style>
