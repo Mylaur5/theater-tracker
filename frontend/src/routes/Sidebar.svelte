@@ -57,14 +57,14 @@
 >
 	<a class="group mt-3 flex w-full items-center px-3" href="/">
 		<img
-			alt="System_Imaginarium_Theater"
-			src="/icons/System_Imaginarium_Theater.webp"
+			alt="UI Imaginarium Theater"
+			src={UIImaginariumTheater}
 			decoding="async"
 			loading="lazy"
 			width="30"
 			height="30"
-			data-image-name="System_Imaginarium_Theater.webp"
-			data-image-key="System_Imaginarium_Theater.webp"
+			data-image-name="UI Imaginarium Theater.png"
+			data-image-key="UI_Imaginarium_Theater.png"
 			data-relevant="0"
 			class="transition-transform duration-300 group-hover:scale-125"
 		/>
