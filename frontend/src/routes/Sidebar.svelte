@@ -33,15 +33,11 @@
 		}
 	];
 
-	let hidden: boolean = $state(true);
+	let hidden: boolean = $state(false);
 	let selected: string = $state('');
 
-	function openSidebar() {
-		hidden = false;
-	}
-
-	function closeSidebar() {
-		hidden = true;
+	function toggleSidebar() {
+		hidden = !hidden;
 	}
 </script>
 
@@ -51,11 +47,9 @@
 	class="flex h-full {hidden
 		? 'w-16'
 		: 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
-	onmouseover={openSidebar}
-	onmouseout={closeSidebar}
 	tabindex="0"
 >
-	<a class="group mt-3 flex w-full items-center px-3" href="/">
+	<a class="group mt-3 flex w-full items-center px-3" href="/" onclick={toggleSidebar}>
 		<img
 			alt="System_Imaginarium_Theater"
 			src="/icons/System_Imaginarium_Theater.webp"
