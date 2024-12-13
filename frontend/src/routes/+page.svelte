@@ -1,1 +1,1 @@
-<h1 class="text-center text-4xl font-bold">Theater Tracker</h1>
+<h1 class="mt-4 text-center text-4xl font-bold">Theater Tracker</h1>
