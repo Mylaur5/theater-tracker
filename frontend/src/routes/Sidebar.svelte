@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { Icon } from 'svelte-icons-pack';
 	import { RiWeatherBlazeFill } from 'svelte-icons-pack/ri';
 	import { BsPersonVcard, BsUpload, BsPersonCircle } from 'svelte-icons-pack/bs';
@@ -49,21 +48,23 @@
 <!-- svelte-ignore a11y_mouse_events_have_key_events -->
 <div
 	role="menu"
-	class="flex h-full {hidden ? 'w-16' : 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
+	class="flex h-full {hidden
+		? 'w-16'
+		: 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
 	onmouseover={openSidebar}
 	onmouseout={closeSidebar}
 	tabindex="0"
 >
 	<a class="group mt-3 flex w-full items-center px-3" href="/">
 		<img
-			alt="UI Imaginarium Theater"
-			src={UIImaginariumTheater}
+			alt="System_Imaginarium_Theater"
+			src="/icons/System_Imaginarium_Theater.webp"
 			decoding="async"
 			loading="lazy"
 			width="30"
 			height="30"
-			data-image-name="UI Imaginarium Theater.png"
-			data-image-key="UI_Imaginarium_Theater.png"
+			data-image-name="System_Imaginarium_Theater.webp"
+			data-image-key="System_Imaginarium_Theater.webp"
 			data-relevant="0"
 			class="transition-transform duration-300 group-hover:scale-125"
 		/>
@@ -85,28 +86,19 @@
 				selected = item.id;
 			}}
 		>
-			<div class="group flex justify-center items-center group-hover:scale-110">
-				<Icon src={item.icon} size={24}/>
+			<div class="group flex items-center justify-center group-hover:scale-110">
+				<Icon src={item.icon} size={24} />
 				<span class="ml-2 text-sm font-medium" class:hidden>{item.label}</span>
 			</div>
 		</a>
 	{/each}
-	<a class="group mt-auto flex h-16 w-full items-center bg-gray-800 px-4 hover:bg-gray-700 hover:text-gray-300" href="#">
-		<div class="group flex justify-center items-center group-hover:scale-110">
-			<Icon src={BsPersonCircle} size="24"/>
+	<a
+		class="group mt-auto flex h-16 w-full items-center bg-gray-800 px-4 hover:bg-gray-700 hover:text-gray-300"
+		href="#"
+	>
+		<div class="group flex items-center justify-center group-hover:scale-110">
+			<Icon src={BsPersonCircle} size="24" />
 			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
 		</div>
 	</a>
 </div>
-
-<style>
-	@font-face {
-		font-family: 'Genshin Impact';
-		src: url('/fonts/Genshin_Impact_Font.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	}
-	body {
-		font-family: 'Genshin Impact', sans-serif;
-	}
-</style>
