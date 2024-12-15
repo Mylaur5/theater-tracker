@@ -4,13 +4,10 @@
 	let { children } = $props();
 </script>
 
-<main class="flex h-screen bg-gray-100">
+<main class="flex h-screen bg-gray-100 dark:bg-indigo-950 dark:text-gray-400">
 	<Sidebar />
-	<section class="flex flex-col w-screen justify-between">
+	<section class="flex flex-col w-screen m-4">
 		{@render children()}
-		<footer class="bg-blue-500 p-4 text-center text-white">
-			<p>&copy; 2024 Theater Tracker</p>
-		</footer>
 	</section>
 </main>
 

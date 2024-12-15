@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { Icon } from 'svelte-icons-pack';
 	import { RiWeatherBlazeFill } from 'svelte-icons-pack/ri';
-	import { BsPersonVcard, BsUpload, BsPersonCircle } from 'svelte-icons-pack/bs';
-	import UIImaginariumTheater from '$lib/images/UI_Imaginarium_Theater.png';
+	import { BsPersonVcard, BsUpload } from 'svelte-icons-pack/bs';
 
 	// Define a type for menu items
 	type MenuItem = {
@@ -87,12 +86,12 @@
 		</a>
 	{/each}
 	<a
-		class="group mt-auto flex h-16 w-full items-center bg-gray-800 px-4 hover:bg-gray-700 hover:text-gray-300"
-		href="#"
+		class="group flex h-auto w-full items-center bg-gray-800 px-4 hover:bg-gray-700 hover:text-gray-300"
+		href="/accounts"
 	>
 		<div class="group flex items-center justify-center group-hover:scale-110">
-			<Icon src={BsPersonCircle} size="24" />
+			<img src="icons/Icon_Character_Lumine.webp" class="h-10 m-2" alt="Accounts Icon"/>
 			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
-		</div>
+		</div>	
 	</a>
 </div>

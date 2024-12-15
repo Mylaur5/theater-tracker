@@ -10,5 +10,7 @@ export default {
 		extend: {}
 	},
 
+	darkMode: 'selector',
+
 	plugins: [typography, forms, containerQueries]
 } satisfies Config;

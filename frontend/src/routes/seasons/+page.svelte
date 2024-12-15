@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let seasonsData = [];
+	let seasonsData: string | any[] = [];
 	let imagesData = [];
 
 	onMount(async () => {
@@ -27,9 +27,7 @@
 
 <div><h1 class="text-center text-4xl font-bold">Seasons</h1></div>
 <div>
-	{#if seasonsData.length === 0}
-		<p>Loading...</p>
-	{:else}
+	{#if seasonsData.length !== 0}
 		{#each seasonsData as season}
 			<div class="season mb-8">
 				<h2 class="text-center text-2xl font-bold">{season.season_name}</h2>
@@ -43,7 +41,7 @@
 							<img
 								src={`http://localhost:5000${element.image_local}`}
 								class="h-16 w-16 object-cover"
-								alt={'element.name'}
+								alt={element.name}
 							/>
 						{/each}
 					</div>
