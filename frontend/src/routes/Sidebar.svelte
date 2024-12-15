@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Icon } from 'svelte-icons-pack';
 	import { RiWeatherBlazeFill } from 'svelte-icons-pack/ri';
 	import { BsPersonVcard, BsUpload } from 'svelte-icons-pack/bs';
 
@@ -9,6 +8,7 @@
 		label: string;
 		icon: any;
 		href: string;
+		img: string;
 	};
 
 	const menuItems: MenuItem[] = [
@@ -16,19 +16,22 @@
 			id: 'seasons',
 			label: 'Seasons',
 			icon: RiWeatherBlazeFill,
-			href: '/seasons'
+			href: '/seasons',
+			img: 'icons/Imaginarium_Theater_Emblem.png'
 		},
 		{
 			id: 'characters',
 			label: 'Characters',
 			icon: BsPersonVcard,
-			href: '/characters'
+			href: '/characters',
+			img: 'icons/Icon_Party_Setup.webp'
 		},
 		{
 			id: 'uploads',
 			label: 'Uploads',
 			icon: BsUpload,
-			href: '/uploads'
+			href: '/uploads',
+			img: 'icons/Icon_Archive.webp'
 		}
 	];
 
@@ -80,7 +83,7 @@
 			}}
 		>
 			<div class="group flex items-center justify-center group-hover:scale-110">
-				<Icon src={item.icon} size={24} />
+				<img src={item.img} width="32" height="32" />
 				<span class="ml-2 text-sm font-medium" class:hidden>{item.label}</span>
 			</div>
 		</a>
@@ -90,8 +93,8 @@
 		href="/accounts"
 	>
 		<div class="group flex items-center justify-center group-hover:scale-110">
-			<img src="icons/Icon_Character_Lumine.webp" class="h-10 m-2" alt="Accounts Icon"/>
+			<img src="icons/Icon_Character_Lumine.webp" class="m-2 h-10" alt="Accounts Icon" />
 			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
-		</div>	
+		</div>
 	</a>
 </div>
