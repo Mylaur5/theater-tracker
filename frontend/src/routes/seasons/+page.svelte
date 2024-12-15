@@ -65,12 +65,3 @@
 		{/each}
 	{/if}
 </div>
-
-<style>
-	@font-face {
-		font-family: 'Genshin Impact';
-		src: url('/fonts/Genshin_Impact_Font.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	}
-</style>
