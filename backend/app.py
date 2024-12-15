@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, send_from_directory
-from werkzeug.utils import secure_filename
 from flask_cors import CORS
+from werkzeug.utils import secure_filename
 import json
 import os
 
