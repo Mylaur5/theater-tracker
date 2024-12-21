@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { RiWeatherBlazeFill } from 'svelte-icons-pack/ri';
-	import { BsPersonVcard, BsUpload } from 'svelte-icons-pack/bs';
+	import { AiOutlineMoon, AiOutlineSun } from 'svelte-icons-pack/ai';
+	import { Icon } from 'svelte-icons-pack';
 
 	// Define a type for menu items
 	type MenuItem = {
 		id: string;
 		label: string;
-		icon: any;
 		href: string;
 		img: string;
 	};
@@ -15,21 +14,18 @@
 		{
 			id: 'seasons',
 			label: 'Seasons',
-			icon: RiWeatherBlazeFill,
 			href: '/seasons',
 			img: 'icons/Imaginarium_Theater_Emblem.png'
 		},
 		{
 			id: 'characters',
 			label: 'Characters',
-			icon: BsPersonVcard,
 			href: '/characters',
 			img: 'icons/Icon_Party_Setup.webp'
 		},
 		{
 			id: 'uploads',
 			label: 'Uploads',
-			icon: BsUpload,
 			href: '/uploads',
 			img: 'icons/Icon_Archive.webp'
 		}
@@ -37,10 +33,25 @@
 
 	let hidden: boolean = $state(false);
 	let selected: string = $state('');
+	let darkMode: boolean = $state(true);
 
 	function toggleSidebar() {
 		hidden = !hidden;
 	}
+
+	function toggleDarkMode() {
+		darkMode = !darkMode;
+	}
+
+	$effect(() => {
+		if (darkMode) {
+			localStorage.theme = 'dark';
+			document.documentElement.classList.add('dark');
+		} else {
+			localStorage.theme = 'light';
+			document.documentElement.classList.remove('dark');
+		}
+	});
 </script>
 
 <!-- svelte-ignore a11y_mouse_events_have_key_events -->
@@ -51,6 +62,7 @@
 		: 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
 	tabindex="0"
 >
+	<!-- Home -->
 	<a class="group mt-3 flex w-full items-center px-3" href="/" onclick={toggleSidebar}>
 		<img
 			alt="System_Imaginarium_Theater"
@@ -71,29 +83,50 @@
 			Theater Tracker
 		</span>
 	</a>
-	<hr class="mt-3 flex flex-col items-center border-t border-gray-700" />
+	<!-- Separator -->
+	<hr class="mt-3 border-t border-gray-700" />
+	<!-- Menu -->
 	{#each menuItems as item}
 		<a
-			class="group mt-2 flex h-12 w-full items-center rounded px-4
-		{selected === item.id ? '' : 'hover:'}bg-gray-700
-		{selected === item.id ? '' : 'hover:'}text-gray-{selected === item.id ? '200' : '300'}"
+			class="group mt-2 flex h-12 w-full items-center rounded px-3
+			{selected === item.id ? 'bg-gray-700 text-gray-200' : 'hover:bg-gray-700 hover:text-gray-300'}"
 			href={item.href}
 			onclick={() => {
 				selected = item.id;
 			}}
 		>
-			<div class="group flex items-center justify-center group-hover:scale-110">
-				<img src={item.img} width="32" height="32" />
+			<div class="group flex items-center group-hover:scale-110">
+				<!-- svelte-ignore a11y_missing_attribute -->
+				<img src={item.img} alt={item.img} width="32" height="32" />
 				<span class="ml-2 text-sm font-medium" class:hidden>{item.label}</span>
 			</div>
 		</a>
 	{/each}
-	<a
-		class="group flex h-auto w-full items-center bg-gray-800 px-4 hover:bg-gray-700 hover:text-gray-300"
-		href="/accounts"
-	>
-		<div class="group flex items-center justify-center group-hover:scale-110">
-			<img src="icons/Icon_Character_Lumine.webp" class="m-2 h-10" alt="Accounts Icon" />
+	<!-- Fill Height -->
+	<div class="mt-auto"></div>
+	<!-- Dark Mode Switch -->
+	<label class="flex items-center py-2 cursor-pointer hover:text-gray-300" class:hidden>
+		<div class="ml-2">
+			<input type="checkbox" class="sr-only" onchange={toggleDarkMode} checked={darkMode}/>
+			<div class="block h-5 w-9 rounded-full bg-gray-600 hover:bg-slate-500">
+				<div
+					class="relative left-0.5 top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-white transition dark:bg-gray-900"
+					class:translate-x-full={darkMode}
+				>
+					<span class:text-gray-800={!darkMode}>
+						<Icon src={darkMode ? AiOutlineMoon : AiOutlineSun} size="12" />
+					</span>
+				</div>
+			</div>
+		</div>
+		<span class="text-nowrap px-2 text-xs" class:hidden>Toggle Dark Mode</span>
+	</label>
+	<!-- Separator -->
+	<hr class="border-t border-gray-700" />
+	<!-- Accounts -->
+	<a class="group h-auto w-full bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="/accounts">
+		<div class="group flex items-center px-2 group-hover:scale-110">
+			<img src="icons/Icon_Character_Lumine.webp" class="my-2 h-10" alt="Accounts Icon" />
 			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
 		</div>
 	</a>
