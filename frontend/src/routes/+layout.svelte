@@ -12,7 +12,7 @@
 	});
 </script>
 
-<main class="flex h-screen bg-gray-100 dark:bg-indigo-950 dark:text-gray-400">
+<main class="flex h-screen bg-white dark:bg-indigo-950 dark:text-gray-400">
 	<Sidebar />
 	<section class="flex flex-col w-screen m-4">
 		{@render children()}	
@@ -21,6 +21,6 @@
 
 <style>
 	* {
-		font-family: 'Genshin Impact';
+		font-family: 'Genshin Impact', sans-serif;
 	}
 </style>
