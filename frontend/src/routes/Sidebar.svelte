@@ -2,7 +2,6 @@
 	import { AiOutlineMoon, AiOutlineSun } from 'svelte-icons-pack/ai';
 	import { Icon } from 'svelte-icons-pack';
 
-	// Define a type for menu items
 	type MenuItem = {
 		id: string;
 		label: string;
@@ -95,10 +94,10 @@
 				selected = item.id;
 			}}
 		>
-			<div class="group flex items-center group-hover:scale-110">
+			<div class="flex items-center">
 				<!-- svelte-ignore a11y_missing_attribute -->
-				<img src={item.img} alt={item.img} width="32" height="32" />
-				<span class="ml-2 text-sm font-medium" class:hidden>{item.label}</span>
+				<img src={item.img} alt={item.img} width="32" height="32" class="transition-transform group-hover:scale-125" />
+				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden>{item.label}</span>
 			</div>
 		</a>
 	{/each}
@@ -125,9 +124,9 @@
 	<hr class="border-t border-gray-700" />
 	<!-- Accounts -->
 	<a class="group h-auto w-full bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="/accounts">
-		<div class="group flex items-center px-2 group-hover:scale-110">
-			<img src="icons/Icon_Character_Lumine.webp" class="my-2 h-10" alt="Accounts Icon" />
-			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
+		<div class="group flex items-center px-2">
+			<img src="icons/Icon_Character_Lumine.webp" class="my-2 h-10 transition-transform group-hover:scale-125" alt="Accounts Icon" />
+			<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden>Accounts</span>
 		</div>
 	</a>
 </div>
