@@ -16,8 +16,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 # Route to serve the season data
 @app.route('/seasons', methods=['GET'])
 def get_seasons():
-	file_path = os.path.join(os.path.dirname(__file__), 'data',
-		'seasons_data_version_5.1.json')
+	file_path = os.path.join(os.path.dirname(__file__), 'data/seasons_data.json')
 	if not os.path.exists(file_path):
 		return jsonify({"error": "File not found"}), 404
 	with open(file_path, 'r') as f:

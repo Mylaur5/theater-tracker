@@ -24,8 +24,8 @@ def process_image(img_element, folder_name):
 		)
 		return
 
-	file_name = sanitize_filename(file_name).lower() + file_extension
-	folder_name = folder_name.lower()
+	file_name = sanitize_filename(file_name).lower().replace(' ', '_') + file_extension
+	folder_name = folder_name.lower().replace(' ', '_')
 	destination_folder = f"images/{folder_name}/{file_name}"
 	os.makedirs(f"images/{folder_name}", exist_ok=True)
 

@@ -1,223 +1,104 @@
 import os
 import requests
 import json
-import re
-from bs4 import BeautifulSoup
 import time
+from bs4 import BeautifulSoup
+from datetime import datetime
 
-#TODO Unspaghetti the code: regroup everything into functions
-#TODO Add proper documentation comments
-
-# Measure time
-start_time = time.time()
-
-# Main program statements
-script_directory = os.path.dirname(os.path.abspath(__file__))
-os.chdir(script_directory)
-print(os.getcwd())  # Current wd is backend
 
 # Setup the URL and folder paths
-url_official = 'https://genshin-impact.fandom.com/wiki/Imaginarium_Theater/Seasons#Schedule'
-image_folder = '/images'  # Folder to save images
+URL_OFFICIAL = "https://genshin-impact.fandom.com/wiki/Imaginarium_Theater/Seasons#Schedule"
+OUTPUT_FILEPATH = "data/seasons_data.json"
+ELEMENTS_URL = "/images/elements/{}"
+CHARACTERS_URL = "/images/characters/{}"
 
-response = requests.get(url_official)
-soup = BeautifulSoup(response.text, 'html.parser')
 
-# Extract season information
-page = soup.find('div', class_='mw-parser-output')
+def extract_season_dates(tr, season):
+    td_date = tr.find_all("td")[0]
+    season["name"] = td_date.a.text
+    season["number"] = int(season["name"].split(" ")[1])
+    text_split = td_date.small.text.split(" –")
+    print("Found " + season["name"])
 
-# Initialize a list to store all season data
-all_seasons_data = []
+    season["date_start"] = text_split[0][:-6]
+    season["date_end"] = text_split[1][:-6]
+    season["version_start"] = text_split[0][-4:-1]
+    season["version_end"] = text_split[1][-4:-1]
+    season_start = datetime.strptime(season["date_start"], "%B %d, %Y")
+    upcoming = (
+        season_start.year > datetime.now().year
+        or season_start.month > datetime.now().month
+        and season_start.year == datetime.now().year
+    )
+    current = season_start.year == datetime.now().year and season_start.month == datetime.now().month
+    season["status"] = "upcoming" if upcoming else "current" if current else "past"
+    return season
 
-# Find all season sections
-season_sections = page.find_all('h3')
 
-for season_section in season_sections:
-	season_data = {}
+def extract_images(tag):
 
-	# Extract season name
-	season_name = season_section.find('span', class_='mw-headline').text
-	season_data['season_name'] = season_name
+    def get_name(span):
+        name = span.span.a.img["alt"].lower().replace(" ", "_") + ".png"
+        if name == 'kazuha.png':
+            name = "kaedehara_kazuha.png"
+        return name
+        
+    os.makedirs("images/characters", exist_ok=True)
+    return [
+        {
+            "name": span.span.a.img["alt"],
+            "element": span["class"][-1].split("-")[2].capitalize(),
+            "image_local": CHARACTERS_URL.format(get_name(span)),
+            "image_url": span.span.a.img["data-src"],
+        }
+        for span in tag.find_next("span").find_all("span", class_="card-image-container")
+    ]
 
-	# Extract Season Number and Version
-	season_text = season_section.find_next('p').text
 
-	# Check for "There are no upcoming seasons."
-	if "There are no upcoming seasons." in season_text:
-		season_data['season_number'] = None
-		season_data['message'] = "There are no upcoming seasons."
-		all_seasons_data.append(season_data)
-		continue  # Skip to the next iteration of the loop
+def extract_elements(elements):
+    L = []
+    for _ in range(3):
+        img = elements.find_next("span").a.img
+        L.append(
+            {
+                "name": img["alt"],
+                "image_local": ELEMENTS_URL.format(img["alt"].lower().replace(" ", "_") + ".png"),
+                "image_url": img["data-src"],
+            }
+        )
+        elements = elements.find_next("span")
+    return L
 
-	season_number = re.search(r'Season (\d+)', season_text)
-	season_data['season_number'] = season_number.group(0)
 
-	# Extract version information
-	version_info = re.search(r'Version ([\d.]+)', season_text)
-	season_data['version_info'] = version_info.group(0)
+if __name__ == "__main__":
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_directory)
 
-	# Extract season date
-	date_info = re.search(r'from (\w+) \d{2}, (\d+) to (\w+) \d{2}, \d{4}',
-		season_text)
-	season_data['date_info'] = date_info.group(1, 2)
+    # Measure time
+    start_time = time.time()
+    print("Starting the scraping process...")
+    response = requests.get(URL_OFFICIAL)
+    soup = BeautifulSoup(response.text, "html.parser")
+    page = soup.find("div", class_="mw-parser-output")
+    seasons = []
+    for tr in page.find_all("tr"):
+        season = {}
+        if not tr.find("td"):
+            continue
 
-	# Extract opening characters
-	opening_characters = []
-	card_list_container = season_section.find_next('span',
-		class_='card-list-container')
-	if card_list_container:
-		cards = card_list_container.find_all('div', class_='card-container')
-		for card in cards:
-			character = {
-				'name': card.find('span', class_='card-text').text.strip(),
-				'element': card.find('span',
-				class_='card-icon').find('img')['alt']
-			}
+        season = extract_season_dates(tr, season)
+        td_detail = tr.find_all("td")[1]
+        opening = td_detail.b
+        season["opening_characters"] = extract_images(opening)
+        elements = opening.find_next("b")
+        season["alternate_cast_elements"] = extract_elements(elements)
+        special_guest = elements.find_next("b")
+        season["special_guest_stars"] = extract_images(special_guest)
+        seasons.append(season)
 
-			# Get the image URL
-			image_url = card.find('span', class_='card-image-container').find(
-				'img')['data-src'].split('/latest')[0] + '/latest'
+    with open(OUTPUT_FILEPATH, "w") as json_file:
+        json.dump(seasons, json_file, indent=4)
 
-			# Download and save the image locally
-			image_name = f"{character['name'].replace(' ', '_').lower()}.png"
-			os.makedirs(os.path.join(image_folder, 'characters'), exist_ok=True)
-			image_character_path = os.path.join(image_folder, 'characters',
-				image_name)
-			flask_path = f'/images/characters/{image_name}'
-
-			try:
-				# Download the image
-				img_response = requests.get(image_url, stream=True)
-				if img_response.status_code == 200:
-					with open(image_character_path, 'wb') as f:
-						for chunk in img_response.iter_content(1024):
-							f.write(chunk)
-				# Add the local path and original URL to the character data
-				character['image_local'] = flask_path
-				character['image_url'] = image_url  # Keep the original link
-			except Exception as e:
-				print(f"Failed to download image for {character['name']}: {e}")
-				character['image_local'] = None  # In case the download fails
-				character[
-					'image_url'] = image_url  # Keep the original link as fallback
-
-			opening_characters.append(character)
-
-	season_data['opening_characters'] = opening_characters
-
-	# Extract alternate cast elements
-	alternate_cast_elements = []
-	alternate_cast_section = season_section.find_next('h4',
-		string='Alternate Cast Elements')
-	if alternate_cast_section:
-		elements = alternate_cast_section.find_next('p').find_all('a')
-		# Skip over empty element data (1 3 5 don't have img data)
-		for i in range(0, len(elements), 2):
-			element = elements[i]
-			element_data = {
-				'name':
-				element.get('title'),
-				'image_url':
-				element.find('img')['data-src'].split('/revision')[0]
-				if element.find('img') else None
-			}
-
-			if element_data['image_url']:
-				# Download and save the image locally
-				image_name = f"{element_data['name'].replace(' ', '_').lower()}.png"
-				os.makedirs(os.path.join(image_folder, 'elements'),
-					exist_ok=True)
-				element_path = os.path.join(image_folder, 'elements',
-					image_name)
-				flask_element_path = f'/images/elements/{image_name}'
-
-				try:
-					# Download the image
-					img_response = requests.get(element_data['image_url'],
-						stream=True)
-					if img_response.status_code == 200:
-						with open(element_path, 'wb') as f:
-							for chunk in img_response.iter_content(1024):
-								f.write(chunk)
-					# Add the local path to the element data
-					element_data['image_local'] = flask_element_path
-				except Exception as e:
-					print(
-						f"Failed to download image for {element_data['name']}: {e}"
-					)
-					element_data[
-						'image_local'] = None  # In case the download fails
-
-			alternate_cast_elements.append(element_data)
-
-	season_data['alternate_cast_elements'] = alternate_cast_elements
-
-	# Extract special guest stars
-	special_guest_stars = []
-	special_guest_section = season_section.find_next('h4',
-		string='Special Guest Stars')
-	if special_guest_section:
-		card_list_container = special_guest_section.find_next('span',
-			class_='card-list-container')
-		if card_list_container:
-			cards = card_list_container.find_all('div', class_='card-container')
-			for card in cards:
-				guest_star = {
-					'name': card.find('span', class_='card-text').text.strip(),
-					'element': card.find('span', 'card-icon').find('img')['alt']
-				}
-
-				# Get the image URL
-				image_url = card.find('span',
-					class_='card-image-container').find(
-					'img')['data-src'].split('/latest')[0] + '/latest'
-
-				# Download and save the image locally
-				image_name = f"{guest_star['name'].replace(' ', '_').lower()}.png"
-				image_character_path = os.path.join(image_folder, 'characters',
-					image_name)
-				flask_path = f'/images/characters/{image_name}'
-
-				try:
-					# Download the image
-					img_response = requests.get(image_url, stream=True)
-					if img_response.status_code == 200:
-						with open(image_character_path, 'wb') as f:
-							for chunk in img_response.iter_content(1024):
-								f.write(chunk)
-					# Add the local path and original URL to the guest star data
-					guest_star['image_local'] = flask_path
-					guest_star[
-						'image_url'] = image_url  # Keep the original link
-				except Exception as e:
-					print(
-						f"Failed to download image for {guest_star['name']}: {e}"
-					)
-					guest_star[
-						'image_local'] = None  # In case the download fails
-					guest_star[
-						'image_url'] = image_url  # Keep the original link as fallback
-
-				special_guest_stars.append(guest_star)
-
-	season_data['special_guest_stars'] = special_guest_stars
-
-	# Append season data to the list
-	all_seasons_data.append(season_data)
-
-# Extract season numbers and construct the filename
-version_info = [
-	season.get('version_info').split()[-1] for season in all_seasons_data
-	if season.get('version_info') is not None
-]
-version_info_str = '-'.join(version_info)
-filename = f"data/seasons_data_version_{version_info_str}.json"
-
-# Write data to a JSON file
-with open(filename, 'w') as json_file:
-	json.dump(all_seasons_data, json_file, indent=4)
-
-end_time = time.time()
-execution_time = end_time - start_time
-print(f"Script execution time: {execution_time:.2f} seconds")
-print(f"Data successfully written to {filename}")
+    end_time = time.time()
+    print(f"Script execution time: {end_time - start_time:.2f} seconds")
+    print(f"Data successfully written to {OUTPUT_FILEPATH}")
