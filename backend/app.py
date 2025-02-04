@@ -56,6 +56,12 @@ def list_uploaded_files():
 	return jsonify(files)
 
 
+# Route to serve data from the 'backend/data' folder
+@app.route('/uploads/<path:filename>', methods=['GET'])
+def serve_data(filename):
+	return send_from_directory(UPLOAD_FOLDER, filename)
+
+
 # Route to get the uploaded file data
 @app.route('/characters', methods=['GET'])
 def get_characters():

@@ -37,7 +37,6 @@
 		for (let i = 0; i < seasonsData.length; i++) {
 			if (seasonsData[i].status === 'current') {
 				currentSeasonNumber = seasonsData[i].number;
-				console.log(currentSeasonNumber);
 				break;
 			}
 		}
@@ -65,7 +64,7 @@
 </div>
 {#if seasonsData.length !== 0}
 	{#each seasonsData as season}
-		<div class:hidden={season.number !== currentSeasonNumber} class="mt-8">
+		<div class:hidden={season.number !== currentSeasonNumber} class="mt-8 overflow-auto">
 			<h2 class="text-center text-2xl font-bold">
 				{season.name}
 				{#if season.status !=="past"}
@@ -79,7 +78,7 @@
 			{#if season.alternate_cast_elements.length > 0}
 				<h3 class="mt-8 text-center text-2xl font-bold">Alternate Cast Elements</h3>
 			{/if}
-			<div class="mt-4 flex items-center justify-center space-x-4">F
+			<div class="mt-4 flex items-center justify-center space-x-4">
 				{#each season.alternate_cast_elements as element}
 					<img src={`http://localhost:5000${element.image_local}`} class="h-8 w-8 object-cover"
 						 alt={element.name} title={element.name}/>

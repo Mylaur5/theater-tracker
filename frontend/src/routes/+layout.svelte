@@ -14,7 +14,7 @@
 
 <main class="flex h-screen bg-white dark:bg-indigo-950 dark:text-gray-400">
 	<Sidebar />
-	<section class="flex flex-col w-screen m-4">
+	<section class="flex flex-col w-screen m-16">
 		{@render children()}	
 	</section>
 </main>

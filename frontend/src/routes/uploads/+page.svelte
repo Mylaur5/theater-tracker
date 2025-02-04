@@ -1,17 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { selectedFile, fetchData } from '../shared.js';
 
 	let uploadsData: string[] = $state([]);
 	let files: FileList | undefined = $state();
-	let selectedFile: string = $state('');
-
-	async function fetchData() {
-		uploadsData = await fetch('http://localhost:5000/uploads')
-			.then((res) => res.json())
-			.catch((error) => {
-				console.error('Fetch error:', error);
-			});
-	}
 
 	function uploadFile(file: File) {
 		const formData = new FormData();
@@ -21,16 +13,15 @@
 			body: formData
 		})
 			.then((response) => response.json())
-			.then((data) => {
+			.then(async (data) => {
 				console.log(data);
-				fetchData();
-				selectedFile = data.filename;
+				uploadsData = await fetchData();
+				$selectedFile = data.filename;
 			});
 	}
 
-	onMount(() => {
-		selectedFile = uploadsData[0];
-		fetchData();
+	onMount(async () => {
+		uploadsData = await fetchData();
 	});
 
 	$effect(() => {
@@ -44,7 +35,7 @@
 
 <h1 class="mb-4 text-center text-4xl font-bold">Uploads</h1>
 
-<div class="m-12">
+<div>
 	<label
 		for="dropzone-file"
 		class="flex h-64 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
@@ -78,12 +69,13 @@
 		<select
 			id="countries"
 			class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+			bind:value={$selectedFile}
 		>
-            {#if selectedFile}
-                <option>{selectedFile}</option>
-            {/if}
+			{#if $selectedFile}
+				<option>{$selectedFile}</option>
+			{/if}
 			{#each uploadsData as upload}
-				{#if upload !== selectedFile}
+				{#if upload !== $selectedFile}
 					<option value={upload}>{upload}</option>
 				{/if}
 			{:else}
