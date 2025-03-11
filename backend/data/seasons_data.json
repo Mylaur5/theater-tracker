@@ -1,12 +1,102 @@
 [
     {
+        "name": "Season 9",
+        "number": 9,
+        "date_start": "March 1, 2025",
+        "date_end": "March 31, 2025",
+        "version_start": "5.4",
+        "version_end": "5.4",
+        "status": "current",
+        "opening_characters": [
+            {
+                "name": "Kamisato Ayato",
+                "element": "Hydro",
+                "image_local": "/images/characters/kamisato_ayato.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest/scale-to-width-down/74?cb=20220601033710"
+            },
+            {
+                "name": "Barbara",
+                "element": "Hydro",
+                "image_local": "/images/characters/barbara.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Barbara_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091800"
+            },
+            {
+                "name": "Raiden Shogun",
+                "element": "Electro",
+                "image_local": "/images/characters/raiden_shogun.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest/scale-to-width-down/74?cb=20240717072843"
+            },
+            {
+                "name": "Ororon",
+                "element": "Electro",
+                "image_local": "/images/characters/ororon.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Ororon_Icon.png/revision/latest/scale-to-width-down/74?cb=20241014100711"
+            },
+            {
+                "name": "Eula",
+                "element": "Cryo",
+                "image_local": "/images/characters/eula.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Eula_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092858"
+            },
+            {
+                "name": "Layla",
+                "element": "Cryo",
+                "image_local": "/images/characters/layla.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Layla_Icon.png/revision/latest/scale-to-width-down/74?cb=20221118140544"
+            }
+        ],
+        "alternate_cast_elements": [
+            {
+                "name": "Hydro",
+                "image_local": "/images/elements/hydro.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
+            },
+            {
+                "name": "Electro",
+                "image_local": "/images/elements/electro.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
+            },
+            {
+                "name": "Cryo",
+                "image_local": "/images/elements/cryo.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
+            }
+        ],
+        "special_guest_stars": [
+            {
+                "name": "Yumemizuki Mizuki",
+                "element": "Anemo",
+                "image_local": "/images/characters/yumemizuki_mizuki.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/Yumemizuki_Mizuki_Icon.png/revision/latest/scale-to-width-down/74?cb=20250212014631"
+            },
+            {
+                "name": "Navia",
+                "element": "Geo",
+                "image_local": "/images/characters/navia.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest/scale-to-width-down/74?cb=20231220022117"
+            },
+            {
+                "name": "Xinyan",
+                "element": "Pyro",
+                "image_local": "/images/characters/xinyan.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213163013"
+            },
+            {
+                "name": "Thoma",
+                "element": "Pyro",
+                "image_local": "/images/characters/thoma.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest/scale-to-width-down/74?cb=20211014011046"
+            }
+        ]
+    },
+    {
         "name": "Season 8",
         "number": 8,
         "date_start": "February 1, 2025",
         "date_end": "February 28, 2025",
         "version_start": "5.3",
         "version_end": "5.4",
-        "status": "current",
+        "status": "past",
         "opening_characters": [
             {
                 "name": "Hu Tao",

@@ -40,7 +40,14 @@
 
 <h1 class="text-center text-4xl font-bold">Characters</h1>
 
-<h3 class="text-center">Characters from: <code class="font-bold">`{$selectedFile}`</code></h3>
+<h3 class="text-center">
+	{#if $selectedFile}
+	Characters from: <code class="font-bold">`{$selectedFile}`</code>
+	{:else}
+	Please select a file in the '<strong>Upload</strong>' tab.
+	{/if}
+</h3>
+
 
 <div class="overflow-scroll mt-4 flex flex-wrap items-start max-w-(40vw)">
 	{#each goodFileData.characters as character}

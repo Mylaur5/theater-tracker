@@ -1,0 +1,46 @@
+<script lang="ts">
+	let { message, show = false } = $props();
+
+	function closeNotification() {
+		show = false;
+	}
+</script>
+
+<div
+	class:show={show}
+	class="notification fixed right-4 top-4 flex gap-4 rounded-lg bg-gray-800 p-4 shadow-lg hover:text-gray-300"
+>
+	{message}
+	<button
+		type="button"
+		onclick={closeNotification}
+		class="-mx-1.5 -my-1.5 ms-auto inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border-none bg-blue-50 bg-transparent p-1.5 text-lg text-gray-400 hover:bg-gray-700 focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+		data-dismiss-target="#alert-1"
+		aria-label="Close"
+	>
+		<span class="sr-only">Close</span>
+		<svg class="h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+			<path
+				stroke="currentColor"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+			/>
+		</svg>
+	</button>
+</div>
+
+<style>
+	.notification {
+		opacity: 0;
+		transition:
+			opacity 0.1s ease-in,
+			transform 0.1s ease-in;
+	}
+
+	.notification.show {
+		opacity: 1;
+		transform: translateX(-20px);
+	}
+</style>

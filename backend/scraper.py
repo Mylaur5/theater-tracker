@@ -36,13 +36,12 @@ def extract_season_dates(tr, season):
 
 
 def extract_images(tag):
-
     def get_name(span):
         name = span.span.a.img["alt"].lower().replace(" ", "_") + ".png"
-        if name == 'kazuha.png':
+        if name == "kazuha.png":
             name = "kaedehara_kazuha.png"
         return name
-        
+
     os.makedirs("images/characters", exist_ok=True)
     return [
         {
@@ -70,7 +69,7 @@ def extract_elements(elements):
     return L
 
 
-if __name__ == "__main__":
+def extract():
     script_directory = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_directory)
 
@@ -102,3 +101,8 @@ if __name__ == "__main__":
     end_time = time.time()
     print(f"Script execution time: {end_time - start_time:.2f} seconds")
     print(f"Data successfully written to {OUTPUT_FILEPATH}")
+    return OUTPUT_FILEPATH
+
+
+if __name__ == "__main__":
+    extract()

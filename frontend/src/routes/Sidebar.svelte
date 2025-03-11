@@ -97,16 +97,18 @@
 			<div class="flex items-center">
 				<!-- svelte-ignore a11y_missing_attribute -->
 				<img src={item.img} alt={item.img} width="32" height="32" class="transition-transform group-hover:scale-125" />
-				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden>{item.label}</span>
+				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden
+					>{item.label}</span
+				>
 			</div>
 		</a>
 	{/each}
 	<!-- Fill Height -->
 	<div class="mt-auto"></div>
 	<!-- Dark Mode Switch -->
-	<label class="flex items-center py-2 cursor-pointer hover:text-gray-300" class:hidden>
+	<label class="flex cursor-pointer items-center py-2 hover:text-gray-300" class:hidden>
 		<div class="ml-2">
-			<input type="checkbox" class="sr-only" onchange={toggleDarkMode} checked={darkMode}/>
+			<input type="checkbox" class="sr-only" onchange={toggleDarkMode} checked={darkMode} />
 			<div class="block h-5 w-9 rounded-full bg-gray-600 hover:bg-slate-500">
 				<div
 					class="relative left-0.5 top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-white transition dark:bg-gray-900"
@@ -125,7 +127,11 @@
 	<!-- Accounts -->
 	<a class="group h-auto w-full bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="/accounts">
 		<div class="group flex items-center px-2">
-			<img src="icons/Icon_Character_Lumine.webp" class="my-2 h-10 transition-transform group-hover:scale-125" alt="Accounts Icon" />
+			<img
+				src="icons/Icon_Character_Lumine.webp"
+				class="my-2 h-10 transition-transform group-hover:scale-125"
+				alt="Accounts Icon"
+			/>
 			<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden>Accounts</span>
 		</div>
 	</a>
