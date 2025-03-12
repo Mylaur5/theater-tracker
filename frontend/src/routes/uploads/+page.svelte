@@ -1,9 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { selectedFile, fetchData } from '../shared.js';
+	import { selectedFile } from '../shared.js';
 
 	let uploadsData: string[] = $state([]);
 	let files: FileList | undefined = $state();
+
+	async function fetchUploads() {
+		return fetch('http://localhost:5000/uploads')
+			.then((res) => res.json())
+			.catch((error) => {
+				console.error('Fetch error:', error);
+			});
+	}
 
 	function uploadFile(file: File) {
 		const formData = new FormData();
@@ -15,13 +23,13 @@
 			.then((response) => response.json())
 			.then(async (data) => {
 				console.log(data);
-				uploadsData = await fetchData();
+				uploadsData = await fetchUploads();
 				$selectedFile = data.filename;
 			});
 	}
 
 	onMount(async () => {
-		uploadsData = await fetchData();
+		uploadsData = await fetchUploads();
 	});
 
 	$effect(() => {
@@ -38,7 +46,7 @@
 <div>
 	<label
 		for="dropzone-file"
-		class="flex h-64 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
+		class="flex h-[20vh] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
 	>
 		<div class="flex flex-col items-center justify-center pb-6 pt-5">
 			<svg

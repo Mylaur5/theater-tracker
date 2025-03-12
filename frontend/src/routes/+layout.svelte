@@ -18,9 +18,3 @@
 		{@render children()}	
 	</section>
 </main>
-
-<style>
-	* {
-		font-family: 'Genshin Impact', sans-serif;
-	}
-</style>

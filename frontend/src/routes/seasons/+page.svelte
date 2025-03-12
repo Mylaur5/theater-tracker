@@ -4,7 +4,6 @@
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
-	let refreshState: any = $state();
 	let notify = $state(false);
 	let notificationMessage = $state('');
 
@@ -32,7 +31,7 @@
 			.catch((error) => {
 				console.error('Fetch error:', error);
 			});
-		fetchData();
+		fetchSeasonsData();
 		notificationMessage = 'Refresh complete!';
 
 		// Hide the notification after 5 seconds
@@ -41,7 +40,7 @@
 		}, 5000);
 	}
 
-	async function fetchData() {
+	async function fetchSeasonsData() {
 		// Fetch seasons data
 		seasonsData = await fetch('http://localhost:5000/seasons')
 			.then((seasonsResponse) => {
@@ -57,44 +56,41 @@
 	}
 
 	onMount(async () => {
-		fetchData();
+		fetchSeasonsData();
 	});
 </script>
 
-<nav>
-	<!-- Nav Season Button -->
-	<div class="flex items-center justify-center space-x-4">
-		<button onclick={prevSeason} class="gray flex gap-1 rounded-full p-1 hover:bg-indigo-500" aria-label="Previous">
-			<svg
-				class="h-6 w-6"
-				xmlns="http://www.w3.org/2000/svg"
-				height="24px"
-				viewBox="0 -960 960 960"
-				width="24px"
-				fill="currentColor"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" /></svg
-			>
-			Previous
-		</button>
-		<button onclick={refreshData} class="flex gap-1 rounded-full p-1 font-bold hover:bg-indigo-500">
-			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-				<path
-					d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
-				/>
-			</svg>
-			Refresh
-		</button>
-		<button onclick={nextSeason} class="flex gap-1 rounded-full p-1 font-bold hover:bg-indigo-500" aria-label="Next">
-			<svg
-				class="h-6 w-6"
-				xmlns="http://www.w3.org/2000/svg"
-				height="24px"
-				viewBox="0 -960 960 960"
-				width="24px"
-				fill="currentColor"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg
-			>
-			Next
-		</button>
-	</div>
+<nav class="flex items-center justify-center space-x-4">
+	<button onclick={prevSeason} class="gray flex gap-1 rounded-full p-1 hover:bg-indigo-500" aria-label="Previous">
+		<svg
+			class="h-6 w-6"
+			xmlns="http://www.w3.org/2000/svg"
+			height="24px"
+			viewBox="0 -960 960 960"
+			width="24px"
+			fill="currentColor"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" /></svg
+		>
+		Previous
+	</button>
+	<button onclick={refreshData} class="flex gap-1 rounded-full p-1 font-bold hover:bg-indigo-500">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+			<path
+				d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
+			/>
+		</svg>
+		Refresh
+	</button>
+	<button onclick={nextSeason} class="flex gap-1 rounded-full p-1 font-bold hover:bg-indigo-500" aria-label="Next">
+		<svg
+			class="h-6 w-6"
+			xmlns="http://www.w3.org/2000/svg"
+			height="24px"
+			viewBox="0 -960 960 960"
+			width="24px"
+			fill="currentColor"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg
+		>
+		Next
+	</button>
 </nav>
 
 <!-- Notification Component -->
