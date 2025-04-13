@@ -92,9 +92,3 @@
 		</select>
 	</form>
 </div>
-
-<style>
-	option {
-		font-family: inherit;
-	}
-</style>

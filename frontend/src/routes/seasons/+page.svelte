@@ -58,40 +58,60 @@
 	onMount(async () => {
 		fetchSeasonsData();
 	});
+
+	const navUI = [
+		{
+			onclick: prevSeason,
+			label: 'Previous',
+			iconSVG: `<svg
+				class="h-6 w-6"
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px" 
+				fill="currentColor">
+					<path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+				</svg>`
+		},
+		{
+			onclick: refreshData,
+			label: 'Refresh',
+			iconSVG: `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+				<path 
+					d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
+				/>
+			</svg>`
+		},
+		{
+			onclick: nextSeason,
+			label: 'Next',
+			iconSVG: `<svg
+				class="h-6 w-6"
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				fill="currentColor">
+					<path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+				</svg>`
+		}
+	];
 </script>
 
-<nav class="flex items-center justify-center space-x-4">
-	<button onclick={prevSeason} class="gray flex gap-1 rounded-full p-1 hover:bg-indigo-500" aria-label="Previous">
-		<svg
-			class="h-6 w-6"
-			xmlns="http://www.w3.org/2000/svg"
-			height="24px"
-			viewBox="0 -960 960 960"
-			width="24px"
-			fill="currentColor"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" /></svg
-		>
-		Previous
-	</button>
-	<button onclick={refreshData} class="flex gap-1 rounded-full p-1 font-bold hover:bg-indigo-500">
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-			<path
-				d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
-			/>
-		</svg>
-		Refresh
-	</button>
-	<button onclick={nextSeason} class="flex gap-1 rounded-full p-1 font-bold hover:bg-indigo-500" aria-label="Next">
-		<svg
-			class="h-6 w-6"
-			xmlns="http://www.w3.org/2000/svg"
-			height="24px"
-			viewBox="0 -960 960 960"
-			width="24px"
-			fill="currentColor"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg
-		>
-		Next
-	</button>
-</nav>
+<div class="flex items-center justify-center">
+	<nav class="bg-gray-5 flex items-center justify-center space-x-4 rounded dark:bg-indigo-900">
+		{#each navUI as nav}
+			<button
+				onclick={nav.onclick}
+				class="gray flex gap-1 rounded p-1 px-2 hover:bg-gray-200 dark:hover:bg-indigo-800"
+				aria-label={nav.label}
+			>
+				{@html nav.iconSVG}
+				{nav.label}
+			</button>
+		{/each}
+	</nav>
+</div>
 
 <!-- Notification Component -->
 <Notification message={notificationMessage} show={notify} />

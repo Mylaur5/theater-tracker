@@ -56,8 +56,8 @@ def extract_images(tag):
 
 def extract_elements(elements):
     L = []
-    for _ in range(3):
-        img = elements.find_next("span").a.img
+    for i in range(3):
+        img = elements.find_next("span", typeof='mw:File').a.img
         L.append(
             {
                 "name": img["alt"],
@@ -65,7 +65,7 @@ def extract_elements(elements):
                 "image_url": img["data-src"],
             }
         )
-        elements = elements.find_next("span")
+        elements = elements.find_next("span", typeof='mw:File')
     return L
 
 
