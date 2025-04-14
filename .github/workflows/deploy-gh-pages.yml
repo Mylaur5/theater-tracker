@@ -30,13 +30,6 @@ jobs:
           cd frontend/
           npm run build
         
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3.0.1
-        with:
-          # Path of the directory containing the static assets.
-          path: # default is _site/
-          # Duration after which artifact will expire in days.
-          retention-days: # optional, default is 1   
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
