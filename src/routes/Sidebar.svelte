@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { AiOutlineMoon, AiOutlineSun } from 'svelte-icons-pack/ai';
 	import { Icon } from 'svelte-icons-pack';
+	import { base } from '$app/paths';
 
 	type MenuItem = {
 		id: string;
@@ -62,10 +63,10 @@
 	tabindex="0"
 >
 	<!-- Home -->
-	<a class="group mt-3 flex w-full items-center px-3" href="/" onclick={toggleSidebar}>
+	<a class="group mt-3 flex w-full items-center px-3" href="{base}/" onclick={toggleSidebar}>
 		<img
 			alt="System_Imaginarium_Theater"
-			src="/icons/System_Imaginarium_Theater.webp"
+			src="{base}/icons/System_Imaginarium_Theater.webp"
 			decoding="async"
 			loading="lazy"
 			width="30"
@@ -89,14 +90,14 @@
 		<a
 			class="group mt-2 flex h-12 w-full items-center rounded px-3
 			{selected === item.id ? 'bg-gray-700 text-gray-200' : 'hover:bg-gray-700 hover:text-gray-300'}"
-			href={item.href}
+			href="{base}{item.href}"
 			onclick={() => {
 				selected = item.id;
 			}}
 		>
 			<div class="flex items-center">
 				<!-- svelte-ignore a11y_missing_attribute -->
-				<img src={item.img} alt={item.img} width="32" height="32" class="transition-transform group-hover:scale-125" />
+				<img src="{base}{item.img}" alt={item.img} width="32" height="32" class="transition-transform group-hover:scale-125" />
 				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden
 					>{item.label}</span
 				>
@@ -128,7 +129,7 @@
 	<a class="group h-auto w-full bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="/accounts">
 		<div class="group flex items-center px-2">
 			<img
-				src="/icons/Icon_Character_Lumine.webp"
+				src="{base}/icons/Icon_Character_Lumine.webp"
 				class="my-2 h-10 transition-transform group-hover:scale-125"
 				alt="Accounts Icon"
 			/>
