@@ -1,14 +1,24 @@
 <script>
+	// @ts-nocheck
+
 	import { onMount } from 'svelte';
-	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase } from '../../shared.js';
+	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase, normalToPascalCase } from '../../shared.js';
 	let { data } = $props();
 	let characterName = $derived(data.name);
-	let goodFileData = $state({ characters: [] });
-	let characterData = $state({talent: {}});
+	let element = $state("");
+	let characterData = $state({ talent: {} });
 
-	onMount(() => {
+	onMount(async () => {
+		// Find matching element from seasons_data.json
+		element = await fetch('/data/seasons_data.json')
+			.then((response) => response.json())
+			.then((data) => data.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]))
+			.then((allChars) => allChars.find((char) => normalToPascalCase(char.name) === characterName))
+			.then((char) => char.element)
+			.catch((error) => console.error('Fetch error:', error));
+
 		if ($selectedGoodFile === '') return;
-		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
+		const goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
 		characterData = goodFileData.characters.find((char) => char.key === characterName);
 	});
 </script>
@@ -23,6 +33,12 @@
 		title={characterName}
 	/>
 	<div>
+		<img
+			src={`/images/elements/${element.toLowerCase()}.png`}
+			class="w-10 break-before-all text-wrap object-cover"
+			alt={characterName}
+			title={characterName}
+		/>
 		<p>Level {characterData.level}</p>
 		<p>Constellation {characterData.constellation}</p>
 		<p>Ascension {characterData.ascension}</p>

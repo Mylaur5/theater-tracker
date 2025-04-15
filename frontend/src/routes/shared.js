@@ -10,6 +10,7 @@ export function pascalToNormalCase(pascalStr) {
 }
 
 export function normalToPascalCase(normalStr) {
+    if (normalStr === 'Kazuha') return 'KaedeharaKazuha';
     return normalStr
         .split(' ') // Split the string into words
         .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize the first letter of each word
