@@ -44,37 +44,21 @@ Theater Tracker is a web application that tracks various elements and characters
 
 ### frontend
 
-1. Navigate to the frontend directory
-
-```bash
-cd frontend
-```
-2. Install the required Node.js packages:
+1. Install the required Node.js packages:
 
 ```bash
 npm install
 ```
 ## Running the Project
 
-### Backend
-Ensure the virtual environment is activated.
-Start the Flask server:
-```bash
-python app.py
-```
-
-
-
 ### Frontend
 
 ```bash
-cd frontend
 npm run dev -- --open
 ```
 
 ## Building the Project
 ```bash
-cd frontend
 npm run build
 # You can preview the production build with:
 npm run preview
