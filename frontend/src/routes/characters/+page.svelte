@@ -2,23 +2,16 @@
 	// @ts-nocheck
 
 	import { onMount } from 'svelte';
-	import { selectedFile } from '../shared.js';
+	import { selectedGoodFile } from '../shared.js';
 
-	let filteredGoodFileCharacters = $state([]);
 	let seasonsData = $state([]);
+	let charactersData = $state([]);
 	let goodFileData = $state({});
+	let filteredGoodFileCharacters = $state([]);
 	let selectedSeason = $state({ name: 'All Seasons', number: -1 });
 	let selectedElement = $state('All Elements');
 	let seasonFilters = ['All Seasons'];
 	let elementFilters = ['All Elements', 'Pyro', 'Hydro', 'Electro', 'Dendro', 'Cryo', 'Geo', 'Anemo'];
-
-	async function betterFetch(url) {
-		return fetch(url)
-			.then((seasonsResponse) => seasonsResponse.json())
-			.catch((error) => {
-				console.error('Fetch error:', error);
-			});
-	}
 
 	function filterCharactersBySeason(seasonNumber) {
 		if (seasonNumber === -1) {
@@ -38,10 +31,7 @@
 
 		// Build a filter set of unique character names with the specified element
 		const characterNamesWithElement = new Set(
-			seasonsData
-				.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars])
-				.filter((char) => char.element === element)
-				.map((char) => char.name)
+			charactersData.filter((char) => char.element === element).map((char) => char.name)
 		);
 
 		return filteredGoodFileCharacters.filter((character) =>
@@ -71,19 +61,22 @@
 	}
 
 	onMount(async () => {
-		seasonsData = await betterFetch('http://localhost:5000/seasons');
+		seasonsData = await fetch('/data/seasons_data.json')
+			.then((response) => response.json())
+			.catch((error) => console.error('Fetch error:', error));
+		charactersData = seasonsData.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]);
 
-		if ($selectedFile === '') return;
-		goodFileData = await betterFetch('http://localhost:5000/uploads/' + $selectedFile);
+		if ($selectedGoodFile === '') return;
+		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile));
 		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
 	});
 </script>
 
 <h1 class="text-center text-4xl font-bold">Characters</h1>
 
-{#if $selectedFile}
+{#if $selectedGoodFile}
 	<h3 class="mb-2 text-center text-sm">
-		imported from: <code class="font-bold">`{$selectedFile}`</code>
+		imported from: <code class="font-bold">`{$selectedGoodFile}`</code>
 	</h3>
 
 	<div class="flex">
@@ -180,7 +173,12 @@
 									}}
 									popovertarget="dropdown-elements"
 								>
-									<div class="inline-flex items-center">{element}</div>
+									<div class="inline-flex items-center">
+										{#if element !== 'All Elements'}
+											<img src="images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
+										{/if}
+										{element}
+									</div>
 								</button>
 							</li>
 						{/each}
@@ -194,8 +192,8 @@
 		{#each filteredGoodFileCharacters as characterName}
 			<li class="m-2 flex flex-col items-center justify-center">
 				<img
-					src={`http://localhost:5000/images/characters/${normalToSnakeCase(characterName)}.png`}
-					class="h-28 w-28 break-before-all text-wrap object-cover"
+					src={`/images/characters/${normalToSnakeCase(characterName)}.png`}
+					class="h-28 w-28 break-before-all text-wrap object-cover "
 					alt={characterName}
 					title={characterName}
 				/>

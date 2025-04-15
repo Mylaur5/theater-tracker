@@ -1,41 +1,46 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { selectedFile } from '../shared.js';
+	import { selectedGoodFile } from '../shared.js';
+	import { json } from '@sveltejs/kit';
 
-	let uploadsData: string[] = $state([]);
+	let uploadsData: (string | null)[] = $state([]);
 	let files: FileList | undefined = $state();
 
-	async function fetchUploads() {
-		return fetch('http://localhost:5000/uploads')
-			.then((res) => res.json())
-			.catch((error) => {
-				console.error('Fetch error:', error);
-			});
+	function readStorage() {
+		return Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i)).filter((key) =>
+			key!.endsWith('.json')
+		);
 	}
 
-	function uploadFile(file: File) {
-		const formData = new FormData();
-		formData.append('file', file);
-		fetch('http://localhost:5000/uploads', {
-			method: 'POST',
-			body: formData
-		})
-			.then((response) => response.json())
-			.then(async (data) => {
-				console.log(data);
-				uploadsData = await fetchUploads();
-				$selectedFile = data.filename;
-			});
+	function readFile(file: File) {
+		$selectedGoodFile = file.name;
+
+		const reader = new FileReader();
+		reader.onload = (e) => {
+			try {
+				const result = (e.target as FileReader).result;
+				if (typeof result === 'string') {
+					const jsonData = JSON.parse(result);
+					localStorage.setItem(file.name, JSON.stringify(jsonData));
+					console.log('JSON data stored in local storage:', jsonData);
+				}
+			} catch (error) {
+				console.error('Error parsing JSON file:', error);
+			}
+		};
+
+		reader.onerror = (e) => console.error('Error reading file:', e);
+		reader.readAsText(file);
 	}
 
 	onMount(async () => {
-		uploadsData = await fetchUploads();
+		uploadsData = readStorage();
 	});
 
 	$effect(() => {
 		if (files) {
 			for (const file of files) {
-				uploadFile(file);
+				readFile(file);
 			}
 		}
 	});
@@ -69,7 +74,7 @@
 			</p>
 			<p class="text-xs text-gray-500 dark:text-gray-400">JSON files</p>
 		</div>
-		<input id="dropzone-file" type="file" class="hidden" bind:files />
+		<input id="dropzone-file" type="file" accept=".json" class="hidden" bind:files />
 	</label>
 
 	<form class="mt-8 max-w-sm">
@@ -77,13 +82,13 @@
 		<select
 			id="countries"
 			class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-			bind:value={$selectedFile}
+			bind:value={$selectedGoodFile}
 		>
-			{#if $selectedFile}
-				<option>{$selectedFile}</option>
+			{#if $selectedGoodFile}
+				<option>{$selectedGoodFile}</option>
 			{/if}
 			{#each uploadsData as upload}
-				{#if upload !== $selectedFile}
+				{#if upload !== $selectedGoodFile}
 					<option value={upload}>{upload}</option>
 				{/if}
 			{:else}

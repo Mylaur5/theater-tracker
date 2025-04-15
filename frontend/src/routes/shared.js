@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export let selectedFile = writable('');
+export let selectedGoodFile = writable('');

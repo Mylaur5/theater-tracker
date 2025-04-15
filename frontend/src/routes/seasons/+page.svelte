@@ -23,26 +23,21 @@
 		}
 	}
 
-	async function refreshData() {
-		notify = true;
-		notificationMessage = 'Refreshing...';
-		await fetch('http://localhost:5000/seasons', { method: 'PUT' })
-			.then((response) => response.json())
-			.catch((error) => {
-				console.error('Fetch error:', error);
-			});
-		fetchSeasonsData();
-		notificationMessage = 'Refresh complete!';
+	// async function refreshData() {
+	// 	notify = true;
+	// 	notificationMessage = 'Refreshing...';
+	// 	fetchSeasonsData();
+	// 	notificationMessage = 'Refresh complete!';
 
-		// Hide the notification after 5 seconds
-		setTimeout(() => {
-			notify = false;
-		}, 5000);
-	}
+	// 	// Hide the notification after 5 seconds
+	// 	setTimeout(() => {
+	// 		notify = false;
+	// 	}, 5000);
+	// }
 
 	async function fetchSeasonsData() {
 		// Fetch seasons data
-		seasonsData = await fetch('http://localhost:5000/seasons')
+		seasonsData = await fetch('/data/seasons_data.json')
 			.then((seasonsResponse) => {
 				if (!seasonsResponse.ok) throw new Error('Network response was not ok');
 				return seasonsResponse.json();
@@ -57,6 +52,7 @@
 
 	onMount(async () => {
 		fetchSeasonsData();
+		console.log(seasonsData)
 	});
 
 	const navUI = [
@@ -73,15 +69,15 @@
 					<path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
 				</svg>`
 		},
-		{
-			onclick: refreshData,
-			label: 'Refresh',
-			iconSVG: `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-				<path 
-					d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
-				/>
-			</svg>`
-		},
+		// {
+		// 	onclick: refreshData,
+		// 	label: 'Refresh',
+		// 	iconSVG: `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+		// 		<path 
+		// 			d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
+		// 		/>
+		// 	</svg>`
+		// },
 		{
 			onclick: nextSeason,
 			label: 'Next',
@@ -135,7 +131,7 @@
 			<div class="mt-1 flex items-center justify-center space-x-4">
 				{#each season.alternate_cast_elements as element}
 					<img
-						src={`http://localhost:5000${element.image_local}`}
+						src={element.image_local}
 						class="h-8 w-8 object-cover"
 						alt={element.name}
 						title={element.name}
@@ -150,7 +146,7 @@
 				{#each season.opening_characters as character}
 					<div class="flex flex-col items-center justify-center">
 						<img
-							src={`http://localhost:5000${character.image_local}`}
+							src={character.image_local}
 							alt={character.name}
 							class="h-28 w-28 object-cover"
 						/>
@@ -166,7 +162,7 @@
 				{#each season.special_guest_stars as character}
 					<div class="flex flex-col items-center justify-center">
 						<img
-							src={`http://localhost:5000${character.image_local}`}
+							src={character.image_local}
 							alt={character.name}
 							class="h-28 w-28 object-cover"
 						/>
