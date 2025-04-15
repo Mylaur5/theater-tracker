@@ -52,7 +52,7 @@
 
 	onMount(async () => {
 		fetchSeasonsData();
-		console.log(seasonsData)
+		console.log(seasonsData);
 	});
 
 	const navUI = [
@@ -73,7 +73,7 @@
 		// 	onclick: refreshData,
 		// 	label: 'Refresh',
 		// 	iconSVG: `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-		// 		<path 
+		// 		<path
 		// 			d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
 		// 		/>
 		// 	</svg>`
@@ -130,12 +130,7 @@
 			{/if}
 			<div class="mt-1 flex items-center justify-center space-x-4">
 				{#each season.alternate_cast_elements as element}
-					<img
-						src={element.image_local}
-						class="h-8 w-8 object-cover"
-						alt={element.name}
-						title={element.name}
-					/>
+					<img src={element.image_local} class="max-w-8 object-cover transition-transform hover:scale-105" alt={element.name} title={element.name} />
 				{/each}
 			</div>
 
@@ -144,13 +139,9 @@
 			{/if}
 			<div class="mt-1 flex items-start justify-center space-x-4">
 				{#each season.opening_characters as character}
-					<div class="flex flex-col items-center justify-center">
-						<img
-							src={character.image_local}
-							alt={character.name}
-							class="h-28 w-28 object-cover"
-						/>
-						<p class="max-w-28 break-normal text-center">{character.name}</p>
+					<div class="flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105">
+						<img src={character.image_local} alt={character.name} title={character.name} class="break-before-all text-wrap object-cover" />
+						<p class="break-before-auto text-center">{character.name}</p>
 					</div>
 				{/each}
 			</div>
@@ -161,11 +152,7 @@
 			<div class="mt-t flex items-start justify-center space-x-4">
 				{#each season.special_guest_stars as character}
 					<div class="flex flex-col items-center justify-center">
-						<img
-							src={character.image_local}
-							alt={character.name}
-							class="h-28 w-28 object-cover"
-						/>
+						<img src={character.image_local} alt={character.name} class="h-28 w-28 object-cover" />
 						<p class="max-w-28 break-normal text-center">{character.name}</p>
 					</div>
 				{/each}

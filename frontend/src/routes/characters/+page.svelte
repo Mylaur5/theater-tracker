@@ -1,75 +1,8 @@
-<script>
-	// @ts-nocheck
+<script lang="ts">
+	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase } from '../shared.js';
+	import CharacterSorter from './CharacterSorter.svelte';
 
-	import { onMount } from 'svelte';
-	import { selectedGoodFile } from '../shared.js';
-
-	let seasonsData = $state([]);
-	let charactersData = $state([]);
-	let goodFileData = $state({});
-	let filteredGoodFileCharacters = $state([]);
-	let selectedSeason = $state({ name: 'All Seasons', number: -1 });
-	let selectedElement = $state('All Elements');
-	let seasonFilters = ['All Seasons'];
-	let elementFilters = ['All Elements', 'Pyro', 'Hydro', 'Electro', 'Dendro', 'Cryo', 'Geo', 'Anemo'];
-
-	function filterCharactersBySeason(seasonNumber) {
-		if (seasonNumber === -1) {
-			return filteredGoodFileCharacters;
-		}
-
-		const selectedSeasonData = seasonsData.filter((season) => season.number === seasonNumber)[0];
-		const allCharacters = [...selectedSeasonData.opening_characters, ...selectedSeasonData.special_guest_stars];
-		const charNamesInSeason = allCharacters.map((character) => character.name);
-		return filteredGoodFileCharacters.filter((character) => charNamesInSeason.includes(character.key));
-	}
-
-	function filterCharactersByElement(element) {
-		if (element === 'All Elements') {
-			return filteredGoodFileCharacters;
-		}
-
-		// Build a filter set of unique character names with the specified element
-		const characterNamesWithElement = new Set(
-			charactersData.filter((char) => char.element === element).map((char) => char.name)
-		);
-
-		return filteredGoodFileCharacters.filter((character) =>
-			characterNamesWithElement.has(pascalToNormalCase(character.key))
-		);
-	}
-
-	function updateFilters() {
-		filteredGoodFileCharacters = goodFileData.characters;
-		filteredGoodFileCharacters = filterCharactersBySeason(selectedSeason.number);
-		filteredGoodFileCharacters = filterCharactersByElement(selectedElement);
-		filteredGoodFileCharacters = filteredGoodFileCharacters.map((character) => pascalToNormalCase(character.key));
-	}
-
-	function normalToSnakeCase(str) {
-		if (str === 'Traveler Geo') return 'aether_(geo)';
-		return str
-			.split(' ') // Split the string by spaces
-			.map((word) => word.toLowerCase()) // Convert each word to lowercase
-			.join('_'); // Join the words with underscores
-	}
-
-	function pascalToNormalCase(pascalStr) {
-		let normalStr = pascalStr.replace(/([A-Z])/g, ' $1');
-		normalStr = normalStr.charAt(0).toUpperCase() + normalStr.slice(1);
-		return normalStr.trim();
-	}
-
-	onMount(async () => {
-		seasonsData = await fetch('/data/seasons_data.json')
-			.then((response) => response.json())
-			.catch((error) => console.error('Fetch error:', error));
-		charactersData = seasonsData.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]);
-
-		if ($selectedGoodFile === '') return;
-		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile));
-		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
-	});
+	let character: string = $state('');
 </script>
 
 <h1 class="text-center text-4xl font-bold">Characters</h1>
@@ -78,129 +11,25 @@
 	<h3 class="mb-2 text-center text-sm">
 		imported from: <code class="font-bold">`{$selectedGoodFile}`</code>
 	</h3>
-
-	<div class="flex">
-		<p class="me-4 flex items-center">Filter by</p>
-
-		<form class="flex max-w-sm items-center justify-center gap-4">
-			<div class="flex">
-				<button
-					id="states-button"
-					popovertarget="dropdown-seasons"
-					class="inline-flex shrink-0 items-center rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
-					type="button"
-				>
-					{selectedSeason.name}
-					<svg
-						class="ms-2.5 h-2.5 w-2.5"
-						aria-hidden="true"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 10 6"
-					>
-						<path
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="m1 1 4 4 4-4"
-						/>
-					</svg>
-				</button>
-				<div
-					id="dropdown-seasons"
-					class="inset-auto z-10 w-32 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
-					popover
-				>
-					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
-						{#each [{ name: 'All Seasons', number: -1 }, ...seasonsData] as season}
-							<li>
-								<button
-									type="button"
-									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-									onclick={() => {
-										selectedSeason = season;
-										updateFilters();
-									}}
-									popovertarget="dropdown-seasons"
-								>
-									<div class="inline-flex items-center">{season.name}</div>
-								</button>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
-
-			<div class="flex">
-				<button
-					id="states-button"
-					popovertarget="dropdown-elements"
-					class="inline-flex shrink-0 items-center rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
-					type="button"
-				>
-					{selectedElement}
-					<svg
-						class="ms-2.5 h-2.5 w-2.5"
-						aria-hidden="true"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 10 6"
-					>
-						<path
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="m1 1 4 4 4-4"
-						/>
-					</svg>
-				</button>
-				<div
-					id="dropdown-elements"
-					class="inset-auto z-10 w-32 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
-					popover
-				>
-					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
-						{#each elementFilters as element}
-							<li>
-								<button
-									type="button"
-									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-									onclick={() => {
-										selectedElement = element;
-										updateFilters();
-									}}
-									popovertarget="dropdown-elements"
-								>
-									<div class="inline-flex items-center">
-										{#if element !== 'All Elements'}
-											<img src="images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
-										{/if}
-										{element}
-									</div>
-								</button>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
-		</form>
-	</div>
-
-	<ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">
-		{#each filteredGoodFileCharacters as characterName}
-			<li class="m-2 flex flex-col items-center justify-center">
+	<CharacterSorter>
+		{#snippet characterCell(characterName: string)}
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<a
+				class="m-2 flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105"
+				onclick={() => (character = characterName)}
+				href={`/characters/${normalToPascalCase(characterName)}`}
+			>
 				<img
 					src={`/images/characters/${normalToSnakeCase(characterName)}.png`}
-					class="h-28 w-28 break-before-all text-wrap object-cover "
+					class="break-before-all text-wrap object-cover"
 					alt={characterName}
 					title={characterName}
 				/>
-				<p class="max-w-28 break-before-auto text-center">{characterName}</p>
-			</li>
-		{/each}
-	</ul>
+				<p class="break-before-auto text-center">{characterName}</p>
+			</a>
+		{/snippet}
+	</CharacterSorter>
 {:else}
 	<div class="my-auto flex items-center justify-center">
 		<h3 class="mb-2 text-center">

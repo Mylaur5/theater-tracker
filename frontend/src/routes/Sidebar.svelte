@@ -14,19 +14,19 @@
 			id: 'seasons',
 			label: 'Seasons',
 			href: '/seasons',
-			img: 'icons/Imaginarium_Theater_Emblem.png'
+			img: '/icons/Imaginarium_Theater_Emblem.png'
 		},
 		{
 			id: 'characters',
 			label: 'Characters',
 			href: '/characters',
-			img: 'icons/Icon_Party_Setup.webp'
+			img: '/icons/Icon_Party_Setup.webp'
 		},
 		{
 			id: 'uploads',
 			label: 'Uploads',
 			href: '/uploads',
-			img: 'icons/Icon_Archive.webp'
+			img: '/icons/Icon_Archive.webp'
 		}
 	];
 
@@ -128,7 +128,7 @@
 	<a class="group h-auto w-full bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="/accounts">
 		<div class="group flex items-center px-2">
 			<img
-				src="icons/Icon_Character_Lumine.webp"
+				src="/icons/Icon_Character_Lumine.webp"
 				class="my-2 h-10 transition-transform group-hover:scale-125"
 				alt="Accounts Icon"
 			/>
