@@ -15,7 +15,7 @@ const config = {
 			fallback: '404.html' // You’ll also want to generate a fallback 404.html page to replace the default 404 page shown by GitHub Pages.
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH+'/theater-tracker'
+			base: '/theater-tracker'
 		}
 	}
 };
