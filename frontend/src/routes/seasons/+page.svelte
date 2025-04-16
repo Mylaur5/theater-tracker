@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Notification from '../Notification.svelte';
+	import { assets } from '$app/paths';
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
@@ -37,7 +38,7 @@
 
 	async function fetchSeasonsData() {
 		// Fetch seasons data
-		seasonsData = await fetch('/data/seasons_data.json')
+		seasonsData = await fetch(`${assets}/data/seasons_data.json`)
 			.then((seasonsResponse) => {
 				if (!seasonsResponse.ok) throw new Error('Network response was not ok');
 				return seasonsResponse.json();
@@ -130,7 +131,12 @@
 			{/if}
 			<div class="mt-1 flex items-center justify-center space-x-4">
 				{#each season.alternate_cast_elements as element}
-					<img src={element.image_local} class="max-w-8 object-cover transition-transform hover:scale-105" alt={element.name} title={element.name} />
+					<img
+						src="{assets}{element.image_local}"
+						class="max-w-8 object-cover transition-transform hover:scale-105"
+						alt={element.name}
+						title={element.name}
+					/>
 				{/each}
 			</div>
 
@@ -140,7 +146,12 @@
 			<div class="mt-1 flex items-start justify-center space-x-4">
 				{#each season.opening_characters as character}
 					<div class="flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105">
-						<img src={character.image_local} alt={character.name} title={character.name} class="break-before-all text-wrap object-cover" />
+						<img
+							src="{assets}{character.image_local}"
+							alt={character.name}
+							title={character.name}
+							class="break-before-all text-wrap object-cover"
+						/>
 						<p class="break-before-auto text-center">{character.name}</p>
 					</div>
 				{/each}
@@ -152,7 +163,7 @@
 			<div class="mt-t flex items-start justify-center space-x-4">
 				{#each season.special_guest_stars as character}
 					<div class="flex flex-col items-center justify-center">
-						<img src={character.image_local} alt={character.name} class="h-28 w-28 object-cover" />
+						<img src="{assets}{character.image_local}" alt={character.name} class="h-28 w-28 object-cover" />
 						<p class="max-w-28 break-normal text-center">{character.name}</p>
 					</div>
 				{/each}

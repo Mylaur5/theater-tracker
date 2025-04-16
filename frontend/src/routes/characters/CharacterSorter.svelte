@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { selectedGoodFile, pascalToNormalCase } from '../shared.js';
 	import { onMount } from 'svelte';
+	import {assets} from '$app/paths';
 
 	let { characterCell } = $props();
 
@@ -51,7 +52,7 @@
 	}
 
 	onMount(async () => {
-		seasonsData = await fetch('/data/seasons_data.json')
+		seasonsData = await fetch(`${assets}/data/seasons_data.json`)
 			.then((response) => response.json())
 			.catch((error) => console.error('Fetch error:', error));
 		seasonFilters = [{ name: 'All Seasons', number: -1 }, ...seasonsData];
@@ -136,7 +137,7 @@
 							>
 								<div class="inline-flex items-center">
 									{#if element !== 'All Elements'}
-										<img src="images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
+										<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
 									{/if}
 									{element}
 								</div>

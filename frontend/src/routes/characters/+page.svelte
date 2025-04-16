@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase } from '../shared.js';
 	import CharacterSorter from './CharacterSorter.svelte';
+	import { assets, base } from '$app/paths';
 
 	let character: string = $state('');
 </script>
@@ -18,10 +19,10 @@
 			<a
 				class="m-2 flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105"
 				onclick={() => (character = characterName)}
-				href={`/characters/${normalToPascalCase(characterName)}`}
+				href="{base}/characters/{normalToPascalCase(characterName)}"
 			>
 				<img
-					src={`/images/characters/${normalToSnakeCase(characterName)}.png`}
+					src="{assets}/images/characters/{normalToSnakeCase(characterName)}.png"
 					class="break-before-all text-wrap object-cover"
 					alt={characterName}
 					title={characterName}
