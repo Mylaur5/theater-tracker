@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase } from '../shared.js';
 	import { onMount } from 'svelte';
 	import Notification from '../Notification.svelte';
-	import { assets } from '$app/paths';
+	import { assets, base } from '$app/paths';
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
@@ -113,6 +114,29 @@
 <!-- Notification Component -->
 <Notification message={notificationMessage} show={notify} />
 
+{#snippet characterCell(character: any)}
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<a
+		class="m-2 flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105"
+		href="{base}/characters/{normalToPascalCase(character.name)}"
+	>
+		<img
+			src="{assets}/images/elements/{normalToSnakeCase(character.element)}.png"
+			class=" relative left-12 top-4 max-w-6 object-cover transition-transform hover:scale-105"
+			alt={character.element}
+			title={character.element}
+		/>
+		<img
+			src="{assets}/images/characters/{normalToSnakeCase(character.name)}.png"
+			class="break-before-all text-wrap object-cover"
+			alt={character.name}
+			title={character.name}
+		/>
+		<p class="break-before-auto text-center">{character.name}</p>
+	</a>
+{/snippet}
+
 {#if seasonsData.length !== 0}
 	{#each seasonsData as season}
 		<div class:hidden={season.number !== currentSeasonNumber} class="mt-4 overflow-auto">
@@ -145,15 +169,7 @@
 			{/if}
 			<div class="mt-1 flex items-start justify-center space-x-4">
 				{#each season.opening_characters as character}
-					<div class="flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105">
-						<img
-							src="{assets}{character.image_local}"
-							alt={character.name}
-							title={character.name}
-							class="break-before-all text-wrap object-cover"
-						/>
-						<p class="break-before-auto text-center">{character.name}</p>
-					</div>
+					{@render characterCell(character)}
 				{/each}
 			</div>
 
@@ -162,10 +178,7 @@
 			{/if}
 			<div class="mt-t flex items-start justify-center space-x-4">
 				{#each season.special_guest_stars as character}
-					<div class="flex flex-col items-center justify-center">
-						<img src="{assets}{character.image_local}" alt={character.name} class="h-28 w-28 object-cover" />
-						<p class="max-w-28 break-normal text-center">{character.name}</p>
-					</div>
+					{@render characterCell(character)}
 				{/each}
 			</div>
 		</div>

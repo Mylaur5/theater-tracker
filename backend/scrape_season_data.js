@@ -1,9 +1,11 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import fs from 'fs';
 
 const URL_OFFICIAL = 'https://genshin-impact.fandom.com/wiki/Imaginarium_Theater/Seasons#Schedule';
 const ELEMENTS_URL = '/images/elements/';
 const CHARACTERS_URL = '/images/characters/';
+const SEASONS_DATA_FILE = './static/data/seasons_data.json';
 
 async function extractSeasonDates(tr, season) {
 	const tdDate = tr.find('td').first();
@@ -68,29 +70,41 @@ export async function scrape() {
 	const { data } = await axios.get(URL_OFFICIAL);
 	const $ = cheerio.load(data);
 	const page = $('div.mw-parser-output');
-	const seasonsData = Array.from(page.find('tr').map((i, tr) => {
-		const season = {};
-		if (!$(tr).find('td').length) return;
+	const seasonsData = Array.from(
+		page.find('tr').map((i, tr) => {
+			const season = {};
+			if (!$(tr).find('td').length) return;
 
-		extractSeasonDates($(tr), season);
+			extractSeasonDates($(tr), season);
 
-        const tdDetail = $(tr).find('td').eq(1);
-        const opening = tdDetail.find('span.card-list-container').first();
-        season.opening_characters = extractImages(opening);
+			const tdDetail = $(tr).find('td').eq(1);
+			const opening = tdDetail.find('span.card-list-container').first();
+			season.opening_characters = extractImages(opening);
 
-        const elements = tdDetail.find('span.lightmode-drop-shadow');
-        season.alternate_cast_elements = extractElements(elements);
-        
-        const specialGuest = tdDetail.find('span.card-list-container').eq(1);
-        season.special_guest_stars = extractImages(specialGuest);
+			const elements = tdDetail.find('span.lightmode-drop-shadow');
+			season.alternate_cast_elements = extractElements(elements);
 
-        return season
-	}));
+			const specialGuest = tdDetail.find('span.card-list-container').eq(1);
+			season.special_guest_stars = extractImages(specialGuest);
+
+			return season;
+		})
+	);
 
 	const jsonData = JSON.stringify(seasonsData, null, 4);
 
 	const endTime = performance.now();
-	console.log(`Script execution time: ${(endTime - startTime) / 1000} seconds`);
-
+	console.log(`Scraping completed successfully! (time ${(endTime - startTime) / 1000} seconds)`);
 	return jsonData;
 }
+
+scrape().then((data) => {
+	fs.writeFile(SEASONS_DATA_FILE, data, (err) => {
+		if (err) {
+			console.error('Error writing to file', err);
+			return;
+		}
+
+		console.log('Data successfully written to seasons_data.json');
+	});
+});

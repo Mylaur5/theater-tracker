@@ -45,6 +45,11 @@
 		);
 	}
 
+	function getElement(character: string) {
+		const characterData = charactersData.find((char) => char.name === character);
+		return characterData ? characterData.element : '?';
+	}
+
 	function updateFilters() {
 		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
 		filteredGoodFileCharacters = filterCharactersBySeason(selectedSeason.number);
@@ -57,7 +62,7 @@
 			.catch((error) => console.error('Fetch error:', error));
 		seasonFilters = [{ name: 'All Seasons', number: -1 }, ...seasonsData];
 		charactersData = seasonsData.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]);
-
+		
 		if ($selectedGoodFile === '') return;
 		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
 		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
@@ -152,7 +157,7 @@
 <ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">
 	{#each filteredGoodFileCharacters as characterName}
 		<li>
-			{@render characterCell(characterName)}
+			{@render characterCell(characterName, getElement(characterName))}
 		</li>
 	{/each}
 </ul>
