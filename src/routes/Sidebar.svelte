@@ -14,7 +14,7 @@
 		{
 			id: 'seasons',
 			label: 'Seasons',
-			href: '/seasons',
+			href: '/',
 			img: '/icons/Imaginarium_Theater_Emblem.png'
 		},
 		{

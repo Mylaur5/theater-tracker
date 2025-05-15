@@ -1,27 +1,49 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { selectedGoodFile, readStorage, readFile } from '../shared.js';
-
+	import { selectedGoodFile, readStorage } from '../shared.js';
 	let uploadsData: (string | null)[] = $state([]);
 	let files: FileList | undefined = $state();
 
+	export function storeFile(file: File) {
+		$selectedGoodFile = file.name;
+
+		// Check if the file is a JSON file
+		const reader = new FileReader();
+		reader.onload = (e) => {
+			try {
+				const result = (e.target as FileReader).result;
+				if (typeof result === 'string') {
+					const jsonData = JSON.parse(result);
+					localStorage.setItem(file.name, JSON.stringify(jsonData));
+					console.log('JSON data stored in local storage:', jsonData);
+				}
+			} catch (error) {
+				console.error('Error parsing JSON file:', error);
+			}
+		};
+
+		reader.onerror = (e) => console.error('Error reading file:', e);
+		reader.readAsText(file);
+	}
+
 	onMount(async () => {
 		uploadsData = readStorage();
-		$selectedGoodFile = uploadsData[0] ?? "";
+		$selectedGoodFile = uploadsData.at(-1) ?? '';
 	});
 
 	$effect(() => {
 		if (files) {
 			for (const file of files) {
-				readFile(file);
+				storeFile(file);
 			}
+			uploadsData = readStorage();
 		}
 	});
 </script>
 
 <h1 class="mb-4 text-center text-4xl font-bold">GOOD File</h1>
 
-<div>
+<div class="mx-[10vw]">
 	<label
 		for="dropzone-file"
 		class="flex h-[20vh] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
@@ -51,13 +73,15 @@
 	</label>
 
 	<form class="mt-8 max-w-sm">
-		<label for="countries" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Current Loaded File:</label>
+		<label for="countries" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+			>Current Loaded File:</label
+		>
 		<select
 			id="countries"
 			class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
 			bind:value={$selectedGoodFile}
 		>
-			{#if $selectedGoodFile}
+			{#if $selectedGoodFile !== ''}
 				<option>{$selectedGoodFile}</option>
 			{/if}
 			{#each uploadsData as upload}

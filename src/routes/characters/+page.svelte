@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase, readFile, readStorage } from '../shared.js';
+	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase, readStorage } from '../shared.js';
 	import CharacterSorter from './CharacterSorter.svelte';
 	import { assets, base } from '$app/paths';
 	import { onMount } from 'svelte';
@@ -13,8 +13,7 @@
 			.catch((error) => console.error('Fetch error:', error));
 		
 		if ($selectedGoodFile === '') {
-			$selectedGoodFile = readStorage()[0] ?? '';
-			readFile($selectedGoodFile);
+			$selectedGoodFile = readStorage().at(-1) ?? '';
 		}
 	});
 </script>

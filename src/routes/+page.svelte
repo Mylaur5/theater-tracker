@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase } from '../shared.js';
+	import { normalToSnakeCase, normalToPascalCase } from './shared.js';
 	import { onMount } from 'svelte';
-	import Notification from '../Notification.svelte';
+	import Notification from './Notification.svelte';
 	import { assets, base } from '$app/paths';
 
 	let seasonsData: any[] = $state([]);
@@ -137,7 +137,9 @@
 	</a>
 {/snippet}
 
-{#if seasonsData.length !== 0}
+{#await seasonsData}
+	<p class="text-center text-2xl font-bold">Loading...</p>
+{:then}
 	{#each seasonsData as season}
 		<div class:hidden={season.number !== currentSeasonNumber} class="mt-4 overflow-auto">
 			<h2 class="text-center text-3xl font-bold">
@@ -183,4 +185,4 @@
 			</div>
 		</div>
 	{/each}
-{/if}
+{/await}

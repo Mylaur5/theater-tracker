@@ -9,27 +9,6 @@ export function readStorage() {
 	);
 }
 
-export function readFile(file) {
-		$selectedGoodFile = file.name;
-
-		const reader = new FileReader();
-		reader.onload = (e) => {
-			try {
-				const result = e.target.result;
-				if (typeof result === 'string') {
-					const jsonData = JSON.parse(result);
-					localStorage.setItem(file.name, JSON.stringify(jsonData));
-					console.log('JSON data stored in local storage:', jsonData);
-				}
-			} catch (error) {
-				console.error('Error parsing JSON file:', error);
-			}
-		};
-
-		reader.onerror = (e) => console.error('Error reading file:', e);
-		reader.readAsText(file);
-	}
-
 export function pascalToNormalCase(pascalStr) {
 	let normalStr = pascalStr.replace(/([A-Z])/g, ' $1');
 	normalStr = normalStr.charAt(0).toUpperCase() + normalStr.slice(1);

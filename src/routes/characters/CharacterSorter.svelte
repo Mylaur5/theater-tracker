@@ -14,11 +14,14 @@
 
 	let goodFileData: GoodFileData = $state({ characters: [] });
 	let filteredGoodFileCharacters: string[] = $state([]);
+
 	let selectedSeason = $state({ name: 'All Seasons', number: -1 });
 	let selectedElement = $state('All Elements');
+	let selectedOrder = $state('A to Z');
+
 	let seasonFilters: any[] = $state([]);
 	const elementFilters = ['All Elements', 'Pyro', 'Hydro', 'Electro', 'Dendro', 'Cryo', 'Geo', 'Anemo'];
-
+	const orders = ['A to Z', 'Z to A', 'Element'];
 	function filterCharactersBySeason(seasonNumber: number) {
 		if (seasonNumber === -1) {
 			return filteredGoodFileCharacters;
@@ -26,11 +29,12 @@
 
 		const selectedSeasonData = seasonsData.filter((season) => season.number === seasonNumber)[0];
 		const selectedSeasonElements = selectedSeasonData.alternate_cast_elements.map((element: any) => element.name);
-		const characterNamesWithElement = charactersData.filter((char) => selectedSeasonElements.includes(char.element)).map((char) => char.name)
-		const charNamesInSeason = selectedSeasonData.special_guest_stars.map((character: any) => character.name);
+		const charNames = charactersData
+			.filter((char) => selectedSeasonElements.includes(char.element))
+			.map((char) => char.name);
+		const guestNames = selectedSeasonData.special_guest_stars.map((character: any) => character.name);
 		return filteredGoodFileCharacters.filter(
-			(character) =>
-				characterNamesWithElement.includes(pascalToNormalCase(character)) || charNamesInSeason.includes(character)
+			(character) => charNames.includes(pascalToNormalCase(character)) || guestNames.includes(character)
 		);
 	}
 
@@ -58,6 +62,17 @@
 		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
 		filteredGoodFileCharacters = filterCharactersBySeason(selectedSeason.number);
 		filteredGoodFileCharacters = filterCharactersByElement(selectedElement);
+		switch (selectedOrder) {
+			case 'A to Z':
+				filteredGoodFileCharacters.sort((a, b) => a.localeCompare(b));
+				break;
+			case 'Z to A':
+				filteredGoodFileCharacters.sort((a, b) => b.localeCompare(a));
+				break;
+			case 'Element':
+				filteredGoodFileCharacters.sort((a, b) => getElement(a).localeCompare(getElement(b)));
+				break;
+		}
 	}
 
 	onMount(async () => {
@@ -65,7 +80,12 @@
 			.then((response) => response.json())
 			.catch((error) => console.error('Fetch error:', error));
 		seasonFilters = [{ name: 'All Seasons', number: -1 }, ...seasonsData];
-		charactersData = seasonsData.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]);
+
+		charactersData = (
+			await fetch(`${assets}/data/keqing_data.json`)
+				.then((response) => response.json())
+				.catch((error) => console.error('Fetch error:', error))
+		).characters;
 
 		if ($selectedGoodFile === '') return;
 		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
@@ -80,83 +100,124 @@
 {/snippet}
 
 <div class="flex">
-	<p class="me-4 flex items-center">Filter by</p>
+	<div class="flex">
+		<p class="me-4 flex items-center">Filter by</p>
 
-	<form class="flex max-w-sm items-center justify-center gap-4">
-		<div class="flex">
-			<button
-				popovertarget="dropdown-seasons"
-				class="flex w-32 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
-				type="button"
-			>
-				{selectedSeason.name}
-				{@render arrowDown()}
-			</button>
-			<div
-				id="dropdown-seasons"
-				class="inset-auto z-10 w-32 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
-				popover
-			>
-				<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
-					{#each seasonFilters as season}
-						<li>
-							<button
-								type="button"
-								class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-								onclick={() => {
-									selectedSeason = season;
-									updateFilters();
-								}}
-								popovertarget="dropdown-seasons"
-							>
-								<div class="inline-flex items-center">{season.name}</div>
-							</button>
-						</li>
-					{/each}
-				</ul>
+		<form class="flex max-w-sm items-center justify-center gap-4">
+			<div class="flex">
+				<button
+					popovertarget="dropdown-seasons"
+					class="flex w-32 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+					type="button"
+				>
+					{selectedSeason.name}
+					{@render arrowDown()}
+				</button>
+				<div
+					id="dropdown-seasons"
+					class="inset-auto z-10 w-32 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
+					popover
+				>
+					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+						{#each seasonFilters as season}
+							<li>
+								<button
+									type="button"
+									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									onclick={() => {
+										selectedSeason = season;
+										updateFilters();
+									}}
+									popovertarget="dropdown-seasons"
+								>
+									<div class="inline-flex items-center">{season.name}</div>
+								</button>
+							</li>
+						{/each}
+					</ul>
+				</div>
 			</div>
-		</div>
 
-		<div class="flex">
-			<button
-				id="states-button"
-				popovertarget="dropdown-elements"
-				class="inline-flex w-36 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
-				type="button"
-			>
-				{selectedElement}
-				{@render arrowDown()}
-			</button>
-			<div
-				id="dropdown-elements"
-				class="inset-auto z-10 w-36 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
-				popover
-			>
-				<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
-					{#each elementFilters as element}
-						<li>
-							<button
-								type="button"
-								class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-								onclick={() => {
-									selectedElement = element;
-									updateFilters();
-								}}
-								popovertarget="dropdown-elements"
-							>
-								<div class="inline-flex items-center">
-									{#if element !== 'All Elements'}
-										<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
-									{/if}
-									{element}
-								</div>
-							</button>
-						</li>
-					{/each}
-				</ul>
+			<div class="flex">
+				<button
+					id="states-button"
+					popovertarget="dropdown-elements"
+					class="inline-flex w-36 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+					type="button"
+				>
+					{selectedElement}
+					{@render arrowDown()}
+				</button>
+				<div
+					id="dropdown-elements"
+					class="inset-auto z-10 w-36 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
+					popover
+				>
+					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+						{#each elementFilters as element}
+							<li>
+								<button
+									type="button"
+									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									onclick={() => {
+										selectedElement = element;
+										updateFilters();
+									}}
+									popovertarget="dropdown-elements"
+								>
+									<div class="inline-flex items-center">
+										{#if element !== 'All Elements'}
+											<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
+										{/if}
+										{element}
+									</div>
+								</button>
+							</li>
+						{/each}
+					</ul>
+				</div>
 			</div>
-		</div>
-	</form>
+		</form>
+	</div>
+
+	<div class="flex">
+		<p class="ml-12 mr-4 flex items-center">Order by</p>
+		<form class="flex max-w-sm items-center justify-center gap-4">
+			<div class="flex">
+				<button
+					popovertarget="dropdown-order"
+					class="flex w-32 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+					type="button"
+				>
+					{selectedOrder}
+					{@render arrowDown()}
+				</button>
+				<div
+					id="dropdown-order"
+					class="inset-auto z-10 w-32 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
+					popover
+				>
+					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+						{#each orders as order}
+							<li>
+								<button
+									type="button"
+									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									onclick={() => {
+										selectedOrder = order;
+										updateFilters();
+									}}
+									popovertarget="dropdown-order"
+								>
+									<div class="inline-flex items-center">{order}</div>
+								</button>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
 <ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">
 	{#each filteredGoodFileCharacters as characterName}

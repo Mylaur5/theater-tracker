@@ -4,7 +4,6 @@ Theater Tracker is a web application that tracks various elements and characters
 
 ## Requirements
 
-- Python (version 3.8 or higher)
 - Node.js (version 14 or higher)
 - npm (version 6 or higher)
 
@@ -17,32 +16,7 @@ Theater Tracker is a web application that tracks various elements and characters
 
 ## Installation
 
-### Backend
-
-1. Navigate to the `backend` directory:
-```bash
-   cd backend
-```
-2. Create a virtual environment
-```bash
-   python -m venv .venv
-```
-3. Activate the virtual environment:
- - On Windows:
-```powershell
-   .venv\Scripts\activate
-```
-- On macOS/Linux:
-```sh
-   source venv/bin/activate
-```
-4. Install the required Python packages:
-```bash
-   pip install -r requirements.txt
-```
-
-
-### frontend
+### Frontend
 
 1. Install the required Node.js packages:
 
@@ -50,6 +24,10 @@ Theater Tracker is a web application that tracks various elements and characters
 npm install
 ```
 ## Running the Project
+### Backend
+```bash
+
+```
 
 ### Frontend
 
