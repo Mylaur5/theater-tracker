@@ -1,40 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { selectedGoodFile } from '../shared.js';
-	import { json } from '@sveltejs/kit';
+	import { selectedGoodFile, readStorage, readFile } from '../shared.js';
 
 	let uploadsData: (string | null)[] = $state([]);
 	let files: FileList | undefined = $state();
 
-	function readStorage() {
-		return Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i)).filter((key) =>
-			key!.endsWith('.json')
-		);
-	}
-
-	function readFile(file: File) {
-		$selectedGoodFile = file.name;
-
-		const reader = new FileReader();
-		reader.onload = (e) => {
-			try {
-				const result = (e.target as FileReader).result;
-				if (typeof result === 'string') {
-					const jsonData = JSON.parse(result);
-					localStorage.setItem(file.name, JSON.stringify(jsonData));
-					console.log('JSON data stored in local storage:', jsonData);
-				}
-			} catch (error) {
-				console.error('Error parsing JSON file:', error);
-			}
-		};
-
-		reader.onerror = (e) => console.error('Error reading file:', e);
-		reader.readAsText(file);
-	}
-
 	onMount(async () => {
 		uploadsData = readStorage();
+		$selectedGoodFile = uploadsData[0] ?? "";
 	});
 
 	$effect(() => {
@@ -46,7 +19,7 @@
 	});
 </script>
 
-<h1 class="mb-4 text-center text-4xl font-bold">Uploads</h1>
+<h1 class="mb-4 text-center text-4xl font-bold">GOOD File</h1>
 
 <div>
 	<label
@@ -70,7 +43,7 @@
 				/>
 			</svg>
 			<p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-				<span class="font-semibold">Click to upload</span> or drag and drop
+				<span class="font-semibold">Click to load</span> your file or drag and drop it here
 			</p>
 			<p class="text-xs text-gray-500 dark:text-gray-400">JSON files</p>
 		</div>
@@ -78,7 +51,7 @@
 	</label>
 
 	<form class="mt-8 max-w-sm">
-		<label for="countries" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Select a file</label>
+		<label for="countries" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Current Loaded File:</label>
 		<select
 			id="countries"
 			class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
@@ -92,7 +65,7 @@
 					<option value={upload}>{upload}</option>
 				{/if}
 			{:else}
-				<option selected disabled>No file has been uploaded yet</option>
+				<option selected disabled>No file has been loaded yet</option>
 			{/each}
 		</select>
 	</form>

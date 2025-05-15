@@ -24,9 +24,9 @@
 			img: '/icons/Icon_Party_Setup.webp'
 		},
 		{
-			id: 'uploads',
-			label: 'Uploads',
-			href: '/uploads',
+			id: 'files',
+			label: 'Files',
+			href: '/files',
 			img: '/icons/Icon_Archive.webp'
 		}
 	];
@@ -63,7 +63,7 @@
 	tabindex="0"
 >
 	<!-- Home -->
-	<a class="group mt-3 flex w-full items-center px-3" href="{base}/" onclick={toggleSidebar}>
+	<button class="group mt-3 flex w-full items-center px-3" onclick={toggleSidebar}>
 		<img
 			alt="System_Imaginarium_Theater"
 			src="{base}/icons/System_Imaginarium_Theater.webp"
@@ -82,7 +82,7 @@
 		>
 			Theater Tracker
 		</span>
-	</a>
+	</button>
 	<!-- Separator -->
 	<hr class="mt-3 border-t border-gray-700" />
 	<!-- Menu -->

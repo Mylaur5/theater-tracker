@@ -33,17 +33,27 @@
 		alt={characterName}
 		title={characterName}
 	/>
-	<div class="flex flex-col justify-between h-full">
-		<p class="flex gap-2 items-center text-xl font-bold">
-			<img
-				src="{assets}/images/elements/{element.toLowerCase()}.png"
-				class="w-7 break-before-all text-wrap object-cover"
-				alt={element}
-				title={element}
-			/>
-			{element}
+	<div class="flex h-full flex-col justify-between">
+		<p class="flex items-center gap-2 text-xl font-bold">
+			{#await element}
+				Loading element...
+			{:then element}
+				<img
+					src="{assets}/images/elements/{element.toLowerCase()}.png"
+					class="w-7 break-before-all text-wrap object-cover"
+					alt={element}
+					title={element}
+				/>
+				{element}
+			{/await}
+			
 		</p>
-		{#if $selectedGoodFile}
+		{#await characterData}
+			<p class="ml-6 mt-6 break-before-auto text-sm">
+				Loading Data...<br />
+				Meanwhile, ensure to have selected a file <br /> in the <strong>'Files'</strong> tab.
+			</p>
+		{:then characterData}
 			<div class="text-sm">
 				<p>Level: {characterData.level}</p>
 				<p>Constellation: {characterData.constellation}</p>
@@ -53,11 +63,6 @@
 				<p class="pl-8">Skill {characterData.talent.skill}</p>
 				<p class="pl-8">Burst {characterData.talent.burst}</p>
 			</div>
-		{:else}
-			<p class="mt-6 ml-6 text-sm break-before-auto">
-				No Data <br />
-				Please select a file <br/> in the <strong>'Upload'</strong> tab.
-			</p>
-		{/if}
+		{/await}
 	</div>
 </div>

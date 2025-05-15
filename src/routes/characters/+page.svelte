@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase } from '../shared.js';
+	import { selectedGoodFile, normalToSnakeCase, normalToPascalCase, readFile, readStorage } from '../shared.js';
 	import CharacterSorter from './CharacterSorter.svelte';
 	import { assets, base } from '$app/paths';
 	import { onMount } from 'svelte';
@@ -11,6 +11,11 @@
 			.then((response) => response.json())
 			.then((data) => data.flatMap((season: any) => [...season.opening_characters, ...season.special_guest_stars]))
 			.catch((error) => console.error('Fetch error:', error));
+		
+		if ($selectedGoodFile === '') {
+			$selectedGoodFile = readStorage()[0] ?? '';
+			readFile($selectedGoodFile);
+		}
 	});
 </script>
 
@@ -48,7 +53,7 @@
 {:else}
 	<div class="my-auto flex items-center justify-center">
 		<h3 class="mb-2 text-center">
-			Please select a file in the '<strong>Upload</strong>' tab.
+			Please select a file in the '<strong>Files</strong>' tab.
 		</h3>
 	</div>
 {/if}

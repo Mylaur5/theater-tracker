@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { selectedGoodFile, pascalToNormalCase } from '../shared.js';
 	import { onMount } from 'svelte';
-	import {assets} from '$app/paths';
+	import { assets } from '$app/paths';
 
 	let { characterCell } = $props();
 
@@ -25,9 +25,13 @@
 		}
 
 		const selectedSeasonData = seasonsData.filter((season) => season.number === seasonNumber)[0];
-		const allCharacters = [...selectedSeasonData.opening_characters, ...selectedSeasonData.special_guest_stars];
-		const charNamesInSeason = allCharacters.map((character) => character.name);
-		return filteredGoodFileCharacters.filter((character) => charNamesInSeason.includes(character));
+		const selectedSeasonElements = selectedSeasonData.alternate_cast_elements.map((element: any) => element.name);
+		const characterNamesWithElement = charactersData.filter((char) => selectedSeasonElements.includes(char.element)).map((char) => char.name)
+		const charNamesInSeason = selectedSeasonData.special_guest_stars.map((character: any) => character.name);
+		return filteredGoodFileCharacters.filter(
+			(character) =>
+				characterNamesWithElement.includes(pascalToNormalCase(character)) || charNamesInSeason.includes(character)
+		);
 	}
 
 	function filterCharactersByElement(element: string) {
@@ -62,7 +66,7 @@
 			.catch((error) => console.error('Fetch error:', error));
 		seasonFilters = [{ name: 'All Seasons', number: -1 }, ...seasonsData];
 		charactersData = seasonsData.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]);
-		
+
 		if ($selectedGoodFile === '') return;
 		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
 		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
