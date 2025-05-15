@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 
 const PORTRAIT_LINK = 'https://library.keqingmains.com/resources/tools/portraits';
 const SOURCE_LINK = 'https://library.keqingmains.com';
-const IMAGE_FOLDER = '../static/images/';
-const KEQING_DATA_FILE = '../static/data/keqing_data.json';
+const IMAGE_FOLDER = './static/images/';
+const KEQING_DATA_FILE = './static/data/keqing_data.json';
 
 function sanitizeFilename(filename) {
 	// Remove invalid characters for Windows file names
@@ -18,7 +18,7 @@ function sanitizeFilename(filename) {
 async function downloadImage(imgSrc, fileName, folderName) {
 	const imgLink = `${SOURCE_LINK}${imgSrc}`;
 	const destinationFile = `${IMAGE_FOLDER}${folderName}/${fileName}`;
-	fs.mkdirSync(`images/${folderName}`, { recursive: true });
+	fs.mkdirSync(`./images/${folderName}`, { recursive: true });
 
 	// Check if the file already exists and compare sizes
 	if (fs.existsSync(destinationFile)) {
@@ -32,8 +32,16 @@ async function downloadImage(imgSrc, fileName, folderName) {
 	} else {
 		const imgReq = await axios.get(imgLink, { responseType: 'stream' });
 
-		imgReq.data.pipe(fs.createWriteStream(destinationFile));
-		console.log(`Image '${fileName}' has been successfully downloaded and saved to '${destinationFile}'`);
+		await new Promise((resolve, reject) => {
+			const writer = fs.createWriteStream(destinationFile);
+			imgReq.data.pipe(writer);
+			writer.on('finish', () => {
+				console.log(`Image '${fileName}' has been successfully downloaded and saved to '${destinationFile}'`);
+				resolve();
+			});
+			writer.on('error', reject);
+			imgReq.data.on('error', reject);
+		});
 	}
 }
 
@@ -42,8 +50,6 @@ async function extract() {
 	const start = performance.now();
 
 	// Main program statements
-	const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
-	process.chdir(scriptDirectory);
 	console.log(process.cwd()); // Current wd is backend
 
 	const { data } = await axios.get(PORTRAIT_LINK);
@@ -51,6 +57,7 @@ async function extract() {
 
 	const keqingTabs = ['element', 'level', 'type'];
 	const keqingData = {};
+	const downloadPromises = []; // Collect all download promises
 
 	// Loop through each .tabs-container element
 	$('.tabs-container').each((containerIndex, container) => {
@@ -80,18 +87,22 @@ async function extract() {
 
 					const fileExtension = path.extname(img.attr('src'));
 					const fileName = sanitizeFilename(img.attr('alt')).replace(/ /g, '_') + fileExtension;
-					downloadImage(img.attr('src'), fileName, h2).catch((error) => {
-						console.error(`Error processing image ${img.attr('alt')}:`, error.message);
-					});
 					keqingData[h2].push({
 						name: img.attr('alt'),
 						image_local: `/images/${h2}/${fileName}`,
 						image_url: SOURCE_LINK + img.attr('src'),
 						[keqingTabs[containerIndex]]: tabList[panelIndex]
 					});
+					const promise = downloadImage(img.attr('src'), fileName, h2).catch((error) => {
+						console.error(`Error processing image ${img.attr('alt')}:`, error.message);
+					});
+					downloadPromises.push(promise);
 				});
 		});
 	});
+
+	// Wait for all downloads to finish
+	await Promise.all(downloadPromises);
 
 	// Stop timing
 	const stop = performance.now();
@@ -109,7 +120,7 @@ extract()
 				return;
 			}
 
-			console.log('Data successfully written to seasons_data.json');
+			console.log('Data successfully written to ' + KEQING_DATA_FILE);
 		});
 	})
 	.catch(console.error);
