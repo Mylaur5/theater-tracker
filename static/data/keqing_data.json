@@ -1,0 +1,2264 @@
+{
+    "characters": [
+        {
+            "name": "Chasca",
+            "image_local": "/images/characters/Chasca.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Chasca.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Faruzan",
+            "image_local": "/images/characters/Faruzan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Faruzan.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Ifa",
+            "image_local": "/images/characters/Ifa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Ifa.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Jean",
+            "image_local": "/images/characters/Jean.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Jean.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Kaedehara Kazuha",
+            "image_local": "/images/characters/Kaedehara_Kazuha.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaedehara_Kazuha.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Lan Yan",
+            "image_local": "/images/characters/Lan_Yan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lan_Yan.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Lynette",
+            "image_local": "/images/characters/Lynette.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lynette.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Sayu",
+            "image_local": "/images/characters/Sayu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Sayu.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Shikanoin Heizou",
+            "image_local": "/images/characters/Shikanoin_Heizou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Shikanoin_Heizou.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Sucrose",
+            "image_local": "/images/characters/Sucrose.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Sucrose.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Venti",
+            "image_local": "/images/characters/Venti.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Venti.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Wanderer",
+            "image_local": "/images/characters/Wanderer.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Wanderer.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Xianyun",
+            "image_local": "/images/characters/Xianyun.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xianyun.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Xiao",
+            "image_local": "/images/characters/Xiao.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xiao.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Yumemizuki Mizuki",
+            "image_local": "/images/characters/Yumemizuki_Mizuki.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yumemizuki_Mizuki.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Aether (Anemo)",
+            "image_local": "/images/characters/Aether_(Anemo).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Lumine (Anemo)",
+            "image_local": "/images/characters/Lumine_(Anemo).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Aloy",
+            "image_local": "/images/characters/Aloy.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aloy.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Charlotte",
+            "image_local": "/images/characters/Charlotte.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Charlotte.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Chongyun",
+            "image_local": "/images/characters/Chongyun.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Chongyun.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Citlali",
+            "image_local": "/images/characters/Citlali.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Citlali.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Diona",
+            "image_local": "/images/characters/Diona.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Diona.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Escoffier",
+            "image_local": "/images/characters/Escoffier.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Escoffier.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Eula",
+            "image_local": "/images/characters/Eula.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Eula.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Freminet",
+            "image_local": "/images/characters/Freminet.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Freminet.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Ganyu",
+            "image_local": "/images/characters/Ganyu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Ganyu.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Kaeya",
+            "image_local": "/images/characters/Kaeya.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaeya.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Kamisato Ayaka",
+            "image_local": "/images/characters/Kamisato_Ayaka.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayaka.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Layla",
+            "image_local": "/images/characters/Layla.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Layla.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Mika",
+            "image_local": "/images/characters/Mika.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Mika.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Qiqi",
+            "image_local": "/images/characters/Qiqi.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Qiqi.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Rosaria",
+            "image_local": "/images/characters/Rosaria.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Rosaria.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Shenhe",
+            "image_local": "/images/characters/Shenhe.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Shenhe.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Wriothesley",
+            "image_local": "/images/characters/Wriothesley.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Wriothesley.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Aether (Cryo)",
+            "image_local": "/images/characters/Aether_(Cryo).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Lumine (Cryo)",
+            "image_local": "/images/characters/Lumine_(Cryo).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Alhaitham",
+            "image_local": "/images/characters/Alhaitham.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Alhaitham.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Baizhu",
+            "image_local": "/images/characters/Baizhu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Baizhu.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Collei",
+            "image_local": "/images/characters/Collei.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Collei.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Emilie",
+            "image_local": "/images/characters/Emilie.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Emilie.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Kaveh",
+            "image_local": "/images/characters/Kaveh.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaveh.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Kinich",
+            "image_local": "/images/characters/Kinich.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kinich.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Kirara",
+            "image_local": "/images/characters/Kirara.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kirara.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Nahida",
+            "image_local": "/images/characters/Nahida.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Nahida.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Tighnari",
+            "image_local": "/images/characters/Tighnari.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Tighnari.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Yaoyao",
+            "image_local": "/images/characters/Yaoyao.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yaoyao.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Aether (Dendro)",
+            "image_local": "/images/characters/Aether_(Dendro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Lumine (Dendro)",
+            "image_local": "/images/characters/Lumine_(Dendro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Beidou",
+            "image_local": "/images/characters/Beidou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Beidou.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Clorinde",
+            "image_local": "/images/characters/Clorinde.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Clorinde.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Cyno",
+            "image_local": "/images/characters/Cyno.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Cyno.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Dori",
+            "image_local": "/images/characters/Dori.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Dori.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Fischl",
+            "image_local": "/images/characters/Fischl.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Fischl.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Iansan",
+            "image_local": "/images/characters/Iansan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Iansan.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Keqing",
+            "image_local": "/images/characters/Keqing.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Keqing.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Kujou Sara",
+            "image_local": "/images/characters/Kujou_Sara.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kujou_Sara.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Kuki Shinobu",
+            "image_local": "/images/characters/Kuki_Shinobu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kuki_Shinobu.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Lisa",
+            "image_local": "/images/characters/Lisa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lisa.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Ororon",
+            "image_local": "/images/characters/Ororon.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Ororon.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Raiden Shogun",
+            "image_local": "/images/characters/Raiden_Shogun.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Raiden_Shogun.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Razor",
+            "image_local": "/images/characters/Razor.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Razor.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Sethos",
+            "image_local": "/images/characters/Sethos.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Sethos.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Varesa",
+            "image_local": "/images/characters/Varesa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Varesa.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Yae Miko",
+            "image_local": "/images/characters/Yae_Miko.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yae_Miko.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Aether (Electro)",
+            "image_local": "/images/characters/Aether_(Electro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Lumine (Electro)",
+            "image_local": "/images/characters/Lumine_(Electro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Albedo",
+            "image_local": "/images/characters/Albedo.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Albedo.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Arataki Itto",
+            "image_local": "/images/characters/Arataki_Itto.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Arataki_Itto.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Chiori",
+            "image_local": "/images/characters/Chiori.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Chiori.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Gorou",
+            "image_local": "/images/characters/Gorou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Gorou.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Kachina",
+            "image_local": "/images/characters/Kachina.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kachina.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Navia",
+            "image_local": "/images/characters/Navia.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Navia.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Ningguang",
+            "image_local": "/images/characters/Ningguang.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Ningguang.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Noelle",
+            "image_local": "/images/characters/Noelle.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Noelle.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Xilonen",
+            "image_local": "/images/characters/Xilonen.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xilonen.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Yun Jin",
+            "image_local": "/images/characters/Yun_Jin.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yun_Jin.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Zhongli",
+            "image_local": "/images/characters/Zhongli.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Zhongli.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Aether (Geo)",
+            "image_local": "/images/characters/Aether_(Geo).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Lumine (Geo)",
+            "image_local": "/images/characters/Lumine_(Geo).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Barbara",
+            "image_local": "/images/characters/Barbara.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Barbara.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Candace",
+            "image_local": "/images/characters/Candace.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Candace.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Furina",
+            "image_local": "/images/characters/Furina.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Furina.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Kamisato Ayato",
+            "image_local": "/images/characters/Kamisato_Ayato.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayato.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Mona",
+            "image_local": "/images/characters/Mona.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Mona.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Mualani",
+            "image_local": "/images/characters/Mualani.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Mualani.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Neuvillette",
+            "image_local": "/images/characters/Neuvillette.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Neuvillette.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Nilou",
+            "image_local": "/images/characters/Nilou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Nilou.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Sangonomiya Kokomi",
+            "image_local": "/images/characters/Sangonomiya_Kokomi.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Sangonomiya_Kokomi.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Sigewinne",
+            "image_local": "/images/characters/Sigewinne.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Sigewinne.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Tartaglia",
+            "image_local": "/images/characters/Tartaglia.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Tartaglia.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Xingqiu",
+            "image_local": "/images/characters/Xingqiu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xingqiu.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Yelan",
+            "image_local": "/images/characters/Yelan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yelan.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Aether (Hydro)",
+            "image_local": "/images/characters/Aether_(Hydro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Lumine (Hydro)",
+            "image_local": "/images/characters/Lumine_(Hydro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Amber",
+            "image_local": "/images/characters/Amber.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Amber.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Arlecchino",
+            "image_local": "/images/characters/Arlecchino.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Arlecchino.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Bennett",
+            "image_local": "/images/characters/Bennett.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Bennett.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Chevreuse",
+            "image_local": "/images/characters/Chevreuse.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Chevreuse.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Dehya",
+            "image_local": "/images/characters/Dehya.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Dehya.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Diluc",
+            "image_local": "/images/characters/Diluc.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Diluc.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Gaming",
+            "image_local": "/images/characters/Gaming.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Gaming.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Hu Tao",
+            "image_local": "/images/characters/Hu_Tao.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Hu_Tao.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Klee",
+            "image_local": "/images/characters/Klee.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Klee.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Lyney",
+            "image_local": "/images/characters/Lyney.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lyney.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Mavuika",
+            "image_local": "/images/characters/Mavuika.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Mavuika.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Thoma",
+            "image_local": "/images/characters/Thoma.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Thoma.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Xiangling",
+            "image_local": "/images/characters/Xiangling.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xiangling.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Xinyan",
+            "image_local": "/images/characters/Xinyan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xinyan.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Yanfei",
+            "image_local": "/images/characters/Yanfei.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yanfei.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Yoimiya",
+            "image_local": "/images/characters/Yoimiya.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Yoimiya.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Aether (Pyro)",
+            "image_local": "/images/characters/Aether_(Pyro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Lumine (Pyro)",
+            "image_local": "/images/characters/Lumine_(Pyro).png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "element": "Pyro"
+        }
+    ],
+    "artifacts": [
+        {
+            "name": "Adventurer",
+            "image_local": "/images/artifacts/Adventurer.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Adventurer.png",
+            "level": "3★"
+        },
+        {
+            "name": "Lucky Dog",
+            "image_local": "/images/artifacts/Lucky_Dog.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Lucky_Dog.png",
+            "level": "3★"
+        },
+        {
+            "name": "Traveling Doctor",
+            "image_local": "/images/artifacts/Traveling_Doctor.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Traveling_Doctor.png",
+            "level": "3★"
+        },
+        {
+            "name": "Resolution of Sojourner",
+            "image_local": "/images/artifacts/Resolution_of_Sojourner.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Resolution_of_Sojourner.png",
+            "level": "4★"
+        },
+        {
+            "name": "Tiny Miracle",
+            "image_local": "/images/artifacts/Tiny_Miracle.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Tiny_Miracle.png",
+            "level": "4★"
+        },
+        {
+            "name": "Berserker",
+            "image_local": "/images/artifacts/Berserker.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Berserker.png",
+            "level": "4★"
+        },
+        {
+            "name": "Instructor",
+            "image_local": "/images/artifacts/Instructor.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Instructor.png",
+            "level": "4★"
+        },
+        {
+            "name": "The Exile",
+            "image_local": "/images/artifacts/The_Exile.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/The_Exile.png",
+            "level": "4★"
+        },
+        {
+            "name": "Defender's Will",
+            "image_local": "/images/artifacts/Defender's_Will.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Defenders_Will.png",
+            "level": "4★"
+        },
+        {
+            "name": "Brave Heart",
+            "image_local": "/images/artifacts/Brave_Heart.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Brave_Heart.png",
+            "level": "4★"
+        },
+        {
+            "name": "Martial Artist",
+            "image_local": "/images/artifacts/Martial_Artist.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Martial_Artist.png",
+            "level": "4★"
+        },
+        {
+            "name": "Gambler",
+            "image_local": "/images/artifacts/Gambler.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Gambler.png",
+            "level": "4★"
+        },
+        {
+            "name": "Scholar",
+            "image_local": "/images/artifacts/Scholar.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Scholar.png",
+            "level": "4★"
+        },
+        {
+            "name": "Prayers for Illumination",
+            "image_local": "/images/artifacts/Prayers_for_Illumination.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Prayers_for_Illumination.png",
+            "level": "4★"
+        },
+        {
+            "name": "Prayers for Destiny",
+            "image_local": "/images/artifacts/Prayers_for_Destiny.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Prayers_for_Destiny.png",
+            "level": "4★"
+        },
+        {
+            "name": "Prayers for Wisdom",
+            "image_local": "/images/artifacts/Prayers_for_Wisdom.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Prayers_for_Wisdom.png",
+            "level": "4★"
+        },
+        {
+            "name": "Prayers to Springtime",
+            "image_local": "/images/artifacts/Prayers_to_Springtime.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Prayers_to_Springtime.png",
+            "level": "4★"
+        },
+        {
+            "name": "Blizzard Strayer",
+            "image_local": "/images/artifacts/Blizzard_Strayer.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Blizzard_Strayer.png",
+            "level": "5★"
+        },
+        {
+            "name": "Thundersoother",
+            "image_local": "/images/artifacts/Thundersoother.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Thundersoother.png",
+            "level": "5★"
+        },
+        {
+            "name": "Lavawalker",
+            "image_local": "/images/artifacts/Lavawalker.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Lavawalker.png",
+            "level": "5★"
+        },
+        {
+            "name": "Maiden Beloved",
+            "image_local": "/images/artifacts/Maiden_Beloved.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Maiden_Beloved.png",
+            "level": "5★"
+        },
+        {
+            "name": "Gladiator's Finale",
+            "image_local": "/images/artifacts/Gladiator's_Finale.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Gladiators_Finale.png",
+            "level": "5★"
+        },
+        {
+            "name": "Viridescent Venerer",
+            "image_local": "/images/artifacts/Viridescent_Venerer.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Viridescent_Venerer.png",
+            "level": "5★"
+        },
+        {
+            "name": "Wanderer's Troupe",
+            "image_local": "/images/artifacts/Wanderer's_Troupe.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Wanderers_Troupe.png",
+            "level": "5★"
+        },
+        {
+            "name": "Thundering Fury",
+            "image_local": "/images/artifacts/Thundering_Fury.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Thundering_Fury.png",
+            "level": "5★"
+        },
+        {
+            "name": "Crimson Witch of Flames",
+            "image_local": "/images/artifacts/Crimson_Witch_of_Flames.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Crimson_Witch_of_Flames.png",
+            "level": "5★"
+        },
+        {
+            "name": "Noblesse Oblige",
+            "image_local": "/images/artifacts/Noblesse_Oblige.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Noblesse_Oblige.png",
+            "level": "5★"
+        },
+        {
+            "name": "Bloodstained Chivalry",
+            "image_local": "/images/artifacts/Bloodstained_Chivalry.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Bloodstained_Chivalry.png",
+            "level": "5★"
+        },
+        {
+            "name": "Archaic Petra",
+            "image_local": "/images/artifacts/Archaic_Petra.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Archaic_Petra.png",
+            "level": "5★"
+        },
+        {
+            "name": "Retracing Bolide",
+            "image_local": "/images/artifacts/Retracing_Bolide.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Retracing_Bolide.png",
+            "level": "5★"
+        },
+        {
+            "name": "Heart of Depth",
+            "image_local": "/images/artifacts/Heart_of_Depth.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Heart_of_Depth.png",
+            "level": "5★"
+        },
+        {
+            "name": "Tenacity of the Millelith",
+            "image_local": "/images/artifacts/Tenacity_of_the_Millelith.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Tenacity_of_the_Millelith.png",
+            "level": "5★"
+        },
+        {
+            "name": "Pale Flame",
+            "image_local": "/images/artifacts/Pale_Flame.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Pale_Flame.png",
+            "level": "5★"
+        },
+        {
+            "name": "Shimenawa's Reminiscence",
+            "image_local": "/images/artifacts/Shimenawa's_Reminiscence.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Shimenawas_Reminiscence.png",
+            "level": "5★"
+        },
+        {
+            "name": "Emblem of Severed Fate",
+            "image_local": "/images/artifacts/Emblem_of_Severed_Fate.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Emblem_of_Severed_Fate.png",
+            "level": "5★"
+        },
+        {
+            "name": "Husk of Opulent Dreams",
+            "image_local": "/images/artifacts/Husk_of_Opulent_Dreams.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Husk_of_Opulent_Dreams.png",
+            "level": "5★"
+        },
+        {
+            "name": "Ocean-Hued Clam",
+            "image_local": "/images/artifacts/Ocean-Hued_Clam.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Ocean-Hued_Clam.png",
+            "level": "5★"
+        },
+        {
+            "name": "Vermillion Hereafter",
+            "image_local": "/images/artifacts/Vermillion_Hereafter.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Vermillion_Hereafter.png",
+            "level": "5★"
+        },
+        {
+            "name": "Echoes of an Offering",
+            "image_local": "/images/artifacts/Echoes_of_an_Offering.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Echoes_of_an_Offering.png",
+            "level": "5★"
+        },
+        {
+            "name": "Deepwood Memories",
+            "image_local": "/images/artifacts/Deepwood_Memories.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Deepwood_Memories.png",
+            "level": "5★"
+        },
+        {
+            "name": "Gilded Dreams",
+            "image_local": "/images/artifacts/Gilded_Dreams.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Gilded_Dreams.png",
+            "level": "5★"
+        },
+        {
+            "name": "Desert Pavilion Chronicle",
+            "image_local": "/images/artifacts/Desert_Pavilion_Chronicle.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Desert_Pavilion_Chronicle.png",
+            "level": "5★"
+        },
+        {
+            "name": "Flower of Paradise Lost",
+            "image_local": "/images/artifacts/Flower_of_Paradise_Lost.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Flower_of_Paradise_Lost.png",
+            "level": "5★"
+        },
+        {
+            "name": "Nymph's Dream",
+            "image_local": "/images/artifacts/Nymph's_Dream.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Nymphs_Dream.png",
+            "level": "5★"
+        },
+        {
+            "name": "Vourukasha's Glow",
+            "image_local": "/images/artifacts/Vourukasha's_Glow.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Vourukashas_Glow.png",
+            "level": "5★"
+        },
+        {
+            "name": "Marechaussee Hunter",
+            "image_local": "/images/artifacts/Marechaussee_Hunter.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Marechaussee_Hunter.png",
+            "level": "5★"
+        },
+        {
+            "name": "Golden Troupe",
+            "image_local": "/images/artifacts/Golden_Troupe.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Golden_Troupe.png",
+            "level": "5★"
+        },
+        {
+            "name": "Song of Days Past",
+            "image_local": "/images/artifacts/Song_of_Days_Past.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Song_of_Days_Past.png",
+            "level": "5★"
+        },
+        {
+            "name": "Nighttime Whispers in the Echoing Woods",
+            "image_local": "/images/artifacts/Nighttime_Whispers_in_the_Echoing_Woods.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Nighttime_Whispers_in_the_Echoing_Woods.png",
+            "level": "5★"
+        },
+        {
+            "name": "Fragment of Harmonic Whimsy",
+            "image_local": "/images/artifacts/Fragment_of_Harmonic_Whimsy.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Fragment_of_Harmonic_Whimsy.png",
+            "level": "5★"
+        },
+        {
+            "name": "Unfinished Reverie",
+            "image_local": "/images/artifacts/Unfinished_Reverie.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Unfinished_Reverie.png",
+            "level": "5★"
+        },
+        {
+            "name": "Scroll of the Hero of Cinder City",
+            "image_local": "/images/artifacts/Scroll_of_the_Hero_of_Cinder_City.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Scroll_of_the_Hero_of_Cinder_City.png",
+            "level": "5★"
+        },
+        {
+            "name": "Obsidian Codex",
+            "image_local": "/images/artifacts/Obsidian_Codex.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Obsidian_Codex.png",
+            "level": "5★"
+        },
+        {
+            "name": "Long Night's Oath",
+            "image_local": "/images/artifacts/Long_Night's_Oath.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Long_Nights_Oath.png",
+            "level": "5★"
+        },
+        {
+            "name": "Finale of the Deep Galleries",
+            "image_local": "/images/artifacts/Finale_of_the_Deep_Galleries.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Finale_of_the_Deep_Galleries.png",
+            "level": "5★"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Hunter's Bow",
+            "image_local": "/images/weapons/Hunter's_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Hunters_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Seasoned Hunter's Bow",
+            "image_local": "/images/weapons/Seasoned_Hunter's_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Seasoned_Hunters_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Messenger",
+            "image_local": "/images/weapons/Messenger.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Messenger.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Raven Bow",
+            "image_local": "/images/weapons/Raven_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Raven_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Recurve Bow",
+            "image_local": "/images/weapons/Recurve_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Recurve_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Sharpshooter's Oath",
+            "image_local": "/images/weapons/Sharpshooter's_Oath.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sharpshooters_Oath.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Slingshot",
+            "image_local": "/images/weapons/Slingshot.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Slingshot.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Alley Hunter",
+            "image_local": "/images/weapons/Alley_Hunter.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Alley_Hunter.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Blackcliff Warbow",
+            "image_local": "/images/weapons/Blackcliff_Warbow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Blackcliff_Warbow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Chain Breaker",
+            "image_local": "/images/weapons/Chain_Breaker.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Chain_Breaker.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Cloudforged",
+            "image_local": "/images/weapons/Cloudforged.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Cloudforged.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Compound Bow",
+            "image_local": "/images/weapons/Compound_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Compound_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "End of the Line",
+            "image_local": "/images/weapons/End_of_the_Line.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/End_of_the_Line.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Fading Twilight",
+            "image_local": "/images/weapons/Fading_Twilight.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fading_Twilight.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Favonius Warbow",
+            "image_local": "/images/weapons/Favonius_Warbow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Favonius_Warbow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Flower-Wreathed Feathers",
+            "image_local": "/images/weapons/Flower-Wreathed_Feathers.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Flower-Wreathed_Feathers.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Hamayumi",
+            "image_local": "/images/weapons/Hamayumi.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Hamayumi.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Ibis Piercer",
+            "image_local": "/images/weapons/Ibis_Piercer.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ibis_Piercer.png",
+            "type": "Bow"
+        },
+        {
+            "name": "King's Squire",
+            "image_local": "/images/weapons/King's_Squire.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Kings_Squire.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Mitternachts Waltz",
+            "image_local": "/images/weapons/Mitternachts_Waltz.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Mitternachts_Waltz.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Mouun's Moon",
+            "image_local": "/images/weapons/Mouun's_Moon.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Mouuns_Moon.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Predator",
+            "image_local": "/images/weapons/Predator.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Predator.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Prototype Crescent",
+            "image_local": "/images/weapons/Prototype_Crescent.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Crescent.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Range Gauge",
+            "image_local": "/images/weapons/Range_Gauge.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Range_Gauge.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Royal Bow",
+            "image_local": "/images/weapons/Royal_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Royal_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Rust",
+            "image_local": "/images/weapons/Rust.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Rust.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Sacrificial Bow",
+            "image_local": "/images/weapons/Sacrificial_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sacrificial_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Scion of the Blazing Sun",
+            "image_local": "/images/weapons/Scion_of_the_Blazing_Sun.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Scion_of_the_Blazing_Sun.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Sequence of Solitude",
+            "image_local": "/images/weapons/Sequence_of_Solitude.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sequence_of_Solitude.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Song of Stillness",
+            "image_local": "/images/weapons/Song_of_Stillness.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Song_of_Stillness.png",
+            "type": "Bow"
+        },
+        {
+            "name": "The Stringless",
+            "image_local": "/images/weapons/The_Stringless.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Stringless.png",
+            "type": "Bow"
+        },
+        {
+            "name": "The Viridescent Hunt",
+            "image_local": "/images/weapons/The_Viridescent_Hunt.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Viridescent_Hunt.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Windblume Ode",
+            "image_local": "/images/weapons/Windblume_Ode.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Windblume_Ode.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Amos' Bow",
+            "image_local": "/images/weapons/Amos'_Bow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Amos_Bow.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Aqua Simulacra",
+            "image_local": "/images/weapons/Aqua_Simulacra.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Aqua_Simulacra.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Astral Vulture's Crimson Plumage",
+            "image_local": "/images/weapons/Astral_Vulture's_Crimson_Plumage.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Astral_Vultures_Crimson_Plumage.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Elegy for the End",
+            "image_local": "/images/weapons/Elegy_for_the_End.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Elegy_for_the_End.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Hunter's Path",
+            "image_local": "/images/weapons/Hunter's_Path.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Hunters_Path.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Polar Star",
+            "image_local": "/images/weapons/Polar_Star.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Polar_Star.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Silvershower Heartstrings",
+            "image_local": "/images/weapons/Silvershower_Heartstrings.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Silvershower_Heartstrings.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Skyward Harp",
+            "image_local": "/images/weapons/Skyward_Harp.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyward_Harp.png",
+            "type": "Bow"
+        },
+        {
+            "name": "The First Great Magic",
+            "image_local": "/images/weapons/The_First_Great_Magic.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_First_Great_Magic.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Thundering Pulse",
+            "image_local": "/images/weapons/Thundering_Pulse.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Thundering_Pulse.png",
+            "type": "Bow"
+        },
+        {
+            "name": "Apprentice's Notes",
+            "image_local": "/images/weapons/Apprentice's_Notes.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Apprentices_Notes.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Pocket Grimoire",
+            "image_local": "/images/weapons/Pocket_Grimoire.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Pocket_Grimoire.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Emerald Orb",
+            "image_local": "/images/weapons/Emerald_Orb.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Emerald_Orb.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Magic Guide",
+            "image_local": "/images/weapons/Magic_Guide.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Magic_Guide.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Otherworldly Story",
+            "image_local": "/images/weapons/Otherworldly_Story.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Otherworldly_Story.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Thrilling Tales of Dragon Slayers",
+            "image_local": "/images/weapons/Thrilling_Tales_of_Dragon_Slayers.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Thrilling_Tales_of_Dragon_Slayers.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Twin Nephrite",
+            "image_local": "/images/weapons/Twin_Nephrite.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Twin_Nephrite.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Ash-Graven Drinking Horn",
+            "image_local": "/images/weapons/Ash-Graven_Drinking_Horn.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ash-Graven_Drinking_Horn.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Ballad of the Boundless Blue",
+            "image_local": "/images/weapons/Ballad_of_the_Boundless_Blue.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ballad_of_the_Boundless_Blue.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Blackcliff Agate",
+            "image_local": "/images/weapons/Blackcliff_Agate.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Blackcliff_Agate.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Dodoco Tales",
+            "image_local": "/images/weapons/Dodoco_Tales.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dodoco_Tales.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Eye of Perception",
+            "image_local": "/images/weapons/Eye_of_Perception.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Eye_of_Perception.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Favonius Codex",
+            "image_local": "/images/weapons/Favonius_Codex.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Favonius_Codex.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Flowing Purity",
+            "image_local": "/images/weapons/Flowing_Purity.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Flowing_Purity.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Frostbearer",
+            "image_local": "/images/weapons/Frostbearer.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Frostbearer.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Fruit of Fulfillment",
+            "image_local": "/images/weapons/Fruit_of_Fulfillment.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fruit_of_Fulfillment.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Hakushin Ring",
+            "image_local": "/images/weapons/Hakushin_Ring.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Hakushin_Ring.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Mappa Mare",
+            "image_local": "/images/weapons/Mappa_Mare.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Mappa_Mare.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Oathsworn Eye",
+            "image_local": "/images/weapons/Oathsworn_Eye.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Oathsworn_Eye.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Prototype Amber",
+            "image_local": "/images/weapons/Prototype_Amber.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Amber.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Ring of Yaxche",
+            "image_local": "/images/weapons/Ring_of_Yaxche.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ring_of_Yaxche.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Royal Grimoire",
+            "image_local": "/images/weapons/Royal_Grimoire.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Royal_Grimoire.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Sacrificial Fragments",
+            "image_local": "/images/weapons/Sacrificial_Fragments.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sacrificial_Fragments.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Sacrificial Jade",
+            "image_local": "/images/weapons/Sacrificial_Jade.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sacrificial_Jade.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Solar Pearl",
+            "image_local": "/images/weapons/Solar_Pearl.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Solar_Pearl.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "The Widsith",
+            "image_local": "/images/weapons/The_Widsith.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Widsith.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Wandering Evenstar",
+            "image_local": "/images/weapons/Wandering_Evenstar.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Wandering_Evenstar.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Waveriding Whirl",
+            "image_local": "/images/weapons/Waveriding_Whirl.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Waveriding_Whirl.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Wine and Song",
+            "image_local": "/images/weapons/Wine_and_Song.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Wine_and_Song.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "A Thousand Floating Dreams",
+            "image_local": "/images/weapons/A_Thousand_Floating_Dreams.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/A_Thousand_Floating_Dreams.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Cashflow Supervision",
+            "image_local": "/images/weapons/Cashflow_Supervision.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Cashflow_Supervision.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Crane's Echoing Call",
+            "image_local": "/images/weapons/Crane's_Echoing_Call.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Cranes_Echoing_Call.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Everlasting Moonglow",
+            "image_local": "/images/weapons/Everlasting_Moonglow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Everlasting_Moonglow.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Jadefall's Splendor",
+            "image_local": "/images/weapons/Jadefall's_Splendor.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Jadefalls_Splendor.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Kagura's Verity",
+            "image_local": "/images/weapons/Kagura's_Verity.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Kaguras_Verity.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Lost Prayer to the Sacred Winds",
+            "image_local": "/images/weapons/Lost_Prayer_to_the_Sacred_Winds.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Lost_Prayer_to_the_Sacred_Winds.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Memory of Dust",
+            "image_local": "/images/weapons/Memory_of_Dust.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Memory_of_Dust.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Skyward Atlas",
+            "image_local": "/images/weapons/Skyward_Atlas.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyward_Atlas.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Starcaller's Watch",
+            "image_local": "/images/weapons/Starcaller's_Watch.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Starcallers_Watch.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Sunny Morning Sleep-In",
+            "image_local": "/images/weapons/Sunny_Morning_Sleep-In.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sunny_Morning_Sleep-In.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Surf's Up",
+            "image_local": "/images/weapons/Surf's_Up.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Surfs_Up.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Tome of the Eternal Flow",
+            "image_local": "/images/weapons/Tome_of_the_Eternal_Flow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Tome_of_the_Eternal_Flow.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Tulaytullah's Remembrance",
+            "image_local": "/images/weapons/Tulaytullah's_Remembrance.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Tulaytullahs_Remembrance.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Vivid Notions",
+            "image_local": "/images/weapons/Vivid_Notions.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Vivid_Notions.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Waster Greatsword",
+            "image_local": "/images/weapons/Waster_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Waster_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Old Merc's Pal",
+            "image_local": "/images/weapons/Old_Merc's_Pal.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Old_Mercs_Pal.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Bloodtainted Greatsword",
+            "image_local": "/images/weapons/Bloodtainted_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Bloodtainted_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Debate Club",
+            "image_local": "/images/weapons/Debate_Club.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Debate_Club.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Ferrous Shadow",
+            "image_local": "/images/weapons/Ferrous_Shadow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ferrous_Shadow.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Skyrider Greatsword",
+            "image_local": "/images/weapons/Skyrider_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyrider_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "White Iron Greatsword",
+            "image_local": "/images/weapons/White_Iron_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/White_Iron_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Akuoumaru",
+            "image_local": "/images/weapons/Akuoumaru.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Akuoumaru.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Blackcliff Slasher",
+            "image_local": "/images/weapons/Blackcliff_Slasher.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Blackcliff_Slasher.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Earth Shaker",
+            "image_local": "/images/weapons/Earth_Shaker.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Earth_Shaker.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Favonius Greatsword",
+            "image_local": "/images/weapons/Favonius_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Favonius_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Forest Regalia",
+            "image_local": "/images/weapons/Forest_Regalia.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Forest_Regalia.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Fruitful Hook",
+            "image_local": "/images/weapons/Fruitful_Hook.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fruitful_Hook.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Katsuragikiri Nagamasa",
+            "image_local": "/images/weapons/Katsuragikiri_Nagamasa.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Katsuragikiri_Nagamasa.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Lithic Blade",
+            "image_local": "/images/weapons/Lithic_Blade.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Lithic_Blade.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Luxurious Sea-Lord",
+            "image_local": "/images/weapons/Luxurious_Sea-Lord.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Luxurious_Sea-Lord.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Mailed Flower",
+            "image_local": "/images/weapons/Mailed_Flower.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Mailed_Flower.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Makhaira Aquamarine",
+            "image_local": "/images/weapons/Makhaira_Aquamarine.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Makhaira_Aquamarine.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Portable Power Saw",
+            "image_local": "/images/weapons/Portable_Power_Saw.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Portable_Power_Saw.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Prototype Archaic",
+            "image_local": "/images/weapons/Prototype_Archaic.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Archaic.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Rainslasher",
+            "image_local": "/images/weapons/Rainslasher.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Rainslasher.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Royal Greatsword",
+            "image_local": "/images/weapons/Royal_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Royal_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Sacrificial Greatsword",
+            "image_local": "/images/weapons/Sacrificial_Greatsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sacrificial_Greatsword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Serpent Spine",
+            "image_local": "/images/weapons/Serpent_Spine.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Serpent_Spine.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Snow-Tombed Starsilver",
+            "image_local": "/images/weapons/Snow-Tombed_Starsilver.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Snow-Tombed_Starsilver.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Talking Stick",
+            "image_local": "/images/weapons/Talking_Stick.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Talking_Stick.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "The Bell",
+            "image_local": "/images/weapons/The_Bell.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Bell.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Tidal Shadow",
+            "image_local": "/images/weapons/Tidal_Shadow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Tidal_Shadow.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "\"Ultimate Overlord's Mega Magic Sword\"",
+            "image_local": "/images/weapons/Ultimate_Overlord's_Mega_Magic_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ultimate_Overlords_Mega_Magic_Sword.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Whiteblind",
+            "image_local": "/images/weapons/Whiteblind.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Whiteblind.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "A Thousand Blazing Suns",
+            "image_local": "/images/weapons/A_Thousand_Blazing_Suns.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/A_Thousand_Blazing_Suns.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Beacon of the Reed Sea",
+            "image_local": "/images/weapons/Beacon_of_the_Reed_Sea.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Beacon_of_the_Reed_Sea.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Fang of the Mountain King",
+            "image_local": "/images/weapons/Fang_of_the_Mountain_King.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fang_of_the_Mountain_King.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Redhorn Stonethresher",
+            "image_local": "/images/weapons/Redhorn_Stonethresher.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Redhorn_Stonethresher.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Skyward Pride",
+            "image_local": "/images/weapons/Skyward_Pride.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyward_Pride.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Song of Broken Pines",
+            "image_local": "/images/weapons/Song_of_Broken_Pines.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Song_of_Broken_Pines.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "The Unforged",
+            "image_local": "/images/weapons/The_Unforged.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Unforged.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Verdict",
+            "image_local": "/images/weapons/Verdict.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Verdict.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Wolf's Gravestone",
+            "image_local": "/images/weapons/Wolf's_Gravestone.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Wolfs_Gravestone.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Beginner's Protector",
+            "image_local": "/images/weapons/Beginner's_Protector.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Beginners_Protector.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Iron Point",
+            "image_local": "/images/weapons/Iron_Point.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Iron_Point.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Black Tassel",
+            "image_local": "/images/weapons/Black_Tassel.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Black_Tassel.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Halberd",
+            "image_local": "/images/weapons/Halberd.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Halberd.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "White Tassel",
+            "image_local": "/images/weapons/White_Tassel.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/White_Tassel.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Ballad of the Fjords",
+            "image_local": "/images/weapons/Ballad_of_the_Fjords.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Ballad_of_the_Fjords.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Blackcliff Pole",
+            "image_local": "/images/weapons/Blackcliff_Pole.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Blackcliff_Pole.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Crescent Pike",
+            "image_local": "/images/weapons/Crescent_Pike.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Crescent_Pike.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Deathmatch",
+            "image_local": "/images/weapons/Deathmatch.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Deathmatch.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Dialogues of the Desert Sages",
+            "image_local": "/images/weapons/Dialogues_of_the_Desert_Sages.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dialogues_of_the_Desert_Sages.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Dragon's Bane",
+            "image_local": "/images/weapons/Dragon's_Bane.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dragons_Bane.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Dragonspine Spear",
+            "image_local": "/images/weapons/Dragonspine_Spear.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dragonspine_Spear.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Favonius Lance",
+            "image_local": "/images/weapons/Favonius_Lance.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Favonius_Lance.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Footprint of the Rainbow",
+            "image_local": "/images/weapons/Footprint_of_the_Rainbow.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Footprint_of_the_Rainbow.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Kitain Cross Spear",
+            "image_local": "/images/weapons/Kitain_Cross_Spear.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Kitain_Cross_Spear.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Lithic Spear",
+            "image_local": "/images/weapons/Lithic_Spear.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Lithic_Spear.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Missive Windspear",
+            "image_local": "/images/weapons/Missive_Windspear.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Missive_Windspear.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Moonpiercer",
+            "image_local": "/images/weapons/Moonpiercer.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Moonpiercer.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Mountain-Bracing Bolt",
+            "image_local": "/images/weapons/Mountain-Bracing_Bolt.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Mountain-Bracing_Bolt.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Prospector's Drill",
+            "image_local": "/images/weapons/Prospector's_Drill.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prospectors_Drill.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Prototype Starglitter",
+            "image_local": "/images/weapons/Prototype_Starglitter.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Starglitter.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Rightful Reward",
+            "image_local": "/images/weapons/Rightful_Reward.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Rightful_Reward.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Royal Spear",
+            "image_local": "/images/weapons/Royal_Spear.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Royal_Spear.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Tamayuratei no Ohanashi",
+            "image_local": "/images/weapons/Tamayuratei_no_Ohanashi.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Tamayuratei_no_Ohanashi.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "\"The Catch\"",
+            "image_local": "/images/weapons/The_Catch.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Catch.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Wavebreaker's Fin",
+            "image_local": "/images/weapons/Wavebreaker's_Fin.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Wavebreakers_Fin.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Calamity Queller",
+            "image_local": "/images/weapons/Calamity_Queller.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Calamity_Queller.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Crimson Moon's Semblance",
+            "image_local": "/images/weapons/Crimson_Moon's_Semblance.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Crimson_Moons_Semblance.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Engulfing Lightning",
+            "image_local": "/images/weapons/Engulfing_Lightning.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Engulfing_Lightning.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Lumidouce Elegy",
+            "image_local": "/images/weapons/Lumidouce_Elegy.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Lumidouce_Elegy.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Primordial Jade Winged-Spear",
+            "image_local": "/images/weapons/Primordial_Jade_Winged-Spear.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Primordial_Jade_Winged-Spear.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Skyward Spine",
+            "image_local": "/images/weapons/Skyward_Spine.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyward_Spine.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Staff of Homa",
+            "image_local": "/images/weapons/Staff_of_Homa.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Staff_of_Homa.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Staff of the Scarlet Sands",
+            "image_local": "/images/weapons/Staff_of_the_Scarlet_Sands.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Staff_of_the_Scarlet_Sands.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Symphonist of Scents",
+            "image_local": "/images/weapons/Symphonist_of_Scents.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Symphonist_of_Scents.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Vortex Vanquisher",
+            "image_local": "/images/weapons/Vortex_Vanquisher.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Vortex_Vanquisher.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Dull Blade",
+            "image_local": "/images/weapons/Dull_Blade.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dull_Blade.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Silver Sword",
+            "image_local": "/images/weapons/Silver_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Silver_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Cool Steel",
+            "image_local": "/images/weapons/Cool_Steel.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Cool_Steel.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Dark Iron Sword",
+            "image_local": "/images/weapons/Dark_Iron_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dark_Iron_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Fillet Blade",
+            "image_local": "/images/weapons/Fillet_Blade.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fillet_Blade.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Harbinger of Dawn",
+            "image_local": "/images/weapons/Harbinger_of_Dawn.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Harbinger_of_Dawn.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Skyrider Sword",
+            "image_local": "/images/weapons/Skyrider_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyrider_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Traveler's Handy Sword",
+            "image_local": "/images/weapons/Traveler's_Handy_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Travelers_Handy_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Amenoma Kageuchi",
+            "image_local": "/images/weapons/Amenoma_Kageuchi.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Amenoma_Kageuchi.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Blackcliff Longsword",
+            "image_local": "/images/weapons/Blackcliff_Longsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Blackcliff_Longsword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Calamity of Eshu",
+            "image_local": "/images/weapons/Calamity_of_Eshu.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Calamity_of_Eshu.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Cinnabar Spindle",
+            "image_local": "/images/weapons/Cinnabar_Spindle.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Cinnabar_Spindle.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Favonius Sword",
+            "image_local": "/images/weapons/Favonius_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Favonius_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Festering Desire",
+            "image_local": "/images/weapons/Festering_Desire.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Festering_Desire.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Finale of the Deep",
+            "image_local": "/images/weapons/Finale_of_the_Deep.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Finale_of_the_Deep.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Fleuve Cendre Ferryman",
+            "image_local": "/images/weapons/Fleuve_Cendre_Ferryman.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fleuve_Cendre_Ferryman.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Flute of Ezpitzal",
+            "image_local": "/images/weapons/Flute_of_Ezpitzal.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Flute_of_Ezpitzal.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Iron Sting",
+            "image_local": "/images/weapons/Iron_Sting.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Iron_Sting.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Kagotsurube Isshin",
+            "image_local": "/images/weapons/Kagotsurube_Isshin.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Kagotsurube_Isshin.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Lion's Roar",
+            "image_local": "/images/weapons/Lion's_Roar.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Lions_Roar.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Prototype Rancour",
+            "image_local": "/images/weapons/Prototype_Rancour.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Rancour.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Royal Longsword",
+            "image_local": "/images/weapons/Royal_Longsword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Royal_Longsword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Sacrificial Sword",
+            "image_local": "/images/weapons/Sacrificial_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sacrificial_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Sapwood Blade",
+            "image_local": "/images/weapons/Sapwood_Blade.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sapwood_Blade.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Sturdy Bone",
+            "image_local": "/images/weapons/Sturdy_Bone.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sturdy_Bone.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Sword of Descension",
+            "image_local": "/images/weapons/Sword_of_Descension.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sword_of_Descension.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Sword of Narzissenkreuz",
+            "image_local": "/images/weapons/Sword_of_Narzissenkreuz.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sword_of_Narzissenkreuz.png",
+            "type": "Sword"
+        },
+        {
+            "name": "The Alley Flash",
+            "image_local": "/images/weapons/The_Alley_Flash.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Alley_Flash.png",
+            "type": "Sword"
+        },
+        {
+            "name": "The Black Sword",
+            "image_local": "/images/weapons/The_Black_Sword.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Black_Sword.png",
+            "type": "Sword"
+        },
+        {
+            "name": "The Dockhand's Assistant",
+            "image_local": "/images/weapons/The_Dockhand's_Assistant.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Dockhands_Assistant.png",
+            "type": "Sword"
+        },
+        {
+            "name": "The Flute",
+            "image_local": "/images/weapons/The_Flute.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/The_Flute.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Toukabou Shigure",
+            "image_local": "/images/weapons/Toukabou_Shigure.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Toukabou_Shigure.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Wolf-Fang",
+            "image_local": "/images/weapons/Wolf-Fang.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Wolf-Fang.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Xiphos' Moonlight",
+            "image_local": "/images/weapons/Xiphos'_Moonlight.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Xiphos_Moonlight.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Absolution",
+            "image_local": "/images/weapons/Absolution.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Absolution.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Aquila Favonia",
+            "image_local": "/images/weapons/Aquila_Favonia.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Aquila_Favonia.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Freedom-Sworn",
+            "image_local": "/images/weapons/Freedom-Sworn.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Freedom-Sworn.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Haran Geppaku Futsu",
+            "image_local": "/images/weapons/Haran_Geppaku_Futsu.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Haran_Geppaku_Futsu.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Key of Khaj-Nisut",
+            "image_local": "/images/weapons/Key_of_Khaj-Nisut.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Key_of_Khaj-Nisut.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Light of Foliar Incision",
+            "image_local": "/images/weapons/Light_of_Foliar_Incision.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Light_of_Foliar_Incision.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Mistsplitter Reforged",
+            "image_local": "/images/weapons/Mistsplitter_Reforged.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Mistsplitter_Reforged.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Peak Patrol Song",
+            "image_local": "/images/weapons/Peak_Patrol_Song.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Peak_Patrol_Song.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Primordial Jade Cutter",
+            "image_local": "/images/weapons/Primordial_Jade_Cutter.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Primordial_Jade_Cutter.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Skyward Blade",
+            "image_local": "/images/weapons/Skyward_Blade.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyward_Blade.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Splendor of Tranquil Waters",
+            "image_local": "/images/weapons/Splendor_of_Tranquil_Waters.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Splendor_of_Tranquil_Waters.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Summit Shaper",
+            "image_local": "/images/weapons/Summit_Shaper.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Summit_Shaper.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Uraku Misugiri",
+            "image_local": "/images/weapons/Uraku_Misugiri.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Uraku_Misugiri.png",
+            "type": "Sword"
+        }
+    ]
+}

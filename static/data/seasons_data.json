@@ -1,12 +1,102 @@
 [
     {
+        "name": "Season 12",
+        "number": 12,
+        "date_start": "June 1, 2025",
+        "date_end": "June 30, 2025",
+        "version_start": "5.6",
+        "version_end": "5.6",
+        "status": "upcoming",
+        "opening_characters": [
+            {
+                "name": "Cyno",
+                "element": "Electro",
+                "image_local": "/images/characters/cyno.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Cyno_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092240"
+            },
+            {
+                "name": "Fischl",
+                "element": "Electro",
+                "image_local": "/images/characters/fischl.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092945"
+            },
+            {
+                "name": "Qiqi",
+                "element": "Cryo",
+                "image_local": "/images/characters/qiqi.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Qiqi_Icon.png/revision/latest/scale-to-width-down/74?cb=20220316020612"
+            },
+            {
+                "name": "Mika",
+                "element": "Cryo",
+                "image_local": "/images/characters/mika.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Mika_Icon.png/revision/latest/scale-to-width-down/74?cb=20230321101835"
+            },
+            {
+                "name": "Nahida",
+                "element": "Dendro",
+                "image_local": "/images/characters/nahida.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest/scale-to-width-down/74?cb=20221102030809"
+            },
+            {
+                "name": "Collei",
+                "element": "Dendro",
+                "image_local": "/images/characters/collei.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Collei_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092218"
+            }
+        ],
+        "alternate_cast_elements": [
+            {
+                "name": "Electro",
+                "image_local": "/images/elements/electro.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
+            },
+            {
+                "name": "Cryo",
+                "image_local": "/images/elements/cryo.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
+            },
+            {
+                "name": "Dendro",
+                "image_local": "/images/elements/dendro.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Element_Dendro.png/revision/latest/scale-to-width-down/30?cb=20201116063058"
+            }
+        ],
+        "special_guest_stars": [
+            {
+                "name": "Furina",
+                "element": "Hydro",
+                "image_local": "/images/characters/furina.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest/scale-to-width-down/74?cb=20231108030656"
+            },
+            {
+                "name": "Dehya",
+                "element": "Pyro",
+                "image_local": "/images/characters/dehya.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092328"
+            },
+            {
+                "name": "Xiangling",
+                "element": "Pyro",
+                "image_local": "/images/characters/xiangling.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011301"
+            },
+            {
+                "name": "Xingqiu",
+                "element": "Hydro",
+                "image_local": "/images/characters/xingqiu.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012057"
+            }
+        ]
+    },
+    {
         "name": "Season 11",
         "number": 11,
         "date_start": "May 1, 2025",
         "date_end": "May 31, 2025",
         "version_start": "5.5",
-        "version_end": "5.5",
-        "status": "upcoming",
+        "version_end": "5.6",
+        "status": "current",
         "opening_characters": [
             {
                 "name": "Neuvillette",
@@ -96,7 +186,7 @@
         "date_end": "April 30, 2025",
         "version_start": "5.5",
         "version_end": "5.5",
-        "status": "current",
+        "status": "past",
         "opening_characters": [
             {
                 "name": "Yoimiya",

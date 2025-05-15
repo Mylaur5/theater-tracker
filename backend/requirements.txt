@@ -1,6 +1,0 @@
-beautifulsoup4
-Flask
-Flask-cors
-playwright
-Requests
-Werkzeug

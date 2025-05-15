@@ -26,6 +26,7 @@ jobs:
         run: |
           npm run build
           node ./backend/scrape_season_data.js
+          node ./backend/scrape_keqing_img.js
         
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
