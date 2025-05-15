@@ -3,7 +3,6 @@ import * as cheerio from 'cheerio';
 import fs from 'fs';
 import path from 'path';
 import { performance } from 'perf_hooks';
-import { fileURLToPath } from 'url';
 
 const PORTRAIT_LINK = 'https://library.keqingmains.com/resources/tools/portraits';
 const SOURCE_LINK = 'https://library.keqingmains.com';
@@ -17,7 +16,7 @@ function sanitizeFilename(filename) {
 
 async function downloadImage(imgSrc, fileName, folderName) {
 	const imgLink = `${SOURCE_LINK}${imgSrc}`;
-	const destinationFile = `${IMAGE_FOLDER}${folderName}/${fileName}`;
+	const destinationFile = path.resolve(`${IMAGE_FOLDER}${folderName}/${fileName}`);
 	fs.mkdirSync(`./images/${folderName}`, { recursive: true });
 
 	// Check if the file already exists and compare sizes
@@ -120,7 +119,11 @@ extract()
 				return;
 			}
 
-			console.log('Data successfully written to ' + KEQING_DATA_FILE);
+			console.log('Data successfully written to ' + path.resolve(KEQING_DATA_FILE));
+			process.exit(0);
 		});
 	})
-	.catch(console.error);
+	.catch((err) => {
+		console.error(err);
+		process.exit(1);
+	});
