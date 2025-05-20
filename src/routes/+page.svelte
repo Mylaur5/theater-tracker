@@ -1,13 +1,10 @@
 <script lang="ts">
-	import { selectedGoodFile, readStorage, normalToSnakeCase, normalToPascalCase } from './shared.js';
+	import { normalToSnakeCase, normalToPascalCase } from './shared.js';
 	import { onMount } from 'svelte';
-	import Notification from './Notification.svelte';
 	import { assets, base } from '$app/paths';
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
-	let notify = $state(false);
-	let notificationMessage = $state('');
 
 	function capitalize(str: string) {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -53,13 +50,6 @@
 	}
 
 	onMount(async () => {
-		const uploadsData = readStorage();
-		if (uploadsData.length === 0) {
-			notify = true;
-			notificationMessage = "⚠️ No GOOD file found. <br>Please go to the 'Files' tab a GOOD file.";
-		} else if ($selectedGoodFile === '') {
-			$selectedGoodFile = uploadsData.at(-1) ?? '';
-		}
 		fetchSeasonsData();
 		console.log(seasonsData);
 	});
@@ -117,9 +107,6 @@
 		{/each}
 	</nav>
 </div>
-
-<!-- Notification Component -->
-<Notification message={notificationMessage} show={notify} />
 
 {#snippet characterCell(character: any)}
 	<!-- svelte-ignore a11y_click_events_have_key_events -->

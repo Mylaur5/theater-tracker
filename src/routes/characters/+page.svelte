@@ -7,33 +7,22 @@
 		pascalToNormalCase
 	} from '../shared.js';
 	import CharacterSorter from './CharacterSorter.svelte';
-	import Notification from '../Notification.svelte';
 	import { assets, base } from '$app/paths';
 	import { onMount } from 'svelte';
 
 	let character: string = $state('');
 	let charactersData: any[] = $state([]);
-	let notify = $state(false);
-	let notificationMessage = $state('');
+
 	onMount(async () => {
 		charactersData = await fetch(`${assets}/data/keqing_data.json`)
 			.then((response) => response.json())
 			.then((response) => response.characters)
 			.catch((error) => console.error('Fetch error:', error));
-
-		const uploadsData = readStorage();
-		if (uploadsData.length === 0 && $selectedGoodFile === '') {
-			notify = true;
-			notificationMessage = "⚠️ No GOOD file found.<br>Please go to the 'Files' tab a GOOD file.";
-		} else if (uploadsData.length > 0 && $selectedGoodFile === '') {
-			$selectedGoodFile = uploadsData.at(-1) ?? '';
-		}
 	});
 </script>
 
 <h1 class="text-center text-4xl font-bold">Characters</h1>
 
-<!-- Notification Component -->
 {#if $selectedGoodFile.length > 0}
 	<h3 class="mb-2 text-center text-sm">
 		imported from: <code class="font-bold">`{$selectedGoodFile}`</code>
@@ -81,7 +70,6 @@
 		{/snippet}
 	</CharacterSorter>
 {:else}
-	<Notification message={notificationMessage} show={notify} />
 	<div class="my-auto flex items-center justify-center">
 		<h3 class="mb-2 text-center">
 			Please select a file in the '<strong>Files</strong>' tab.

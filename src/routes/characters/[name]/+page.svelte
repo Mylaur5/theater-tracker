@@ -4,7 +4,6 @@
 	import { onMount } from 'svelte';
 	import { base, assets } from '$app/paths';
 	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase, normalToPascalCase } from '../../shared.js';
-	import Notification from '../../Notification.svelte';
 	let { data } = $props();
 	let characterName = $derived(data.name);
 	let element = $state('');
@@ -73,12 +72,7 @@
 		/>
 	</div>
 	<div class="flex h-full flex-col justify-between">
-		{#if $selectedGoodFile === ''}
-			<Notification
-				message="⚠️<p>Ensure you have selected a file<br>in the 'Files' tab to see your<br>character stats.</p>"
-				show={true}
-			/>
-		{:else}
+		{#if $selectedGoodFile !== ''}
 			<div class="text-sm">
 				<p>Level: {characterData.level}</p>
 				<p>Constellation: {characterData.constellation}</p>
