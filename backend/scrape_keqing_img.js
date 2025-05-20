@@ -30,7 +30,7 @@ async function downloadImage(imgSrc, fileName, folderName) {
             const oldPath = path.join(folderPath, existing);
             const newPath = path.join(folderPath, fileName);
 			fs.unlinkSync(oldPath);
-            console.log(`\x1b[33m✏️ Renamed '${existing}' to '${fileName}' for case normalization.\x1b[0m`);
+            console.log(`\x1b[33m✏️ Deleting '${existing}' to '${fileName}' for case normalization.\x1b[0m`);
         }
     }
 
