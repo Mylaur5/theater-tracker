@@ -6,8 +6,8 @@ import { performance } from 'perf_hooks';
 
 const PORTRAIT_LINK = 'https://library.keqingmains.com/resources/tools/portraits';
 const SOURCE_LINK = 'https://library.keqingmains.com';
-const IMAGE_FOLDER = './static/images/';
-const KEQING_DATA_FILE = './static/data/keqing_data.json';
+const IMAGE_FOLDER = '../static/images/';
+const KEQING_DATA_FILE = '../static/data/keqing_data.json';
 let skipped = 0;
 let downloaded = 0;
 
