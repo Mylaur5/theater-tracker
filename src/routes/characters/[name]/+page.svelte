@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { base, assets } from '$app/paths';
 	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase, normalToPascalCase } from '../../shared.js';
+	import Notification from '../../Notification.svelte';
 	let { data } = $props();
 	let characterName = $derived(data.name);
 	let element = $state('');
@@ -11,29 +12,46 @@
 
 	onMount(async () => {
 		// Find matching element from seasons_data.json
-		element = await fetch(`${assets}/data/seasons_data.json`)
-			.then((response) => response.json())
-			.then((data) => data.flatMap((season) => [...season.opening_characters, ...season.special_guest_stars]))
-			.then((allChars) => allChars.find((char) => normalToPascalCase(char.name) === characterName))
-			.then((char) => char.element)
-			.catch((error) => console.error('Fetch error:', error));
+		switch (characterName) {
+			case 'TravelerAnemo':
+				element = 'Anemo';
+				break;
+			case 'TravelerGeo':
+				element = 'Geo';
+				break;
+			case 'TravelerElectro':
+				element = 'Electro';
+				break;
+			case 'TravelerDendro':
+				element = 'Dendro';
+				break;
+			case 'TravelerHydro':
+				element = 'Hydro';
+				break;
+			case 'TravelerCryo':
+				element = 'Cryo';
+				break;
+			case 'TravelerPyro':
+				element = 'Pyro';
+				break;
+			default:
+				element = await fetch(`${assets}/data/keqing_data.json`)
+					.then((response) => response.json().then((response) => response.characters))
+					.then((allChars) => allChars.find((char) => normalToPascalCase(char.name) === characterName))
+					.then((char) => char.element)
+					.catch((error) => console.error('Fetch error:', error));
+		}
 
 		if ($selectedGoodFile === '') return;
 		const goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
-		characterData = goodFileData.characters.find((char) => char.key === characterName);
+		characterData = goodFileData.characters.find((char) => char.id === characterName);
 	});
 </script>
 
 <h1 class="mb-4 text-center text-4xl font-bold">{pascalToNormalCase(characterName)}</h1>
 
-<div class="flex items-start justify-center">
-	<img
-		src="{assets}/images/characters/{normalToSnakeCase(pascalToNormalCase(characterName))}.png"
-		class="w-45 break-before-all text-wrap object-cover"
-		alt={characterName}
-		title={characterName}
-	/>
-	<div class="flex h-full flex-col justify-between">
+<div class="flex items-center justify-center gap-4">
+	<div class="flex flex-col items-center justify-center gap-4">
 		<p class="flex items-center gap-2 text-xl font-bold">
 			{#await element}
 				Loading element...
@@ -46,14 +64,21 @@
 				/>
 				{element}
 			{/await}
-			
 		</p>
-		{#await characterData}
-			<p class="ml-6 mt-6 break-before-auto text-sm">
-				Loading Data...<br />
-				Meanwhile, ensure to have selected a file <br /> in the <strong>'Files'</strong> tab.
-			</p>
-		{:then characterData}
+		<img
+			src="{assets}/images/characters/{normalToSnakeCase(pascalToNormalCase(characterName))}.png"
+			class="w-45 break-before-all text-wrap object-cover"
+			alt={characterName}
+			title={characterName}
+		/>
+	</div>
+	<div class="flex h-full flex-col justify-between">
+		{#if $selectedGoodFile === ''}
+			<Notification
+				message="⚠️<p>Ensure you have selected a file<br>in the 'Files' tab to see your<br>character stats.</p>"
+				show={true}
+			/>
+		{:else}
 			<div class="text-sm">
 				<p>Level: {characterData.level}</p>
 				<p>Constellation: {characterData.constellation}</p>
@@ -63,6 +88,6 @@
 				<p class="pl-8">Skill {characterData.talent.skill}</p>
 				<p class="pl-8">Burst {characterData.talent.burst}</p>
 			</div>
-		{/await}
+		{/if}
 	</div>
 </div>

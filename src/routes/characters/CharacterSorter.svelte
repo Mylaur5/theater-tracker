@@ -2,26 +2,38 @@
 	import { selectedGoodFile, pascalToNormalCase } from '../shared.js';
 	import { onMount } from 'svelte';
 	import { assets } from '$app/paths';
+	import { get } from 'svelte/store';
 
 	let { characterCell } = $props();
 
-	interface GoodFileData {
-		characters: any[];
-	}
+	type GoodFileData = {
+		characters: Character[];
+	};
+
+	type Character = {
+		key: string;
+		level: number;
+	};
 
 	let seasonsData: any[] = $state([]);
 	let charactersData: any[] = $state([]);
 
 	let goodFileData: GoodFileData = $state({ characters: [] });
-	let filteredGoodFileCharacters: string[] = $state([]);
+	let filteredGoodFileCharacters: Character[] = $state([]);
 
-	let selectedSeason = $state({ name: 'All Seasons', number: -1 });
+	let selectedSeason = $state({
+		name: 'All Seasons',
+		number: -1,
+		alternate_cast_elements: [{ name: '' }],
+		special_guest_stars: []
+	});
 	let selectedElement = $state('All Elements');
-	let selectedOrder = $state('A to Z');
+	let selectedOrder = $state('Element');
 
 	let seasonFilters: any[] = $state([]);
-	const elementFilters = ['All Elements', 'Pyro', 'Hydro', 'Electro', 'Dendro', 'Cryo', 'Geo', 'Anemo'];
-	const orders = ['A to Z', 'Z to A', 'Element'];
+	const elements = ['Pyro', 'Hydro', 'Electro', 'Dendro', 'Cryo', 'Geo', 'Anemo'];
+	const elementFilters = ['All Elements', ...elements];
+	const orders = ['Element', 'Level', 'A to Z'];
 	function filterCharactersBySeason(seasonNumber: number) {
 		if (seasonNumber === -1) {
 			return filteredGoodFileCharacters;
@@ -34,7 +46,8 @@
 			.map((char) => char.name);
 		const guestNames = selectedSeasonData.special_guest_stars.map((character: any) => character.name);
 		return filteredGoodFileCharacters.filter(
-			(character) => charNames.includes(pascalToNormalCase(character)) || guestNames.includes(character)
+			(character) =>
+				charNames.includes(pascalToNormalCase(character.key)) || guestNames.includes(pascalToNormalCase(character.key))
 		);
 	}
 
@@ -49,28 +62,66 @@
 		);
 
 		return filteredGoodFileCharacters.filter((character) =>
-			characterNamesWithElement.has(pascalToNormalCase(character))
+			characterNamesWithElement.has(pascalToNormalCase(character.key))
 		);
 	}
 
 	function getElement(character: string) {
-		const characterData = charactersData.find((char) => char.name === character);
-		return characterData ? characterData.element : '?';
+		switch (character) {
+			case 'TravelerAnemo':
+				return 'Anemo';
+			case 'TravelerGeo':
+				return 'Geo';
+			case 'TravelerElectro':
+				return 'Electro';
+			case 'TravelerDendro':
+				return 'Dendro';
+			case 'TravelerHydro':
+				return 'Hydro';
+			case 'TravelerCryo':
+				return 'Cryo';
+			case 'TravelerPyro':
+				return 'Pyro';
+			default:
+				const characterData = charactersData.find((char) => char.name === pascalToNormalCase(character));
+				return characterData ? characterData.element : '?';
+		}
 	}
 
 	function updateFilters() {
-		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
+		filteredGoodFileCharacters = goodFileData.characters;
 		filteredGoodFileCharacters = filterCharactersBySeason(selectedSeason.number);
 		filteredGoodFileCharacters = filterCharactersByElement(selectedElement);
 		switch (selectedOrder) {
-			case 'A to Z':
-				filteredGoodFileCharacters.sort((a, b) => a.localeCompare(b));
+			case 'Level':
+				filteredGoodFileCharacters.sort((a, b) => (a.level > b.level ? -1 : 1));
 				break;
-			case 'Z to A':
-				filteredGoodFileCharacters.sort((a, b) => b.localeCompare(a));
+			case 'A to Z':
+				filteredGoodFileCharacters.sort((a, b) => a.key.localeCompare(b.key));
 				break;
 			case 'Element':
-				filteredGoodFileCharacters.sort((a, b) => getElement(a).localeCompare(getElement(b)));
+				const alternate_cast_elements = selectedSeason.alternate_cast_elements.map((element: any) => element.name);
+				const seasonElOrder = [
+					...alternate_cast_elements,
+					...selectedSeason.special_guest_stars
+						.map((character: any) => character.element)
+						.filter((el: string) => !alternate_cast_elements.includes(el))
+				];
+				const elementOrder = [...seasonElOrder, ...elements.filter((el) => !seasonElOrder.includes(el) && el !== '')];
+
+				filteredGoodFileCharacters.sort((a, b) => {
+					const indexA = elementOrder.indexOf(getElement(a.key));
+					const indexB = elementOrder.indexOf(getElement(b.key));
+					if (indexA === -1 && indexB === -1) {
+						return 0; // Both elements are not in the reference list, maintain their order
+					} else if (indexA === -1) {
+						return 1; // Only 'a' is not in the reference list, 'b' comes first
+					} else if (indexB === -1) {
+						return -1; // Only 'b' is not in the reference list, 'a' comes first
+					} else {
+						return indexA - indexB; // Both elements are in the reference list, sort by their indices
+					}
+				});
 				break;
 		}
 	}
@@ -79,7 +130,7 @@
 		seasonsData = await fetch(`${assets}/data/seasons_data.json`)
 			.then((response) => response.json())
 			.catch((error) => console.error('Fetch error:', error));
-		seasonFilters = [{ name: 'All Seasons', number: -1 }, ...seasonsData];
+		seasonFilters = [{ name: 'All Seasons', number: -1, alternate_cast_elements: [] }, ...seasonsData];
 
 		charactersData = (
 			await fetch(`${assets}/data/keqing_data.json`)
@@ -89,7 +140,8 @@
 
 		if ($selectedGoodFile === '') return;
 		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
-		filteredGoodFileCharacters = goodFileData.characters.map((character) => pascalToNormalCase(character.key));
+		filteredGoodFileCharacters = goodFileData.characters;
+		updateFilters();
 	});
 </script>
 
@@ -99,9 +151,9 @@
 	</svg>
 {/snippet}
 
-<div class="flex">
-	<div class="flex">
-		<p class="me-4 flex items-center">Filter by</p>
+<div class="flex gap-12">
+	<div class="flex gap-4">
+		<p class="flex items-center">Filter by</p>
 
 		<form class="flex max-w-sm items-center justify-center gap-4">
 			<div class="flex">
@@ -167,7 +219,7 @@
 								>
 									<div class="inline-flex items-center">
 										{#if element !== 'All Elements'}
-											<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-4" />
+											<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-6" />
 										{/if}
 										{element}
 									</div>
@@ -180,8 +232,8 @@
 		</form>
 	</div>
 
-	<div class="flex">
-		<p class="ml-12 mr-4 flex items-center">Order by</p>
+	<div class="flex gap-4">
+		<p class="flex items-center">Order by</p>
 		<form class="flex max-w-sm items-center justify-center gap-4">
 			<div class="flex">
 				<button
@@ -218,11 +270,17 @@
 			</div>
 		</form>
 	</div>
+
+	<div class="flex items-center">
+		{#each selectedSeason.alternate_cast_elements as element}
+			<img src="{assets}/images/elements/{element.name.toLowerCase()}.png" alt={element.name} class="mx-1 h-6" />
+		{/each}
+	</div>
 </div>
 <ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">
-	{#each filteredGoodFileCharacters as characterName}
+	{#each filteredGoodFileCharacters as character}
 		<li>
-			{@render characterCell(characterName, getElement(characterName))}
+			{@render characterCell(character.key, getElement(character.key), character.level)}
 		</li>
 	{/each}
 </ul>

@@ -8,10 +8,12 @@ const PORTRAIT_LINK = 'https://library.keqingmains.com/resources/tools/portraits
 const SOURCE_LINK = 'https://library.keqingmains.com';
 const IMAGE_FOLDER = './static/images/';
 const KEQING_DATA_FILE = './static/data/keqing_data.json';
+let skipped = 0;
+let downloaded = 0;
 
 function sanitizeFilename(filename) {
 	// Remove invalid characters for Windows file names
-	return filename.replace(/[<>:"/\\|?*]/g, '');
+	return filename.replace(/[<>:"/\\|?*]/g, '').toLowerCase();
 }
 
 async function downloadImage(imgSrc, fileName, folderName) {
@@ -26,7 +28,8 @@ async function downloadImage(imgSrc, fileName, folderName) {
 		const newFileSize = parseInt(imgReq.headers['content-length'], 10);
 
 		if (existingFileSize === newFileSize) {
-			console.log(`Image '${destinationFile}' already exists and is identical. Skipping download.`);
+			skipped++;
+			console.log(`\x1b[90m⏭️  Skipping download: Image '${destinationFile}' already exists and is identical.\x1b[0m`);
 		}
 	} else {
 		const imgReq = await axios.get(imgLink, { responseType: 'stream' });
@@ -35,7 +38,8 @@ async function downloadImage(imgSrc, fileName, folderName) {
 			const writer = fs.createWriteStream(destinationFile);
 			imgReq.data.pipe(writer);
 			writer.on('finish', () => {
-				console.log(`Image '${fileName}' has been successfully downloaded and saved to '${destinationFile}'`);
+				downloaded++;
+				console.log(`\x1b[32m Downloading '${fileName}' successfully. Saved to '${destinationFile}'\x1b[0m`);
 				resolve();
 			});
 			writer.on('error', reject);
@@ -108,6 +112,8 @@ async function extract() {
 	const executionTime = (stop - start) / 1000;
 
 	console.log(`Program Executed in ${executionTime} seconds`); // It returns time in seconds
+	console.log(`Downloaded ${downloaded} images and skipped ${skipped} images.`);
+	console.log(`Total images processed: ${downloaded + skipped}`);
 	return JSON.stringify(keqingData, null, 4);
 }
 

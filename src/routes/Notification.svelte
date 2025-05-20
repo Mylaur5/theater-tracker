@@ -10,7 +10,7 @@
 	class:show={show}
 	class="notification fixed right-4 top-4 flex gap-4 rounded-lg bg-gray-800 p-4 shadow-lg hover:text-gray-300"
 >
-	{message}
+	{@html message}
 	<button
 		type="button"
 		onclick={closeNotification}

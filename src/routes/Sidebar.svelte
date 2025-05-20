@@ -32,7 +32,7 @@
 	];
 
 	let hidden: boolean = $state(false);
-	let selected: string = $state('');
+	let selected: string = $state('seasons');
 	let darkMode: boolean = $state(true);
 
 	function toggleSidebar() {
@@ -97,7 +97,13 @@
 		>
 			<div class="flex items-center">
 				<!-- svelte-ignore a11y_missing_attribute -->
-				<img src="{base}{item.img}" alt={item.img} width="32" height="32" class="transition-transform group-hover:scale-125" />
+				<img
+					src="{base}{item.img}"
+					alt={item.img}
+					width="32"
+					height="32"
+					class="transition-transform group-hover:scale-125"
+				/>
 				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden
 					>{item.label}</span
 				>
@@ -126,14 +132,14 @@
 	<!-- Separator -->
 	<hr class="border-t border-gray-700" />
 	<!-- Accounts -->
-	<a class="group h-auto w-full bg-gray-800 hover:bg-gray-700 hover:text-gray-300" href="/accounts">
+	<div class="group h-auto w-full cursor-not-allowed bg-gray-800">
+		<!-- href="{base}/accounts" -->
+		<!-- hover:bg-gray-700 hover:text-gray-300 -->
 		<div class="group flex items-center px-2">
-			<img
-				src="{base}/icons/Icon_Character_Lumine.webp"
-				class="my-2 h-10 transition-transform group-hover:scale-125"
-				alt="Accounts Icon"
-			/>
-			<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden>Accounts</span>
+			<img src="{base}/icons/Icon_Character_Lumine.webp" class="my-2 h-10" alt="Accounts Icon" />
+			<!-- "transition-transform group-hover:scale-125" -->
+			<span class="ml-2 text-sm font-medium" class:hidden>Accounts</span>
+			<!-- transition-transform group-hover:scale-110" -->
 		</div>
-	</a>
+	</div>
 </div>

@@ -41,12 +41,12 @@
 	});
 </script>
 
-<h1 class="mb-4 text-center text-4xl font-bold">GOOD File</h1>
+<h1 class="mb-4 text-center text-4xl font-bold">Load GOOD file</h1>
 
 <div class="mx-[10vw]">
 	<label
 		for="dropzone-file"
-		class="flex h-[20vh] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
+		class="flex h-[max(20vh, 15rem)] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
 	>
 		<div class="flex flex-col items-center justify-center pb-6 pt-5">
 			<svg
@@ -81,13 +81,13 @@
 			class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
 			bind:value={$selectedGoodFile}
 		>
-			{#if $selectedGoodFile !== ''}
-				<option>{$selectedGoodFile}</option>
-			{/if}
-			{#each uploadsData as upload}
-				{#if upload !== $selectedGoodFile}
-					<option value={upload}>{upload}</option>
+		{#each uploadsData as upload}
+			<option value={upload}>{upload}</option>
+				<!-- {#if $selectedGoodFile !== ''}
+					<option selected>{$selectedGoodFile}</option>
 				{/if}
+				{#if upload !== $selectedGoodFile}
+				{/if} -->
 			{:else}
 				<option selected disabled>No file has been loaded yet</option>
 			{/each}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { normalToSnakeCase, normalToPascalCase } from './shared.js';
+	import { selectedGoodFile, readStorage, normalToSnakeCase, normalToPascalCase } from './shared.js';
 	import { onMount } from 'svelte';
 	import Notification from './Notification.svelte';
 	import { assets, base } from '$app/paths';
@@ -53,6 +53,13 @@
 	}
 
 	onMount(async () => {
+		const uploadsData = readStorage();
+		if (uploadsData.length === 0) {
+			notify = true;
+			notificationMessage = "⚠️ No GOOD file found. <br>Please go to the 'Files' tab a GOOD file.";
+		} else if ($selectedGoodFile === '') {
+			$selectedGoodFile = uploadsData.at(-1) ?? '';
+		}
 		fetchSeasonsData();
 		console.log(seasonsData);
 	});
@@ -154,35 +161,35 @@
 
 			{#if season.alternate_cast_elements.length > 0}
 				<h3 class="mt-4 text-center text-xl font-bold">Alternate Cast Elements</h3>
+				<div class="mt-1 flex items-center justify-center space-x-4">
+					{#each season.alternate_cast_elements as element}
+						<img
+							src="{assets}{element.image_local}"
+							class="max-w-8 object-cover transition-transform hover:scale-105"
+							alt={element.name}
+							title={element.name}
+						/>
+					{/each}
+				</div>
 			{/if}
-			<div class="mt-1 flex items-center justify-center space-x-4">
-				{#each season.alternate_cast_elements as element}
-					<img
-						src="{assets}{element.image_local}"
-						class="max-w-8 object-cover transition-transform hover:scale-105"
-						alt={element.name}
-						title={element.name}
-					/>
-				{/each}
-			</div>
 
 			{#if season.opening_characters.length > 0}
 				<h3 class="mt-4 text-center text-xl font-bold">Opening Characters:</h3>
+				<div class="mt-1 flex items-start justify-center space-x-4">
+					{#each season.opening_characters as character}
+						{@render characterCell(character)}
+					{/each}
+				</div>
 			{/if}
-			<div class="mt-1 flex items-start justify-center space-x-4">
-				{#each season.opening_characters as character}
-					{@render characterCell(character)}
-				{/each}
-			</div>
 
 			{#if season.special_guest_stars.length > 0}
 				<h3 class="mt-4 text-center text-xl font-bold">Special Guest Stars:</h3>
+				<div class="mt-t flex items-start justify-center space-x-4">
+					{#each season.special_guest_stars as character}
+						{@render characterCell(character)}
+					{/each}
+				</div>
 			{/if}
-			<div class="mt-t flex items-start justify-center space-x-4">
-				{#each season.special_guest_stars as character}
-					{@render characterCell(character)}
-				{/each}
-			</div>
 		</div>
 	{/each}
 {/await}
