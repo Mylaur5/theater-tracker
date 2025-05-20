@@ -29,7 +29,7 @@ async function downloadImage(imgSrc, fileName, folderName) {
         if (existing.toLowerCase() === lowerFileName && existing !== fileName) {
             const oldPath = path.join(folderPath, existing);
             const newPath = path.join(folderPath, fileName);
-            fs.renameSync(oldPath, newPath);
+			fs.unlinkSync(oldPath);
             console.log(`\x1b[33m✏️ Renamed '${existing}' to '${fileName}' for case normalization.\x1b[0m`);
         }
     }
