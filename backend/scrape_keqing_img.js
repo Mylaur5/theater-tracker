@@ -18,8 +18,21 @@ function sanitizeFilename(filename) {
 
 async function downloadImage(imgSrc, fileName, folderName) {
 	const imgLink = `${SOURCE_LINK}${imgSrc}`;
-	const destinationFile = path.resolve(`${IMAGE_FOLDER}${folderName}/${fileName}`);
+    const folderPath = path.resolve(`${IMAGE_FOLDER}${folderName}`);
+    const destinationFile = path.join(folderPath, fileName);
 	fs.mkdirSync(`./images/${folderName}`, { recursive: true });
+
+	// --- Case-insensitive rename logic ---
+    const filesInFolder = fs.readdirSync(folderPath);
+    const lowerFileName = fileName.toLowerCase();
+    for (const existing of filesInFolder) {
+        if (existing.toLowerCase() === lowerFileName && existing !== fileName) {
+            const oldPath = path.join(folderPath, existing);
+            const newPath = path.join(folderPath, fileName);
+            fs.renameSync(oldPath, newPath);
+            console.log(`\x1b[33m✏️ Renamed '${existing}' to '${fileName}' for case normalization.\x1b[0m`);
+        }
+    }
 
 	// Check if the file already exists and compare sizes
 	if (fs.existsSync(destinationFile)) {
