@@ -6,7 +6,25 @@ export let selectedGoodFile = writable('');
 export function readStorage() {
 	return Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i))
 		.filter((key) => key.endsWith('.json'))
-		.sort((a, b) => a.localeCompare(b));
+		.sort((a, b) => {
+			const dateA = JSON.parse(localStorage.getItem(a)).storedDate;
+			const dateB = JSON.parse(localStorage.getItem(b)).storedDate;
+			if (dateA && dateB) {
+				return new Date(dateB) - new Date(dateA);
+			}
+		});
+}
+
+export function readGoodFile(fileName) {
+	if (!fileName) {
+		console.error('No file name provided');
+		return;
+	}
+	const goodFile = JSON.parse(localStorage.getItem(fileName) ?? '');
+	if (goodFile) {
+		return goodFile.content;
+	}
+	console.error(`File ${fileName} not found in localStorage`);
 }
 
 export function pascalToNormalCase(pascalStr) {
@@ -53,6 +71,8 @@ export function normalToSnakeCase(str) {
 			return 'aether_(geo)';
 		case 'Traveler Anemo':
 			return 'aether_(anemo)';
+		case 'Kazuha':
+			return 'kaedehara_kazuha';
 		default:
 			return str
 				.split(' ')

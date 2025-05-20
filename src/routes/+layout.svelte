@@ -1,7 +1,7 @@
 <script lang="ts">
+	import '../app.css';
 	import { selectedGoodFile, readStorage } from './shared.js';
 	import Notification from './Notification.svelte';
-	import '../app.css';
 	import Sidebar from './Sidebar.svelte';
 	import { onMount } from 'svelte';
 	let { children } = $props();
@@ -17,9 +17,22 @@
 		const uploadsData = readStorage();
 		if (uploadsData.length === 0 && $selectedGoodFile === '') {
 			notify = true;
-			notificationMessage = "⚠️ <p> No GOOD file found.<br>Please go to the 'Files' tab a GOOD file.</p>";
+			notificationMessage = "⚠️ <p> No GOOD file found.<br>Please go to the <strong>'Files'</strong> tab a GOOD file.</p>";
 		} else if (uploadsData.length > 0 && $selectedGoodFile === '') {
-			$selectedGoodFile = uploadsData.at(-1) ?? '';
+			$selectedGoodFile = uploadsData[0] ?? '';
+			setTimeout(() => {
+				notify = true;
+				notificationMessage = '📚 Latest GOOD file loaded from local storage.';
+			})
+			setTimeout(() => {
+				notify = false;
+			}, 5000);
+		}
+	});
+
+	$effect(() => {
+		if ($selectedGoodFile !== '') {
+			notify = false;
 		}
 	});
 </script>

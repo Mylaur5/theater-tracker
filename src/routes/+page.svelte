@@ -117,7 +117,7 @@
 	>
 		<img
 			src="{assets}/images/elements/{normalToSnakeCase(character.element)}.png"
-			class=" relative left-12 top-4 max-w-6 object-cover transition-transform hover:scale-105"
+			class="relative left-12 top-4 max-w-6 object-cover transition-transform hover:scale-105"
 			alt={character.element}
 			title={character.element}
 		/>

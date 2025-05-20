@@ -51,13 +51,14 @@
 							alt={element}
 							title={element}
 						/>
-						<p
-							class=""
-							title="Level {level}"
-						>
-							{level}
-						</p>
 					</div>
+					<p
+						class="relative left-12 top-28 text-center text-xs font-bold text-green-300"
+						style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"
+						title="Level {level}"
+					>
+						{level}
+					</p>
 				{/if}
 				<img
 					src="{assets}/images/characters/{pascalToSnakeCase(characterName)}.png"

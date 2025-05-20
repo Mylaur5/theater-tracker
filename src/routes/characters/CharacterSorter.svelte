@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { selectedGoodFile, pascalToNormalCase } from '../shared.js';
+	import { selectedGoodFile, pascalToNormalCase, readGoodFile } from '../shared.js';
 	import { onMount } from 'svelte';
 	import { assets } from '$app/paths';
-	import { get } from 'svelte/store';
 
 	let { characterCell } = $props();
 
@@ -139,7 +138,7 @@
 		).characters;
 
 		if ($selectedGoodFile === '') return;
-		goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
+		goodFileData = readGoodFile($selectedGoodFile);
 		filteredGoodFileCharacters = goodFileData.characters;
 		updateFilters();
 	});
@@ -153,21 +152,33 @@
 
 <div class="flex gap-12">
 	<div class="flex gap-4">
-		<p class="flex items-center">Filter by</p>
-
-		<form class="flex max-w-sm items-center justify-center gap-4">
+		<label for="filter" class="flex items-center">Filter by</label>
+		<form name="filter" class="flex max-w-sm items-center justify-center gap-4">
 			<div class="flex">
 				<button
 					popovertarget="dropdown-seasons"
-					class="flex w-32 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+					class="flex w-56 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
 					type="button"
 				>
-					{selectedSeason.name}
+					<div class="flex w-full justify-between">
+						<span>
+							{selectedSeason.name}
+						</span>
+						<div class="inline-flex items-center">
+							{#each selectedSeason.alternate_cast_elements as element}
+								<img
+									src="{assets}/images/elements/{element.name.toLowerCase()}.png"
+									alt={element.name}
+									class="mx-1 h-4"
+								/>
+							{/each}
+						</div>
+					</div>
 					{@render arrowDown()}
 				</button>
 				<div
 					id="dropdown-seasons"
-					class="inset-auto z-10 w-32 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
+					class="inset-auto z-10 w-56 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
 					popover
 				>
 					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
@@ -175,14 +186,23 @@
 							<li>
 								<button
 									type="button"
-									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									class="inline-flex w-full items-center justify-between rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
 									onclick={() => {
 										selectedSeason = season;
 										updateFilters();
 									}}
 									popovertarget="dropdown-seasons"
 								>
-									<div class="inline-flex items-center">{season.name}</div>
+									{season.name}
+									<div class="inline-flex items-center">
+										{#each season.alternate_cast_elements as element}
+											<img
+												src="{assets}/images/elements/{element.name.toLowerCase()}.png"
+												alt={element.name}
+												class="mx-1 h-4"
+											/>
+										{/each}
+									</div>
 								</button>
 							</li>
 						{/each}
@@ -233,8 +253,8 @@
 	</div>
 
 	<div class="flex gap-4">
-		<p class="flex items-center">Order by</p>
-		<form class="flex max-w-sm items-center justify-center gap-4">
+		<label for="order" class="flex items-center">Order by</label>
+		<form name="order" class="flex max-w-sm items-center justify-center gap-4">
 			<div class="flex">
 				<button
 					popovertarget="dropdown-order"
@@ -269,12 +289,6 @@
 				</div>
 			</div>
 		</form>
-	</div>
-
-	<div class="flex items-center">
-		{#each selectedSeason.alternate_cast_elements as element}
-			<img src="{assets}/images/elements/{element.name.toLowerCase()}.png" alt={element.name} class="mx-1 h-6" />
-		{/each}
 	</div>
 </div>
 <ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">

@@ -1,12 +1,24 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { selectedGoodFile, readStorage } from '../shared.js';
+	import Notification from '../Notification.svelte';
 	let uploadsData: (string | null)[] = $state([]);
 	let files: FileList | undefined = $state();
+	let notificationMessage: string = $state('');
+	let notificationToggle: boolean = $state(false);
+	let isHovering = $state(false);
+	let dragCounter = $state(0); // To handle nested drag events
 
 	export function storeFile(file: File) {
+		notificationToggle = false;
 		$selectedGoodFile = file.name;
-
+		setTimeout(() => {
+			notificationMessage = `✅ <p>File&nbsp;<code>${file.name}</code><br>sucessfully loaded in the local storage</p>`;
+			notificationToggle = true;
+		}, 250);
+		setTimeout(() => {
+			notificationToggle = false;
+		}, 5000);
 		// Check if the file is a JSON file
 		const reader = new FileReader();
 		reader.onload = (e) => {
@@ -14,8 +26,13 @@
 				const result = (e.target as FileReader).result;
 				if (typeof result === 'string') {
 					const jsonData = JSON.parse(result);
-					localStorage.setItem(file.name, JSON.stringify(jsonData));
-					console.log('JSON data stored in local storage:', jsonData);
+					const wrappedData = {
+						name: file.name,
+						storedDate: new Date().toISOString(),
+						content: jsonData
+					};
+					localStorage.setItem(file.name, JSON.stringify(wrappedData));
+					console.log('JSON data stored in local storage:', wrappedData);
 				}
 			} catch (error) {
 				console.error('Error parsing JSON file:', error);
@@ -24,29 +41,89 @@
 
 		reader.onerror = (e) => console.error('Error reading file:', e);
 		reader.readAsText(file);
+		setTimeout(() => {
+			uploadsData = readStorage();
+		}, 500);
 	}
 
-	onMount(async () => {
-		uploadsData = readStorage();
-		$selectedGoodFile = uploadsData.at(-1) ?? '';
-	});
-
-	$effect(() => {
-		if (files) {
+	function handleDrop(event: DragEvent) {
+		event.preventDefault();
+		event.stopPropagation();
+		isHovering = false;
+		dragCounter = 0;
+		if (event.dataTransfer?.files && event.dataTransfer.files.length > 0) {
+			files = event.dataTransfer.files;
 			for (const file of files) {
-				storeFile(file);
+				if (file.type === 'application/json') {
+					storeFile(file);
+				} else {
+					notificationMessage = 'Invalid file type. Only JSON files are allowed.';
+					notificationToggle = true;
+					setTimeout(() => {
+						notificationToggle = false;
+					}, 5000);
+				}
 			}
-			uploadsData = readStorage();
 		}
+	}
+	function handleDragOver(event: DragEvent) {
+		event.preventDefault();
+		event.stopPropagation();
+	}
+	function handleDragEnter(event: DragEvent) {
+		event.preventDefault();
+		event.stopPropagation();
+		dragCounter++;
+		isHovering = true;
+	}
+	function handleDragLeave(event: DragEvent) {
+		event.preventDefault();
+		event.stopPropagation();
+		dragCounter--;
+		if (dragCounter === 0) {
+			isHovering = false;
+		}
+	}
+
+	onMount(() => {
+		uploadsData = readStorage();
+
+		// Only add window event listeners in the browser
+		window.addEventListener('dragenter', handleDragEnter);
+		window.addEventListener('dragleave', handleDragLeave);
+		window.addEventListener('drop', handleDrop);
+		window.addEventListener('dragover', handleDragOver);
+
+		return () => {
+			window.removeEventListener('dragenter', handleDragEnter);
+			window.removeEventListener('dragleave', handleDragLeave);
+			window.removeEventListener('drop', handleDrop);
+			window.removeEventListener('dragover', handleDragOver);
+		};
 	});
 </script>
 
+<Notification message={notificationMessage} show={notificationToggle} />
+
 <h1 class="mb-4 text-center text-4xl font-bold">Load GOOD file</h1>
+
+{#if isHovering}
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<div
+		class="fixed inset-0 z-40 flex items-center justify-center bg-gray-300/40 backdrop-blur-sm dark:bg-indigo-900/40"
+		ondragenter={handleDragEnter}
+		ondragleave={handleDragLeave}
+	>
+		<div class="rounded-xl border-2 border-blue-500 bg-white/80 px-8 py-6 text-2xl font-bold text-blue-800 shadow-xl">
+			Drop your file anywhere!
+		</div>
+	</div>
+{/if}
 
 <div class="mx-[10vw]">
 	<label
 		for="dropzone-file"
-		class="flex h-[max(20vh, 15rem)] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
+		class="flex h-[40vh] cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-200 dark:border-gray-600 dark:bg-indigo-900 dark:hover:border-gray-500 dark:hover:bg-indigo-800"
 	>
 		<div class="flex flex-col items-center justify-center pb-6 pt-5">
 			<svg
@@ -69,28 +146,41 @@
 			</p>
 			<p class="text-xs text-gray-500 dark:text-gray-400">JSON files</p>
 		</div>
-		<input id="dropzone-file" type="file" accept=".json" class="hidden" bind:files />
+		<input
+			id="dropzone-file"
+			type="file"
+			accept=".json"
+			class="hidden"
+			onchange={(event) => {
+				const target = event.target as HTMLInputElement;
+				if (target.files) {
+					files = target.files;
+					for (const file of files) {
+						storeFile(file);
+					}
+				}
+			}}
+		/>
 	</label>
 
-	<form class="mt-8 max-w-sm">
-		<label for="countries" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-			>Current Loaded File:</label
-		>
-		<select
-			id="countries"
-			class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-			bind:value={$selectedGoodFile}
-		>
-		{#each uploadsData as upload}
-			<option value={upload}>{upload}</option>
-				<!-- {#if $selectedGoodFile !== ''}
-					<option selected>{$selectedGoodFile}</option>
-				{/if}
-				{#if upload !== $selectedGoodFile}
-				{/if} -->
-			{:else}
-				<option selected disabled>No file has been loaded yet</option>
-			{/each}
-		</select>
-	</form>
+	{#if $selectedGoodFile !== ''}
+		<form class="mt-8 max-w-sm">
+			<label for="files" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">
+				<p class="mt-4">Current file loaded:</p>
+			</label>
+			<select
+				id="files"
+				class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+				bind:value={$selectedGoodFile}
+			>
+				{#each uploadsData as upload}
+					<option value={upload}>{upload}</option>
+				{:else}
+					<option selected disabled>No file has been loaded yet</option>
+				{/each}
+			</select>
+		</form>
+	{:else}
+		<p class="mt-12">No file has been found. Please load at least one GOOD file.</p>
+	{/if}
 </div>

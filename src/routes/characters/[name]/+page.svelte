@@ -3,7 +3,7 @@
 
 	import { onMount } from 'svelte';
 	import { base, assets } from '$app/paths';
-	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase, normalToPascalCase } from '../../shared.js';
+	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase, normalToPascalCase, readGoodFile } from '../../shared.js';
 	let { data } = $props();
 	let characterName = $derived(data.name);
 	let element = $state('');
@@ -42,14 +42,14 @@
 		}
 
 		if ($selectedGoodFile === '') return;
-		const goodFileData = JSON.parse(localStorage.getItem($selectedGoodFile) ?? '');
+		const goodFileData = readGoodFile(selectedGoodFile);
 		characterData = goodFileData.characters.find((char) => char.id === characterName);
 	});
 </script>
 
 <h1 class="mb-4 text-center text-4xl font-bold">{pascalToNormalCase(characterName)}</h1>
 
-<div class="flex items-center justify-center gap-4">
+<div class="flex items-center justify-center gap-8">
 	<div class="flex flex-col items-center justify-center gap-4">
 		<p class="flex items-center gap-2 text-xl font-bold">
 			{#await element}
@@ -71,10 +71,10 @@
 			title={characterName}
 		/>
 	</div>
-	<div class="flex h-full flex-col justify-between">
+	<div class="flex h-full flex-col justify-evenly">
 		{#if $selectedGoodFile !== ''}
+			<h2 class="text-xl font-bold text-green-500">Level {characterData.level}</h2>
 			<div class="text-sm">
-				<p>Level: {characterData.level}</p>
 				<p>Constellation: {characterData.constellation}</p>
 				<p>Ascension: {characterData.ascension}</p>
 				<p>Talent:</p>
