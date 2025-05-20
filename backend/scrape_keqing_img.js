@@ -20,6 +20,14 @@ async function downloadImage(imgSrc, fileName, folderName) {
 	const imgLink = `${SOURCE_LINK}${imgSrc}`;
     const folderPath = path.resolve(`${IMAGE_FOLDER}${folderName}`);
     const destinationFile = path.join(folderPath, fileName);
+	// Clean the folder before downloading
+	if (fs.existsSync(`./images/${folderName}`)) {
+		fs.readdirSync(`./images/${folderName}`).forEach(file => {
+			const filePath = path.join(`./images/${folderName}`, file);
+			fs.unlinkSync(filePath);
+		});
+		fs.rmdirSync(`./images/${folderName}`);
+	}
 	fs.mkdirSync(`./images/${folderName}`, { recursive: true });
 
 	// --- Case-insensitive rename logic ---
@@ -28,7 +36,6 @@ async function downloadImage(imgSrc, fileName, folderName) {
     for (const existing of filesInFolder) {
         if (existing.toLowerCase() === lowerFileName && existing !== fileName) {
             const oldPath = path.join(folderPath, existing);
-            const newPath = path.join(folderPath, fileName);
 			fs.unlinkSync(oldPath);
             console.log(`\x1b[33m✏️ Deleting '${existing}' to '${fileName}' for case normalization.\x1b[0m`);
         }
