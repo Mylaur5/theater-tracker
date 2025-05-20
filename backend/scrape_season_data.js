@@ -18,13 +18,6 @@ async function extractSeasonDates(tr, season) {
 	season.date_end = textSplit[1].slice(0, -6);
 	season.version_start = textSplit[0].slice(-4, -1);
 	season.version_end = textSplit[1].slice(-4, -1);
-	const seasonStart = new Date(season.date_start);
-	const now = new Date();
-	const upcoming =
-		seasonStart.getFullYear() > now.getFullYear() ||
-		(seasonStart.getFullYear() === now.getFullYear() && seasonStart.getMonth() > now.getMonth());
-	const current = seasonStart.getFullYear() === now.getFullYear() && seasonStart.getMonth() === now.getMonth();
-	season.status = upcoming ? 'upcoming' : current ? 'current' : 'past';
 	return season;
 }
 

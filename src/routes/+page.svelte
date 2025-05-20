@@ -2,6 +2,7 @@
 	import { normalToSnakeCase, normalToPascalCase } from './shared.js';
 	import { onMount } from 'svelte';
 	import { assets, base } from '$app/paths';
+	import { get } from 'svelte/store';
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
@@ -20,6 +21,16 @@
 		if (currentSeasonNumber > 1) {
 			currentSeasonNumber--;
 		}
+	}
+
+	function getSeasonStatus(season: any) {
+		const seasonStart = new Date(season.date_start);
+		const now = new Date();
+		const upcoming =
+			seasonStart.getFullYear() > now.getFullYear() ||
+			(seasonStart.getFullYear() === now.getFullYear() && seasonStart.getMonth() > now.getMonth());
+		const current = seasonStart.getFullYear() === now.getFullYear() && seasonStart.getMonth() === now.getMonth();
+		return upcoming ? 'upcoming' : current ? 'current' : 'past';
 	}
 
 	// async function refreshData() {
@@ -46,7 +57,11 @@
 			});
 
 		// Find the current season or returns 1
-		currentSeasonNumber = seasonsData.find((season) => season.status === 'current')?.number ?? 1;
+		seasonsData.forEach((season) => {
+			if (getSeasonStatus(season) === 'current') {
+				currentSeasonNumber = season.number;
+			}
+		});
 	}
 
 	onMount(async () => {
@@ -138,8 +153,8 @@
 		<div class:hidden={season.number !== currentSeasonNumber} class="mt-4 overflow-auto">
 			<h2 class="text-center text-3xl font-bold">
 				{season.name}
-				{#if season.status !== 'past'}
-					({capitalize(season.status)})
+				{#if getSeasonStatus(season) !== 'past'}
+					({capitalize(getSeasonStatus(season))})
 				{/if}
 			</h2>
 			<p class="mt-1 text-center">
