@@ -6,7 +6,6 @@
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
-	let character: string = $state('');
 
 	function capitalize(str: string) {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -67,7 +66,6 @@
 
 	onMount(async () => {
 		fetchSeasonsData();
-		console.log(seasonsData);
 	});
 
 	const navUI = [

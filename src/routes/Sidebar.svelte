@@ -2,6 +2,8 @@
 	import { AiOutlineMoon, AiOutlineSun } from 'svelte-icons-pack/ai';
 	import { Icon } from 'svelte-icons-pack';
 	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 
 	type MenuItem = {
 		id: string;
@@ -33,7 +35,7 @@
 
 	let hidden: boolean = $state(false);
 	let selected: string = $state('seasons');
-	let darkMode: boolean = $state(true);
+	let darkMode: boolean = $state(false);
 
 	function toggleSidebar() {
 		hidden = !hidden;
@@ -41,15 +43,23 @@
 
 	function toggleDarkMode() {
 		darkMode = !darkMode;
-	}
-
-	$effect(() => {
 		if (darkMode) {
 			localStorage.theme = 'dark';
 			document.documentElement.classList.add('dark');
 		} else {
 			localStorage.theme = 'light';
 			document.documentElement.classList.remove('dark');
+		}
+	}
+
+	onMount(() => {
+		darkMode = localStorage.theme === 'dark';
+		if ($page.url.pathname.startsWith(base + '/')) {
+			selected = 'seasons';
+		} else if ($page.url.pathname.startsWith(base + '/characters')) {
+			selected = 'characters';
+		} else if ($page.url.pathname.startsWith(base + '/files')) {
+			selected = 'files';
 		}
 	});
 </script>

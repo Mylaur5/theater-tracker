@@ -7,8 +7,8 @@
 </script>
 
 <div
-	class:show={show}
-	class="notification fixed right-4 top-4 flex rounded-lg bg-gray-800 p-4 shadow-lg hover:text-gray-300"
+	class:show
+	class="notification fixed right-4 top-4 flex rounded-lg bg-gray-50 p-4 shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-gray-300"
 >
 	{@html message}
 	<button

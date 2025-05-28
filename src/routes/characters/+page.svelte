@@ -59,7 +59,7 @@
 		</div>
 		<img
 			src="{assets}/images/characters/{pascalToSnakeCase(characterName)}.png"
-			class="break-before-all text-wrap rounded-md object-cover {ready ? level >= 90 ? "bg-green-300" : "bg-orange-300" : ""}"
+			class="break-before-all text-wrap rounded-md object-cover {ready ? level >= 70 ? "bg-green-300" : "bg-orange-300" : ""}"
 			alt={characterName}
 			title={characterName}
 		/>

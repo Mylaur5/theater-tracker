@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { selectedGoodFile, pascalToNormalCase, readGoodFile } from '../shared.js';
-	import { onMount } from 'svelte';
 	import { assets } from '$app/paths';
+	import { onMount } from 'svelte';
+	import { pascalToNormalCase, readGoodFile, selectedGoodFile } from '../shared.js';
 
 	let { characterCell } = $props();
 
@@ -17,8 +17,8 @@
 	let seasonsData: any[] = $state([]);
 	let charactersData: any[] = $state([]);
 
-	let goodFileData: GoodFileData = $state({ characters: [] });
-	let filteredGoodFileCharacters: Character[] = $state([]);
+	let goodFileChars: Character[] = $state([]);
+	let filteredGoodFileChars: Character[] = $state([]);
 
 	let selectedSeason = $state({
 		name: 'All Seasons',
@@ -36,7 +36,7 @@
 	const orders = ['Element', 'Level', 'A to Z'];
 	function filterCharactersBySeason(seasonNumber: number) {
 		if (seasonNumber === -1) {
-			return filteredGoodFileCharacters;
+			return filteredGoodFileChars;
 		}
 
 		const selectedSeasonData = seasonsData.filter((season) => season.number === seasonNumber)[0];
@@ -45,7 +45,7 @@
 			.filter((char) => selectedSeasonElements.includes(char.element))
 			.map((char) => char.name);
 		const guestNames = selectedSeasonData.special_guest_stars.map((character: any) => character.name);
-		return filteredGoodFileCharacters.filter(
+		return filteredGoodFileChars.filter(
 			(character) =>
 				charNames.includes(pascalToNormalCase(character.key)) || guestNames.includes(pascalToNormalCase(character.key))
 		);
@@ -53,7 +53,7 @@
 
 	function filterCharactersByElements(elements: string[]) {
 		if (elements.length == 0) {
-			return filteredGoodFileCharacters;
+			return filteredGoodFileChars;
 		}
 
 		// Build a filter set of unique character names with the specified element
@@ -61,7 +61,7 @@
 			charactersData.filter((char) => elements.includes(char.element)).map((char) => char.name)
 		);
 
-		return filteredGoodFileCharacters.filter((character) =>
+		return filteredGoodFileChars.filter((character) =>
 			characterNamesWithElement.has(pascalToNormalCase(character.key))
 		);
 	}
@@ -100,15 +100,15 @@
 	}
 
 	function updateFilters() {
-		filteredGoodFileCharacters = goodFileData.characters;
-		filteredGoodFileCharacters = filterCharactersBySeason(selectedSeason.number);
-		filteredGoodFileCharacters = filterCharactersByElements(selectedElements);
+		filteredGoodFileChars = goodFileChars;
+		filteredGoodFileChars = filterCharactersBySeason(selectedSeason.number);
+		filteredGoodFileChars = filterCharactersByElements(selectedElements);
 		switch (selectedOrder) {
 			case 'Level':
-				filteredGoodFileCharacters.sort((a, b) => (a.level > b.level ? -1 : 1));
+				filteredGoodFileChars.sort((a, b) => (a.level > b.level ? -1 : 1));
 				break;
 			case 'A to Z':
-				filteredGoodFileCharacters.sort((a, b) => a.key.localeCompare(b.key));
+				filteredGoodFileChars.sort((a, b) => a.key.localeCompare(b.key));
 				break;
 			case 'Element':
 				const alternate_cast_elements = selectedSeason.alternate_cast_elements.map((element: any) => element.name);
@@ -120,7 +120,7 @@
 				];
 				const elementOrder = [...seasonElOrder, ...elements.filter((el) => !seasonElOrder.includes(el) && el !== '')];
 
-				filteredGoodFileCharacters.sort((a, b) => {
+				filteredGoodFileChars.sort((a, b) => {
 					const indexA = elementOrder.indexOf(getElement(a.key));
 					const indexB = elementOrder.indexOf(getElement(b.key));
 					if (indexA === -1 && indexB === -1) {
@@ -150,8 +150,8 @@
 		).characters;
 
 		if ($selectedGoodFile === '') return;
-		goodFileData = readGoodFile($selectedGoodFile);
-		filteredGoodFileCharacters = goodFileData.characters;
+		goodFileChars = readGoodFile($selectedGoodFile).characters;
+		filteredGoodFileChars = goodFileChars;
 		updateFilters();
 	});
 </script>
@@ -193,7 +193,7 @@
 					class="inset-auto z-10 w-56 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
 					popover
 				>
-					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+					<ul class="flex flex-col gap-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
 						{#each seasonFilters as season}
 							<li>
 								<button
@@ -211,7 +211,7 @@
 											<img
 												src="{assets}/images/elements/{element.name.toLowerCase()}.png"
 												alt={element.name}
-												class="mx-1 h-4"
+												class="mx-1 h-5"
 											/>
 										{/each}
 									</div>
@@ -229,10 +229,13 @@
 					class="inline-flex w-48 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
 					type="button"
 				>
-					<div class="flex gap-1">
-						{#if selectedElements.length !== 0}
+					<div class="flex h-5 items-center">
+						{#if selectedElements.length === 1}
+							<img src="{assets}/images/elements/{selectedElements[0].toLowerCase()}.png" alt={selectedElements[0]} class="mx-1 h-5" />
+							{selectedElements[0]}
+						{:else if selectedElements.length !== 0}
 							{#each selectedElements as element}
-								<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="h-5" />
+								<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mx-1 h-5" />
 							{/each}
 						{:else}
 							All Elements
@@ -245,7 +248,7 @@
 					class="inset-auto z-10 w-48 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
 					popover
 				>
-					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+					<ul class="flex flex-col gap-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
 						{#each elementFilters as element}
 							<li>
 								<button
@@ -260,7 +263,7 @@
 								>
 									<div class="inline-flex items-center">
 										{#if element !== 'All Elements'}
-											<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-6" />
+											<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="mr-2 h-5" />
 										{/if}
 										{element}
 									</div>
@@ -279,7 +282,7 @@
 			<div class="flex">
 				<button
 					popovertarget="dropdown-order"
-					class="flex w-32 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+					class="inline-flex w-32 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
 					type="button"
 				>
 					{selectedOrder}
@@ -331,7 +334,7 @@
 		<span class="text-nowrap px-2">Ready</span>
 	</label>
 </div>
-{#await filteredGoodFileCharacters}
+{#await filteredGoodFileChars}
 	<p>Loading Character</p>
 {:then filteredGoodFileCharacters}
 	<ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">

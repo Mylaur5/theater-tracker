@@ -2,17 +2,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Backend Flask App",
-      "type": "shell",
-      "command": "python backend/app.py",
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "detail": "Runs the Flask server"
-    },
-    {
       "type": "npm",
       "script": "dev -- --open",
       "path": "frontend",

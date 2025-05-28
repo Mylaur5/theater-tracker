@@ -13,7 +13,7 @@
 	let { data } = $props();
 	let characterName = $derived(data.name);
 	let element = $state('');
-	let characterData = $state({ talent: {} });
+	let characterData = $state();
 
 	onMount(async () => {
 		// Find matching element from seasons_data.json
@@ -49,7 +49,7 @@
 
 		if ($selectedGoodFile === '') return;
 		const goodFileData = readGoodFile($selectedGoodFile);
-		characterData = goodFileData.characters.find((char) => char.key === characterName);
+		characterData = Promise.resolve(goodFileData.then((data) => data.characters.find((char) => char.key === characterName)));
 	});
 </script>
 

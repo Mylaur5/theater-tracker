@@ -17,13 +17,15 @@
 		const uploadsData = readStorage();
 		if (uploadsData.length === 0 && $selectedGoodFile === '') {
 			notify = true;
-			notificationMessage = "⚠️ <p> No GOOD file found.<br>Please go to the <strong>'Files'</strong> tab a GOOD file.</p>";
+			notificationMessage = `⚠️&nbsp;<p>No GOOD file found.<br>
+				Please go to the <strong>'Files'</strong> tab a GOOD file.</p>`;
 		} else if (uploadsData.length > 0 && $selectedGoodFile === '') {
-			$selectedGoodFile = uploadsData[0] ?? '';
+			$selectedGoodFile = uploadsData[0]!;
 			setTimeout(() => {
 				notify = true;
-				notificationMessage = '📚 Latest GOOD file loaded from local storage.';
-			})
+				notificationMessage = `📚&nbsp;<p>Latest GOOD file loaded from local storage.<br/>
+				Loaded: <code class="text-sm">${$selectedGoodFile}</code></p>`;
+			});
 			setTimeout(() => {
 				notify = false;
 			}, 5000);
