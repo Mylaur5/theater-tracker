@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: 'main'
+  schedule:
+    - cron: '0 0 1 * *' # Runs at 00:00 UTC on the 1st of every month
 
 jobs:
   build_site:
@@ -27,7 +29,7 @@ jobs:
           node backend/scrape_season_data.js
           node backend/scrape_keqing_img.js
           npm run build
-        
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
