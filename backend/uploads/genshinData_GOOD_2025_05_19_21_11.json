@@ -1,0 +1,5431 @@
+{
+    "format": "GOOD",
+    "version": 2,
+    "kamera_version": "1.3.17",
+    "source": "Inventory_Kamera",
+    "weapons": [
+        {
+            "key": "AstralVulturesCrimsonPlumage",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Chasca",
+            "lock": false,
+            "id": 0
+        },
+        {
+            "key": "TheFirstGreatMagic",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Ororon",
+            "lock": false,
+            "id": 1
+        },
+        {
+            "key": "LostPrayerToTheSacredWinds",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "YaeMiko",
+            "lock": false,
+            "id": 2
+        },
+        {
+            "key": "SkywardSpine",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Escoffier",
+            "lock": false,
+            "id": 3
+        },
+        {
+            "key": "Verdict",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Navia",
+            "lock": false,
+            "id": 4
+        },
+        {
+            "key": "WolfsGravestone",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Chongyun",
+            "lock": false,
+            "id": 5
+        },
+        {
+            "key": "WolfsGravestone",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Eula",
+            "lock": false,
+            "id": 6
+        },
+        {
+            "key": "SkywardPride",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Diluc",
+            "lock": false,
+            "id": 7
+        },
+        {
+            "key": "UrakuMisugiri",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Chiori",
+            "lock": false,
+            "id": 8
+        },
+        {
+            "key": "KeyOfKhajNisut",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Nilou",
+            "lock": false,
+            "id": 9
+        },
+        {
+            "key": "MistsplitterReforged",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Traveler",
+            "lock": false,
+            "id": 10
+        },
+        {
+            "key": "AmosBow",
+            "level": 81,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Faruzan",
+            "lock": false,
+            "id": 11
+        },
+        {
+            "key": "PeakPatrolSong",
+            "level": 20,
+            "ascension": 1,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 12
+        },
+        {
+            "key": "FavoniusWarbow",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 3,
+            "location": "Diona",
+            "lock": false,
+            "id": 13
+        },
+        {
+            "key": "PrototypeAmber",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Barbara",
+            "lock": false,
+            "id": 14
+        },
+        {
+            "key": "SacrificialFragments",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 3,
+            "location": "Sucrose",
+            "lock": false,
+            "id": 15
+        },
+        {
+            "key": "TheWidsith",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "LanYan",
+            "lock": false,
+            "id": 16
+        },
+        {
+            "key": "FavoniusCodex",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 3,
+            "location": "Charlotte",
+            "lock": false,
+            "id": 17
+        },
+        {
+            "key": "FavoniusCodex",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 2,
+            "location": "Mona",
+            "lock": false,
+            "id": 18
+        },
+        {
+            "key": "TheCatch",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Candace",
+            "lock": false,
+            "id": 19
+        },
+        {
+            "key": "DragonsBane",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "HuTao",
+            "lock": false,
+            "id": 20
+        },
+        {
+            "key": "LithicBlade",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Beidou",
+            "lock": false,
+            "id": 21
+        },
+        {
+            "key": "Whiteblind",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Noelle",
+            "lock": false,
+            "id": 22
+        },
+        {
+            "key": "FavoniusGreatsword",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 2,
+            "location": "Sayu",
+            "lock": false,
+            "id": 23
+        },
+        {
+            "key": "FleuveCendreFerryman",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Furina",
+            "lock": false,
+            "id": 24
+        },
+        {
+            "key": "WolfFang",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 3,
+            "location": "Keqing",
+            "lock": false,
+            "id": 25
+        },
+        {
+            "key": "SapwoodBlade",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 2,
+            "location": "Bennett",
+            "lock": false,
+            "id": 26
+        },
+        {
+            "key": "AmenomaKageuchi",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Jean",
+            "lock": false,
+            "id": 27
+        },
+        {
+            "key": "LionsRoar",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Kaeya",
+            "lock": false,
+            "id": 29
+        },
+        {
+            "key": "IronSting",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "KukiShinobu",
+            "lock": false,
+            "id": 28
+        },
+        {
+            "key": "SacrificialSword",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 2,
+            "location": "KaedeharaKazuha",
+            "lock": false,
+            "id": 30
+        },
+        {
+            "key": "SacrificialSword",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 1,
+            "location": "Kirara",
+            "lock": false,
+            "id": 31
+        },
+        {
+            "key": "FavoniusSword",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 2,
+            "location": "Layla",
+            "lock": false,
+            "id": 32
+        },
+        {
+            "key": "FavoniusSword",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 2,
+            "location": "Xingqiu",
+            "lock": false,
+            "id": 33
+        },
+        {
+            "key": "SacrificialBow",
+            "level": 89,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Collei",
+            "lock": false,
+            "id": 34
+        },
+        {
+            "key": "SongOfStillness",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 1,
+            "location": "Tartaglia",
+            "lock": false,
+            "id": 35
+        },
+        {
+            "key": "TheStringless",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 5,
+            "location": "Fischl",
+            "lock": false,
+            "id": 36
+        },
+        {
+            "key": "FavoniusWarbow",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 37
+        },
+        {
+            "key": "DodocoTales",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 5,
+            "location": "Ningguang",
+            "lock": false,
+            "id": 38
+        },
+        {
+            "key": "FootprintOfTheRainbow",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 1,
+            "location": "Kachina",
+            "lock": false,
+            "id": 39
+        },
+        {
+            "key": "DialoguesOfTheDesertSages",
+            "level": 80,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Yaoyao",
+            "lock": false,
+            "id": 40
+        },
+        {
+            "key": "FavoniusLance",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 2,
+            "location": "Iansan",
+            "lock": false,
+            "id": 41
+        },
+        {
+            "key": "FavoniusLance",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 2,
+            "location": "Rosaria",
+            "lock": false,
+            "id": 42
+        },
+        {
+            "key": "SapwoodBlade",
+            "level": 80,
+            "ascension": 5,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 43
+        },
+        {
+            "key": "EyeOfPerception",
+            "level": 70,
+            "ascension": 4,
+            "refinement": 5,
+            "location": "Yanfei",
+            "lock": false,
+            "id": 44
+        },
+        {
+            "key": "Rainslasher",
+            "level": 70,
+            "ascension": 4,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 45
+        },
+        {
+            "key": "TheBell",
+            "level": 60,
+            "ascension": 3,
+            "refinement": 5,
+            "location": "Dehya",
+            "lock": false,
+            "id": 46
+        },
+        {
+            "key": "SacrificialSword",
+            "level": 60,
+            "ascension": 4,
+            "refinement": 1,
+            "location": "Lynette",
+            "lock": false,
+            "id": 47
+        },
+        {
+            "key": "CalamityOfEshu",
+            "level": 50,
+            "ascension": 2,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 48
+        },
+        {
+            "key": "WindblumeOde",
+            "level": 40,
+            "ascension": 2,
+            "refinement": 5,
+            "location": "Tighnari",
+            "lock": false,
+            "id": 49
+        },
+        {
+            "key": "RightfulReward",
+            "level": 40,
+            "ascension": 2,
+            "refinement": 1,
+            "location": "Chevreuse",
+            "lock": false,
+            "id": 51
+        },
+        {
+            "key": "BalladOfTheBoundlessBlue",
+            "level": 40,
+            "ascension": 1,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 50
+        },
+        {
+            "key": "FavoniusGreatsword",
+            "level": 40,
+            "ascension": 1,
+            "refinement": 2,
+            "location": "Dori",
+            "lock": false,
+            "id": 52
+        },
+        {
+            "key": "PrototypeRancour",
+            "level": 40,
+            "ascension": 2,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 53
+        },
+        {
+            "key": "AlleyHunter",
+            "level": 22,
+            "ascension": 1,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 54
+        },
+        {
+            "key": "AshGravenDrinkingHorn",
+            "level": 20,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 55
+        },
+        {
+            "key": "UltimateOverlordsMegaMagicSword",
+            "level": 20,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 56
+        },
+        {
+            "key": "SnowTombedStarsilver",
+            "level": 20,
+            "ascension": 1,
+            "refinement": 1,
+            "location": "Freminet",
+            "lock": false,
+            "id": 57
+        },
+        {
+            "key": "KagotsurubeIsshin",
+            "level": 20,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 58
+        },
+        {
+            "key": "TheFlute",
+            "level": 20,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 59
+        },
+        {
+            "key": "FlowerWreathedFeathers",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 60
+        },
+        {
+            "key": "MitternachtsWaltz",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 61
+        },
+        {
+            "key": "TheViridescentHunt",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 62
+        },
+        {
+            "key": "Rust",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 63
+        },
+        {
+            "key": "Rust",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 64
+        },
+        {
+            "key": "SacrificialBow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 65
+        },
+        {
+            "key": "SacrificialBow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "KujouSara",
+            "lock": false,
+            "id": 66
+        },
+        {
+            "key": "TheStringless",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 4,
+            "location": "",
+            "lock": false,
+            "id": 67
+        },
+        {
+            "key": "FavoniusWarbow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "Gorou",
+            "lock": false,
+            "id": 68
+        },
+        {
+            "key": "FavoniusWarbow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 69
+        },
+        {
+            "key": "FavoniusWarbow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 70
+        },
+        {
+            "key": "RingOfYaxche",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 71
+        },
+        {
+            "key": "WaveridingWhirl",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 4,
+            "location": "",
+            "lock": false,
+            "id": 72
+        },
+        {
+            "key": "EyeOfPerception",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 3,
+            "location": "",
+            "lock": false,
+            "id": 73
+        },
+        {
+            "key": "MappaMare",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "Ifa",
+            "lock": false,
+            "id": 74
+        },
+        {
+            "key": "SacrificialFragments",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 75
+        },
+        {
+            "key": "TheWidsith",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 76
+        },
+        {
+            "key": "FavoniusCodex",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 77
+        },
+        {
+            "key": "MountainBracingBolt",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "Thoma",
+            "lock": false,
+            "id": 78
+        },
+        {
+            "key": "KitainCrossSpear",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "YunJin",
+            "lock": false,
+            "id": 79
+        },
+        {
+            "key": "DragonspineSpear",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 80
+        },
+        {
+            "key": "FavoniusLance",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "Xiangling",
+            "lock": false,
+            "id": 81
+        },
+        {
+            "key": "FavoniusLance",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 82
+        },
+        {
+            "key": "DragonsBane",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 83
+        },
+        {
+            "key": "EarthShaker",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 84
+        },
+        {
+            "key": "SacrificialGreatsword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 85
+        },
+        {
+            "key": "TheBell",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 86
+        },
+        {
+            "key": "TheBell",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 87
+        },
+        {
+            "key": "FavoniusGreatsword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 88
+        },
+        {
+            "key": "SturdyBone",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 89
+        },
+        {
+            "key": "SturdyBone",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 90
+        },
+        {
+            "key": "TheAlleyFlash",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 91
+        },
+        {
+            "key": "SacrificialSword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 92
+        },
+        {
+            "key": "TheFlute",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 3,
+            "location": "",
+            "lock": false,
+            "id": 93
+        },
+        {
+            "key": "FavoniusSword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 94
+        },
+        {
+            "key": "FavoniusSword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 95
+        },
+        {
+            "key": "FavoniusSword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 96
+        },
+        {
+            "key": "ThrillingTalesOfDragonSlayers",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Citlali",
+            "lock": false,
+            "id": 97
+        },
+        {
+            "key": "MagicGuide",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "Nahida",
+            "lock": false,
+            "id": 98
+        },
+        {
+            "key": "SkyriderSword",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 99
+        },
+        {
+            "key": "HarbingerOfDawn",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 100
+        },
+        {
+            "key": "BlackTassel",
+            "level": 60,
+            "ascension": 3,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 101
+        },
+        {
+            "key": "Slingshot",
+            "level": 50,
+            "ascension": 2,
+            "refinement": 5,
+            "location": "Amber",
+            "lock": false,
+            "id": 102
+        },
+        {
+            "key": "BloodtaintedGreatsword",
+            "level": 40,
+            "ascension": 2,
+            "refinement": 5,
+            "location": "Kaveh",
+            "lock": false,
+            "id": 103
+        },
+        {
+            "key": "FilletBlade",
+            "level": 40,
+            "ascension": 1,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 104
+        },
+        {
+            "key": "SharpshootersOath",
+            "level": 25,
+            "ascension": 1,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 105
+        },
+        {
+            "key": "EmeraldOrb",
+            "level": 20,
+            "ascension": 1,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 106
+        },
+        {
+            "key": "ThrillingTalesOfDragonSlayers",
+            "level": 20,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "ShikanoinHeizou",
+            "lock": false,
+            "id": 107
+        },
+        {
+            "key": "WhiteTassel",
+            "level": 20,
+            "ascension": 1,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 108
+        },
+        {
+            "key": "DebateClub",
+            "level": 8,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 109
+        },
+        {
+            "key": "Messenger",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 110
+        },
+        {
+            "key": "Messenger",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 3,
+            "location": "",
+            "lock": false,
+            "id": 111
+        },
+        {
+            "key": "TwinNephrite",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 4,
+            "location": "",
+            "lock": false,
+            "id": 112
+        },
+        {
+            "key": "OtherworldlyStory",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 113
+        },
+        {
+            "key": "MagicGuide",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 114
+        },
+        {
+            "key": "BlackTassel",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 115
+        },
+        {
+            "key": "Halberd",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 116
+        },
+        {
+            "key": "SkyriderGreatsword",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "Xinyan",
+            "lock": false,
+            "id": 117
+        },
+        {
+            "key": "WhiteIronGreatsword",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 118
+        },
+        {
+            "key": "FerrousShadow",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 119
+        },
+        {
+            "key": "SkyriderSword",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 120
+        },
+        {
+            "key": "FilletBlade",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 121
+        },
+        {
+            "key": "DarkIronSword",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "",
+            "lock": false,
+            "id": 122
+        },
+        {
+            "key": "TravelersHandySword",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 123
+        },
+        {
+            "key": "HarbingerOfDawn",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 124
+        },
+        {
+            "key": "CoolSteel",
+            "level": 6,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "Qiqi",
+            "lock": false,
+            "id": 125
+        },
+        {
+            "key": "Halberd",
+            "level": 4,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 126
+        },
+        {
+            "key": "WhiteTassel",
+            "level": 4,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "",
+            "lock": false,
+            "id": 127
+        },
+        {
+            "key": "RecurveBow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 2,
+            "location": "Aloy",
+            "lock": false,
+            "id": 128
+        },
+        {
+            "key": "SharpshootersOath",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 129
+        },
+        {
+            "key": "ThrillingTalesOfDragonSlayers",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 130
+        },
+        {
+            "key": "ThrillingTalesOfDragonSlayers",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 131
+        },
+        {
+            "key": "SkyriderGreatsword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 132
+        },
+        {
+            "key": "SkyriderGreatsword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "Razor",
+            "lock": false,
+            "id": 133
+        },
+        {
+            "key": "BloodtaintedGreatsword",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false,
+            "id": 134
+        },
+        {
+            "key": "FilletBlade",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 4,
+            "location": "",
+            "lock": false,
+            "id": 135
+        }
+    ],
+    "artifacts": [
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 17.1 },
+                { "key": "def_", "value": 13.1 },
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "eleMas", "value": 42.0 }
+            ],
+            "location": "Chasca",
+            "lock": true,
+            "id": 0
+        },
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 17.5 },
+                { "key": "eleMas", "value": 23.0 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "critRate_", "value": 14.8 }
+            ],
+            "location": "Chasca",
+            "lock": true,
+            "id": 1
+        },
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 4.7 },
+                { "key": "critRate_", "value": 7.4 },
+                { "key": "critDMG_", "value": 20.2 },
+                { "key": "def_", "value": 13.9 }
+            ],
+            "location": "Traveler",
+            "lock": true,
+            "id": 2
+        },
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 538.0 },
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "hp_", "value": 15.7 },
+                { "key": "enerRech_", "value": 5.2 }
+            ],
+            "location": "Chasca",
+            "lock": true,
+            "id": 3
+        },
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critDMG_",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 10.5 },
+                { "key": "hp", "value": 747.0 },
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "def", "value": 23.0 }
+            ],
+            "location": "Chasca",
+            "lock": true,
+            "id": 4
+        },
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 18.0 },
+                { "key": "enerRech_", "value": 31.1 },
+                { "key": "hp_", "value": 5.3 },
+                { "key": "atk_", "value": 5.3 }
+            ],
+            "location": "Xingqiu",
+            "lock": true,
+            "id": 5
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "eleMas", "value": 16.0 },
+                { "key": "critRate_", "value": 7.4 },
+                { "key": "atk_", "value": 21.0 }
+            ],
+            "location": "Ororon",
+            "lock": true,
+            "id": 6
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 19.0 },
+                { "key": "atk_", "value": 4.1 },
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "eleMas", "value": 82.0 }
+            ],
+            "location": "Citlali",
+            "lock": true,
+            "id": 7
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 269.0 },
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "atk_", "value": 9.9 },
+                { "key": "critDMG_", "value": 21.0 }
+            ],
+            "location": "Ororon",
+            "lock": true,
+            "id": 8
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "critDMG_", "value": 21.0 },
+                { "key": "def", "value": 39.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 9
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 13.0 },
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "atk_", "value": 11.7 },
+                { "key": "critRate_", "value": 7.0 }
+            ],
+            "location": "Citlali",
+            "lock": true,
+            "id": 10
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 299.0 },
+                { "key": "enerRech_", "value": 14.2 },
+                { "key": "atk", "value": 16.0 },
+                { "key": "critDMG_", "value": 18.7 }
+            ],
+            "location": "Citlali",
+            "lock": true,
+            "id": 11
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 538.0 },
+                { "key": "critRate_", "value": 5.4 },
+                { "key": "hp_", "value": 5.8 },
+                { "key": "enerRech_", "value": 18.8 }
+            ],
+            "location": "Citlali",
+            "lock": true,
+            "id": 12
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 37.0 },
+                { "key": "critDMG_", "value": 10.9 },
+                { "key": "atk", "value": 29.0 },
+                { "key": "enerRech_", "value": 11.0 }
+            ],
+            "location": "Ororon",
+            "lock": true,
+            "id": 13
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 18.2 },
+                { "key": "atk", "value": 31.0 },
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "eleMas", "value": 42.0 }
+            ],
+            "location": "Kachina",
+            "lock": true,
+            "id": 14
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 14.6 },
+                { "key": "critDMG_", "value": 15.5 },
+                { "key": "critRate_", "value": 3.9 },
+                { "key": "atk_", "value": 9.3 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 15
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 20.2 },
+                { "key": "eleMas", "value": 65.0 },
+                { "key": "hp_", "value": 4.7 },
+                { "key": "critRate_", "value": 2.7 }
+            ],
+            "location": "Ningguang",
+            "lock": true,
+            "id": 16
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "critRate_", "value": 7.0 },
+                { "key": "def_", "value": 19.0 },
+                { "key": "atk_", "value": 11.7 }
+            ],
+            "location": "Ningguang",
+            "lock": true,
+            "id": 17
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 26.2 },
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "critRate_", "value": 3.5 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 18
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "physical_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 16.9 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "def", "value": 23.0 }
+            ],
+            "location": "Eula",
+            "lock": true,
+            "id": 19
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "electro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 11.7 },
+                { "key": "atk", "value": 33.0 },
+                { "key": "atk_", "value": 4.7 },
+                { "key": "hp", "value": 538.0 }
+            ],
+            "location": "Fischl",
+            "lock": true,
+            "id": 20
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 687.0 },
+                { "key": "atk_", "value": 5.8 },
+                { "key": "eleMas", "value": 40.0 },
+                { "key": "def", "value": 35.0 }
+            ],
+            "location": "Ningguang",
+            "lock": true,
+            "id": 21
+        },
+        {
+            "setKey": "SongOfDaysPast",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 5.2 },
+                { "key": "hp_", "value": 19.2 },
+                { "key": "critRate_", "value": 3.5 },
+                { "key": "eleMas", "value": 44.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 22
+        },
+        {
+            "setKey": "SongOfDaysPast",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 18.1 },
+                { "key": "hp", "value": 866.0 },
+                { "key": "atk", "value": 14.0 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Kirara",
+            "lock": true,
+            "id": 23
+        },
+        {
+            "setKey": "SongOfDaysPast",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 31.0 },
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "eleMas", "value": 49.0 }
+            ],
+            "location": "Barbara",
+            "lock": true,
+            "id": 24
+        },
+        {
+            "setKey": "SongOfDaysPast",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "def_", "value": 10.2 },
+                { "key": "hp", "value": 866.0 },
+                { "key": "eleMas", "value": 21.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 25
+        },
+        {
+            "setKey": "SongOfDaysPast",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 5.1 },
+                { "key": "enerRech_", "value": 9.7 },
+                { "key": "hp", "value": 568.0 },
+                { "key": "def", "value": 58.0 }
+            ],
+            "location": "Barbara",
+            "lock": false,
+            "id": 26
+        },
+        {
+            "setKey": "SongOfDaysPast",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "heal_",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 19.2 },
+                { "key": "eleMas", "value": 37.0 },
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "atk", "value": 14.0 }
+            ],
+            "location": "Chevreuse",
+            "lock": false,
+            "id": 27
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 15.7 },
+                { "key": "enerRech_", "value": 17.5 },
+                { "key": "critDMG_", "value": 11.7 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Furina",
+            "lock": true,
+            "id": 28
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 19.0 },
+                { "key": "hp_", "value": 26.2 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "eleMas", "value": 35.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 29
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 5.8 },
+                { "key": "enerRech_", "value": 18.1 },
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "critDMG_", "value": 12.4 }
+            ],
+            "location": "Furina",
+            "lock": true,
+            "id": 30
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "atk_", "value": 15.2 },
+                { "key": "def", "value": 67.0 }
+            ],
+            "location": "Fischl",
+            "lock": true,
+            "id": 31
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 37.0 },
+                { "key": "enerRech_", "value": 17.5 },
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "eleMas", "value": 16.0 }
+            ],
+            "location": "Layla",
+            "lock": true,
+            "id": 32
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "def", "value": 56.0 },
+                { "key": "enerRech_", "value": 9.1 },
+                { "key": "critRate_", "value": 3.9 }
+            ],
+            "location": "Escoffier",
+            "lock": true,
+            "id": 33
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 36.5 },
+                { "key": "def", "value": 23.0 },
+                { "key": "critRate_", "value": 3.9 },
+                { "key": "hp", "value": 508.0 }
+            ],
+            "location": "Furina",
+            "lock": true,
+            "id": 34
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "geo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 19.0 },
+                { "key": "critRate_", "value": 13.6 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "atk_", "value": 14.6 }
+            ],
+            "location": "Navia",
+            "lock": true,
+            "id": 35
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "pyro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 42.0 },
+                { "key": "critRate_", "value": 3.5 },
+                { "key": "hp_", "value": 8.7 },
+                { "key": "critDMG_", "value": 18.7 }
+            ],
+            "location": "Traveler",
+            "lock": true,
+            "id": 36
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "atk_", "value": 14.6 },
+                { "key": "hp", "value": 538.0 }
+            ],
+            "location": "Escoffier",
+            "lock": true,
+            "id": 37
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "atk_", "value": 5.3 },
+                { "key": "def_", "value": 6.6 },
+                { "key": "critRate_", "value": 13.2 }
+            ],
+            "location": "Citlali",
+            "lock": true,
+            "id": 38
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 448.0 },
+                { "key": "def", "value": 19.0 },
+                { "key": "enerRech_", "value": 22.0 },
+                { "key": "hp_", "value": 4.1 }
+            ],
+            "location": "Furina",
+            "lock": true,
+            "id": 39
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "atk", "value": 39.0 }
+            ],
+            "location": "Faruzan",
+            "lock": true,
+            "id": 40
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 23.3 },
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "def_", "value": 11.7 },
+                { "key": "critRate_", "value": 2.7 }
+            ],
+            "location": "Noelle",
+            "lock": true,
+            "id": 41
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 39.0 },
+                { "key": "atk_", "value": 8.2 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "critDMG_", "value": 18.7 }
+            ],
+            "location": "Noelle",
+            "lock": true,
+            "id": 42
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "eleMas", "value": 42.0 }
+            ],
+            "location": "Faruzan",
+            "lock": true,
+            "id": 43
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 15.5 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "atk", "value": 14.0 }
+            ],
+            "location": "Faruzan",
+            "lock": true,
+            "id": 44
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "geo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 12.8 },
+                { "key": "def", "value": 42.0 },
+                { "key": "critDMG_", "value": 15.5 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Noelle",
+            "lock": true,
+            "id": 45
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 21.0 },
+                { "key": "critDMG_", "value": 28.0 },
+                { "key": "def", "value": 42.0 },
+                { "key": "hp_", "value": 5.3 }
+            ],
+            "location": "Noelle",
+            "lock": true,
+            "id": 46
+        },
+        {
+            "setKey": "MarechausseeHunter",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 7.3 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "atk", "value": 56.0 }
+            ],
+            "location": "Sucrose",
+            "lock": true,
+            "id": 47
+        },
+        {
+            "setKey": "VourukashasGlow",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 21.6 },
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "eleMas", "value": 40.0 },
+                { "key": "hp", "value": 508.0 }
+            ],
+            "location": "Nilou",
+            "lock": true,
+            "id": 48
+        },
+        {
+            "setKey": "VourukashasGlow",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 37.0 },
+                { "key": "atk_", "value": 10.5 },
+                { "key": "atk", "value": 53.0 },
+                { "key": "hp", "value": 239.0 }
+            ],
+            "location": "Nilou",
+            "lock": true,
+            "id": 49
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 24.9 },
+                { "key": "enerRech_", "value": 5.2 },
+                { "key": "eleMas", "value": 19.0 },
+                { "key": "atk", "value": 39.0 }
+            ],
+            "location": "YaeMiko",
+            "lock": true,
+            "id": 50
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 7.3 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "enerRech_", "value": 18.1 },
+                { "key": "eleMas", "value": 40.0 }
+            ],
+            "location": "Diluc",
+            "lock": true,
+            "id": 51
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "hp", "value": 448.0 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "eleMas", "value": 75.0 }
+            ],
+            "location": "KukiShinobu",
+            "lock": true,
+            "id": 52
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 299.0 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "hp_", "value": 14.6 },
+                { "key": "critDMG_", "value": 13.2 }
+            ],
+            "location": "Diluc",
+            "lock": true,
+            "id": 53
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 37.0 },
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "YaeMiko",
+            "lock": true,
+            "id": 54
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 18.1 },
+                { "key": "critRate_", "value": 7.8 },
+                { "key": "atk", "value": 31.0 },
+                { "key": "hp", "value": 269.0 }
+            ],
+            "location": "KukiShinobu",
+            "lock": true,
+            "id": 55
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "electro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 7.4 },
+                { "key": "atk_", "value": 4.1 },
+                { "key": "critDMG_", "value": 24.9 },
+                { "key": "eleMas", "value": 35.0 }
+            ],
+            "location": "YaeMiko",
+            "lock": true,
+            "id": 56
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "critDMG_", "value": 15.5 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "atk", "value": 29.0 }
+            ],
+            "location": "Chasca",
+            "lock": true,
+            "id": 57
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "anemo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 14.0 },
+                { "key": "critRate_", "value": 3.5 },
+                { "key": "atk_", "value": 20.4 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "LanYan",
+            "lock": true,
+            "id": 58
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 21.0 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "atk", "value": 16.0 },
+                { "key": "hp_", "value": 4.1 }
+            ],
+            "location": "Diluc",
+            "lock": true,
+            "id": 59
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 18.8 },
+                { "key": "eleMas", "value": 61.0 },
+                { "key": "hp_", "value": 5.8 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Nahida",
+            "lock": true,
+            "id": 60
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 4.5 },
+                { "key": "critRate_", "value": 13.2 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "def", "value": 35.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 61
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "def_", "value": 5.1 },
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "Nahida",
+            "lock": true,
+            "id": 62
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 37.0 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "atk", "value": 49.0 }
+            ],
+            "location": "Nahida",
+            "lock": true,
+            "id": 63
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 63.0 },
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "atk_", "value": 4.1 }
+            ],
+            "location": "Nilou",
+            "lock": true,
+            "id": 64
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 5.8 },
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "atk_", "value": 15.2 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 65
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 13.1 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "atk_", "value": 5.8 }
+            ],
+            "location": "Collei",
+            "lock": true,
+            "id": 66
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "hp_", "value": 19.2 },
+                { "key": "atk", "value": 31.0 },
+                { "key": "critDMG_", "value": 14.8 }
+            ],
+            "location": "Nahida",
+            "lock": true,
+            "id": 67
+        },
+        {
+            "setKey": "OceanHuedClam",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 9.9 },
+                { "key": "def_", "value": 13.9 },
+                { "key": "enerRech_", "value": 4.5 },
+                { "key": "eleMas", "value": 82.0 }
+            ],
+            "location": "Barbara",
+            "lock": true,
+            "id": 68
+        },
+        {
+            "setKey": "HuskOfOpulentDreams",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 16.0 },
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "critDMG_", "value": 29.5 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Chiori",
+            "lock": true,
+            "id": 69
+        },
+        {
+            "setKey": "HuskOfOpulentDreams",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "electro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "critDMG_", "value": 11.7 },
+                { "key": "hp", "value": 448.0 },
+                { "key": "eleMas", "value": 47.0 }
+            ],
+            "location": "Ororon",
+            "lock": true,
+            "id": 70
+        },
+        {
+            "setKey": "HuskOfOpulentDreams",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 15.7 },
+                { "key": "eleMas", "value": 16.0 },
+                { "key": "def_", "value": 17.5 },
+                { "key": "def", "value": 35.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 71
+        },
+        {
+            "setKey": "HuskOfOpulentDreams",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "hp", "value": 209.0 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "atk", "value": 49.0 }
+            ],
+            "location": "Chiori",
+            "lock": true,
+            "id": 72
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "critDMG_", "value": 21.0 },
+                { "key": "critRate_", "value": 7.8 },
+                { "key": "def_", "value": 6.6 }
+            ],
+            "location": "Mona",
+            "lock": true,
+            "id": 73
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 27.9 },
+                { "key": "atk_", "value": 4.7 },
+                { "key": "eleMas", "value": 21.0 },
+                { "key": "critRate_", "value": 2.7 }
+            ],
+            "location": "Collei",
+            "lock": true,
+            "id": 74
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 31.0 },
+                { "key": "atk_", "value": 14.6 },
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "eleMas", "value": 19.0 }
+            ],
+            "location": "Kaeya",
+            "lock": true,
+            "id": 75
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "critRate_", "value": 9.3 },
+                { "key": "def", "value": 44.0 },
+                { "key": "enerRech_", "value": 5.8 }
+            ],
+            "location": "Xiangling",
+            "lock": true,
+            "id": 76
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "atk_", "value": 22.7 },
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "eleMas", "value": 23.0 }
+            ],
+            "location": "Mona",
+            "lock": true,
+            "id": 77
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "atk_", "value": 13.4 },
+                { "key": "eleMas", "value": 19.0 },
+                { "key": "hp_", "value": 9.9 }
+            ],
+            "location": "Kaeya",
+            "lock": true,
+            "id": 78
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 21.0 },
+                { "key": "atk_", "value": 8.7 },
+                { "key": "critRate_", "value": 3.5 },
+                { "key": "enerRech_", "value": 12.3 }
+            ],
+            "location": "Xiangling",
+            "lock": true,
+            "id": 79
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "critDMG_", "value": 14.8 },
+                { "key": "def", "value": 58.0 }
+            ],
+            "location": "Collei",
+            "lock": true,
+            "id": 80
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 14.8 },
+                { "key": "atk_", "value": 14.0 },
+                { "key": "enerRech_", "value": 16.2 },
+                { "key": "def", "value": 16.0 }
+            ],
+            "location": "Candace",
+            "lock": true,
+            "id": 81
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "def", "value": 21.0 },
+                { "key": "eleMas", "value": 21.0 },
+                { "key": "hp", "value": 866.0 }
+            ],
+            "location": "Beidou",
+            "lock": true,
+            "id": 82
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 14.0 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "atk_", "value": 8.7 },
+                { "key": "hp_", "value": 14.6 }
+            ],
+            "location": "Mona",
+            "lock": true,
+            "id": 83
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 12.4 },
+                { "key": "critRate_", "value": 3.5 },
+                { "key": "hp", "value": 269.0 },
+                { "key": "eleMas", "value": 86.0 }
+            ],
+            "location": "Xiangling",
+            "lock": true,
+            "id": 84
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "geo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 22.7 },
+                { "key": "def_", "value": 12.4 },
+                { "key": "critRate_", "value": 3.9 },
+                { "key": "atk", "value": 27.0 }
+            ],
+            "location": "Ningguang",
+            "lock": true,
+            "id": 85
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "cryo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 33.0 },
+                { "key": "enerRech_", "value": 14.9 },
+                { "key": "critDMG_", "value": 14.8 },
+                { "key": "hp", "value": 448.0 }
+            ],
+            "location": "Kaeya",
+            "lock": true,
+            "id": 86
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "electro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 68.0 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "atk", "value": 19.0 },
+                { "key": "critRate_", "value": 3.9 }
+            ],
+            "location": "Keqing",
+            "lock": true,
+            "id": 87
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critDMG_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.7 },
+                { "key": "eleMas", "value": 103.0 },
+                { "key": "hp_", "value": 4.1 },
+                { "key": "atk_", "value": 5.8 }
+            ],
+            "location": "Xiangling",
+            "lock": true,
+            "id": 88
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 63.0 },
+                { "key": "critDMG_", "value": 15.5 },
+                { "key": "hp", "value": 448.0 },
+                { "key": "atk", "value": 14.0 }
+            ],
+            "location": "Kaeya",
+            "lock": true,
+            "id": 89
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 5.3 },
+                { "key": "critDMG_", "value": 24.9 },
+                { "key": "hp", "value": 269.0 },
+                { "key": "eleMas", "value": 37.0 }
+            ],
+            "location": "Beidou",
+            "lock": true,
+            "id": 90
+        },
+        {
+            "setKey": "EmblemOfSeveredFate",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "eleMas", "value": 16.0 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "atk", "value": 37.0 }
+            ],
+            "location": "Mona",
+            "lock": true,
+            "id": 91
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "critDMG_", "value": 19.4 },
+                { "key": "atk_", "value": 4.7 },
+                { "key": "critRate_", "value": 10.5 }
+            ],
+            "location": "Navia",
+            "lock": true,
+            "id": 92
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 16.3 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "critRate_", "value": 3.9 },
+                { "key": "hp", "value": 269.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 93
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "dendro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 10.9 },
+                { "key": "critDMG_", "value": 22.5 },
+                { "key": "hp", "value": 598.0 },
+                { "key": "atk", "value": 19.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 94
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "anemo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 10.9 },
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "critRate_", "value": 12.1 },
+                { "key": "enerRech_", "value": 4.5 }
+            ],
+            "location": "Lynette",
+            "lock": true,
+            "id": 95
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "atk", "value": 33.0 },
+                { "key": "atk_", "value": 9.3 }
+            ],
+            "location": "Navia",
+            "lock": true,
+            "id": 96
+        },
+        {
+            "setKey": "PaleFlame",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 4.1 },
+                { "key": "eleMas", "value": 19.0 },
+                { "key": "critDMG_", "value": 28.0 },
+                { "key": "atk_", "value": 9.9 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 97
+        },
+        {
+            "setKey": "PaleFlame",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 16.0 },
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "def_", "value": 21.1 }
+            ],
+            "location": "Eula",
+            "lock": true,
+            "id": 98
+        },
+        {
+            "setKey": "PaleFlame",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "anemo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "atk_", "value": 15.7 },
+                { "key": "critDMG_", "value": 14.8 },
+                { "key": "def_", "value": 11.7 }
+            ],
+            "location": "Faruzan",
+            "lock": true,
+            "id": 99
+        },
+        {
+            "setKey": "PaleFlame",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 16.0 },
+                { "key": "hp", "value": 239.0 },
+                { "key": "eleMas", "value": 82.0 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "Eula",
+            "lock": true,
+            "id": 100
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 6.6 },
+                { "key": "hp_", "value": 15.2 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "enerRech_", "value": 9.1 }
+            ],
+            "location": "Layla",
+            "lock": true,
+            "id": 101
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 35.0 },
+                { "key": "hp_", "value": 14.0 },
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "def_", "value": 7.3 }
+            ],
+            "location": "Nilou",
+            "lock": true,
+            "id": 102
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "hp_", "value": 16.3 },
+                { "key": "eleMas", "value": 58.0 },
+                { "key": "critDMG_", "value": 14.0 }
+            ],
+            "location": "Barbara",
+            "lock": true,
+            "id": 103
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 9.9 },
+                { "key": "hp_", "value": 9.3 },
+                { "key": "enerRech_", "value": 14.2 },
+                { "key": "def", "value": 23.0 }
+            ],
+            "location": "Layla",
+            "lock": true,
+            "id": 104
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "atk_", "value": 14.0 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "critRate_", "value": 8.9 }
+            ],
+            "location": "Furina",
+            "lock": true,
+            "id": 105
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 17.5 },
+                { "key": "critDMG_", "value": 11.7 },
+                { "key": "atk_", "value": 9.3 },
+                { "key": "def_", "value": 5.8 }
+            ],
+            "location": "Layla",
+            "lock": true,
+            "id": 106
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 39.0 },
+                { "key": "hp", "value": 508.0 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Layla",
+            "lock": true,
+            "id": 107
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 42.0 },
+                { "key": "def_", "value": 5.8 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "critRate_", "value": 15.6 }
+            ],
+            "location": "Nilou",
+            "lock": true,
+            "id": 108
+        },
+        {
+            "setKey": "HeartOfDepth",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 4.1 },
+                { "key": "atk_", "value": 9.3 },
+                { "key": "critDMG_", "value": 23.3 },
+                { "key": "critRate_", "value": 7.8 }
+            ],
+            "location": "Xingqiu",
+            "lock": true,
+            "id": 109
+        },
+        {
+            "setKey": "HeartOfDepth",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 10.5 },
+                { "key": "hp_", "value": 14.0 },
+                { "key": "critRate_", "value": 3.5 },
+                { "key": "critDMG_", "value": 15.5 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 110
+        },
+        {
+            "setKey": "HeartOfDepth",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 21.0 },
+                { "key": "eleMas", "value": 19.0 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Xingqiu",
+            "lock": true,
+            "id": 111
+        },
+        {
+            "setKey": "HeartOfDepth",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hydro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "eleMas", "value": 58.0 },
+                { "key": "def", "value": 16.0 },
+                { "key": "hp_", "value": 11.1 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 112
+        },
+        {
+            "setKey": "BloodstainedChivalry",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "pyro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 16.0 },
+                { "key": "atk_", "value": 4.1 },
+                { "key": "critDMG_", "value": 28.0 },
+                { "key": "critRate_", "value": 9.7 }
+            ],
+            "location": "Xiangling",
+            "lock": true,
+            "id": 113
+        },
+        {
+            "setKey": "BloodstainedChivalry",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "def", "value": 16.0 },
+                { "key": "atk", "value": 18.0 },
+                { "key": "critRate_", "value": 9.7 }
+            ],
+            "location": "KaedeharaKazuha",
+            "lock": true,
+            "id": 114
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 31.9 },
+                { "key": "def", "value": 16.0 },
+                { "key": "atk_", "value": 4.7 },
+                { "key": "hp_", "value": 5.3 }
+            ],
+            "location": "Chongyun",
+            "lock": true,
+            "id": 115
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 9.3 },
+                { "key": "critDMG_", "value": 19.4 },
+                { "key": "def", "value": 58.0 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Bennett",
+            "lock": true,
+            "id": 116
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 47.0 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "hp_", "value": 15.7 },
+                { "key": "critRate_", "value": 3.9 }
+            ],
+            "location": "Kirara",
+            "lock": true,
+            "id": 117
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 22.0 },
+                { "key": "atk_", "value": 15.2 },
+                { "key": "hp", "value": 239.0 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "Charlotte",
+            "lock": true,
+            "id": 118
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "critDMG_", "value": 21.8 },
+                { "key": "def", "value": 42.0 }
+            ],
+            "location": "Chongyun",
+            "lock": true,
+            "id": 119
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 4.1 },
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "hp_", "value": 10.5 }
+            ],
+            "location": "Bennett",
+            "lock": true,
+            "id": 120
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "hp_", "value": 11.1 },
+                { "key": "hp", "value": 538.0 },
+                { "key": "eleMas", "value": 58.0 }
+            ],
+            "location": "Kirara",
+            "lock": true,
+            "id": 121
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 35.0 },
+                { "key": "enerRech_", "value": 9.7 },
+                { "key": "hp", "value": 568.0 },
+                { "key": "critDMG_", "value": 16.3 }
+            ],
+            "location": "Diona",
+            "lock": true,
+            "id": 122
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 17.5 },
+                { "key": "eleMas", "value": 58.0 },
+                { "key": "hp", "value": 478.0 },
+                { "key": "critDMG_", "value": 6.2 }
+            ],
+            "location": "Xingqiu",
+            "lock": true,
+            "id": 123
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "def", "value": 35.0 },
+                { "key": "atk_", "value": 14.0 },
+                { "key": "atk", "value": 16.0 }
+            ],
+            "location": "Diona",
+            "lock": true,
+            "id": 125
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 598.0 },
+                { "key": "eleMas", "value": 35.0 },
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "critRate_", "value": 6.6 }
+            ],
+            "location": "Collei",
+            "lock": true,
+            "id": 126
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 46.0 },
+                { "key": "critRate_", "value": 7.0 },
+                { "key": "hp", "value": 777.0 },
+                { "key": "atk_", "value": 4.7 }
+            ],
+            "location": "Bennett",
+            "lock": true,
+            "id": 127
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 5.3 },
+                { "key": "atk", "value": 29.0 },
+                { "key": "critDMG_", "value": 22.5 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "Diluc",
+            "lock": true,
+            "id": 128
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.7 },
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "eleMas", "value": 19.0 },
+                { "key": "atk_", "value": 19.8 }
+            ],
+            "location": "Chevreuse",
+            "lock": true,
+            "id": 129
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "dendro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 7.4 },
+                { "key": "atk", "value": 14.0 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "hp_", "value": 15.7 }
+            ],
+            "location": "Collei",
+            "lock": true,
+            "id": 130
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 9.7 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "def_", "value": 13.1 },
+                { "key": "atk", "value": 37.0 }
+            ],
+            "location": "Kirara",
+            "lock": true,
+            "id": 131
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hydro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 16.2 },
+                { "key": "hp", "value": 209.0 },
+                { "key": "def", "value": 16.0 },
+                { "key": "critDMG_", "value": 21.0 }
+            ],
+            "location": "Xingqiu",
+            "lock": true,
+            "id": 132
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 42.0 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "atk_", "value": 14.6 },
+                { "key": "atk", "value": 16.0 }
+            ],
+            "location": "Chongyun",
+            "lock": true,
+            "id": 133
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "heal_",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 12.8 },
+                { "key": "hp_", "value": 15.2 },
+                { "key": "enerRech_", "value": 13.0 },
+                { "key": "def_", "value": 5.1 }
+            ],
+            "location": "Bennett",
+            "lock": true,
+            "id": 134
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "atk", "value": 47.0 },
+                { "key": "critRate_", "value": 6.2 }
+            ],
+            "location": "Kirara",
+            "lock": true,
+            "id": 135
+        },
+        {
+            "setKey": "CrimsonWitchOfFlames",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 21.0 },
+                { "key": "critRate_", "value": 10.9 },
+                { "key": "critDMG_", "value": 19.4 },
+                { "key": "hp_", "value": 4.7 }
+            ],
+            "location": "HuTao",
+            "lock": true,
+            "id": 136
+        },
+        {
+            "setKey": "CrimsonWitchOfFlames",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "hp_", "value": 9.3 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "atk_", "value": 14.6 }
+            ],
+            "location": "Sayu",
+            "lock": true,
+            "id": 137
+        },
+        {
+            "setKey": "ThunderingFury",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "atk", "value": 66.0 },
+                { "key": "eleMas", "value": 40.0 }
+            ],
+            "location": "Keqing",
+            "lock": true,
+            "id": 138
+        },
+        {
+            "setKey": "ThunderingFury",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "critDMG_", "value": 21.0 },
+                { "key": "def_", "value": 13.1 }
+            ],
+            "location": "Lisa",
+            "lock": true,
+            "id": 139
+        },
+        {
+            "setKey": "ThunderingFury",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 239.0 },
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "enerRech_", "value": 18.1 }
+            ],
+            "location": "Keqing",
+            "lock": true,
+            "id": 140
+        },
+        {
+            "setKey": "ThunderingFury",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 5.4 },
+                { "key": "atk_", "value": 11.7 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "def", "value": 44.0 }
+            ],
+            "location": "Lisa",
+            "lock": true,
+            "id": 141
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 17.5 },
+                { "key": "hp_", "value": 10.5 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "critRate_", "value": 10.1 }
+            ],
+            "location": "HuTao",
+            "lock": true,
+            "id": 142
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 5.8 },
+                { "key": "eleMas", "value": 35.0 },
+                { "key": "critDMG_", "value": 28.0 },
+                { "key": "def_", "value": 6.6 }
+            ],
+            "location": "Tighnari",
+            "lock": true,
+            "id": 143
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 31.0 },
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "critDMG_", "value": 20.2 },
+                { "key": "hp_", "value": 5.8 }
+            ],
+            "location": "Yanfei",
+            "lock": true,
+            "id": 144
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 19.2 },
+                { "key": "def_", "value": 6.6 },
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "atk", "value": 19.0 }
+            ],
+            "location": "Diona",
+            "lock": false,
+            "id": 145
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def", "value": 21.0 },
+                { "key": "critDMG_", "value": 11.7 },
+                { "key": "critRate_", "value": 13.2 },
+                { "key": "enerRech_", "value": 11.0 }
+            ],
+            "location": "Yanfei",
+            "lock": false,
+            "id": 146
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 6.6 },
+                { "key": "eleMas", "value": 33.0 },
+                { "key": "critRate_", "value": 7.4 },
+                { "key": "critDMG_", "value": 27.2 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 147
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 5.8 },
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "def", "value": 65.0 },
+                { "key": "critRate_", "value": 9.7 }
+            ],
+            "location": "Nahida",
+            "lock": true,
+            "id": 148
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "atk", "value": 43.0 },
+                { "key": "critRate_", "value": 3.5 }
+            ],
+            "location": "Mona",
+            "lock": true,
+            "id": 149
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "geo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 12.8 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "atk", "value": 47.0 },
+                { "key": "enerRech_", "value": 5.2 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 150
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "geo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 35.0 },
+                { "key": "critDMG_", "value": 11.7 },
+                { "key": "def_", "value": 27.7 },
+                { "key": "atk_", "value": 5.8 }
+            ],
+            "location": "Chiori",
+            "lock": true,
+            "id": 151
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "pyro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 448.0 },
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "atk", "value": 31.0 },
+                { "key": "atk_", "value": 14.6 }
+            ],
+            "location": "Yanfei",
+            "lock": true,
+            "id": 152
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 23.0 },
+                { "key": "enerRech_", "value": 22.7 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "hp", "value": 598.0 }
+            ],
+            "location": "Bennett",
+            "lock": true,
+            "id": 153
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critDMG_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 16.3 },
+                { "key": "atk", "value": 31.0 },
+                { "key": "atk_", "value": 5.8 },
+                { "key": "hp_", "value": 5.3 }
+            ],
+            "location": "YaeMiko",
+            "lock": true,
+            "id": 154
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 105.0 },
+                { "key": "def", "value": 39.0 },
+                { "key": "enerRech_", "value": 5.2 },
+                { "key": "def_", "value": 5.8 }
+            ],
+            "location": "HuTao",
+            "lock": true,
+            "id": 155
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 28.8 },
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "def", "value": 35.0 },
+                { "key": "atk", "value": 35.0 }
+            ],
+            "location": "Lynette",
+            "lock": true,
+            "id": 156
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "atk", "value": 35.0 },
+                { "key": "critRate_", "value": 12.8 },
+                { "key": "hp_", "value": 5.8 }
+            ],
+            "location": "LanYan",
+            "lock": true,
+            "id": 157
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 9.3 },
+                { "key": "def_", "value": 5.1 },
+                { "key": "def", "value": 42.0 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "Sayu",
+            "lock": true,
+            "id": 158
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "def_", "value": 10.9 },
+                { "key": "eleMas", "value": 40.0 },
+                { "key": "atk_", "value": 9.3 }
+            ],
+            "location": "KaedeharaKazuha",
+            "lock": true,
+            "id": 159
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 13.2 },
+                { "key": "atk_", "value": 15.2 },
+                { "key": "eleMas", "value": 21.0 },
+                { "key": "enerRech_", "value": 4.5 }
+            ],
+            "location": "LanYan",
+            "lock": true,
+            "id": 160
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 13.9 },
+                { "key": "critRate_", "value": 7.0 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "def", "value": 42.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 161
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 5.3 },
+                { "key": "critRate_", "value": 7.8 },
+                { "key": "enerRech_", "value": 14.2 },
+                { "key": "critDMG_", "value": 11.7 }
+            ],
+            "location": "KaedeharaKazuha",
+            "lock": true,
+            "id": 162
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 18.1 },
+                { "key": "eleMas", "value": 61.0 },
+                { "key": "atk_", "value": 5.8 },
+                { "key": "hp", "value": 478.0 }
+            ],
+            "location": "Sucrose",
+            "lock": true,
+            "id": 163
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 239.0 },
+                { "key": "def", "value": 19.0 },
+                { "key": "enerRech_", "value": 24.0 },
+                { "key": "atk_", "value": 14.0 }
+            ],
+            "location": "Sayu",
+            "lock": true,
+            "id": 164
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "def", "value": 37.0 },
+                { "key": "critRate_", "value": 14.0 },
+                { "key": "hp_", "value": 5.8 }
+            ],
+            "location": "Sucrose",
+            "lock": true,
+            "id": 165
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 26.4 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "atk_", "value": 5.8 },
+                { "key": "def", "value": 58.0 }
+            ],
+            "location": "LanYan",
+            "lock": true,
+            "id": 166
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 448.0 },
+                { "key": "critDMG_", "value": 13.2 },
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "def", "value": 39.0 }
+            ],
+            "location": "KaedeharaKazuha",
+            "lock": true,
+            "id": 167
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "hp", "value": 269.0 },
+                { "key": "critRate_", "value": 11.3 },
+                { "key": "atk", "value": 35.0 }
+            ],
+            "location": "Sayu",
+            "lock": true,
+            "id": 168
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 7.8 },
+                { "key": "hp", "value": 508.0 },
+                { "key": "atk", "value": 37.0 },
+                { "key": "enerRech_", "value": 11.0 }
+            ],
+            "location": "KaedeharaKazuha",
+            "lock": true,
+            "id": 169
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "hydro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 15.7 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "enerRech_", "value": 9.7 },
+                { "key": "def", "value": 39.0 }
+            ],
+            "location": "Candace",
+            "lock": true,
+            "id": 170
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "heal_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "atk_", "value": 5.8 },
+                { "key": "hp", "value": 209.0 },
+                { "key": "critDMG_", "value": 31.1 }
+            ],
+            "location": "Jean",
+            "lock": true,
+            "id": 171
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "heal_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 508.0 },
+                { "key": "critRate_", "value": 10.9 },
+                { "key": "def", "value": 19.0 },
+                { "key": "critDMG_", "value": 12.4 }
+            ],
+            "location": "Sayu",
+            "lock": true,
+            "id": 172
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "atk_", "value": 5.8 },
+                { "key": "def", "value": 58.0 },
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "eleMas", "value": 37.0 }
+            ],
+            "location": "LanYan",
+            "lock": true,
+            "id": 173
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 13.2 },
+                { "key": "enerRech_", "value": 14.9 },
+                { "key": "hp_", "value": 5.8 },
+                { "key": "eleMas", "value": 21.0 }
+            ],
+            "location": "Eula",
+            "lock": true,
+            "id": 174
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 20.2 },
+                { "key": "critRate_", "value": 7.4 },
+                { "key": "hp_", "value": 5.8 },
+                { "key": "atk", "value": 29.0 }
+            ],
+            "location": "Navia",
+            "lock": true,
+            "id": 175
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 13.1 },
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "enerRech_", "value": 16.2 },
+                { "key": "critDMG_", "value": 21.0 }
+            ],
+            "location": "Chiori",
+            "lock": true,
+            "id": 176
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "def_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 5.8 },
+                { "key": "critDMG_", "value": 25.7 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "def", "value": 42.0 }
+            ],
+            "location": "Chiori",
+            "lock": true,
+            "id": 177
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "eleMas", "value": 49.0 },
+                { "key": "critDMG_", "value": 17.9 },
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "def_", "value": 13.1 }
+            ],
+            "location": "Yanfei",
+            "lock": true,
+            "id": 178
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "hp", "value": 627.0 },
+                { "key": "critRate_", "value": 9.3 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "def", "value": 39.0 }
+            ],
+            "location": "Kaeya",
+            "lock": true,
+            "id": 179
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 10.5 },
+                { "key": "atk", "value": 33.0 },
+                { "key": "eleMas", "value": 37.0 },
+                { "key": "hp_", "value": 10.5 }
+            ],
+            "location": "Keqing",
+            "lock": true,
+            "id": 180
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 7.0 },
+                { "key": "enerRech_", "value": 14.9 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "def", "value": 44.0 }
+            ],
+            "location": "Eula",
+            "lock": true,
+            "id": 181
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "cryo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "eleMas", "value": 40.0 },
+                { "key": "critDMG_", "value": 14.8 },
+                { "key": "def", "value": 76.0 }
+            ],
+            "location": "Chongyun",
+            "lock": true,
+            "id": 182
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "heal_",
+            "level": 20,
+            "substats": [
+                { "key": "enerRech_", "value": 16.2 },
+                { "key": "def_", "value": 7.3 },
+                { "key": "def", "value": 21.0 },
+                { "key": "atk_", "value": 15.7 }
+            ],
+            "location": "Charlotte",
+            "lock": true,
+            "id": 183
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 17.1 },
+                { "key": "hp_", "value": 11.1 },
+                { "key": "def", "value": 32.0 },
+                { "key": "atk", "value": 19.0 }
+            ],
+            "location": "Keqing",
+            "lock": true,
+            "id": 184
+        },
+        {
+            "setKey": "MaidenBeloved",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 20,
+            "substats": [
+                { "key": "atk", "value": 18.0 },
+                { "key": "eleMas", "value": 58.0 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "critRate_", "value": 12.4 }
+            ],
+            "location": "Thoma",
+            "lock": true,
+            "id": 185
+        },
+        {
+            "setKey": "MaidenBeloved",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "geo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "hp_", "value": 10.5 },
+                { "key": "enerRech_", "value": 12.3 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "def", "value": 53.0 }
+            ],
+            "location": "Kachina",
+            "lock": true,
+            "id": 186
+        },
+        {
+            "setKey": "MaidenBeloved",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "pyro_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "atk", "value": 37.0 },
+                { "key": "atk_", "value": 14.6 },
+                { "key": "def_", "value": 5.8 }
+            ],
+            "location": "Diluc",
+            "lock": true,
+            "id": 187
+        },
+        {
+            "setKey": "Thundersoother",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "cryo_dmg_",
+            "level": 20,
+            "substats": [
+                { "key": "critRate_", "value": 12.8 },
+                { "key": "def", "value": 16.0 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "eleMas", "value": 61.0 }
+            ],
+            "location": "Rosaria",
+            "lock": true,
+            "id": 188
+        },
+        {
+            "setKey": "BlizzardStrayer",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 20,
+            "substats": [
+                { "key": "def_", "value": 7.3 },
+                { "key": "critDMG_", "value": 33.4 },
+                { "key": "def", "value": 39.0 },
+                { "key": "atk_", "value": 4.7 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 189
+        },
+        {
+            "setKey": "BlizzardStrayer",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 20,
+            "substats": [
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "atk", "value": 29.0 },
+                { "key": "def", "value": 46.0 },
+                { "key": "eleMas", "value": 40.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 190
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 18,
+            "substats": [
+                { "key": "atk", "value": 49.0 },
+                { "key": "enerRech_", "value": 4.5 },
+                { "key": "def", "value": 39.0 },
+                { "key": "hp_", "value": 5.8 }
+            ],
+            "location": "Lynette",
+            "lock": true,
+            "id": 191
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 18,
+            "substats": [
+                { "key": "hp_", "value": 10.5 },
+                { "key": "hp", "value": 478.0 },
+                { "key": "enerRech_", "value": 5.2 },
+                { "key": "def", "value": 37.0 }
+            ],
+            "location": "Sucrose",
+            "lock": true,
+            "id": 192
+        },
+        {
+            "setKey": "ObsidianCodex",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 17,
+            "substats": [
+                { "key": "critRate_", "value": 10.9 },
+                { "key": "enerRech_", "value": 14.2 },
+                { "key": "critDMG_", "value": 7.8 },
+                { "key": "eleMas", "value": 23.0 }
+            ],
+            "location": "Traveler",
+            "lock": true,
+            "id": 193
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 17,
+            "substats": [
+                { "key": "def", "value": 35.0 },
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "atk_", "value": 4.1 },
+                { "key": "hp", "value": 538.0 }
+            ],
+            "location": "Ororon",
+            "lock": true,
+            "id": 194
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 17,
+            "substats": [
+                { "key": "hp", "value": 508.0 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "critRate_", "value": 7.8 },
+                { "key": "def_", "value": 5.8 }
+            ],
+            "location": "Escoffier",
+            "lock": true,
+            "id": 195
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "hp_",
+            "level": 17,
+            "substats": [
+                { "key": "atk", "value": 37.0 },
+                { "key": "critDMG_", "value": 6.2 },
+                { "key": "eleMas", "value": 47.0 },
+                { "key": "critRate_", "value": 6.2 }
+            ],
+            "location": "HuTao",
+            "lock": true,
+            "id": 196
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "atk", "value": 33.0 },
+                { "key": "def_", "value": 11.7 },
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "hp_", "value": 5.3 }
+            ],
+            "location": "Kachina",
+            "lock": false,
+            "id": 197
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 16,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "def_", "value": 19.7 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "atk_", "value": 5.3 }
+            ],
+            "location": "Iansan",
+            "lock": false,
+            "id": 198
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 16,
+            "substats": [
+                { "key": "def_", "value": 5.1 },
+                { "key": "enerRech_", "value": 4.5 },
+                { "key": "critDMG_", "value": 19.4 },
+                { "key": "eleMas", "value": 44.0 }
+            ],
+            "location": "Kachina",
+            "lock": true,
+            "id": 199
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 16,
+            "substats": [
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "eleMas", "value": 40.0 },
+                { "key": "critRate_", "value": 6.2 },
+                { "key": "enerRech_", "value": 10.4 }
+            ],
+            "location": "Iansan",
+            "lock": true,
+            "id": 200
+        },
+        {
+            "setKey": "ScrollOfTheHeroOfCinderCity",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 16,
+            "substats": [
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "hp_", "value": 4.1 },
+                { "key": "critRate_", "value": 7.0 },
+                { "key": "eleMas", "value": 37.0 }
+            ],
+            "location": "Iansan",
+            "lock": true,
+            "id": 201
+        },
+        {
+            "setKey": "NighttimeWhispersInTheEchoingWoods",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 16,
+            "substats": [
+                { "key": "eleMas", "value": 35.0 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "atk", "value": 16.0 },
+                { "key": "def", "value": 53.0 }
+            ],
+            "location": "Ningguang",
+            "lock": true,
+            "id": 202
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "atk", "value": 14.0 },
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "atk_", "value": 9.3 }
+            ],
+            "location": "Fischl",
+            "lock": true,
+            "id": 203
+        },
+        {
+            "setKey": "GoldenTroupe",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 16,
+            "substats": [
+                { "key": "def", "value": 32.0 },
+                { "key": "critDMG_", "value": 14.0 },
+                { "key": "critRate_", "value": 2.7 },
+                { "key": "atk_", "value": 9.9 }
+            ],
+            "location": "Escoffier",
+            "lock": true,
+            "id": 204
+        },
+        {
+            "setKey": "FlowerOfParadiseLost",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "eleMas", "value": 86.0 },
+                { "key": "critRate_", "value": 3.1 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 205
+        },
+        {
+            "setKey": "GildedDreams",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "critDMG_", "value": 5.4 },
+                { "key": "atk_", "value": 4.1 }
+            ],
+            "location": "KukiShinobu",
+            "lock": true,
+            "id": 206
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "pyro_dmg_",
+            "level": 16,
+            "substats": [
+                { "key": "critRate_", "value": 6.6 },
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "def_", "value": 14.6 },
+                { "key": "atk", "value": 33.0 }
+            ],
+            "location": "Amber",
+            "lock": true,
+            "id": 207
+        },
+        {
+            "setKey": "DeepwoodMemories",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "heal_",
+            "level": 16,
+            "substats": [
+                { "key": "def", "value": 21.0 },
+                { "key": "critRate_", "value": 3.9 },
+                { "key": "hp_", "value": 19.8 },
+                { "key": "def_", "value": 5.8 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 208
+        },
+        {
+            "setKey": "HuskOfOpulentDreams",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "eleMas",
+            "level": 16,
+            "substats": [
+                { "key": "def", "value": 19.0 },
+                { "key": "enerRech_", "value": 6.5 },
+                { "key": "hp_", "value": 12.8 },
+                { "key": "critRate_", "value": 10.9 }
+            ],
+            "location": "KukiShinobu",
+            "lock": true,
+            "id": 209
+        },
+        {
+            "setKey": "PaleFlame",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "anemo_dmg_",
+            "level": 16,
+            "substats": [
+                { "key": "hp_", "value": 14.0 },
+                { "key": "eleMas", "value": 19.0 },
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "atk_", "value": 12.8 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 210
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "atk_", "value": 9.3 },
+                { "key": "enerRech_", "value": 10.4 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "critRate_", "value": 6.2 }
+            ],
+            "location": "Dehya",
+            "lock": true,
+            "id": 211
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "def", "value": 37.0 },
+                { "key": "enerRech_", "value": 16.8 },
+                { "key": "def_", "value": 5.8 },
+                { "key": "hp_", "value": 5.8 }
+            ],
+            "location": "Candace",
+            "lock": true,
+            "id": 212
+        },
+        {
+            "setKey": "TenacityOfTheMillelith",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 16,
+            "substats": [
+                { "key": "hp_", "value": 9.3 },
+                { "key": "critDMG_", "value": 21.8 },
+                { "key": "enerRech_", "value": 4.5 },
+                { "key": "atk_", "value": 4.7 }
+            ],
+            "location": "Candace",
+            "lock": true,
+            "id": 213
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "flower",
+            "rarity": 5,
+            "mainStatKey": "hp",
+            "level": 16,
+            "substats": [
+                { "key": "critRate_", "value": 9.7 },
+                { "key": "def_", "value": 5.8 },
+                { "key": "critDMG_", "value": 12.4 },
+                { "key": "eleMas", "value": 16.0 }
+            ],
+            "location": "Rosaria",
+            "lock": true,
+            "id": 214
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 16,
+            "substats": [
+                { "key": "atk_", "value": 9.3 },
+                { "key": "critRate_", "value": 9.3 },
+                { "key": "enerRech_", "value": 4.5 },
+                { "key": "hp_", "value": 4.1 }
+            ],
+            "location": "Rosaria",
+            "lock": true,
+            "id": 215
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "enerRech_",
+            "level": 16,
+            "substats": [
+                { "key": "atk_", "value": 5.8 },
+                { "key": "eleMas", "value": 75.0 },
+                { "key": "hp", "value": 478.0 },
+                { "key": "atk", "value": 16.0 }
+            ],
+            "location": "Rosaria",
+            "lock": true,
+            "id": 216
+        },
+        {
+            "setKey": "NoblesseOblige",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 16,
+            "substats": [
+                { "key": "atk_", "value": 14.0 },
+                { "key": "eleMas", "value": 40.0 },
+                { "key": "def", "value": 37.0 },
+                { "key": "critDMG_", "value": 5.4 }
+            ],
+            "location": "Rosaria",
+            "lock": true,
+            "id": 217
+        },
+        {
+            "setKey": "ThunderingFury",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 16,
+            "substats": [
+                { "key": "eleMas", "value": 44.0 },
+                { "key": "hp_", "value": 5.8 },
+                { "key": "hp", "value": 478.0 },
+                { "key": "atk", "value": 35.0 }
+            ],
+            "location": "Lisa",
+            "lock": false,
+            "id": 218
+        },
+        {
+            "setKey": "ThunderingFury",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 16,
+            "substats": [
+                { "key": "def", "value": 19.0 },
+                { "key": "eleMas", "value": 37.0 },
+                { "key": "hp", "value": 239.0 },
+                { "key": "atk", "value": 47.0 }
+            ],
+            "location": "Lisa",
+            "lock": false,
+            "id": 219
+        },
+        {
+            "setKey": "WanderersTroupe",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 16,
+            "substats": [
+                { "key": "hp", "value": 209.0 },
+                { "key": "critDMG_", "value": 11.7 },
+                { "key": "atk_", "value": 16.9 },
+                { "key": "def_", "value": 14.6 }
+            ],
+            "location": "Yanfei",
+            "lock": true,
+            "id": 220
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "plume",
+            "rarity": 5,
+            "mainStatKey": "atk",
+            "level": 16,
+            "substats": [
+                { "key": "enerRech_", "value": 11.0 },
+                { "key": "hp_", "value": 11.7 },
+                { "key": "atk_", "value": 9.3 },
+                { "key": "critDMG_", "value": 5.4 }
+            ],
+            "location": "Jean",
+            "lock": true,
+            "id": 221
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "sands",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 16,
+            "substats": [
+                { "key": "critRate_", "value": 10.1 },
+                { "key": "hp_", "value": 4.1 },
+                { "key": "def", "value": 16.0 },
+                { "key": "enerRech_", "value": 11.0 }
+            ],
+            "location": "Jean",
+            "lock": true,
+            "id": 222
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "goblet",
+            "rarity": 5,
+            "mainStatKey": "atk_",
+            "level": 16,
+            "substats": [
+                { "key": "critRate_", "value": 3.1 },
+                { "key": "enerRech_", "value": 9.7 },
+                { "key": "hp", "value": 747.0 },
+                { "key": "def_", "value": 7.3 }
+            ],
+            "location": "Jean",
+            "lock": true,
+            "id": 223
+        },
+        {
+            "setKey": "ViridescentVenerer",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critDMG_",
+            "level": 16,
+            "substats": [
+                { "key": "atk_", "value": 4.7 },
+                { "key": "atk", "value": 31.0 },
+                { "key": "critRate_", "value": 10.5 },
+                { "key": "hp", "value": 239.0 }
+            ],
+            "location": "",
+            "lock": true,
+            "id": 224
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "slotKey": "circlet",
+            "rarity": 5,
+            "mainStatKey": "critRate_",
+            "level": 16,
+            "substats": [
+                { "key": "critDMG_", "value": 7.0 },
+                { "key": "enerRech_", "value": 15.5 },
+                { "key": "hp", "value": 448.0 },
+                { "key": "atk", "value": 19.0 }
+            ],
+            "location": "Razor",
+            "lock": true,
+            "id": 225
+        }
+    ],
+    "characters": [
+        {
+            "key": "Nilou",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 2, "skill": 7, "burst": 8 }
+        },
+        {
+            "key": "Nahida",
+            "level": 88,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 6, "skill": 8, "burst": 8 }
+        },
+        {
+            "key": "Collei",
+            "level": 80,
+            "constellation": 6,
+            "ascension": 5,
+            "talent": { "auto": 4, "skill": 8, "burst": 8 }
+        },
+        {
+            "key": "Barbara",
+            "level": 90,
+            "constellation": 6,
+            "ascension": 6,
+            "talent": { "auto": 3, "skill": 6, "burst": 6 }
+        },
+        {
+            "key": "Chiori",
+            "level": 90,
+            "constellation": 1,
+            "ascension": 6,
+            "talent": { "auto": 4, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "Navia",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 10, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "Chasca",
+            "level": 90,
+            "constellation": 1,
+            "ascension": 6,
+            "talent": { "auto": 4, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "KaedeharaKazuha",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 7, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "Eula",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 10, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "YaeMiko",
+            "level": 90,
+            "constellation": 1,
+            "ascension": 6,
+            "talent": { "auto": 8, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "Keqing",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 10, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "Furina",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 4, "skill": 10, "burst": 10 }
+        },
+        {
+            "key": "HuTao",
+            "level": 90,
+            "constellation": 0,
+            "ascension": 6,
+            "talent": { "auto": 10, "skill": 10, "burst": 9 }
+        }
+    ],
+    "materials": {
+        "Mora": 151259,
+        "HerosWit": 14,
+        "BlackCrystalHorn": 9,
+        "BlackBronzeHorn": 21,
+        "HeavyHorn": 145,
+        "LeyLineSprout": 23,
+        "DeadLeyLineLeaves": 14,
+        "DeadLeyLineBranch": 187,
+        "ChaosCore": 1,
+        "ChaosCircuit": 111,
+        "ChaosDevice": 142,
+        "MistGrassWick": 24,
+        "MistGrass": 116,
+        "MistGrassPollen": 130,
+        "InspectorsSacrificialKnife": 10,
+        "AgentsSacrificialKnife": 59,
+        "HuntersSacrificialKnife": 29,
+        "FossilizedBoneShard": 1,
+        "SturdyBoneShard": 113,
+        "FragileBoneShard": 245,
+        "ChaosAxis": 1,
+        "ChaosGear": 139,
+        "PolarizingPrism": 7,
+        "CrystalPrism": 1174,
+        "DismalPrism": 153,
+        "ConcealedTalon": 8,
+        "ConcealedUnguis": 59,
+        "ConcealedClaw": 49,
+        "DeathlyStatuette": 10,
+        "DarkStatuette": 58,
+        "GloomyStatuette": 201,
+        "RobustFungalNucleus": 1,
+        "DormantFungalNucleus": 95,
+        "InactivatedFungalNucleus": 130,
+        "ChaosBolt": 29,
+        "ChaosModule": 24,
+        "ChaosStorage": 86,
+        "RadiantPrism": 1,
+        "TurbidPrism": 7,
+        "DamagedPrism": 185,
+        "MarkedShell": 8,
+        "SturdyShell": 29,
+        "DesiccatedShell": 105,
+        "WanderersBloomingFlower": 9,
+        "TreasuredFlower": 52,
+        "AFlowerYetToBloom": 193,
+        "NewbornTaintedHydroPhantasm": 9,
+        "ScoopOfTaintedWater": 34,
+        "DropOfTaintedWater": 541,
+        "AlienLifeCore": 1,
+        "ForeignSynapse": 3,
+        "RiftCore": 139,
+        "OperativesConstancy": 37,
+        "OperativesStandardPocketWatch": 66,
+        "OldOperativesPocketWatch": 86,
+        "ChasmlightFin": 20,
+        "LunarFin": 67,
+        "FeatheryFin": 235,
+        "StillSmolderingHilt": 9,
+        "SplinteredHilt": 23,
+        "RuinedHilt": 86,
+        "SigilOfAStridingWill": 24,
+        "LocusOfAClearWill": 87,
+        "ShardOfAShatteredWill": 323,
+        "IgnitedSeeingEye": 5,
+        "IgnitedSeedOfLife": 31,
+        "IgnitedStone": 127,
+        "HeartOfTheSecretSource": 11,
+        "SheathOfTheSecretSource": 38,
+        "AxisOfTheSecretSource": 142,
+        "RefractiveBud": 37,
+        "BlazingPrismshell": 1,
+        "WarmBackShell": 2,
+        "ColdCrackedShellshard": 10,
+        "SlimeConcentrate": 11,
+        "SlimeSecretions": 103,
+        "SlimeCondensate": 466,
+        "OminousMask": 3,
+        "StainedMask": 104,
+        "DamagedMask": 689,
+        "ForbiddenCurseScroll": 2,
+        "SealedScroll": 16,
+        "DiviningScroll": 93,
+        "WeatheredArrowhead": 21,
+        "SharpArrowhead": 47,
+        "FirmArrowhead": 210,
+        "LieutenantsInsignia": 76,
+        "SergeantsInsignia": 223,
+        "RecruitsInsignia": 993,
+        "GoldenRavenInsignia": 21,
+        "SilverRavenInsignia": 152,
+        "TreasureHoarderInsignia": 499,
+        "EnergyNectar": 151,
+        "ShimmeringNectar": 14,
+        "WhopperflowerNectar": 113,
+        "FamedHandguard": 1,
+        "KageuchiHandguard": 5,
+        "OldHandguard": 21,
+        "SpectralNucleus": 21,
+        "SpectralHeart": 11,
+        "SpectralHusk": 41,
+        "CrystallineCystDust": 19,
+        "LuminescentPollen": 9,
+        "FungalSpores": 276,
+        "RichRedBrocade": 5,
+        "TrimmedRedSilk": 1,
+        "FadedRedSatin": 179,
+        "XenochromaticCrystal": 5,
+        "TransoceanicChunk": 20,
+        "TransoceanicPearl": 89,
+        "ArtificedDynamicGear": 70,
+        "MechanicalSpurGear": 185,
+        "MeshingGear": 610,
+        "TyrantsFang": 24,
+        "SeasonedFang": 19,
+        "JuvenileFang": 169,
+        "SaurianCrownedWarriorsGoldenWhistle": 18,
+        "WarriorsMetalWhistle": 159,
+        "SentrysWoodenWhistle": 437,
+        "DvalinsPlume": 8,
+        "DvalinsClaw": 2,
+        "DvalinsSigh": 7,
+        "TailOfBoreas": 1,
+        "RingOfBoreas": 5,
+        "SpiritLocketOfBoreas": 17,
+        "TuskOfMonocerosCaeli": 21,
+        "ShardOfAFoulLegacy": 3,
+        "ShadowOfTheWarrior": 15,
+        "DragonLordsCrown": 4,
+        "BloodjadeBranch": 9,
+        "MoltenMoment": 1,
+        "HellfireButterfly": 5,
+        "AshenHeart": 4,
+        "MudraOfTheMaleficGeneral": 4,
+        "TearsOfTheCalamitousGod": 4,
+        "TheMeaningOfAeons": 1,
+        "PuppetStrings": 2,
+        "MirrorOfMushin": 7,
+        "DakasBell": 7,
+        "WorldspanFern": 11,
+        "PrimordialGreenbloom": 5,
+        "Everamber": 4,
+        "LightlessSilkString": 2,
+        "LightlessEyeOfTheMaelstrom": 17,
+        "LightlessMass": 14,
+        "FadingCandle": 5,
+        "SilkenFeather": 1,
+        "DenialAndJudgment": 1,
+        "TheCornerstoneOfStarsAndFlames": 4,
+        "ErodedHorn": 3,
+        "ErodedScaleFeather": 1,
+        "HurricaneSeed": 2,
+        "LightningPrism": 4,
+        "BasaltPillar": 3,
+        "HoarfrostCore": 2,
+        "EverflameSeed": 5,
+        "JuvenileJade": 1,
+        "CrystallineBloom": 2,
+        "PerpetualHeart": 3,
+        "SmolderingPearl": 1,
+        "DewOfRepudiation": 3,
+        "DragonheirsFalseFin": 1,
+        "RunicFang": 2,
+        "MajesticHookedBeak": 4,
+        "PerpetualCaliber": 1,
+        "QuelledCreeper": 1,
+        "ArtificedSpareClockworkComponentCoppelia": 4,
+        "ArtificedSpareClockworkComponentCoppelius": 1,
+        "TourbillonDevice": 4,
+        "FontemerUnihorn": 4,
+        "CloudseamScale": 3,
+        "MarkOfTheBindingBlessing": 1,
+        "OverripeFlamegranate": 1,
+        "GoldInscribedSecretSourceCore": 8,
+        "EnsnaringGaze": 2,
+        "TalismanOfTheEnigmaticLand": 3,
+        "SecretSourceAirflowAccumulator": 7,
+        "AgnidusAgateGemstone": 1,
+        "AgnidusAgateChunk": 1,
+        "AgnidusAgateFragment": 59,
+        "AgnidusAgateSliver": 131,
+        "VarunadaLazuriteChunk": 1,
+        "VarunadaLazuriteFragment": 46,
+        "VarunadaLazuriteSliver": 328,
+        "NagadusEmeraldSliver": 58,
+        "VajradaAmethystChunk": 7,
+        "VajradaAmethystFragment": 14,
+        "VajradaAmethystSliver": 124,
+        "VayudaTurquoiseGemstone": 2,
+        "VayudaTurquoiseChunk": 3,
+        "VayudaTurquoiseFragment": 4,
+        "VayudaTurquoiseSliver": 8,
+        "ShivadaJadeChunk": 6,
+        "ShivadaJadeFragment": 27,
+        "ShivadaJadeSliver": 351,
+        "PrithivaTopazChunk": 9,
+        "PrithivaTopazFragment": 28,
+        "PrithivaTopazSliver": 79,
+        "PhilosophiesOfFreedom": 11,
+        "GuideToFreedom": 4,
+        "TeachingsOfFreedom": 4,
+        "PhilosophiesOfResistance": 1,
+        "GuideToResistance": 2,
+        "TeachingsOfResistance": 9,
+        "PhilosophiesOfBallad": 22,
+        "GuideToBallad": 3,
+        "TeachingsOfBallad": 2,
+        "PhilosophiesOfProsperity": 1,
+        "TeachingsOfProsperity": 12,
+        "PhilosophiesOfDiligence": 4,
+        "GuideToDiligence": 2,
+        "TeachingsOfDiligence": 2,
+        "PhilosophiesOfGold": 4,
+        "GuideToGold": 25,
+        "TeachingsOfGold": 12,
+        "PhilosophiesOfTransience": 10,
+        "GuideToTransience": 2,
+        "TeachingsOfTransience": 19,
+        "PhilosophiesOfElegance": 10,
+        "GuideToElegance": 7,
+        "TeachingsOfElegance": 24,
+        "GuideToLight": 1,
+        "TeachingsOfLight": 8,
+        "PhilosophiesOfAdmonition": 2,
+        "PhilosophiesOfIngenuity": 33,
+        "GuideToIngenuity": 31,
+        "TeachingsOfIngenuity": 18,
+        "PhilosophiesOfPraxis": 3,
+        "GuideToPraxis": 1,
+        "TeachingsOfPraxis": 21,
+        "PhilosophiesOfEquity": 2,
+        "GuideToEquity": 10,
+        "TeachingsOfEquity": 28,
+        "PhilosophiesOfJustice": 6,
+        "GuideToJustice": 21,
+        "TeachingsOfJustice": 4,
+        "PhilosophiesOfOrder": 28,
+        "GuideToOrder": 28,
+        "TeachingsOfOrder": 21,
+        "PhilosophiesOfContention": 2,
+        "GuideToContention": 38,
+        "TeachingsOfContention": 104,
+        "PhilosophiesOfKindling": 14,
+        "GuideToKindling": 19,
+        "TeachingsOfKindling": 17,
+        "PhilosophiesOfConflict": 1,
+        "GuideToConflict": 42,
+        "TeachingsOfConflict": 27,
+        "CrownOfInsight": 9,
+        "DebrisOfDecarabiansCity": 0,
+        "TileOfDecarabiansTower": 2,
+        "BorealWolfsCrackedTooth": 0,
+        "BorealWolfsMilkTooth": 1,
+        "ShacklesOfTheDandelionGladiator": 1,
+        "FettersOfTheDandelionGladiator": 1,
+        "RelicFromGuyun": 1,
+        "LustrousStoneFromGuyun": 0,
+        "LuminousSandsFromGuyun": 18,
+        "MistVeiledGoldElixir": 6,
+        "MistVeiledMercuryElixir": 9,
+        "MistVeiledLeadElixir": 9,
+        "BitOfAerosiderite": 1,
+        "PieceOfAerosiderite": 17,
+        "GrainOfAerosiderite": 18,
+        "JeweledBranchOfADistantSea": 1,
+        "CoralBranchOfADistantSea": 28,
+        "NarukamisJoy": 2,
+        "NarukamisWisdom": 43,
+        "MaskOfTheTigersBite": 0,
+        "MaskOfTheWickedLieutenant": 0,
+        "GoldenTalismanOfTheForestDew": 1,
+        "SilverTalismanOfTheForestDew": 11,
+        "IronTalismanOfTheForestDew": 7,
+        "CopperTalismanOfTheForestDew": 17,
+        "OasisGardensMourning": 5,
+        "OasisGardensKindness": 22,
+        "OasisGardensReminiscence": 29,
+        "DreamOfScorchingMight": 6,
+        "RemnantGlowOfScorchingMight": 32,
+        "EchoOfScorchingMight": 41,
+        "MovementOfAnAncientChord": 1,
+        "NightWindsMysticConsideration": 9,
+        "NightWindsMysticPremonition": 17,
+        "DeliriousDecadenceOfTheSacredLord": 3,
+        "DeliriousDesolationOfTheSacredLord": 26,
+        "DeliriousDemeanorOfTheSacredLord": 7,
+        "BlazingSacrificialHeartsTerror": 14,
+        "BlazingSacrificialHeartsHesitance": 48,
+        "BlazingSacrificialHeartsResolve": 6,
+        "BrokenGobletOfThePristineSea": 23,
+        "WineGobletOfThePristineSea": 73,
+        "SilverGobletOfThePristineSea": 4,
+        "DrossOfPureSacredDewdrop": 24,
+        "SublimationOfPureSacredDewdrop": 77,
+        "SpringOfPureSacredDewdrop": 7,
+        "FragmentOfAnAncientChord": 23,
+        "ChapterOfAnAncientChord": 10,
+        "NorthlanderSwordBillet": 1,
+        "NorthlanderBowBillet": 2,
+        "NorthlanderCatalystBillet": 7,
+        "NorthlanderPolearmBillet": 1,
+        "MidlanderSwordBillet": 1,
+        "MidlanderClaymoreBillet": 3,
+        "MidlanderCatalystBillet": 4,
+        "MidlanderPolearmBillet": 2,
+        "BorderlandSwordBillet": 1,
+        "BorderlandClaymoreBillet": 2,
+        "BorderlandPolearmBillet": 1,
+        "IronChunk": 1364,
+        "WhiteIronChunk": 734,
+        "CrystalChunk": 135,
+        "MagicalCrystalChunk": 264,
+        "Starsilver": 58,
+        "AmethystLump": 3,
+        "CondessenceCrystal": 175,
+        "Wolfhook": 17,
+        "Valberry": 31,
+        "Cecilia": 43,
+        "WindwheelAster": 69,
+        "PhilanemoMushroom": 1,
+        "SmallLampGrass": 43,
+        "CallaLily": 130,
+        "DandelionSeed": 29,
+        "JueyunChili": 11,
+        "NoctilucousJade": 201,
+        "SilkFlower": 102,
+        "GlazeLily": 100,
+        "Qingxin": 211,
+        "Starconch": 229,
+        "Violetgrass": 80,
+        "CorLapis": 6,
+        "ClearwaterJade": 1,
+        "Onikabuto": 41,
+        "SakuraBloom": 73,
+        "CrystalMarrow": 19,
+        "Dendrobium": 6,
+        "NakuWeed": 3,
+        "SeaGanoderma": 139,
+        "SangoPearl": 54,
+        "AmakumoFruit": 218,
+        "FluorescentFungus": 46,
+        "RukkhashavaMushrooms": 91,
+        "Padisarah": 8,
+        "NilotpalaLotus": 3,
+        "KalpalataLotus": 12,
+        "HennaBerry": 8,
+        "SandGreasePupa": 25,
+        "MourningFlower": 44,
+        "Trishiraite": 64,
+        "Scarab": 11,
+        "BerylConch": 54,
+        "RomaritimeFlower": 81,
+        "LumidouceBell": 262,
+        "RainbowRose": 65,
+        "Lumitoile": 94,
+        "LakelightLily": 85,
+        "SubdetectionUnit": 57,
+        "SpringOfTheFirstDewdrop": 25,
+        "SprayfeatherGill": 37,
+        "BrilliantChrysanthemum": 73,
+        "QuenepaBerry": 17,
+        "SaurianClawSucculent": 7,
+        "GlowingHornshroom": 39,
+        "WitheringPurpurbloom": 5,
+        "SkysplitGembloom": 19,
+        "Dracolite": 153,
+        "Horsetail": 25,
+        "MistFlowerCorolla": 76,
+        "FlamingFlowerStamen": 291,
+        "ElectroCrystal": 113,
+        "ButterflyWings": 89,
+        "Frog": 62,
+        "LuminescentSpine": 93,
+        "LizardTail": 148,
+        "CrystalCore": 29,
+        "LoachPearl": 11,
+        "Viparyas": 28,
+        "PluieLotus": 144,
+        "Cacahuatl": 7,
+        "EmbercoreFlower": 4,
+        "Mushroom": 804,
+        "SweetFlower": 743,
+        "Carrot": 285,
+        "Radish": 556,
+        "Snapdragon": 83,
+        "Mint": 844,
+        "Wheat": 27,
+        "Cabbage": 527,
+        "Pinecone": 370,
+        "LotusHead": 340,
+        "Berry": 1386,
+        "RawMeat": 185,
+        "BirdEgg": 6,
+        "Matsutake": 1,
+        "Fowl": 179,
+        "Crab": 1,
+        "Onion": 30,
+        "Pepper": 90,
+        "Milk": 77,
+        "Tomato": 26,
+        "Potato": 102,
+        "Fish": 2,
+        "Tofu": 111,
+        "Almond": 2,
+        "BambooShoot": 3,
+        "ShrimpMeat": 6,
+        "ChilledMeat": 10,
+        "EelMeat": 20,
+        "GlabrousBeans": 21,
+        "MysteriousMeat": 59,
+        "CoffeeBeans": 28,
+        "FermentedJuice": 6,
+        "Seagrass": 1174,
+        "LavenderMelon": 2,
+        "HarraFruit": 48,
+        "ZaytunPeach": 307,
+        "SumeruRose": 278,
+        "AjilenakhNut": 21,
+        "Marcotte": 520,
+        "Tidalga": 220,
+        "ChenyuAdeptea": 57,
+        "Grainfruit": 146,
+        "SpinelFruit": 10,
+        "RedBerryshroom": 6,
+        "CrabRoe": 4,
+        "Cream": 1,
+        "SmokedFowl": 32,
+        "Ham": 20,
+        "Sugar": 45,
+        "Cheese": 6,
+        "Bacon": 1,
+        "Sausage": 2,
+        "Spice": 154,
+        "BirchWood": 354,
+        "CuihuaWood": 114,
+        "PineWood": 101,
+        "SandbearerWood": 1,
+        "BambooSegment": 1,
+        "FragrantCedarWood": 510,
+        "FirWood": 752,
+        "YumemiruWood": 20,
+        "MapleWood": 36,
+        "AraliaWood": 78,
+        "OtogiWood": 246,
+        "Brightwood": 78,
+        "KarmaphalaWood": 21,
+        "AdhigamaWood": 130,
+        "MountainDateWood": 13,
+        "AthelWood": 39,
+        "MallowWood": 68,
+        "LindenWood": 7,
+        "AshWood": 36,
+        "CypressWood": 1086,
+        "TorchWood": 9,
+        "WhiteChestnutOakWood": 4,
+        "FlammabombWood": 35,
+        "Fabric": 37,
+        "RedDye": 11,
+        "YellowDye": 37,
+        "BlueDye": 61,
+        "FruitPasteBait": 404,
+        "RedrotBait": 101,
+        "FalseWormBait": 176,
+        "FakeFlyBait": 22,
+        "SugardewBait": 131,
+        "SourBait": 191,
+        "FlashingMaintenanceMekBait": 61,
+        "SpinelgrainBait": 44,
+        "EmberglowBait": 50,
+        "Medaka": 6,
+        "GlazeMedaka": 12,
+        "SweetFlowerMedaka": 17,
+        "AizenMedaka": 22,
+        "Dawncatcher": 4,
+        "Crystalfish": 1,
+        "LungedStickleback": 4,
+        "Betta": 11,
+        "VenomspineFish": 2,
+        "AkaiMaou": 3,
+        "GoldenKoi": 1,
+        "RustyKoi": 9,
+        "BrownShirakodai": 3,
+        "PurpleShirakodai": 7,
+        "TeaColoredShirakodai": 5,
+        "RaimeiAngelfish": 1,
+        "Pufferfish": 10,
+        "DivdaRay": 3,
+        "FormaloRay": 5,
+        "TrueFruitAngler": 4,
+        "PseudosharkUnihornfish": 1,
+        "DuskSunfish": 4,
+        "MaintenanceMekGoldLeader": 1,
+        "MaintenanceMekPlatinumCollection": 1,
+        "MaintenanceMekSituationController": 10,
+        "MaintenanceMekWaterBodyCleaner": 4,
+        "MaintenanceMekInitialConfiguration": 17,
+        "RipplingHeartfeatherBass": 3,
+        "StreamingAxeMarlin": 6,
+        "HalcyonJadeAxeMarlin": 7,
+        "LazuriteAxeMarlin": 6,
+        "SunsetCloudAngler": 4,
+        "SandstormAngler": 2
+    }
+}

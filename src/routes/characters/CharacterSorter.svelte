@@ -26,8 +26,9 @@
 		alternate_cast_elements: [{ name: '' }],
 		special_guest_stars: []
 	});
-	let selectedElement = $state('All Elements');
+	let selectedElements: string[] = $state([]);
 	let selectedOrder = $state('Element');
+	let selectedReady = $state(false);
 
 	let seasonFilters: any[] = $state([]);
 	const elements = ['Pyro', 'Hydro', 'Electro', 'Dendro', 'Cryo', 'Geo', 'Anemo'];
@@ -50,14 +51,14 @@
 		);
 	}
 
-	function filterCharactersByElement(element: string) {
-		if (element === 'All Elements') {
+	function filterCharactersByElements(elements: string[]) {
+		if (elements.length == 0) {
 			return filteredGoodFileCharacters;
 		}
 
 		// Build a filter set of unique character names with the specified element
 		const characterNamesWithElement = new Set(
-			charactersData.filter((char) => char.element === element).map((char) => char.name)
+			charactersData.filter((char) => elements.includes(char.element)).map((char) => char.name)
 		);
 
 		return filteredGoodFileCharacters.filter((character) =>
@@ -87,10 +88,21 @@
 		}
 	}
 
+	function toggleElement(element: string) {
+		if (selectedElements.includes(element)) {
+			selectedElements = selectedElements.filter((el) => el !== element);
+		} else {
+			selectedElements.push(element);
+		}
+		if (element == 'All Elements') selectedElements = [];
+
+		updateFilters();
+	}
+
 	function updateFilters() {
 		filteredGoodFileCharacters = goodFileData.characters;
 		filteredGoodFileCharacters = filterCharactersBySeason(selectedSeason.number);
-		filteredGoodFileCharacters = filterCharactersByElement(selectedElement);
+		filteredGoodFileCharacters = filterCharactersByElements(selectedElements);
 		switch (selectedOrder) {
 			case 'Level':
 				filteredGoodFileCharacters.sort((a, b) => (a.level > b.level ? -1 : 1));
@@ -153,7 +165,7 @@
 <div class="flex gap-12">
 	<div class="flex gap-4">
 		<label for="filter" class="flex items-center">Filter by</label>
-		<form name="filter" class="flex max-w-sm items-center justify-center gap-4">
+		<form name="filter" class="flex items-center justify-center gap-4">
 			<div class="flex">
 				<button
 					popovertarget="dropdown-seasons"
@@ -214,15 +226,23 @@
 				<button
 					id="states-button"
 					popovertarget="dropdown-elements"
-					class="inline-flex w-36 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+					class="inline-flex w-48 items-center justify-between rounded-md border border-gray-300 bg-gray-100 p-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
 					type="button"
 				>
-					{selectedElement}
+					<div class="flex gap-1">
+						{#if selectedElements.length !== 0}
+							{#each selectedElements as element}
+								<img src="{assets}/images/elements/{element.toLowerCase()}.png" alt={element} class="h-5" />
+							{/each}
+						{:else}
+							All Elements
+						{/if}
+					</div>
 					{@render arrowDown()}
 				</button>
 				<div
 					id="dropdown-elements"
-					class="inset-auto z-10 w-36 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
+					class="inset-auto z-10 w-48 divide-y divide-gray-100 rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-700"
 					popover
 				>
 					<ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
@@ -230,10 +250,11 @@
 							<li>
 								<button
 									type="button"
-									class="inline-flex w-full rounded-md p-2 text-sm text-gray-700 hover:bg-white dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									class="inline-flex w-full rounded-md p-2 text-sm {selectedElements.includes(element)
+										? 'bg-white dark:bg-gray-600 dark:text-white'
+										: 'text-gray-700 dark:text-gray-400'} hover:bg-white dark:hover:bg-gray-600 dark:hover:text-white"
 									onclick={() => {
-										selectedElement = element;
-										updateFilters();
+										toggleElement(element);
 									}}
 									popovertarget="dropdown-elements"
 								>
@@ -290,11 +311,34 @@
 			</div>
 		</form>
 	</div>
+
+	<label class="flex cursor-pointer items-center py-2 hover:text-gray-300">
+		<input type="checkbox" class="sr-only" bind:checked={selectedReady} />
+		<div
+			class="block h-5 w-9 rounded-full {selectedReady
+				? 'bg-green-400 hover:bg-green-300'
+				: 'bg-gray-600 hover:bg-slate-500'} "
+		>
+			<div
+				class="relative left-0.5 top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-white transition dark:bg-gray-900"
+				class:translate-x-full={selectedReady}
+			>
+				<div class:text-gray-800={!selectedReady}>
+					<!-- <img src="{assets}/icons/checkmark-in-circle-clip-white-check-mark-symbol.jpeg" alt="" class rounded-full" /> -->
+				</div>
+			</div>
+		</div>
+		<span class="text-nowrap px-2">Ready</span>
+	</label>
 </div>
-<ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">
-	{#each filteredGoodFileCharacters as character}
-		<li>
-			{@render characterCell(character.key, getElement(character.key), character.level)}
-		</li>
-	{/each}
-</ul>
+{#await filteredGoodFileCharacters}
+	<p>Loading Character</p>
+{:then filteredGoodFileCharacters}
+	<ul class="max-w-(40vw) mt-2 flex flex-wrap justify-center overflow-scroll">
+		{#each filteredGoodFileCharacters as character}
+			<li>
+				{@render characterCell(character.key, getElement(character.key), character.level, selectedReady)}
+			</li>
+		{/each}
+	</ul>
+{/await}

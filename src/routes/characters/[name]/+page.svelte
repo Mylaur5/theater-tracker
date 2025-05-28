@@ -3,7 +3,13 @@
 
 	import { onMount } from 'svelte';
 	import { base, assets } from '$app/paths';
-	import { selectedGoodFile, normalToSnakeCase, pascalToNormalCase, normalToPascalCase, readGoodFile } from '../../shared.js';
+	import {
+		selectedGoodFile,
+		normalToSnakeCase,
+		pascalToNormalCase,
+		normalToPascalCase,
+		readGoodFile
+	} from '../../shared.js';
 	let { data } = $props();
 	let characterName = $derived(data.name);
 	let element = $state('');
@@ -42,8 +48,8 @@
 		}
 
 		if ($selectedGoodFile === '') return;
-		const goodFileData = readGoodFile(selectedGoodFile);
-		characterData = goodFileData.characters.find((char) => char.id === characterName);
+		const goodFileData = readGoodFile($selectedGoodFile);
+		characterData = goodFileData.characters.find((char) => char.key === characterName);
 	});
 </script>
 
@@ -72,16 +78,20 @@
 		/>
 	</div>
 	<div class="flex h-full flex-col justify-evenly">
-		{#if $selectedGoodFile !== ''}
-			<h2 class="text-xl font-bold text-green-500">Level {characterData.level}</h2>
-			<div class="text-sm">
-				<p>Constellation: {characterData.constellation}</p>
-				<p>Ascension: {characterData.ascension}</p>
-				<p>Talent:</p>
-				<p class="pl-8">Auto {characterData.talent.auto}</p>
-				<p class="pl-8">Skill {characterData.talent.skill}</p>
-				<p class="pl-8">Burst {characterData.talent.burst}</p>
-			</div>
-		{/if}
+		{#await characterData}
+			<h2 class="text-xl font-bold">Loading Character Data...</h2>
+		{:then characterData}
+			{#if $selectedGoodFile !== ''}
+				<h2 class="text-xl font-bold text-green-500">Level {characterData.level}</h2>
+				<div class="text-sm">
+					<p>Constellation: {characterData.constellation}</p>
+					<p>Ascension: {characterData.ascension}</p>
+					<p>Talent:</p>
+					<p class="pl-8">Auto {characterData.talent.auto}</p>
+					<p class="pl-8">Skill {characterData.talent.skill}</p>
+					<p class="pl-8">Burst {characterData.talent.burst}</p>
+				</div>
+			{/if}
+		{/await}
 	</div>
 </div>

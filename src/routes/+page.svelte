@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { normalToSnakeCase, normalToPascalCase } from './shared.js';
+	import { normalToSnakeCase, normalToPascalCase, pascalToNormalCase, pascalToSnakeCase } from './shared.js';
 	import { onMount } from 'svelte';
 	import { assets, base } from '$app/paths';
-	import { get } from 'svelte/store';
+	import { characterCell } from './characters/+page.svelte';
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
+	let character: string = $state('');
 
 	function capitalize(str: string) {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -123,29 +124,6 @@
 	</nav>
 </div>
 
-{#snippet characterCell(character: any)}
-	<!-- svelte-ignore a11y_click_events_have_key_events -->
-	<!-- svelte-ignore a11y_no_static_element_interactions -->
-	<a
-		class="m-2 flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105"
-		href="{base}/characters/{normalToPascalCase(character.name)}"
-	>
-		<img
-			src="{assets}/images/elements/{normalToSnakeCase(character.element)}.png"
-			class="relative left-12 top-4 max-w-6 object-cover transition-transform hover:scale-105"
-			alt={character.element}
-			title={character.element}
-		/>
-		<img
-			src="{assets}/images/characters/{normalToSnakeCase(character.name)}.png"
-			class="break-before-all text-wrap object-cover"
-			alt={character.name}
-			title={character.name}
-		/>
-		<p class="break-before-auto text-center">{character.name}</p>
-	</a>
-{/snippet}
-
 {#await seasonsData}
 	<p class="text-center text-2xl font-bold">Loading...</p>
 {:then}
@@ -179,7 +157,7 @@
 				<h3 class="mt-4 text-center text-xl font-bold">Opening Characters:</h3>
 				<div class="mt-1 flex items-start justify-center space-x-4">
 					{#each season.opening_characters as character}
-						{@render characterCell(character)}
+						{@render characterCell(normalToPascalCase(character.name), character.element)}
 					{/each}
 				</div>
 			{/if}
@@ -188,7 +166,7 @@
 				<h3 class="mt-4 text-center text-xl font-bold">Special Guest Stars:</h3>
 				<div class="mt-t flex items-start justify-center space-x-4">
 					{#each season.special_guest_stars as character}
-						{@render characterCell(character)}
+						{@render characterCell(normalToPascalCase(character.name), character.element)}
 					{/each}
 				</div>
 			{/if}

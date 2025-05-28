@@ -17,14 +17,21 @@ export function readStorage() {
 
 export function readGoodFile(fileName) {
 	if (!fileName) {
-		console.error('No file name provided');
+		console.error('No file name provided:', fileName);
 		return;
 	}
-	const goodFile = JSON.parse(localStorage.getItem(fileName) ?? '');
-	if (goodFile) {
-		return goodFile.content;
+	if (typeof fileName !== 'string') {
+		console.error('File name is not a string:', fileName);
+		return null;
 	}
-	console.error(`File ${fileName} not found in localStorage`);
+	
+	try {
+		const goodFile = JSON.parse(localStorage.getItem(fileName));
+		return goodFile.content;
+	} catch (error) {
+		console.error(`Error reading or parsing file ${JSON.stringify(fileName)} from localStorage:`, error);
+		return null;
+	}
 }
 
 export function pascalToNormalCase(pascalStr) {
