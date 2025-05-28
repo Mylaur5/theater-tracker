@@ -3,9 +3,9 @@ import * as cheerio from 'cheerio';
 import fs from 'fs';
 
 const URL_OFFICIAL = 'https://genshin-impact.fandom.com/wiki/Imaginarium_Theater/Seasons#Schedule';
-const ELEMENTS_URL = '/images/elements/';
-const CHARACTERS_URL = '/images/characters/';
-const SEASONS_DATA_FILE = '../static/data/seasons_data.json';
+const ELEMENTS_URL = './static/images/elements/';
+const CHARACTERS_URL = './static/images/characters/';
+const SEASONS_DATA_FILE = './static/data/seasons_data.json';
 
 async function extractSeasonDates(tr, season) {
 	const tdDate = tr.find('td').first();
