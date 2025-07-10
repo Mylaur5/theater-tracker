@@ -1,64 +1,152 @@
 [
     {
+        "name": "Season 13",
+        "number": 13,
+        "date_start": "July 1, 2025",
+        "date_end": "July 31, 2025",
+        "version_start": "5.7",
+        "version_end": "5.7",
+        "opening_characters": [
+            {
+                "name": "Lyney",
+                "element": "Pyro",
+                "image_local": "./static/images/characters/lyney.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png/revision/latest/scale-to-width-down/74?cb=20230816045203"
+            },
+            {
+                "name": "Xiangling",
+                "element": "Pyro",
+                "image_local": "./static/images/characters/xiangling.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011301"
+            },
+            {
+                "name": "Tartaglia",
+                "element": "Hydro",
+                "image_local": "./static/images/characters/tartaglia.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Tartaglia_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213163935"
+            },
+            {
+                "name": "Dahlia",
+                "element": "Hydro",
+                "image_local": "./static/images/characters/dahlia.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6d/Dahlia_Icon.png/revision/latest/scale-to-width-down/74?cb=20250618025425"
+            },
+            {
+                "name": "Wriothesley",
+                "element": "Cryo",
+                "image_local": "./static/images/characters/wriothesley.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest/scale-to-width-down/74?cb=20231017103145"
+            },
+            {
+                "name": "Rosaria",
+                "element": "Cryo",
+                "image_local": "./static/images/characters/rosaria.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Rosaria_Icon.png/revision/latest/scale-to-width-down/74?cb=20220601032845"
+            }
+        ],
+        "alternate_cast_elements": [
+            {
+                "name": "Pyro",
+                "image_local": "./static/images/elements/pyro.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
+            },
+            {
+                "name": "Hydro",
+                "image_local": "./static/images/elements/hydro.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
+            },
+            {
+                "name": "Cryo",
+                "image_local": "./static/images/elements/cryo.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
+            }
+        ],
+        "special_guest_stars": [
+            {
+                "name": "Emilie",
+                "element": "Dendro",
+                "image_local": "./static/images/characters/emilie.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Emilie_Icon.png/revision/latest/scale-to-width-down/74?cb=20240806102359"
+            },
+            {
+                "name": "Kinich",
+                "element": "Dendro",
+                "image_local": "./static/images/characters/kinich.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Kinich_Icon.png/revision/latest/scale-to-width-down/74?cb=20240917123836"
+            },
+            {
+                "name": "Lan Yan",
+                "element": "Anemo",
+                "image_local": "./static/images/characters/lan_yan.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Lan_Yan_Icon.png/revision/latest/scale-to-width-down/74?cb=20250128195304"
+            },
+            {
+                "name": "Noelle",
+                "element": "Geo",
+                "image_local": "./static/images/characters/noelle.png",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Noelle_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011929"
+            }
+        ]
+    },
+    {
         "name": "Season 12",
         "number": 12,
         "date_start": "June 1, 2025",
         "date_end": "June 30, 2025",
         "version_start": "5.6",
-        "version_end": "5.6",
-        "status": "upcoming",
+        "version_end": "5.7",
         "opening_characters": [
             {
                 "name": "Cyno",
                 "element": "Electro",
-                "image_local": "/images/characters/cyno.png",
+                "image_local": "./static/images/characters/cyno.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Cyno_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092240"
             },
             {
                 "name": "Fischl",
                 "element": "Electro",
-                "image_local": "/images/characters/fischl.png",
+                "image_local": "./static/images/characters/fischl.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092945"
             },
             {
                 "name": "Qiqi",
                 "element": "Cryo",
-                "image_local": "/images/characters/qiqi.png",
+                "image_local": "./static/images/characters/qiqi.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Qiqi_Icon.png/revision/latest/scale-to-width-down/74?cb=20220316020612"
             },
             {
                 "name": "Mika",
                 "element": "Cryo",
-                "image_local": "/images/characters/mika.png",
+                "image_local": "./static/images/characters/mika.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Mika_Icon.png/revision/latest/scale-to-width-down/74?cb=20230321101835"
             },
             {
                 "name": "Nahida",
                 "element": "Dendro",
-                "image_local": "/images/characters/nahida.png",
+                "image_local": "./static/images/characters/nahida.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest/scale-to-width-down/74?cb=20221102030809"
             },
             {
                 "name": "Collei",
                 "element": "Dendro",
-                "image_local": "/images/characters/collei.png",
+                "image_local": "./static/images/characters/collei.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Collei_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092218"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Cryo",
-                "image_local": "/images/elements/cryo.png",
+                "image_local": "./static/images/elements/cryo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
             },
             {
                 "name": "Dendro",
-                "image_local": "/images/elements/dendro.png",
+                "image_local": "./static/images/elements/dendro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Element_Dendro.png/revision/latest/scale-to-width-down/30?cb=20201116063058"
             }
         ],
@@ -66,25 +154,25 @@
             {
                 "name": "Furina",
                 "element": "Hydro",
-                "image_local": "/images/characters/furina.png",
+                "image_local": "./static/images/characters/furina.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest/scale-to-width-down/74?cb=20231108030656"
             },
             {
                 "name": "Dehya",
                 "element": "Pyro",
-                "image_local": "/images/characters/dehya.png",
+                "image_local": "./static/images/characters/dehya.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092328"
             },
             {
                 "name": "Xiangling",
                 "element": "Pyro",
-                "image_local": "/images/characters/xiangling.png",
+                "image_local": "./static/images/characters/xiangling.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011301"
             },
             {
                 "name": "Xingqiu",
                 "element": "Hydro",
-                "image_local": "/images/characters/xingqiu.png",
+                "image_local": "./static/images/characters/xingqiu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012057"
             }
         ]
@@ -96,59 +184,58 @@
         "date_end": "May 31, 2025",
         "version_start": "5.5",
         "version_end": "5.6",
-        "status": "current",
         "opening_characters": [
             {
                 "name": "Neuvillette",
                 "element": "Hydro",
-                "image_local": "/images/characters/neuvillette.png",
+                "image_local": "./static/images/characters/neuvillette.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/Neuvillette_Icon.png/revision/latest/scale-to-width-down/74?cb=20240711205454"
             },
             {
                 "name": "Candace",
                 "element": "Hydro",
-                "image_local": "/images/characters/candace.png",
+                "image_local": "./static/images/characters/candace.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Candace_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092140"
             },
             {
                 "name": "Kamisato Ayaka",
                 "element": "Cryo",
-                "image_local": "/images/characters/kamisato_ayaka.png",
+                "image_local": "./static/images/characters/kamisato_ayaka.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Kamisato_Ayaka_Icon.png/revision/latest/scale-to-width-down/74?cb=20211221231648"
             },
             {
                 "name": "Charlotte",
                 "element": "Cryo",
-                "image_local": "/images/characters/charlotte.png",
+                "image_local": "./static/images/characters/charlotte.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Charlotte_Icon.png/revision/latest/scale-to-width-down/74?cb=20231108030544"
             },
             {
                 "name": "Albedo",
                 "element": "Geo",
-                "image_local": "/images/characters/albedo.png",
+                "image_local": "./static/images/characters/albedo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/Albedo_Icon.png/revision/latest/scale-to-width-down/74?cb=20231214222053"
             },
             {
                 "name": "Kachina",
                 "element": "Geo",
-                "image_local": "/images/characters/kachina.png",
+                "image_local": "./static/images/characters/kachina.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Kachina_Icon.png/revision/latest/scale-to-width-down/74?cb=20240828030247"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Hydro",
-                "image_local": "/images/elements/hydro.png",
+                "image_local": "./static/images/elements/hydro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
             },
             {
                 "name": "Cryo",
-                "image_local": "/images/elements/cryo.png",
+                "image_local": "./static/images/elements/cryo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
             },
             {
                 "name": "Geo",
-                "image_local": "/images/elements/geo.png",
+                "image_local": "./static/images/elements/geo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Element_Geo.png/revision/latest/scale-to-width-down/30?cb=20201116063036"
             }
         ],
@@ -156,25 +243,25 @@
             {
                 "name": "Venti",
                 "element": "Anemo",
-                "image_local": "/images/characters/venti.png",
+                "image_local": "./static/images/characters/venti.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Venti_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011949"
             },
             {
                 "name": "Hu Tao",
                 "element": "Pyro",
-                "image_local": "/images/characters/hu_tao.png",
+                "image_local": "./static/images/characters/hu_tao.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Hu_Tao_Icon.png/revision/latest/scale-to-width-down/74?cb=20210228210611"
             },
             {
                 "name": "Kaveh",
                 "element": "Dendro",
-                "image_local": "/images/characters/kaveh.png",
+                "image_local": "./static/images/characters/kaveh.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest/scale-to-width-down/74?cb=20230502113258"
             },
             {
                 "name": "Kuki Shinobu",
                 "element": "Electro",
-                "image_local": "/images/characters/kuki_shinobu.png",
+                "image_local": "./static/images/characters/kuki_shinobu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest/scale-to-width-down/74?cb=20220605061801"
             }
         ]
@@ -186,59 +273,58 @@
         "date_end": "April 30, 2025",
         "version_start": "5.5",
         "version_end": "5.5",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Yoimiya",
                 "element": "Pyro",
-                "image_local": "/images/characters/yoimiya.png",
+                "image_local": "./static/images/characters/yoimiya.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Yoimiya_Icon.png/revision/latest/scale-to-width-down/74?cb=20220214235604"
             },
             {
                 "name": "Thoma",
                 "element": "Pyro",
-                "image_local": "/images/characters/thoma.png",
+                "image_local": "./static/images/characters/thoma.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest/scale-to-width-down/74?cb=20211014011046"
             },
             {
                 "name": "Clorinde",
                 "element": "Electro",
-                "image_local": "/images/characters/clorinde.png",
+                "image_local": "./static/images/characters/clorinde.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Clorinde_Icon.png/revision/latest/scale-to-width-down/74?cb=20240605020849"
             },
             {
                 "name": "Beidou",
                 "element": "Electro",
-                "image_local": "/images/characters/beidou.png",
+                "image_local": "./static/images/characters/beidou.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Beidou_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091828"
             },
             {
                 "name": "Xiao",
                 "element": "Anemo",
-                "image_local": "/images/characters/xiao.png",
+                "image_local": "./static/images/characters/xiao.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Xiao_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012045"
             },
             {
                 "name": "Sucrose",
                 "element": "Anemo",
-                "image_local": "/images/characters/sucrose.png",
+                "image_local": "./static/images/characters/sucrose.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Sucrose_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213163209"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Anemo",
-                "image_local": "/images/elements/anemo.png",
+                "image_local": "./static/images/elements/anemo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Element_Anemo.png/revision/latest/scale-to-width-down/30?cb=20201116063017"
             }
         ],
@@ -246,25 +332,25 @@
             {
                 "name": "Xilonen",
                 "element": "Geo",
-                "image_local": "/images/characters/xilonen.png",
+                "image_local": "./static/images/characters/xilonen.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Xilonen_Icon.png/revision/latest/scale-to-width-down/74?cb=20241009015637"
             },
             {
                 "name": "Alhaitham",
                 "element": "Dendro",
-                "image_local": "/images/characters/alhaitham.png",
+                "image_local": "./static/images/characters/alhaitham.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091456"
             },
             {
                 "name": "Yaoyao",
                 "element": "Dendro",
-                "image_local": "/images/characters/yaoyao.png",
+                "image_local": "./static/images/characters/yaoyao.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest/scale-to-width-down/74?cb=20230123150446"
             },
             {
                 "name": "Mika",
                 "element": "Cryo",
-                "image_local": "/images/characters/mika.png",
+                "image_local": "./static/images/characters/mika.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Mika_Icon.png/revision/latest/scale-to-width-down/74?cb=20230321101835"
             }
         ]
@@ -276,59 +362,58 @@
         "date_end": "March 31, 2025",
         "version_start": "5.4",
         "version_end": "5.5",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Kamisato Ayato",
                 "element": "Hydro",
-                "image_local": "/images/characters/kamisato_ayato.png",
+                "image_local": "./static/images/characters/kamisato_ayato.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest/scale-to-width-down/74?cb=20220601033710"
             },
             {
                 "name": "Barbara",
                 "element": "Hydro",
-                "image_local": "/images/characters/barbara.png",
+                "image_local": "./static/images/characters/barbara.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Barbara_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091800"
             },
             {
                 "name": "Raiden Shogun",
                 "element": "Electro",
-                "image_local": "/images/characters/raiden_shogun.png",
+                "image_local": "./static/images/characters/raiden_shogun.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest/scale-to-width-down/74?cb=20240717072843"
             },
             {
                 "name": "Ororon",
                 "element": "Electro",
-                "image_local": "/images/characters/ororon.png",
+                "image_local": "./static/images/characters/ororon.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Ororon_Icon.png/revision/latest/scale-to-width-down/74?cb=20241014100711"
             },
             {
                 "name": "Eula",
                 "element": "Cryo",
-                "image_local": "/images/characters/eula.png",
+                "image_local": "./static/images/characters/eula.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Eula_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092858"
             },
             {
                 "name": "Layla",
                 "element": "Cryo",
-                "image_local": "/images/characters/layla.png",
+                "image_local": "./static/images/characters/layla.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Layla_Icon.png/revision/latest/scale-to-width-down/74?cb=20221118140544"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Hydro",
-                "image_local": "/images/elements/hydro.png",
+                "image_local": "./static/images/elements/hydro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
             },
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Cryo",
-                "image_local": "/images/elements/cryo.png",
+                "image_local": "./static/images/elements/cryo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
             }
         ],
@@ -336,25 +421,25 @@
             {
                 "name": "Yumemizuki Mizuki",
                 "element": "Anemo",
-                "image_local": "/images/characters/yumemizuki_mizuki.png",
+                "image_local": "./static/images/characters/yumemizuki_mizuki.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/Yumemizuki_Mizuki_Icon.png/revision/latest/scale-to-width-down/74?cb=20250212014631"
             },
             {
                 "name": "Navia",
                 "element": "Geo",
-                "image_local": "/images/characters/navia.png",
+                "image_local": "./static/images/characters/navia.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest/scale-to-width-down/74?cb=20231220022117"
             },
             {
                 "name": "Xinyan",
                 "element": "Pyro",
-                "image_local": "/images/characters/xinyan.png",
+                "image_local": "./static/images/characters/xinyan.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213163013"
             },
             {
                 "name": "Thoma",
                 "element": "Pyro",
-                "image_local": "/images/characters/thoma.png",
+                "image_local": "./static/images/characters/thoma.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest/scale-to-width-down/74?cb=20211014011046"
             }
         ]
@@ -366,59 +451,58 @@
         "date_end": "February 28, 2025",
         "version_start": "5.3",
         "version_end": "5.4",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Hu Tao",
                 "element": "Pyro",
-                "image_local": "/images/characters/hu_tao.png",
+                "image_local": "./static/images/characters/hu_tao.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Hu_Tao_Icon.png/revision/latest/scale-to-width-down/74?cb=20210228210611"
             },
             {
                 "name": "Gaming",
                 "element": "Pyro",
-                "image_local": "/images/characters/gaming.png",
+                "image_local": "./static/images/characters/gaming.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Gaming_Icon.png/revision/latest/scale-to-width-down/74?cb=20240131020313"
             },
             {
                 "name": "Mona",
                 "element": "Hydro",
-                "image_local": "/images/characters/mona.png",
+                "image_local": "./static/images/characters/mona.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Mona_Icon.png/revision/latest/scale-to-width-down/74?cb=20220601033558"
             },
             {
                 "name": "Xingqiu",
                 "element": "Hydro",
-                "image_local": "/images/characters/xingqiu.png",
+                "image_local": "./static/images/characters/xingqiu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012057"
             },
             {
                 "name": "Venti",
                 "element": "Anemo",
-                "image_local": "/images/characters/venti.png",
+                "image_local": "./static/images/characters/venti.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Venti_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011949"
             },
             {
                 "name": "Shikanoin Heizou",
                 "element": "Anemo",
-                "image_local": "/images/characters/shikanoin_heizou.png",
+                "image_local": "./static/images/characters/shikanoin_heizou.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/Shikanoin_Heizou_Icon.png/revision/latest/scale-to-width-down/74?cb=20240711205453"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Hydro",
-                "image_local": "/images/elements/hydro.png",
+                "image_local": "./static/images/elements/hydro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
             },
             {
                 "name": "Anemo",
-                "image_local": "/images/elements/anemo.png",
+                "image_local": "./static/images/elements/anemo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Element_Anemo.png/revision/latest/scale-to-width-down/30?cb=20201116063017"
             }
         ],
@@ -426,25 +510,25 @@
             {
                 "name": "Clorinde",
                 "element": "Electro",
-                "image_local": "/images/characters/clorinde.png",
+                "image_local": "./static/images/characters/clorinde.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Clorinde_Icon.png/revision/latest/scale-to-width-down/74?cb=20240605020849"
             },
             {
                 "name": "Ororon",
                 "element": "Electro",
-                "image_local": "/images/characters/ororon.png",
+                "image_local": "./static/images/characters/ororon.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Ororon_Icon.png/revision/latest/scale-to-width-down/74?cb=20241014100711"
             },
             {
                 "name": "Citlali",
                 "element": "Cryo",
-                "image_local": "/images/characters/citlali.png",
+                "image_local": "./static/images/characters/citlali.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Citlali_Icon.png/revision/latest/scale-to-width-down/74?cb=20241130080542"
             },
             {
                 "name": "Yun Jin",
                 "element": "Geo",
-                "image_local": "/images/characters/yun_jin.png",
+                "image_local": "./static/images/characters/yun_jin.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest/scale-to-width-down/74?cb=20220316025919"
             }
         ]
@@ -456,59 +540,58 @@
         "date_end": "January 31, 2025",
         "version_start": "5.3",
         "version_end": "5.3",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Diluc",
                 "element": "Pyro",
-                "image_local": "/images/characters/diluc.png",
+                "image_local": "./static/images/characters/diluc.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3d/Diluc_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092341"
             },
             {
                 "name": "Bennett",
                 "element": "Pyro",
-                "image_local": "/images/characters/bennett.png",
+                "image_local": "./static/images/characters/bennett.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Bennett_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091856"
             },
             {
                 "name": "Ganyu",
                 "element": "Cryo",
-                "image_local": "/images/characters/ganyu.png",
+                "image_local": "./static/images/characters/ganyu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest/scale-to-width-down/74?cb=20230519012425"
             },
             {
                 "name": "Kaeya",
                 "element": "Cryo",
-                "image_local": "/images/characters/kaeya.png",
+                "image_local": "./static/images/characters/kaeya.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kaeya_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011902"
             },
             {
                 "name": "Navia",
                 "element": "Geo",
-                "image_local": "/images/characters/navia.png",
+                "image_local": "./static/images/characters/navia.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest/scale-to-width-down/74?cb=20231220022117"
             },
             {
                 "name": "Noelle",
                 "element": "Geo",
-                "image_local": "/images/characters/noelle.png",
+                "image_local": "./static/images/characters/noelle.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Noelle_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011929"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Cryo",
-                "image_local": "/images/elements/cryo.png",
+                "image_local": "./static/images/elements/cryo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
             },
             {
                 "name": "Geo",
-                "image_local": "/images/elements/geo.png",
+                "image_local": "./static/images/elements/geo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Element_Geo.png/revision/latest/scale-to-width-down/30?cb=20201116063036"
             }
         ],
@@ -516,25 +599,25 @@
             {
                 "name": "Kamisato Ayato",
                 "element": "Hydro",
-                "image_local": "/images/characters/kamisato_ayato.png",
+                "image_local": "./static/images/characters/kamisato_ayato.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest/scale-to-width-down/74?cb=20220601033710"
             },
             {
                 "name": "Fischl",
                 "element": "Electro",
-                "image_local": "/images/characters/fischl.png",
+                "image_local": "./static/images/characters/fischl.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092945"
             },
             {
                 "name": "Xianyun",
                 "element": "Anemo",
-                "image_local": "/images/characters/xianyun.png",
+                "image_local": "./static/images/characters/xianyun.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Xianyun_Icon.png/revision/latest/scale-to-width-down/74?cb=20240131020302"
             },
             {
                 "name": "Sayu",
                 "element": "Anemo",
-                "image_local": "/images/characters/sayu.png",
+                "image_local": "./static/images/characters/sayu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest/scale-to-width-down/74?cb=20210810101044"
             }
         ]
@@ -546,59 +629,58 @@
         "date_end": "December 31, 2024",
         "version_start": "5.2",
         "version_end": "5.2",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Sangonomiya Kokomi",
                 "element": "Hydro",
-                "image_local": "/images/characters/sangonomiya_kokomi.png",
+                "image_local": "./static/images/characters/sangonomiya_kokomi.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Sangonomiya_Kokomi_Icon.png/revision/latest/scale-to-width-down/74?cb=20210921103819"
             },
             {
                 "name": "Xingqiu",
                 "element": "Hydro",
-                "image_local": "/images/characters/xingqiu.png",
+                "image_local": "./static/images/characters/xingqiu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012057"
             },
             {
                 "name": "Raiden Shogun",
                 "element": "Electro",
-                "image_local": "/images/characters/raiden_shogun.png",
+                "image_local": "./static/images/characters/raiden_shogun.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest/scale-to-width-down/74?cb=20240717072843"
             },
             {
                 "name": "Kujou Sara",
                 "element": "Electro",
-                "image_local": "/images/characters/kujou_sara.png",
+                "image_local": "./static/images/characters/kujou_sara.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/Kujou_Sara_Icon.png/revision/latest/scale-to-width-down/74?cb=20220210040844"
             },
             {
                 "name": "Jean",
                 "element": "Anemo",
-                "image_local": "/images/characters/jean.png",
+                "image_local": "./static/images/characters/jean.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Jean_Icon.png/revision/latest/scale-to-width-down/74?cb=20220602180528"
             },
             {
                 "name": "Lynette",
                 "element": "Anemo",
-                "image_local": "/images/characters/lynette.png",
+                "image_local": "./static/images/characters/lynette.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest/scale-to-width-down/74?cb=20230816051019"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Hydro",
-                "image_local": "/images/elements/hydro.png",
+                "image_local": "./static/images/elements/hydro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
             },
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Anemo",
-                "image_local": "/images/elements/anemo.png",
+                "image_local": "./static/images/elements/anemo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Element_Anemo.png/revision/latest/scale-to-width-down/30?cb=20201116063017"
             }
         ],
@@ -606,25 +688,25 @@
             {
                 "name": "Lyney",
                 "element": "Pyro",
-                "image_local": "/images/characters/lyney.png",
+                "image_local": "./static/images/characters/lyney.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png/revision/latest/scale-to-width-down/74?cb=20230816045203"
             },
             {
                 "name": "Bennett",
                 "element": "Pyro",
-                "image_local": "/images/characters/bennett.png",
+                "image_local": "./static/images/characters/bennett.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Bennett_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091856"
             },
             {
                 "name": "Zhongli",
                 "element": "Geo",
-                "image_local": "/images/characters/zhongli.png",
+                "image_local": "./static/images/characters/zhongli.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Zhongli_Icon.png/revision/latest/scale-to-width-down/74?cb=20240711205450"
             },
             {
                 "name": "Collei",
                 "element": "Dendro",
-                "image_local": "/images/characters/collei.png",
+                "image_local": "./static/images/characters/collei.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Collei_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092218"
             }
         ]
@@ -636,59 +718,58 @@
         "date_end": "November 30, 2024",
         "version_start": "5.1",
         "version_end": "5.2",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Klee",
                 "element": "Pyro",
-                "image_local": "/images/characters/klee.png",
+                "image_local": "./static/images/characters/klee.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Klee_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011911"
             },
             {
                 "name": "Xinyan",
                 "element": "Pyro",
-                "image_local": "/images/characters/xinyan.png",
+                "image_local": "./static/images/characters/xinyan.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213163013"
             },
             {
                 "name": "Yae Miko",
                 "element": "Electro",
-                "image_local": "/images/characters/yae_miko.png",
+                "image_local": "./static/images/characters/yae_miko.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Yae_Miko_Icon.png/revision/latest/scale-to-width-down/74?cb=20220216025931"
             },
             {
                 "name": "Dori",
                 "element": "Electro",
-                "image_local": "/images/characters/dori.png",
+                "image_local": "./static/images/characters/dori.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092725"
             },
             {
                 "name": "Tighnari",
                 "element": "Dendro",
-                "image_local": "/images/characters/tighnari.png",
+                "image_local": "./static/images/characters/tighnari.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Tighnari_Icon.png/revision/latest/scale-to-width-down/74?cb=20220824024817"
             },
             {
                 "name": "Kirara",
                 "element": "Dendro",
-                "image_local": "/images/characters/kirara.png",
+                "image_local": "./static/images/characters/kirara.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kirara_Icon.png/revision/latest/scale-to-width-down/74?cb=20230718042457"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Dendro",
-                "image_local": "/images/elements/dendro.png",
+                "image_local": "./static/images/elements/dendro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Element_Dendro.png/revision/latest/scale-to-width-down/30?cb=20201116063058"
             }
         ],
@@ -696,25 +777,25 @@
             {
                 "name": "Xilonen",
                 "element": "Geo",
-                "image_local": "/images/characters/xilonen.png",
+                "image_local": "./static/images/characters/xilonen.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Xilonen_Icon.png/revision/latest/scale-to-width-down/74?cb=20241009015637"
             },
             {
                 "name": "Chiori",
                 "element": "Geo",
-                "image_local": "/images/characters/chiori.png",
+                "image_local": "./static/images/characters/chiori.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest/scale-to-width-down/74?cb=20240313015540"
             },
             {
                 "name": "Xingqiu",
                 "element": "Hydro",
-                "image_local": "/images/characters/xingqiu.png",
+                "image_local": "./static/images/characters/xingqiu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012057"
             },
             {
                 "name": "Layla",
                 "element": "Cryo",
-                "image_local": "/images/characters/layla.png",
+                "image_local": "./static/images/characters/layla.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Layla_Icon.png/revision/latest/scale-to-width-down/74?cb=20221118140544"
             }
         ]
@@ -726,59 +807,58 @@
         "date_end": "October 31, 2024",
         "version_start": "5.0",
         "version_end": "5.1",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Dehya",
                 "element": "Pyro",
-                "image_local": "/images/characters/dehya.png",
+                "image_local": "./static/images/characters/dehya.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092328"
             },
             {
                 "name": "Chevreuse",
                 "element": "Pyro",
-                "image_local": "/images/characters/chevreuse.png",
+                "image_local": "./static/images/characters/chevreuse.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest/scale-to-width-down/74?cb=20231225195348"
             },
             {
                 "name": "Keqing",
                 "element": "Electro",
-                "image_local": "/images/characters/keqing.png",
+                "image_local": "./static/images/characters/keqing.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Keqing_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213162751"
             },
             {
                 "name": "Fischl",
                 "element": "Electro",
-                "image_local": "/images/characters/fischl.png",
+                "image_local": "./static/images/characters/fischl.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092945"
             },
             {
                 "name": "Chiori",
                 "element": "Geo",
-                "image_local": "/images/characters/chiori.png",
+                "image_local": "./static/images/characters/chiori.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest/scale-to-width-down/74?cb=20240313015540"
             },
             {
                 "name": "Ningguang",
                 "element": "Geo",
-                "image_local": "/images/characters/ningguang.png",
+                "image_local": "./static/images/characters/ningguang.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Ningguang_Icon.png/revision/latest/scale-to-width-down/74?cb=20220210040239"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Geo",
-                "image_local": "/images/elements/geo.png",
+                "image_local": "./static/images/elements/geo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Element_Geo.png/revision/latest/scale-to-width-down/30?cb=20201116063036"
             }
         ],
@@ -786,25 +866,25 @@
             {
                 "name": "Kinich",
                 "element": "Dendro",
-                "image_local": "/images/characters/kinich.png",
+                "image_local": "./static/images/characters/kinich.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Kinich_Icon.png/revision/latest/scale-to-width-down/74?cb=20240917123836"
             },
             {
                 "name": "Yelan",
                 "element": "Hydro",
-                "image_local": "/images/characters/yelan.png",
+                "image_local": "./static/images/characters/yelan.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Yelan_Icon.png/revision/latest/scale-to-width-down/74?cb=20240711205454"
             },
             {
                 "name": "Venti",
                 "element": "Anemo",
-                "image_local": "/images/characters/venti.png",
+                "image_local": "./static/images/characters/venti.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Venti_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011949"
             },
             {
                 "name": "Sucrose",
                 "element": "Anemo",
-                "image_local": "/images/characters/sucrose.png",
+                "image_local": "./static/images/characters/sucrose.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Sucrose_Icon.png/revision/latest/scale-to-width-down/74?cb=20210213163209"
             }
         ]
@@ -816,59 +896,58 @@
         "date_end": "September 30, 2024",
         "version_start": "5.0",
         "version_end": "5.0",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Dehya",
                 "element": "Pyro",
-                "image_local": "/images/characters/dehya.png",
+                "image_local": "./static/images/characters/dehya.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092328"
             },
             {
                 "name": "Xiangling",
                 "element": "Pyro",
-                "image_local": "/images/characters/xiangling.png",
+                "image_local": "./static/images/characters/xiangling.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011301"
             },
             {
                 "name": "Mualani",
                 "element": "Hydro",
-                "image_local": "/images/characters/mualani.png",
+                "image_local": "./static/images/characters/mualani.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Mualani_Icon.png/revision/latest/scale-to-width-down/74?cb=20240828030235"
             },
             {
                 "name": "Candace",
                 "element": "Hydro",
-                "image_local": "/images/characters/candace.png",
+                "image_local": "./static/images/characters/candace.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Candace_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092140"
             },
             {
                 "name": "Emilie",
                 "element": "Dendro",
-                "image_local": "/images/characters/emilie.png",
+                "image_local": "./static/images/characters/emilie.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Emilie_Icon.png/revision/latest/scale-to-width-down/74?cb=20240806102359"
             },
             {
                 "name": "Yaoyao",
                 "element": "Dendro",
-                "image_local": "/images/characters/yaoyao.png",
+                "image_local": "./static/images/characters/yaoyao.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest/scale-to-width-down/74?cb=20230123150446"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Hydro",
-                "image_local": "/images/elements/hydro.png",
+                "image_local": "./static/images/elements/hydro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
             },
             {
                 "name": "Dendro",
-                "image_local": "/images/elements/dendro.png",
+                "image_local": "./static/images/elements/dendro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Element_Dendro.png/revision/latest/scale-to-width-down/30?cb=20201116063058"
             }
         ],
@@ -876,25 +955,25 @@
             {
                 "name": "Kazuha",
                 "element": "Anemo",
-                "image_local": "/images/characters/kaedehara_kazuha.png",
+                "image_local": "./static/images/characters/kaedehara_kazuha.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest/scale-to-width-down/74?cb=20210623063513"
             },
             {
                 "name": "Kachina",
                 "element": "Geo",
-                "image_local": "/images/characters/kachina.png",
+                "image_local": "./static/images/characters/kachina.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Kachina_Icon.png/revision/latest/scale-to-width-down/74?cb=20240828030247"
             },
             {
                 "name": "Clorinde",
                 "element": "Electro",
-                "image_local": "/images/characters/clorinde.png",
+                "image_local": "./static/images/characters/clorinde.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Clorinde_Icon.png/revision/latest/scale-to-width-down/74?cb=20240605020849"
             },
             {
                 "name": "Raiden Shogun",
                 "element": "Electro",
-                "image_local": "/images/characters/raiden_shogun.png",
+                "image_local": "./static/images/characters/raiden_shogun.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest/scale-to-width-down/74?cb=20240717072843"
             }
         ]
@@ -906,59 +985,58 @@
         "date_end": "August 31, 2024",
         "version_start": "4.8",
         "version_end": "5.0",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Furina",
                 "element": "Hydro",
-                "image_local": "/images/characters/furina.png",
+                "image_local": "./static/images/characters/furina.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest/scale-to-width-down/74?cb=20231108030656"
             },
             {
                 "name": "Barbara",
                 "element": "Hydro",
-                "image_local": "/images/characters/barbara.png",
+                "image_local": "./static/images/characters/barbara.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Barbara_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091800"
             },
             {
                 "name": "Kamisato Ayaka",
                 "element": "Cryo",
-                "image_local": "/images/characters/kamisato_ayaka.png",
+                "image_local": "./static/images/characters/kamisato_ayaka.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Kamisato_Ayaka_Icon.png/revision/latest/scale-to-width-down/74?cb=20211221231648"
             },
             {
                 "name": "Diona",
                 "element": "Cryo",
-                "image_local": "/images/characters/diona.png",
+                "image_local": "./static/images/characters/diona.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Diona_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092355"
             },
             {
                 "name": "Xiao",
                 "element": "Anemo",
-                "image_local": "/images/characters/xiao.png",
+                "image_local": "./static/images/characters/xiao.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Xiao_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214012045"
             },
             {
                 "name": "Faruzan",
                 "element": "Anemo",
-                "image_local": "/images/characters/faruzan.png",
+                "image_local": "./static/images/characters/faruzan.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Faruzan_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092917"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Hydro",
-                "image_local": "/images/elements/hydro.png",
+                "image_local": "./static/images/elements/hydro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Element_Hydro.png/revision/latest/scale-to-width-down/30?cb=20201116063105"
             },
             {
                 "name": "Cryo",
-                "image_local": "/images/elements/cryo.png",
+                "image_local": "./static/images/elements/cryo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Element_Cryo.png/revision/latest/scale-to-width-down/30?cb=20201116063123"
             },
             {
                 "name": "Anemo",
-                "image_local": "/images/elements/anemo.png",
+                "image_local": "./static/images/elements/anemo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Element_Anemo.png/revision/latest/scale-to-width-down/30?cb=20201116063017"
             }
         ],
@@ -966,25 +1044,25 @@
             {
                 "name": "Emilie",
                 "element": "Dendro",
-                "image_local": "/images/characters/emilie.png",
+                "image_local": "./static/images/characters/emilie.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Emilie_Icon.png/revision/latest/scale-to-width-down/74?cb=20240806102359"
             },
             {
                 "name": "Dehya",
                 "element": "Pyro",
-                "image_local": "/images/characters/dehya.png",
+                "image_local": "./static/images/characters/dehya.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092328"
             },
             {
                 "name": "Nahida",
                 "element": "Dendro",
-                "image_local": "/images/characters/nahida.png",
+                "image_local": "./static/images/characters/nahida.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest/scale-to-width-down/74?cb=20221102030809"
             },
             {
                 "name": "Xiangling",
                 "element": "Pyro",
-                "image_local": "/images/characters/xiangling.png",
+                "image_local": "./static/images/characters/xiangling.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest/scale-to-width-down/74?cb=20210214011301"
             }
         ]
@@ -996,59 +1074,58 @@
         "date_end": "July 31, 2024",
         "version_start": "4.7",
         "version_end": "4.8",
-        "status": "past",
         "opening_characters": [
             {
                 "name": "Arlecchino",
                 "element": "Pyro",
-                "image_local": "/images/characters/arlecchino.png",
+                "image_local": "./static/images/characters/arlecchino.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Arlecchino_Icon.png/revision/latest/scale-to-width-down/74?cb=20240424041749"
             },
             {
                 "name": "Thoma",
                 "element": "Pyro",
-                "image_local": "/images/characters/thoma.png",
+                "image_local": "./static/images/characters/thoma.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest/scale-to-width-down/74?cb=20211014011046"
             },
             {
                 "name": "Clorinde",
                 "element": "Electro",
-                "image_local": "/images/characters/clorinde.png",
+                "image_local": "./static/images/characters/clorinde.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Clorinde_Icon.png/revision/latest/scale-to-width-down/74?cb=20240605020849"
             },
             {
                 "name": "Kuki Shinobu",
                 "element": "Electro",
-                "image_local": "/images/characters/kuki_shinobu.png",
+                "image_local": "./static/images/characters/kuki_shinobu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest/scale-to-width-down/74?cb=20220605061801"
             },
             {
                 "name": "Wanderer",
                 "element": "Anemo",
-                "image_local": "/images/characters/wanderer.png",
+                "image_local": "./static/images/characters/wanderer.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest/scale-to-width-down/74?cb=20221207034209"
             },
             {
                 "name": "Faruzan",
                 "element": "Anemo",
-                "image_local": "/images/characters/faruzan.png",
+                "image_local": "./static/images/characters/faruzan.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Faruzan_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215092917"
             }
         ],
         "alternate_cast_elements": [
             {
                 "name": "Pyro",
-                "image_local": "/images/elements/pyro.png",
+                "image_local": "./static/images/elements/pyro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest/scale-to-width-down/30?cb=20201116063114"
             },
             {
                 "name": "Electro",
-                "image_local": "/images/elements/electro.png",
+                "image_local": "./static/images/elements/electro.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Electro.png/revision/latest/scale-to-width-down/30?cb=20201116063049"
             },
             {
                 "name": "Anemo",
-                "image_local": "/images/elements/anemo.png",
+                "image_local": "./static/images/elements/anemo.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Element_Anemo.png/revision/latest/scale-to-width-down/30?cb=20201116063017"
             }
         ],
@@ -1056,25 +1133,25 @@
             {
                 "name": "Wriothesley",
                 "element": "Cryo",
-                "image_local": "/images/characters/wriothesley.png",
+                "image_local": "./static/images/characters/wriothesley.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest/scale-to-width-down/74?cb=20231017103145"
             },
             {
                 "name": "Baizhu",
                 "element": "Dendro",
-                "image_local": "/images/characters/baizhu.png",
+                "image_local": "./static/images/characters/baizhu.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Baizhu_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091730"
             },
             {
                 "name": "Alhaitham",
                 "element": "Dendro",
-                "image_local": "/images/characters/alhaitham.png",
+                "image_local": "./static/images/characters/alhaitham.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest/scale-to-width-down/74?cb=20231215091456"
             },
             {
                 "name": "Sigewinne",
                 "element": "Hydro",
-                "image_local": "/images/characters/sigewinne.png",
+                "image_local": "./static/images/characters/sigewinne.png",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Sigewinne_Icon.png/revision/latest/scale-to-width-down/74?cb=20240625101835"
             }
         ]

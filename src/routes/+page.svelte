@@ -142,7 +142,7 @@
 				<div class="mt-1 flex items-center justify-center space-x-4">
 					{#each season.alternate_cast_elements as element}
 						<img
-							src="{assets}{element.image_local}"
+							src="{assets}/images/elements/{element.name.toLowerCase()}.png"
 							class="max-w-8 object-cover transition-transform hover:scale-105"
 							alt={element.name}
 							title={element.name}

@@ -25,6 +25,12 @@
             "element": "Anemo"
         },
         {
+            "name": "Jean Skin1",
+            "image_local": "/images/characters/jean_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Jean_Skin1.png",
+            "element": "Anemo"
+        },
+        {
             "name": "Kaedehara Kazuha",
             "image_local": "/images/characters/kaedehara_kazuha.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Kaedehara_Kazuha.png",
@@ -157,15 +163,33 @@
             "element": "Cryo"
         },
         {
+            "name": "Ganyu Skin1",
+            "image_local": "/images/characters/ganyu_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Ganyu_Skin1.png",
+            "element": "Cryo"
+        },
+        {
             "name": "Kaeya",
             "image_local": "/images/characters/kaeya.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Kaeya.png",
             "element": "Cryo"
         },
         {
+            "name": "Kaeya Skin1",
+            "image_local": "/images/characters/kaeya_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaeya_Skin1.png",
+            "element": "Cryo"
+        },
+        {
             "name": "Kamisato Ayaka",
             "image_local": "/images/characters/kamisato_ayaka.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayaka.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Kamisato Ayaka Skin1",
+            "image_local": "/images/characters/kamisato_ayaka_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayaka_Skin1.png",
             "element": "Cryo"
         },
         {
@@ -196,6 +220,18 @@
             "name": "Shenhe",
             "image_local": "/images/characters/shenhe.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Shenhe.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Shenhe Skin1",
+            "image_local": "/images/characters/shenhe_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Shenhe_Skin1.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Skirk",
+            "image_local": "/images/characters/skirk.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Skirk.png",
             "element": "Cryo"
         },
         {
@@ -259,6 +295,12 @@
             "element": "Dendro"
         },
         {
+            "name": "Kirara Skin1",
+            "image_local": "/images/characters/kirara_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Kirara_Skin1.png",
+            "element": "Dendro"
+        },
+        {
             "name": "Nahida",
             "image_local": "/images/characters/nahida.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Nahida.png",
@@ -319,6 +361,12 @@
             "element": "Electro"
         },
         {
+            "name": "Fischl Skin1",
+            "image_local": "/images/characters/fischl_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Fischl_Skin1.png",
+            "element": "Electro"
+        },
+        {
             "name": "Iansan",
             "image_local": "/images/characters/iansan.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Iansan.png",
@@ -328,6 +376,12 @@
             "name": "Keqing",
             "image_local": "/images/characters/keqing.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Keqing.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Keqing Skin1",
+            "image_local": "/images/characters/keqing_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Keqing_Skin1.png",
             "element": "Electro"
         },
         {
@@ -346,6 +400,12 @@
             "name": "Lisa",
             "image_local": "/images/characters/lisa.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Lisa.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Lisa Skin1",
+            "image_local": "/images/characters/lisa_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Lisa_Skin1.png",
             "element": "Electro"
         },
         {
@@ -439,6 +499,12 @@
             "element": "Geo"
         },
         {
+            "name": "Ningguang Skin1",
+            "image_local": "/images/characters/ningguang_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Ningguang_Skin1.png",
+            "element": "Geo"
+        },
+        {
             "name": "Noelle",
             "image_local": "/images/characters/noelle.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Noelle.png",
@@ -481,9 +547,21 @@
             "element": "Hydro"
         },
         {
+            "name": "Barbara Skin1",
+            "image_local": "/images/characters/barbara_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Barbara_Skin1.png",
+            "element": "Hydro"
+        },
+        {
             "name": "Candace",
             "image_local": "/images/characters/candace.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Candace.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Dahlia",
+            "image_local": "/images/characters/dahlia.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Dahlia.png",
             "element": "Hydro"
         },
         {
@@ -523,6 +601,12 @@
             "element": "Hydro"
         },
         {
+            "name": "Nilou Skin1",
+            "image_local": "/images/characters/nilou_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Nilou_Skin1.png",
+            "element": "Hydro"
+        },
+        {
             "name": "Sangonomiya Kokomi",
             "image_local": "/images/characters/sangonomiya_kokomi.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Sangonomiya_Kokomi.png",
@@ -544,6 +628,12 @@
             "name": "Xingqiu",
             "image_local": "/images/characters/xingqiu.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Xingqiu.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Xingqiu Skin1",
+            "image_local": "/images/characters/xingqiu_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xingqiu_Skin1.png",
             "element": "Hydro"
         },
         {
@@ -601,6 +691,12 @@
             "element": "Pyro"
         },
         {
+            "name": "Diluc Skin1",
+            "image_local": "/images/characters/diluc_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Diluc_Skin1.png",
+            "element": "Pyro"
+        },
+        {
             "name": "Gaming",
             "image_local": "/images/characters/gaming.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Gaming.png",
@@ -613,9 +709,21 @@
             "element": "Pyro"
         },
         {
+            "name": "Hu Tao Skin1",
+            "image_local": "/images/characters/hu_tao_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Hu_Tao_Skin1.png",
+            "element": "Pyro"
+        },
+        {
             "name": "Klee",
             "image_local": "/images/characters/klee.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Klee.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Klee Skin1",
+            "image_local": "/images/characters/klee_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Klee_Skin1.png",
             "element": "Pyro"
         },
         {
@@ -640,6 +748,12 @@
             "name": "Xiangling",
             "image_local": "/images/characters/xiangling.png",
             "image_url": "https://library.keqingmains.com/img/characters/icon/Xiangling.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Xiangling Skin1",
+            "image_local": "/images/characters/xiangling_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/icon/Xiangling_Skin1.png",
             "element": "Pyro"
         },
         {
@@ -2192,6 +2306,12 @@
             "name": "Aquila Favonia",
             "image_local": "/images/weapons/aquila_favonia.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Aquila_Favonia.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Azurelight",
+            "image_local": "/images/weapons/azurelight.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Azurelight.png",
             "type": "Sword"
         },
         {

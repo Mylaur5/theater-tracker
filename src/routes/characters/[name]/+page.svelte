@@ -1,6 +1,4 @@
 <script>
-	// @ts-nocheck
-
 	import { onMount } from 'svelte';
 	import { base, assets } from '$app/paths';
 	import {
@@ -49,11 +47,18 @@
 
 		if ($selectedGoodFile === '') return;
 		const goodFileData = readGoodFile($selectedGoodFile);
-		characterData = Promise.resolve(goodFileData.then((data) => data.characters.find((char) => char.key === characterName)));
+		characterData = goodFileData.characters.find((char) => char.key === characterName);
+		console.log($state.snapshot(characterData));
 	});
 </script>
 
 <h1 class="mb-4 text-center text-4xl font-bold">{pascalToNormalCase(characterName)}</h1>
+
+{#if $selectedGoodFile.length > 0}
+	<h3 class="mb-2 text-center text-sm">
+		imported from: <code class="font-bold">`{$selectedGoodFile}`</code>
+	</h3>
+{/if}
 
 <div class="flex items-center justify-center gap-8">
 	<div class="flex flex-col items-center justify-center gap-4">
@@ -78,20 +83,18 @@
 		/>
 	</div>
 	<div class="flex h-full flex-col justify-evenly">
-		{#await characterData}
-			<h2 class="text-xl font-bold">Loading Character Data...</h2>
-		{:then characterData}
-			{#if $selectedGoodFile !== ''}
-				<h2 class="text-xl font-bold text-green-500">Level {characterData.level}</h2>
-				<div class="text-sm">
-					<p>Constellation: {characterData.constellation}</p>
-					<p>Ascension: {characterData.ascension}</p>
-					<p>Talent:</p>
-					<p class="pl-8">Auto {characterData.talent.auto}</p>
-					<p class="pl-8">Skill {characterData.talent.skill}</p>
-					<p class="pl-8">Burst {characterData.talent.burst}</p>
-				</div>
-			{/if}
-		{/await}
+		<!-- {#if !('level' in characterData)}
+			<h2 class="text-xl font-bold break-before-all">Loading Character Data...</h2>
+		{:else if $selectedGoodFile !== ''} -->
+			<h2 class="text-xl font-bold text-green-500">Level {characterData.level}</h2>
+			<div class="text-sm">
+				<p>Constellation: {characterData.constellation}</p>
+				<p>Ascension: {characterData.ascension}</p>
+				<p>Talent:</p>
+				<p class="pl-8">Auto {characterData.talent.auto}</p>
+				<p class="pl-8">Skill {characterData.talent.skill}</p>
+				<p class="pl-8">Burst {characterData.talent.burst}</p>
+			</div>
+		<!-- {/if} -->
 	</div>
 </div>

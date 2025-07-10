@@ -29,7 +29,7 @@ function extractImages(cardListContainer) {
 		}
 		return name;
 	}
-
+	
 	return Array.from(
 		cardListContainer.find('span.card-body').map((index, body) => {
 			const cardBody = cheerio.load(body)(body);
