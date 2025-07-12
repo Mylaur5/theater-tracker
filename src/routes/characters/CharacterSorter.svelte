@@ -162,10 +162,10 @@
 	</svg>
 {/snippet}
 
-<div class="flex gap-12">
+<div class="flex flex-wrap gap-6 md:gap-12">
 	<div class="flex gap-4">
 		<label for="filter" class="flex items-center">Filter by</label>
-		<form name="filter" class="flex items-center justify-center gap-4">
+		<form name="filter" class="flex flex-wrap items-center justify-start gap-4">
 			<div class="flex">
 				<button
 					popovertarget="dropdown-seasons"
@@ -278,7 +278,7 @@
 
 	<div class="flex gap-4">
 		<label for="order" class="flex items-center">Order by</label>
-		<form name="order" class="flex max-w-sm items-center justify-center gap-4">
+		<form name="order" class="flex wrap max-w-sm items-center justify-center md:gap-4">
 			<div class="flex">
 				<button
 					popovertarget="dropdown-order"

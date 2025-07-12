@@ -41,7 +41,7 @@
 
 <main class="flex h-screen bg-white dark:bg-indigo-950 dark:text-gray-400">
 	<Sidebar />
-	<section class="mx-16 my-8 flex w-screen flex-col">
+	<section class="mx-3 my-8 flex md:w-screen flex-col md:mx-16 text-sm md:text-base">
 		<Notification message={notificationMessage} show={notify} />
 		{@render children()}
 	</section>

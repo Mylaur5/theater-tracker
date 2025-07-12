@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { AiOutlineMoon, AiOutlineSun } from 'svelte-icons-pack/ai';
-	import { Icon } from 'svelte-icons-pack';
-	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
+	import { Icon } from 'svelte-icons-pack';
+	import { AiOutlineMoon, AiOutlineSun } from 'svelte-icons-pack/ai';
 
 	type MenuItem = {
 		id: string;
@@ -53,6 +54,9 @@
 	}
 
 	onMount(() => {
+		if (browser && window.innerWidth <= 768) {
+			hidden = true;
+		}
 		darkMode = localStorage.theme === 'dark';
 		if ($page.url.pathname.startsWith(base + '/')) {
 			selected = 'seasons';
@@ -67,13 +71,13 @@
 <!-- svelte-ignore a11y_mouse_events_have_key_events -->
 <div
 	role="menu"
-	class="flex h-full {hidden
-		? 'w-16'
-		: 'w-60'} flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
+	class="flex h-full min-w-12 flex-col overflow-hidden bg-gray-900 text-gray-400 transition-all duration-300 ease-in-out"
+	class:w-16={hidden}
+	class:w-60={!hidden}
 	tabindex="0"
 >
 	<!-- Home -->
-	<button class="group mt-3 flex w-full items-center px-3" onclick={toggleSidebar}>
+	<button class="group mt-3 flex w-full items-center justify-center md:justify-start md:px-3" onclick={toggleSidebar}>
 		<img
 			alt="System_Imaginarium_Theater"
 			src="{base}/icons/System_Imaginarium_Theater.webp"
@@ -98,7 +102,7 @@
 	<!-- Menu -->
 	{#each menuItems as item}
 		<a
-			class="group mt-2 flex h-12 w-full items-center rounded px-3
+			class="group mt-2 flex h-12 w-full items-center rounded justify-center md:justify-start md:px-3
 			{selected === item.id ? 'bg-gray-700 text-gray-200' : 'hover:bg-gray-700 hover:text-gray-300'}"
 			href="{base}{item.href}"
 			onclick={() => {

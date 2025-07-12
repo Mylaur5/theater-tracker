@@ -26,7 +26,7 @@
 
 {#snippet characterCell(characterName: string, element: string = '?', level: number = -1, ready: boolean = false)}
 	<a
-		class="m-2 flex max-w-28 flex-col items-center justify-start transition-transform hover:scale-105"
+		class="m-1 md:m-2 flex max-w-16 md:max-w-28 flex-col items-center justify-start transition-transform hover:scale-105"
 		href="{base}/characters/{characterName}"
 	>
 		<div class="flex">
@@ -38,7 +38,7 @@
 					?
 				</p>
 			{:else}
-				<div class="relative left-12 top-6 max-w-6 transition-transform hover:scale-105">
+				<div class="relative left-8 md:left-12 top-4 md:top-6 max-w-5 md:max-w-6 transition-transform hover:scale-105">
 					<img
 						src="{assets}/images/elements/{normalToSnakeCase(element)}.png"
 						class="object-cover"
@@ -49,7 +49,7 @@
 			{/if}
 			{#if level != -1}
 				<p
-					class="relative left-9 top-[7.75rem] text-center text-xs font-bold text-green-300"
+					class="relative left-4 md:left-9 top-[4.5rem] md:top-[7.75rem] text-center text-xs font-bold text-green-300"
 					style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"
 					title="Level {level}"
 				>
