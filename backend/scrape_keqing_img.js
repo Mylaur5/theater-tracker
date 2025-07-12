@@ -16,56 +16,65 @@ function sanitizeFilename(filename) {
 	return filename.replace(/[<>:"/\\|?*]/g, '').toLowerCase();
 }
 
+
 async function downloadImage(imgSrc, fileName, folderName) {
-	const imgLink = `${SOURCE_LINK}${imgSrc}`;
+    const imgLink = `${SOURCE_LINK}${imgSrc}`;
     const folderPath = path.resolve(`${IMAGE_FOLDER}${folderName}`);
     const destinationFile = path.join(folderPath, fileName);
-	// Clean the folder before downloading
-	if (fs.existsSync(`./images/${folderName}`)) {
-		fs.readdirSync(`./images/${folderName}`).forEach(file => {
-			const filePath = path.join(`./images/${folderName}`, file);
-			fs.unlinkSync(filePath);
-		});
-		fs.rmdirSync(`./images/${folderName}`);
-	}
-	fs.mkdirSync(`./images/${folderName}`, { recursive: true });
 
-	// --- Case-insensitive rename logic ---
+    // Clean the folder before downloading
+    if (fs.existsSync(`./images/${folderName}`)) {
+        fs.readdirSync(`./images/${folderName}`).forEach(file => {
+            const filePath = path.join(`./images/${folderName}`, file);
+            fs.unlinkSync(filePath);
+        });
+        fs.rmdirSync(`./images/${folderName}`);
+    }
+    fs.mkdirSync(`./images/${folderName}`, { recursive: true });
+
+    // --- Case-insensitive rename logic ---
     const filesInFolder = fs.readdirSync(folderPath);
     const lowerFileName = fileName.toLowerCase();
     for (const existing of filesInFolder) {
         if (existing.toLowerCase() === lowerFileName && existing !== fileName) {
             const oldPath = path.join(folderPath, existing);
-			fs.unlinkSync(oldPath);
+            fs.unlinkSync(oldPath);
             console.log(`\x1b[33m✏️ Deleting '${existing}' to '${fileName}' for case normalization.\x1b[0m`);
         }
     }
 
-	// Check if the file already exists and compare sizes
-	if (fs.existsSync(destinationFile)) {
-		const existingFileSize = fs.statSync(destinationFile).size;
-		const imgReq = await axios.get(imgLink, { responseType: 'stream' });
-		const newFileSize = parseInt(imgReq.headers['content-length'], 10);
-
-		if (existingFileSize === newFileSize) {
-			skipped++;
-			console.log(`\x1b[90m⏭️  Skipping download: Image '${destinationFile}' already exists and is identical.\x1b[0m`);
-		}
-	} else {
-		const imgReq = await axios.get(imgLink, { responseType: 'stream' });
-
-		await new Promise((resolve, reject) => {
-			const writer = fs.createWriteStream(destinationFile);
-			imgReq.data.pipe(writer);
-			writer.on('finish', () => {
-				downloaded++;
-				console.log(`\x1b[32m Downloading '${fileName}' successfully. Saved to '${destinationFile}'\x1b[0m`);
-				resolve();
-			});
-			writer.on('error', reject);
-			imgReq.data.on('error', reject);
-		});
-	}
+    try {
+        // Check if the file already exists and compare sizes
+        if (fs.existsSync(destinationFile)) {
+            const existingFileSize = fs.statSync(destinationFile).size;
+            const imgReq = await axios.get(imgLink, { responseType: 'stream' });
+            const newFileSize = parseInt(imgReq.headers['content-length'], 10);
+            if (existingFileSize === newFileSize) {
+                skipped++;
+                console.log(`\x1b[90m⏭️ Skipping download: Image '${destinationFile}' already exists and is identical.\x1b[0m`);
+            }
+        } else {
+            const imgReq = await axios.get(imgLink, { responseType: 'stream' });
+            await new Promise((resolve, reject) => {
+                const writer = fs.createWriteStream(destinationFile);
+                imgReq.data.pipe(writer);
+                writer.on('finish', () => {
+                    downloaded++;
+                    console.log(`\x1b[32m Downloading '${fileName}' successfully. Saved to '${destinationFile}'\x1b[0m`);
+                    resolve();
+                });
+                writer.on('error', reject);
+                imgReq.data.on('error', reject);
+            });
+        }
+    } catch (error) {
+        if (error.response && error.response.status === 403) {
+            console.error(`\x1b[31m⚠️ Code 403: Forbidden: Access to the image '${imgLink}' is forbidden.\x1b[0m`);
+        } else {
+            console.error(`\x1b[31m⚠️ Error downloading image '${imgLink}': ${error.message}\x1b[0m`);
+        }
+        throw error; // Re-throw the error if you want calling code to handle it
+    }
 }
 
 async function extract() {
