@@ -52,6 +52,7 @@ async function downloadImage(imgSrc, fileName, folderName) {
             if (existingFileSize === newFileSize) {
                 skipped++;
                 console.log(`\x1b[90m⏭️ Skipping download: Image '${destinationFile}' already exists and is identical.\x1b[0m`);
+                return;
             }
         } else {
             const imgReq = await axios.get(imgLink, { responseType: 'stream' });
@@ -69,7 +70,8 @@ async function downloadImage(imgSrc, fileName, folderName) {
         }
     } catch (error) {
         if (error.response && error.response.status === 403) {
-            console.error(`\x1b[31m⚠️ Code 403: Forbidden: Access to the image '${imgLink}' is forbidden.\x1b[0m`);
+            console.error(`\x1b[31m⚠️ Forbidden (Code 403): Access to the image '${imgLink}' is forbidden. Skipping...\x1b[0m`);
+			return;
         } else {
             console.error(`\x1b[31m⚠️ Error downloading image '${imgLink}': ${error.message}\x1b[0m`);
 			throw error; // Re-throw the error if you want calling code to handle it
