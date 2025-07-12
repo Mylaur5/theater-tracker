@@ -72,8 +72,8 @@ async function downloadImage(imgSrc, fileName, folderName) {
             console.error(`\x1b[31m⚠️ Code 403: Forbidden: Access to the image '${imgLink}' is forbidden.\x1b[0m`);
         } else {
             console.error(`\x1b[31m⚠️ Error downloading image '${imgLink}': ${error.message}\x1b[0m`);
+			throw error; // Re-throw the error if you want calling code to handle it
         }
-        throw error; // Re-throw the error if you want calling code to handle it
     }
 }
 
