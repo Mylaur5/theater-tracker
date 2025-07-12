@@ -104,7 +104,7 @@
 			onclick={() => {
 				window.open('https://github.com/Mylaur5/theater-tracker/actions/workflows/deploy-gh-pages.yml', '_blank');
 			}}
-			class="gray flex gap-1 rounded p-1 hover:bg-gray-200 md:px-2 dark:bg-indigo-900 dark:hover:bg-indigo-800"
+			class="gray mx-4 flex gap-1 rounded p-1 px-2 hover:bg-gray-200 dark:bg-indigo-900 dark:hover:bg-indigo-800"
 			aria-label="Refresh"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
@@ -134,7 +134,7 @@
 
 			{#if season.alternate_cast_elements.length > 0}
 				<h3 class="mt-4 text-center text-lg font-bold md:text-xl">Alternate Cast Elements</h3>
-				<div class="mt-1 flex items-center justify-center space-x-2 md:space-x-4">
+				<div class="mt-1 flex flex-wrap items-center justify-center gap-2">
 					{#each season.alternate_cast_elements as element}
 						<img
 							src="{assets}/images/elements/{element.name.toLowerCase()}.png"
@@ -148,7 +148,7 @@
 
 			{#if season.opening_characters.length > 0}
 				<h3 class="mt-4 text-center text-lg font-bold md:text-xl">Opening Characters:</h3>
-				<div class="mt-1 flex flex-wrap items-start justify-center gap-2 space-x-2 md:space-x-4">
+				<div class="mt-1 flex flex-wrap items-center justify-center gap-2">
 					{#each season.opening_characters as character}
 						{@render characterCell(normalToPascalCase(character.name), character.element)}
 					{/each}
@@ -157,7 +157,7 @@
 
 			{#if season.special_guest_stars.length > 0}
 				<h3 class="mt-4 text-center text-lg font-bold md:text-xl">Special Guest Stars:</h3>
-				<div class="mt-1 flex flex-wrap items-start justify-center gap-2 space-x-2 md:space-x-4">
+				<div class="mt-1 flex flex-wrap items-center justify-center gap-2">
 					{#each season.special_guest_stars as character}
 						{@render characterCell(normalToPascalCase(character.name), character.element)}
 					{/each}

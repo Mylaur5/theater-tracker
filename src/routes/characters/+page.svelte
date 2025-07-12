@@ -38,7 +38,7 @@
 					?
 				</p>
 			{:else}
-				<div class="relative left-8 md:left-12 top-4 md:top-6 max-w-5 md:max-w-6 transition-transform hover:scale-105">
+				<div class="relative left-8 md:left-10 top-4 md:top-6 max-w-5 md:max-w-6 transition-transform hover:scale-105">
 					<img
 						src="{assets}/images/elements/{normalToSnakeCase(element)}.png"
 						class="object-cover"

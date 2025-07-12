@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { base, assets } from '$app/paths';
+	import { assets } from '$app/paths';
 	import {
 		selectedGoodFile,
 		normalToSnakeCase,
@@ -40,15 +40,14 @@
 			default:
 				element = await fetch(`${assets}/data/keqing_data.json`)
 					.then((response) => response.json().then((response) => response.characters))
-					.then((allChars) => allChars.find((char) => normalToPascalCase(char.name) === characterName))
+					.then((allChars) => allChars.find((/** @type {{ name: any; }} */ char) => normalToPascalCase(char.name) === characterName))
 					.then((char) => char.element)
 					.catch((error) => console.error('Fetch error:', error));
 		}
 
 		if ($selectedGoodFile === '') return;
 		const goodFileData = readGoodFile($selectedGoodFile);
-		characterData = goodFileData.characters.find((char) => char.key === characterName);
-		console.log($state.snapshot(characterData));
+		characterData = goodFileData.characters.find((/** @type {{ key: string; }} */ char) => char.key === characterName);
 	});
 </script>
 
@@ -60,7 +59,7 @@
 	</h3>
 {/if}
 
-<div class="flex items-center justify-center gap-8">
+<div class="flex flex-col md:flex-row items-center justify-center gap-8">
 	<div class="flex flex-col items-center justify-center gap-4">
 		<p class="flex items-center gap-2 text-xl font-bold">
 			{#await element}
@@ -77,15 +76,15 @@
 		</p>
 		<img
 			src="{assets}/images/characters/{normalToSnakeCase(pascalToNormalCase(characterName))}.png"
-			class="w-45 break-before-all text-wrap object-cover"
+			class="w-40 break-before-all text-wrap object-cover"
 			alt={characterName}
 			title={characterName}
 		/>
 	</div>
 	<div class="flex h-full flex-col justify-evenly">
-		<!-- {#if !('level' in characterData)}
-			<h2 class="text-xl font-bold break-before-all">Loading Character Data...</h2>
-		{:else if $selectedGoodFile !== ''} -->
+		{#if !characterData}
+			<h2 class="text-xl font-bold break-before-all">Character Data Not Found...</h2>
+		{:else if $selectedGoodFile !== ''}
 			<h2 class="text-xl font-bold text-green-500">Level {characterData.level}</h2>
 			<div class="text-sm">
 				<p>Constellation: {characterData.constellation}</p>
@@ -95,6 +94,6 @@
 				<p class="pl-8">Skill {characterData.talent.skill}</p>
 				<p class="pl-8">Burst {characterData.talent.burst}</p>
 			</div>
-		<!-- {/if} -->
+		{/if}
 	</div>
 </div>
