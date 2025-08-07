@@ -3,6 +3,14 @@ import { writable } from 'svelte/store';
 
 export let selectedGoodFile = writable('');
 
+/**
+ * Reads all keys from localStorage that end with '.json',
+ * sorts them by their storedDate in descending order,
+ * and returns an array of the sorted keys.
+ *
+ * @returns {string[]} An array of localStorage keys ending with '.json',
+ * sorted by storedDate (newest first).
+ */
 export function readStorage() {
 	return Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i))
 		.filter((key) => key.endsWith('.json'))
@@ -15,6 +23,12 @@ export function readStorage() {
 		});
 }
 
+/**
+ * Reads and parses a JSON file from localStorage and returns its `content` property.
+ *
+ * @param {string} fileName - The name of the file to read from localStorage.
+ * @returns {*} The `content` property of the parsed file, or `null` if an error occurs or input is invalid.
+ */
 export function readGoodFile(fileName) {
 	if (!fileName) {
 		console.error('No file name provided:', fileName);
@@ -24,13 +38,37 @@ export function readGoodFile(fileName) {
 		console.error('File name is not a string:', fileName);
 		return null;
 	}
-	
+
 	try {
 		const goodFile = JSON.parse(localStorage.getItem(fileName));
 		return goodFile.content;
 	} catch (error) {
 		console.error(`Error reading or parsing file ${JSON.stringify(fileName)} from localStorage:`, error);
 		return null;
+	}
+}
+
+/**
+ * Writes a JSON object to localStorage under the specified key.
+ * Adds a storedDate property with the current ISO date string.
+ *
+ * @param {string} key - The key under which to store the object.
+ * @param {*} content - The content to store (will be wrapped in an object).
+ */
+export function writeGoodFile(key, content) {
+	if (!key || typeof key !== 'string') {
+		console.error('Invalid key for localStorage:', key);
+		return;
+	}
+	const data = {
+		name: key,
+		content,
+		storedDate: new Date().toISOString()
+	};
+	try {
+		localStorage.setItem(key, JSON.stringify(data));
+	} catch (error) {
+		console.error(`Error writing file ${JSON.stringify(key)} to localStorage:`, error);
 	}
 }
 
