@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	let { children } = $props();
 	let notify = $state(false);
-	let notificationMessage = $state('');
+	let notificationHtmlMessage = $state('');
 
 	onMount(() => {
 		document.documentElement.classList.toggle(
@@ -17,13 +17,13 @@
 		const uploadsData = readStorage();
 		if (uploadsData.length === 0 && $selectedGoodFile === '') {
 			notify = true;
-			notificationMessage = `⚠️&nbsp;<p>No GOOD file found.<br>
+			notificationHtmlMessage = `⚠️&nbsp;<p>No GOOD file found.<br>
 				Please go to the <strong>'Files'</strong> tab a GOOD file.</p>`;
 		} else if (uploadsData.length > 0 && $selectedGoodFile === '') {
 			$selectedGoodFile = uploadsData[0]!;
 			setTimeout(() => {
 				notify = true;
-				notificationMessage = `📚&nbsp;<p>Latest GOOD file loaded from local storage.<br/>
+				notificationHtmlMessage = `📚&nbsp;<p>Latest GOOD file loaded from local storage.<br/>
 				Loaded: <code class="text-sm">${$selectedGoodFile}</code></p>`;
 			});
 			setTimeout(() => {
@@ -41,8 +41,8 @@
 
 <main class="flex h-screen bg-white dark:bg-indigo-950 dark:text-gray-400">
 	<Sidebar />
-	<section class="mx-3 my-8 flex md:w-screen flex-col md:mx-16 text-sm md:text-base">
-		<Notification message={notificationMessage} show={notify} />
+	<section class="mx-1 my-8 flex flex-col text-sm md:mx-16 md:w-screen md:text-base">
+		<Notification htmlMessage={notificationHtmlMessage} show={notify} />
 		{@render children()}
 	</section>
 </main>

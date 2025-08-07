@@ -102,7 +102,7 @@
 	<!-- Menu -->
 	{#each menuItems as item}
 		<a
-			class="group mt-2 flex h-12 w-full items-center rounded justify-center md:justify-start md:px-3
+			class="group mt-2 flex h-12 w-full items-center justify-center rounded md:justify-start md:px-3
 			{selected === item.id ? 'bg-gray-700 text-gray-200' : 'hover:bg-gray-700 hover:text-gray-300'}"
 			href="{base}{item.href}"
 			onclick={() => {
@@ -118,9 +118,9 @@
 					height="32"
 					class="transition-transform group-hover:scale-125"
 				/>
-				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden
-					>{item.label}</span
-				>
+				<span class="ml-2 text-sm font-medium transition-transform group-hover:scale-110" class:hidden>
+					{item.label}
+				</span>
 			</div>
 		</a>
 	{/each}

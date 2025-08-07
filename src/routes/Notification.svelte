@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { message, show = false } = $props();
+	let { htmlMessage, show = false } = $props();
 
 	function closeNotification() {
 		show = false;
@@ -8,13 +8,13 @@
 
 <div
 	class:show
-	class="notification fixed right-4 top-4 flex rounded-lg bg-gray-50 p-4 shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+	class="notification fixed md:right-4 right-0 top-4 flex rounded-lg bg-gray-50  px-2 md:px-4 py-4 shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-gray-300"
 >
-	{@html message}
+	{@html htmlMessage}
 	<button
 		type="button"
 		onclick={closeNotification}
-		class="-mx-1.5 -my-1.5 ms-auto inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border-none bg-blue-50 bg-transparent p-1.5 text-lg text-gray-400 hover:bg-gray-700 focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+		class="md:-mx-1.5 -my-1.5 ms-auto inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border-none bg-blue-50 bg-transparent p-1.5 text-lg text-gray-400 hover:bg-gray-700 focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:hover:bg-gray-700"
 		data-dismiss-target="#alert-1"
 		aria-label="Close"
 	>
@@ -44,5 +44,11 @@
 		visibility: visible;
 		opacity: 1;
 		transform: translateX(-20px);
+	}
+
+	@media (width < 768px) {
+		.notification.show {
+			transform: translateX(-5px);
+		}
 	}
 </style>

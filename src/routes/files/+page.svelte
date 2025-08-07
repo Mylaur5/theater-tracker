@@ -103,7 +103,7 @@
 	});
 </script>
 
-<Notification message={notificationMessage} show={notificationToggle} />
+<Notification htmlMessage={notificationMessage} show={notificationToggle} />
 
 <h1 class="mb-4 text-center text-4xl font-bold">Load GOOD file</h1>
 
