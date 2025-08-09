@@ -134,7 +134,7 @@
 		{/if}
 		<button
 			type="button"
-			class="m-6 flex h-8 items-center self-end rounded-md border border-gray-300 bg-gray-100 p-3 px-4 text-white hover:bg-gray-200 focus:outline-none focus:ring-2 dark:border-green-700 dark:bg-green-600 dark:hover:bg-green-800"
+			class="m-6 flex h-8 items-center self-end rounded-md border p-3 px-4 text-white hover:bg-gray-200 focus:outline-none focus:ring-2 border-green-700 bg-green-600 dark:hover:bg-green-800"
 			onclick={saveCharToGoodFile}
 		>
 			Save

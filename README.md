@@ -24,10 +24,6 @@ Theater Tracker is a web application that tracks various elements and characters
 npm install
 ```
 ## Running the Project
-### Backend
-```bash
-
-```
 
 ### Frontend
 
@@ -41,6 +37,9 @@ npm run build
 # You can preview the production build with:
 npm run preview
 ```
+
+## Auto-updates from GitHub Actions
+Season Data scraping script is run when pushing on the main branch or on the 1st of every month.
 
 ### Contributing
 If you would like to contribute to this project, please follow these steps:
