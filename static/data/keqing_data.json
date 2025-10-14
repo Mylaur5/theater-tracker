@@ -3,787 +3,919 @@
         {
             "name": "Chasca",
             "image_local": "/images/characters/chasca.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Chasca.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Chasca.png",
             "element": "Anemo"
         },
         {
             "name": "Faruzan",
             "image_local": "/images/characters/faruzan.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Faruzan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Faruzan.png",
             "element": "Anemo"
         },
         {
             "name": "Ifa",
             "image_local": "/images/characters/ifa.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Ifa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ifa.png",
             "element": "Anemo"
         },
         {
             "name": "Jean",
             "image_local": "/images/characters/jean.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Jean.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Jean.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Jean Alt1",
+            "image_local": "/images/characters/jean_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Jean_Alt1.png",
             "element": "Anemo"
         },
         {
             "name": "Jean Skin1",
             "image_local": "/images/characters/jean_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Jean_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Jean_Skin1.png",
             "element": "Anemo"
         },
         {
             "name": "Kaedehara Kazuha",
             "image_local": "/images/characters/kaedehara_kazuha.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaedehara_Kazuha.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kaedehara_Kazuha.png",
             "element": "Anemo"
         },
         {
             "name": "Lan Yan",
             "image_local": "/images/characters/lan_yan.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lan_Yan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lan_Yan.png",
             "element": "Anemo"
         },
         {
             "name": "Lynette",
             "image_local": "/images/characters/lynette.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lynette.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lynette.png",
             "element": "Anemo"
         },
         {
             "name": "Sayu",
             "image_local": "/images/characters/sayu.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Sayu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Sayu.png",
             "element": "Anemo"
         },
         {
             "name": "Shikanoin Heizou",
             "image_local": "/images/characters/shikanoin_heizou.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Shikanoin_Heizou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Shikanoin_Heizou.png",
             "element": "Anemo"
         },
         {
             "name": "Sucrose",
             "image_local": "/images/characters/sucrose.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Sucrose.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Sucrose.png",
             "element": "Anemo"
         },
         {
-            "name": "Venti",
-            "image_local": "/images/characters/venti.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Venti.png",
+            "name": "Sucrose Alt1",
+            "image_local": "/images/characters/sucrose_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Sucrose_Alt1.png",
+            "element": "Anemo"
+        },
+        {
+            "name": "Venti Alt1",
+            "image_local": "/images/characters/venti_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Venti_Alt1.png",
             "element": "Anemo"
         },
         {
             "name": "Wanderer",
             "image_local": "/images/characters/wanderer.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Wanderer.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Wanderer.png",
             "element": "Anemo"
         },
         {
             "name": "Xianyun",
             "image_local": "/images/characters/xianyun.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xianyun.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xianyun.png",
             "element": "Anemo"
         },
         {
-            "name": "Xiao",
-            "image_local": "/images/characters/xiao.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xiao.png",
+            "name": "Xiao Alt1",
+            "image_local": "/images/characters/xiao_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xiao_Alt1.png",
             "element": "Anemo"
         },
         {
             "name": "Yumemizuki Mizuki",
             "image_local": "/images/characters/yumemizuki_mizuki.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yumemizuki_Mizuki.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yumemizuki_Mizuki.png",
             "element": "Anemo"
         },
         {
             "name": "Aether (Anemo)",
             "image_local": "/images/characters/aether_(anemo).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Anemo"
         },
         {
             "name": "Lumine (Anemo)",
             "image_local": "/images/characters/lumine_(anemo).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Anemo"
         },
         {
             "name": "Aloy",
             "image_local": "/images/characters/aloy.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aloy.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aloy.png",
             "element": "Cryo"
         },
         {
             "name": "Charlotte",
             "image_local": "/images/characters/charlotte.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Charlotte.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Charlotte.png",
             "element": "Cryo"
         },
         {
-            "name": "Chongyun",
-            "image_local": "/images/characters/chongyun.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Chongyun.png",
+            "name": "Chongyun Alt1",
+            "image_local": "/images/characters/chongyun_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Chongyun_Alt1.png",
             "element": "Cryo"
         },
         {
             "name": "Citlali",
             "image_local": "/images/characters/citlali.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Citlali.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Citlali.png",
             "element": "Cryo"
         },
         {
-            "name": "Diona",
-            "image_local": "/images/characters/diona.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Diona.png",
+            "name": "Diona Alt1",
+            "image_local": "/images/characters/diona_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Diona_Alt1.png",
             "element": "Cryo"
         },
         {
             "name": "Escoffier",
             "image_local": "/images/characters/escoffier.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Escoffier.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Escoffier.png",
             "element": "Cryo"
         },
         {
             "name": "Eula",
             "image_local": "/images/characters/eula.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Eula.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Eula.png",
             "element": "Cryo"
         },
         {
             "name": "Freminet",
             "image_local": "/images/characters/freminet.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Freminet.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Freminet.png",
             "element": "Cryo"
         },
         {
             "name": "Ganyu",
             "image_local": "/images/characters/ganyu.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Ganyu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ganyu.png",
+            "element": "Cryo"
+        },
+        {
+            "name": "Ganyu Alt1",
+            "image_local": "/images/characters/ganyu_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ganyu_Alt1.png",
             "element": "Cryo"
         },
         {
             "name": "Ganyu Skin1",
             "image_local": "/images/characters/ganyu_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Ganyu_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ganyu_Skin1.png",
             "element": "Cryo"
         },
         {
-            "name": "Kaeya",
-            "image_local": "/images/characters/kaeya.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaeya.png",
+            "name": "Kaeya Alt1",
+            "image_local": "/images/characters/kaeya_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kaeya_Alt1.png",
             "element": "Cryo"
         },
         {
             "name": "Kaeya Skin1",
             "image_local": "/images/characters/kaeya_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaeya_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kaeya_Skin1.png",
             "element": "Cryo"
         },
         {
             "name": "Kamisato Ayaka",
             "image_local": "/images/characters/kamisato_ayaka.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayaka.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kamisato_Ayaka.png",
             "element": "Cryo"
         },
         {
-            "name": "Kamisato Ayaka Skin1",
+            "name": "Kamisato Ayaka_Skin1",
             "image_local": "/images/characters/kamisato_ayaka_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayaka_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kamisato_Ayaka_Skin1.png",
             "element": "Cryo"
         },
         {
             "name": "Layla",
             "image_local": "/images/characters/layla.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Layla.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Layla.png",
             "element": "Cryo"
         },
         {
             "name": "Mika",
             "image_local": "/images/characters/mika.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Mika.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Mika.png",
             "element": "Cryo"
         },
         {
-            "name": "Qiqi",
-            "image_local": "/images/characters/qiqi.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Qiqi.png",
+            "name": "Qiqi Alt1",
+            "image_local": "/images/characters/qiqi_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Qiqi_Alt1.png",
             "element": "Cryo"
         },
         {
             "name": "Rosaria",
             "image_local": "/images/characters/rosaria.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Rosaria.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Rosaria.png",
             "element": "Cryo"
         },
         {
             "name": "Shenhe",
             "image_local": "/images/characters/shenhe.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Shenhe.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Shenhe.png",
             "element": "Cryo"
         },
         {
             "name": "Shenhe Skin1",
             "image_local": "/images/characters/shenhe_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Shenhe_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Shenhe_Skin1.png",
             "element": "Cryo"
         },
         {
             "name": "Skirk",
             "image_local": "/images/characters/skirk.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Skirk.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Skirk.png",
             "element": "Cryo"
         },
         {
             "name": "Wriothesley",
             "image_local": "/images/characters/wriothesley.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Wriothesley.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Wriothesley.png",
             "element": "Cryo"
         },
         {
             "name": "Aether (Cryo)",
             "image_local": "/images/characters/aether_(cryo).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Cryo"
         },
         {
             "name": "Lumine (Cryo)",
             "image_local": "/images/characters/lumine_(cryo).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Cryo"
         },
         {
             "name": "Alhaitham",
             "image_local": "/images/characters/alhaitham.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Alhaitham.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Alhaitham.png",
             "element": "Dendro"
         },
         {
             "name": "Baizhu",
             "image_local": "/images/characters/baizhu.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Baizhu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Baizhu.png",
             "element": "Dendro"
         },
         {
             "name": "Collei",
             "image_local": "/images/characters/collei.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Collei.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Collei.png",
             "element": "Dendro"
         },
         {
             "name": "Emilie",
             "image_local": "/images/characters/emilie.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Emilie.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Emilie.png",
             "element": "Dendro"
         },
         {
             "name": "Kaveh",
             "image_local": "/images/characters/kaveh.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kaveh.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kaveh.png",
             "element": "Dendro"
         },
         {
             "name": "Kinich",
             "image_local": "/images/characters/kinich.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kinich.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kinich.png",
             "element": "Dendro"
         },
         {
             "name": "Kirara",
             "image_local": "/images/characters/kirara.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kirara.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kirara.png",
             "element": "Dendro"
         },
         {
             "name": "Kirara Skin1",
             "image_local": "/images/characters/kirara_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kirara_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kirara_Skin1.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Lauma",
+            "image_local": "/images/characters/lauma.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lauma.png",
             "element": "Dendro"
         },
         {
             "name": "Nahida",
             "image_local": "/images/characters/nahida.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Nahida.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Nahida.png",
+            "element": "Dendro"
+        },
+        {
+            "name": "Nefer",
+            "image_local": "/images/characters/nefer.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Nefer.png",
             "element": "Dendro"
         },
         {
             "name": "Tighnari",
             "image_local": "/images/characters/tighnari.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Tighnari.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Tighnari.png",
             "element": "Dendro"
         },
         {
             "name": "Yaoyao",
             "image_local": "/images/characters/yaoyao.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yaoyao.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yaoyao.png",
             "element": "Dendro"
         },
         {
             "name": "Aether (Dendro)",
             "image_local": "/images/characters/aether_(dendro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Dendro"
         },
         {
             "name": "Lumine (Dendro)",
             "image_local": "/images/characters/lumine_(dendro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Dendro"
         },
         {
-            "name": "Beidou",
-            "image_local": "/images/characters/beidou.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Beidou.png",
+            "name": "Beidou Alt1",
+            "image_local": "/images/characters/beidou_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Beidou_Alt1.png",
             "element": "Electro"
         },
         {
             "name": "Clorinde",
             "image_local": "/images/characters/clorinde.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Clorinde.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Clorinde.png",
             "element": "Electro"
         },
         {
             "name": "Cyno",
             "image_local": "/images/characters/cyno.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Cyno.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Cyno.png",
             "element": "Electro"
         },
         {
             "name": "Dori",
             "image_local": "/images/characters/dori.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Dori.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Dori.png",
             "element": "Electro"
         },
         {
             "name": "Fischl",
             "image_local": "/images/characters/fischl.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Fischl.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Fischl.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Fischl Alt1",
+            "image_local": "/images/characters/fischl_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Fischl_Alt1.png",
             "element": "Electro"
         },
         {
             "name": "Fischl Skin1",
             "image_local": "/images/characters/fischl_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Fischl_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Fischl_Skin1.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Flins",
+            "image_local": "/images/characters/flins.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Flins.png",
             "element": "Electro"
         },
         {
             "name": "Iansan",
             "image_local": "/images/characters/iansan.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Iansan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Iansan.png",
             "element": "Electro"
         },
         {
-            "name": "Keqing",
-            "image_local": "/images/characters/keqing.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Keqing.png",
+            "name": "Ineffa",
+            "image_local": "/images/characters/ineffa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ineffa.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Keqing Alt1",
+            "image_local": "/images/characters/keqing_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Keqing_Alt1.png",
             "element": "Electro"
         },
         {
             "name": "Keqing Skin1",
             "image_local": "/images/characters/keqing_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Keqing_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Keqing_Skin1.png",
             "element": "Electro"
         },
         {
             "name": "Kujou Sara",
             "image_local": "/images/characters/kujou_sara.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kujou_Sara.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kujou_Sara.png",
             "element": "Electro"
         },
         {
             "name": "Kuki Shinobu",
             "image_local": "/images/characters/kuki_shinobu.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kuki_Shinobu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kuki_Shinobu.png",
             "element": "Electro"
         },
         {
             "name": "Lisa",
             "image_local": "/images/characters/lisa.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lisa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lisa.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Lisa Alt1",
+            "image_local": "/images/characters/lisa_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lisa_Alt1.png",
             "element": "Electro"
         },
         {
             "name": "Lisa Skin1",
             "image_local": "/images/characters/lisa_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lisa_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lisa_Skin1.png",
             "element": "Electro"
         },
         {
             "name": "Ororon",
             "image_local": "/images/characters/ororon.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Ororon.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ororon.png",
             "element": "Electro"
         },
         {
             "name": "Raiden Shogun",
             "image_local": "/images/characters/raiden_shogun.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Raiden_Shogun.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Raiden_Shogun.png",
             "element": "Electro"
         },
         {
-            "name": "Razor",
-            "image_local": "/images/characters/razor.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Razor.png",
+            "name": "Razor Alt1",
+            "image_local": "/images/characters/razor_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Razor_Alt1.png",
             "element": "Electro"
         },
         {
             "name": "Sethos",
             "image_local": "/images/characters/sethos.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Sethos.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Sethos.png",
             "element": "Electro"
         },
         {
             "name": "Varesa",
             "image_local": "/images/characters/varesa.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Varesa.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Varesa.png",
+            "element": "Electro"
+        },
+        {
+            "name": "Varesa Alt1",
+            "image_local": "/images/characters/varesa_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Varesa_Alt1.png",
             "element": "Electro"
         },
         {
             "name": "Yae Miko",
             "image_local": "/images/characters/yae_miko.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yae_Miko.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yae_Miko.png",
             "element": "Electro"
         },
         {
             "name": "Aether (Electro)",
             "image_local": "/images/characters/aether_(electro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Electro"
         },
         {
             "name": "Lumine (Electro)",
             "image_local": "/images/characters/lumine_(electro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Electro"
         },
         {
-            "name": "Albedo",
-            "image_local": "/images/characters/albedo.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Albedo.png",
+            "name": "Albedo Alt1",
+            "image_local": "/images/characters/albedo_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Albedo_Alt1.png",
             "element": "Geo"
         },
         {
             "name": "Arataki Itto",
             "image_local": "/images/characters/arataki_itto.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Arataki_Itto.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Arataki_Itto.png",
             "element": "Geo"
         },
         {
             "name": "Chiori",
             "image_local": "/images/characters/chiori.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Chiori.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Chiori.png",
             "element": "Geo"
         },
         {
             "name": "Gorou",
             "image_local": "/images/characters/gorou.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Gorou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Gorou.png",
             "element": "Geo"
         },
         {
             "name": "Kachina",
             "image_local": "/images/characters/kachina.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kachina.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kachina.png",
             "element": "Geo"
         },
         {
             "name": "Navia",
             "image_local": "/images/characters/navia.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Navia.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Navia.png",
             "element": "Geo"
         },
         {
-            "name": "Ningguang",
-            "image_local": "/images/characters/ningguang.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Ningguang.png",
+            "name": "Ningguang Alt1",
+            "image_local": "/images/characters/ningguang_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ningguang_Alt1.png",
             "element": "Geo"
         },
         {
             "name": "Ningguang Skin1",
             "image_local": "/images/characters/ningguang_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Ningguang_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Ningguang_Skin1.png",
             "element": "Geo"
         },
         {
             "name": "Noelle",
             "image_local": "/images/characters/noelle.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Noelle.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Noelle.png",
+            "element": "Geo"
+        },
+        {
+            "name": "Noelle Alt1",
+            "image_local": "/images/characters/noelle_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Noelle_Alt1.png",
             "element": "Geo"
         },
         {
             "name": "Xilonen",
             "image_local": "/images/characters/xilonen.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xilonen.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xilonen.png",
             "element": "Geo"
         },
         {
             "name": "Yun Jin",
             "image_local": "/images/characters/yun_jin.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yun_Jin.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yun_Jin.png",
             "element": "Geo"
         },
         {
-            "name": "Zhongli",
-            "image_local": "/images/characters/zhongli.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Zhongli.png",
+            "name": "Zhongli Alt1",
+            "image_local": "/images/characters/zhongli_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Zhongli_Alt1.png",
             "element": "Geo"
         },
         {
             "name": "Aether (Geo)",
             "image_local": "/images/characters/aether_(geo).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Geo"
         },
         {
             "name": "Lumine (Geo)",
             "image_local": "/images/characters/lumine_(geo).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Geo"
         },
         {
-            "name": "Barbara",
-            "image_local": "/images/characters/barbara.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Barbara.png",
+            "name": "Aino",
+            "image_local": "/images/characters/aino.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aino.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Barbara Alt1",
+            "image_local": "/images/characters/barbara_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Barbara_Alt1.png",
             "element": "Hydro"
         },
         {
             "name": "Barbara Skin1",
             "image_local": "/images/characters/barbara_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Barbara_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Barbara_Skin1.png",
             "element": "Hydro"
         },
         {
             "name": "Candace",
             "image_local": "/images/characters/candace.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Candace.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Candace.png",
             "element": "Hydro"
         },
         {
             "name": "Dahlia",
             "image_local": "/images/characters/dahlia.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Dahlia.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Dahlia.png",
             "element": "Hydro"
         },
         {
             "name": "Furina",
             "image_local": "/images/characters/furina.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Furina.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Furina.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Furina Alt1",
+            "image_local": "/images/characters/furina_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Furina_Alt1.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Furina Alt2",
+            "image_local": "/images/characters/furina_alt2.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Furina_Alt2.png",
             "element": "Hydro"
         },
         {
             "name": "Kamisato Ayato",
             "image_local": "/images/characters/kamisato_ayato.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Kamisato_Ayato.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Kamisato_Ayato.png",
             "element": "Hydro"
         },
         {
-            "name": "Mona",
-            "image_local": "/images/characters/mona.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Mona.png",
+            "name": "Mona Alt1",
+            "image_local": "/images/characters/mona_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Mona_Alt1.png",
             "element": "Hydro"
         },
         {
             "name": "Mualani",
             "image_local": "/images/characters/mualani.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Mualani.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Mualani.png",
             "element": "Hydro"
         },
         {
             "name": "Neuvillette",
             "image_local": "/images/characters/neuvillette.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Neuvillette.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Neuvillette.png",
             "element": "Hydro"
         },
         {
             "name": "Nilou",
             "image_local": "/images/characters/nilou.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Nilou.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Nilou.png",
             "element": "Hydro"
         },
         {
             "name": "Nilou Skin1",
             "image_local": "/images/characters/nilou_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Nilou_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Nilou_Skin1.png",
             "element": "Hydro"
         },
         {
             "name": "Sangonomiya Kokomi",
             "image_local": "/images/characters/sangonomiya_kokomi.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Sangonomiya_Kokomi.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Sangonomiya_Kokomi.png",
             "element": "Hydro"
         },
         {
             "name": "Sigewinne",
             "image_local": "/images/characters/sigewinne.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Sigewinne.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Sigewinne.png",
             "element": "Hydro"
         },
         {
             "name": "Tartaglia",
             "image_local": "/images/characters/tartaglia.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Tartaglia.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Tartaglia.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Tartaglia Alt1",
+            "image_local": "/images/characters/tartaglia_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Tartaglia_Alt1.png",
             "element": "Hydro"
         },
         {
             "name": "Xingqiu",
             "image_local": "/images/characters/xingqiu.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xingqiu.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xingqiu.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Xingqiu Alt1",
+            "image_local": "/images/characters/xingqiu_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xingqiu_Alt1.png",
             "element": "Hydro"
         },
         {
             "name": "Xingqiu Skin1",
             "image_local": "/images/characters/xingqiu_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xingqiu_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xingqiu_Skin1.png",
             "element": "Hydro"
         },
         {
             "name": "Yelan",
             "image_local": "/images/characters/yelan.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yelan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yelan.png",
+            "element": "Hydro"
+        },
+        {
+            "name": "Yelan Skin1",
+            "image_local": "/images/characters/yelan_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yelan_Skin1.png",
             "element": "Hydro"
         },
         {
             "name": "Aether (Hydro)",
             "image_local": "/images/characters/aether_(hydro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Hydro"
         },
         {
             "name": "Lumine (Hydro)",
             "image_local": "/images/characters/lumine_(hydro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Hydro"
         },
         {
             "name": "Amber",
             "image_local": "/images/characters/amber.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Amber.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Amber.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Amber Alt1",
+            "image_local": "/images/characters/amber_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Amber_Alt1.png",
             "element": "Pyro"
         },
         {
             "name": "Arlecchino",
             "image_local": "/images/characters/arlecchino.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Arlecchino.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Arlecchino.png",
             "element": "Pyro"
         },
         {
-            "name": "Bennett",
-            "image_local": "/images/characters/bennett.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Bennett.png",
+            "name": "Bennett Alt1",
+            "image_local": "/images/characters/bennett_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Bennett_Alt1.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Bennett Skin1",
+            "image_local": "/images/characters/bennett_skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Bennett_Skin1.png",
             "element": "Pyro"
         },
         {
             "name": "Chevreuse",
             "image_local": "/images/characters/chevreuse.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Chevreuse.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Chevreuse.png",
             "element": "Pyro"
         },
         {
             "name": "Dehya",
             "image_local": "/images/characters/dehya.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Dehya.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Dehya.png",
             "element": "Pyro"
         },
         {
-            "name": "Diluc",
-            "image_local": "/images/characters/diluc.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Diluc.png",
+            "name": "Diluc Alt1",
+            "image_local": "/images/characters/diluc_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Diluc_Alt1.png",
             "element": "Pyro"
         },
         {
             "name": "Diluc Skin1",
             "image_local": "/images/characters/diluc_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Diluc_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Diluc_Skin1.png",
             "element": "Pyro"
         },
         {
             "name": "Gaming",
             "image_local": "/images/characters/gaming.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Gaming.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Gaming.png",
             "element": "Pyro"
         },
         {
-            "name": "Hu Tao",
-            "image_local": "/images/characters/hu_tao.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Hu_Tao.png",
+            "name": "Hu Tao_Alt1",
+            "image_local": "/images/characters/hu_tao_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Hu_Tao_Alt1.png",
             "element": "Pyro"
         },
         {
-            "name": "Hu Tao Skin1",
+            "name": "Hu Tao_Skin1",
             "image_local": "/images/characters/hu_tao_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Hu_Tao_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Hu_Tao_Skin1.png",
             "element": "Pyro"
         },
         {
             "name": "Klee",
             "image_local": "/images/characters/klee.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Klee.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Klee.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Klee Alt1",
+            "image_local": "/images/characters/klee_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Klee_Alt1.png",
             "element": "Pyro"
         },
         {
             "name": "Klee Skin1",
             "image_local": "/images/characters/klee_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Klee_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Klee_Skin1.png",
             "element": "Pyro"
         },
         {
             "name": "Lyney",
             "image_local": "/images/characters/lyney.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lyney.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lyney.png",
             "element": "Pyro"
         },
         {
             "name": "Mavuika",
             "image_local": "/images/characters/mavuika.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Mavuika.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Mavuika.png",
             "element": "Pyro"
         },
         {
             "name": "Thoma",
             "image_local": "/images/characters/thoma.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Thoma.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Thoma.png",
             "element": "Pyro"
         },
         {
             "name": "Xiangling",
             "image_local": "/images/characters/xiangling.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xiangling.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xiangling.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Xiangling Alt1",
+            "image_local": "/images/characters/xiangling_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xiangling_Alt1.png",
             "element": "Pyro"
         },
         {
             "name": "Xiangling Skin1",
             "image_local": "/images/characters/xiangling_skin1.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xiangling_Skin1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xiangling_Skin1.png",
             "element": "Pyro"
         },
         {
             "name": "Xinyan",
             "image_local": "/images/characters/xinyan.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Xinyan.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xinyan.png",
+            "element": "Pyro"
+        },
+        {
+            "name": "Xinyan Alt1",
+            "image_local": "/images/characters/xinyan_alt1.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Xinyan_Alt1.png",
             "element": "Pyro"
         },
         {
             "name": "Yanfei",
             "image_local": "/images/characters/yanfei.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yanfei.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yanfei.png",
             "element": "Pyro"
         },
         {
             "name": "Yoimiya",
             "image_local": "/images/characters/yoimiya.png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Yoimiya.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Yoimiya.png",
             "element": "Pyro"
         },
         {
             "name": "Aether (Pyro)",
             "image_local": "/images/characters/aether_(pyro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Aether.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Aether.png",
             "element": "Pyro"
         },
         {
             "name": "Lumine (Pyro)",
             "image_local": "/images/characters/lumine_(pyro).png",
-            "image_url": "https://library.keqingmains.com/img/characters/icon/Lumine.png",
+            "image_url": "https://library.keqingmains.com/img/characters/round-icon/Lumine.png",
             "element": "Pyro"
         }
     ],
@@ -1117,6 +1249,18 @@
             "image_local": "/images/artifacts/finale_of_the_deep_galleries.png",
             "image_url": "https://library.keqingmains.com/img/artifacts/icon/Finale_of_the_Deep_Galleries.png",
             "level": "5★"
+        },
+        {
+            "name": "Night of the Sky's Unveiling",
+            "image_local": "/images/artifacts/night_of_the_sky's_unveiling.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Night_of_the_Skys_Unveiling.png",
+            "level": "5★"
+        },
+        {
+            "name": "Silken Moon's Serenade",
+            "image_local": "/images/artifacts/silken_moon's_serenade.png",
+            "image_url": "https://library.keqingmains.com/img/artifacts/icon/Silken_Moons_Serenade.png",
+            "level": "5★"
         }
     ],
     "weapons": [
@@ -1295,6 +1439,12 @@
             "type": "Bow"
         },
         {
+            "name": "Snare Hook",
+            "image_local": "/images/weapons/snare_hook.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Snare_Hook.png",
+            "type": "Bow"
+        },
+        {
             "name": "Song of Stillness",
             "image_local": "/images/weapons/song_of_stillness.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Song_of_Stillness.png",
@@ -1439,9 +1589,21 @@
             "type": "Catalyst"
         },
         {
+            "name": "Blackmarrow Lantern",
+            "image_local": "/images/weapons/blackmarrow_lantern.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Blackmarrow_Lantern.png",
+            "type": "Catalyst"
+        },
+        {
             "name": "Dodoco Tales",
             "image_local": "/images/weapons/dodoco_tales.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Dodoco_Tales.png",
+            "type": "Catalyst"
+        },
+        {
+            "name": "Etherlight Spindlelute",
+            "image_local": "/images/weapons/etherlight_spindlelute.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Etherlight_Spindlelute.png",
             "type": "Catalyst"
         },
         {
@@ -1601,6 +1763,12 @@
             "type": "Catalyst"
         },
         {
+            "name": "Nightweaver's Looking Glass",
+            "image_local": "/images/weapons/nightweaver's_looking_glass.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Nightweavers_Looking_Glass.png",
+            "type": "Catalyst"
+        },
+        {
             "name": "Skyward Atlas",
             "image_local": "/images/weapons/skyward_atlas.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Skyward_Atlas.png",
@@ -1709,6 +1877,12 @@
             "type": "Claymore"
         },
         {
+            "name": "Flame-Forged Insight",
+            "image_local": "/images/weapons/flame-forged_insight.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Flame-Forged_Insight.png",
+            "type": "Claymore"
+        },
+        {
             "name": "Forest Regalia",
             "image_local": "/images/weapons/forest_regalia.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Forest_Regalia.png",
@@ -1748,6 +1922,12 @@
             "name": "Makhaira Aquamarine",
             "image_local": "/images/weapons/makhaira_aquamarine.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Makhaira_Aquamarine.png",
+            "type": "Claymore"
+        },
+        {
+            "name": "Master Key",
+            "image_local": "/images/weapons/master_key.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Master_Key.png",
             "type": "Claymore"
         },
         {
@@ -1997,6 +2177,12 @@
             "type": "Polearm"
         },
         {
+            "name": "Prospector's Shovel",
+            "image_local": "/images/weapons/prospector's_shovel.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prospectors_Shovel.png",
+            "type": "Polearm"
+        },
+        {
             "name": "Prototype Starglitter",
             "image_local": "/images/weapons/prototype_starglitter.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Starglitter.png",
@@ -2033,6 +2219,12 @@
             "type": "Polearm"
         },
         {
+            "name": "Bloodsoaked Ruins",
+            "image_local": "/images/weapons/bloodsoaked_ruins.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Bloodsoaked_Ruins.png",
+            "type": "Polearm"
+        },
+        {
             "name": "Calamity Queller",
             "image_local": "/images/weapons/calamity_queller.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Calamity_Queller.png",
@@ -2048,6 +2240,12 @@
             "name": "Engulfing Lightning",
             "image_local": "/images/weapons/engulfing_lightning.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Engulfing_Lightning.png",
+            "type": "Polearm"
+        },
+        {
+            "name": "Fractured Halo",
+            "image_local": "/images/weapons/fractured_halo.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Fractured_Halo.png",
             "type": "Polearm"
         },
         {
@@ -2213,6 +2411,12 @@
             "type": "Sword"
         },
         {
+            "name": "Moonweaver's Dawn",
+            "image_local": "/images/weapons/moonweaver's_dawn.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Moonweavers_Dawn.png",
+            "type": "Sword"
+        },
+        {
             "name": "Prototype Rancour",
             "image_local": "/images/weapons/prototype_rancour.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Prototype_Rancour.png",
@@ -2234,6 +2438,12 @@
             "name": "Sapwood Blade",
             "image_local": "/images/weapons/sapwood_blade.png",
             "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Sapwood_Blade.png",
+            "type": "Sword"
+        },
+        {
+            "name": "Serenity's Call",
+            "image_local": "/images/weapons/serenity's_call.png",
+            "image_url": "https://library.keqingmains.com/img/weapons/icon_ascended/Serenitys_Call.png",
             "type": "Sword"
         },
         {

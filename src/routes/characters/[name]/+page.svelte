@@ -38,30 +38,17 @@
 
 	// Helper function to determine element
 	async function getElementForCharacter(characterName: string) {
-		switch (characterName) {
-			case 'TravelerAnemo':
-				return 'Anemo';
-			case 'TravelerGeo':
-				return 'Geo';
-			case 'TravelerElectro':
-				return 'Electro';
-			case 'TravelerDendro':
-				return 'Dendro';
-			case 'TravelerHydro':
-				return 'Hydro';
-			case 'TravelerCryo':
-				return 'Cryo';
-			case 'TravelerPyro':
-				return 'Pyro';
-			default:
-				return await fetch(`${assets}/data/keqing_data.json`)
-					.then((response) => response.json().then((response) => response.characters))
-					.then((allChars) => allChars.find((char: any) => normalToPascalCase(char.name) === characterName))
-					.then((char) => char.element)
-					.catch((error) => {
-						console.error('Fetch error:', error);
-						return '';
-					});
+		if (characterName.startsWith('Traveler')) {
+			return characterName.replace('Traveler', '');
+		}
+		try {
+			const response = await fetch(`${assets}/data/keqing_data.json`);
+			const data = await response.json();
+			const char = data.characters.find((char: any) => normalToPascalCase(char.name) === characterName);
+			return char.element;
+		} catch (error) {
+			console.error('Fetch error:', error);
+			return '';
 		}
 	}
 
