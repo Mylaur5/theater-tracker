@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
 	import { onMount } from 'svelte';
-	import { pascalToNormalCase, readGoodFile, selectedGoodFile } from '../shared.js';
+	import { pascalToNormalCase, pascalToSnakeCase, readGoodFile, selectedGoodFile } from '../shared.js';
 
 	let { characterCell } = $props();
 
@@ -83,7 +83,7 @@
 			case 'TravelerPyro':
 				return 'Pyro';
 			default:
-				const characterData = charactersData.find((char) => char.name === pascalToNormalCase(character));
+				const characterData = charactersData.find((char) => char.name === pascalToSnakeCase(character));
 				return characterData ? characterData.element : '?';
 		}
 	}
@@ -149,6 +149,7 @@
 				.catch((error) => console.error('Fetch error:', error))
 		).characters;
 
+		console.log(charactersData);
 		if ($selectedGoodFile === '') return;
 		goodFileChars = readGoodFile($selectedGoodFile).characters;
 		filteredGoodFileChars = goodFileChars;

@@ -1,15 +1,11 @@
 <script lang="ts">
-	import { normalToPascalCase } from './shared.js';
+	import { normalToPascalCase, capitalize } from './shared.js';
 	import { onMount } from 'svelte';
 	import { assets } from '$app/paths';
 	import { characterCell } from './characters/+page.svelte';
 
 	let seasonsData: any[] = $state([]);
 	let currentSeasonNumber = $state(1);
-
-	function capitalize(str: string) {
-		return str.charAt(0).toUpperCase() + str.slice(1);
-	}
 
 	function nextSeason() {
 		if (currentSeasonNumber < seasonsData.length) {

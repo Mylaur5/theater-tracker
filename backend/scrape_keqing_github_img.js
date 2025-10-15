@@ -4,8 +4,9 @@ import fs from 'fs';
 import path from 'path';
 import { performance } from 'perf_hooks';
 
-const baseUrl = 'https://github.com';
+const BASE_URL = 'https://github.com';
 const IMAGE_FOLDER = './static/images/';
+const KEQING_DATA_FILE = './static/data/keqing_data.json';
 
 let skipped = 0;
 let downloaded = 0;
@@ -15,7 +16,8 @@ function sanitizeFilename(filename) {
 	return filename
 		.replace(/[<>:"/\\|?*]/g, '')
 		.toLowerCase()
-		.replace(/ /g, '_');
+		.replace(' ', '_')
+		.replace('-', '_');
 }
 
 async function downloadImage(imgSrc, fileName, folderName) {
@@ -101,6 +103,7 @@ async function downloadImage(imgSrc, fileName, folderName) {
 
 async function scrape(section, url) {
 	try {
+		const data = [];
 		const start = performance.now();
 		const response = await axios.get(url);
 		const html = response.data;
@@ -118,13 +121,14 @@ async function scrape(section, url) {
 				const items = jsonData.payload.tree.items;
 				items.forEach((item) => {
 					if (item.contentType === 'file') {
-						const fileName = item.name;
-						const fileUrl = `${baseUrl}/KQM-git/TCL/raw/master/${item.path}`;
+						const fileName = sanitizeFilename(item.name);
+						const fileUrl = `${BASE_URL}/KQM-git/TCL/raw/master/${item.path}`;
 
-						const promise = downloadImage(fileUrl, sanitizeFilename(fileName), section).catch((error) => {
-							console.error(`Error processing image ${fileName}:`, error.message);
+						const promise = downloadImage(fileUrl, (fileName), section).catch((error) => {
+							console.error(`Error processing image ${item.name}:`, error.message);
 						});
 						downloadPromises.push(promise);
+						data.push({ name: fileName.replace('.png', ''), image_url: fileUrl, image_local: `${IMAGE_FOLDER}${section}/${fileName}` });
 					}
 				});
 			}
@@ -136,16 +140,27 @@ async function scrape(section, url) {
 		const stop = performance.now();
 		const executionTime = (stop - start) / 1000;
 		console.log(`Program Executed in ${executionTime} seconds`); // It returns time in seconds
+		return data;
 	} catch (error) {
 		console.error(`\x1b[31m⚠️ Failed to scrape the page: ${error.message}: ${error.stack}\x1b[0m`);
 	}
 }
 
+let data = {};
 for (const [section, url] of Object.entries({
 	artifacts: 'https://github.com/KQM-git/TCL/tree/master/static/img/artifacts/icon',
 	characters: 'https://github.com/KQM-git/TCL/tree/master/static/img/characters/icon',
 	elements: 'https://github.com/KQM-git/TCL/tree/master/static/img/elements',
 	weapons: 'https://github.com/KQM-git/TCL/tree/master/static/img/weapons/icon_ascended'
 })) {
-	scrape(section, url);
+	data[section] = await scrape(section, url);
 }
+
+fs.writeFile(KEQING_DATA_FILE, JSON.stringify(data), (err) => {
+	if (err) {
+		console.error('Error writing to file', err);
+		return;
+	}
+	console.log('Data successfully written to ' + path.resolve(KEQING_DATA_FILE));
+	process.exit(0);
+});

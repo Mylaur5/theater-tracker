@@ -6,6 +6,8 @@
 		normalToSnakeCase,
 		pascalToNormalCase,
 		normalToPascalCase,
+		pascalToSnakeCase,
+		capitalize,
 		readGoodFile,
 		writeGoodFile
 	} from '../../shared.js';
@@ -44,8 +46,10 @@
 		try {
 			const response = await fetch(`${assets}/data/keqing_data.json`);
 			const data = await response.json();
-			const char = data.characters.find((char: any) => normalToPascalCase(char.name) === characterName);
-			return char.element;
+			const char = data.characters.find((char: any) => {
+				return char.name === pascalToSnakeCase(characterName)}
+			);
+			return capitalize(char.element);
 		} catch (error) {
 			console.error('Fetch error:', error);
 			return '';

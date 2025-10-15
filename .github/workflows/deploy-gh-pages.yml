@@ -28,8 +28,9 @@ jobs:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           rm -rf static/images/
-          node backend/scrape_season_data.js
           node backend/scrape_keqing_github_img.js
+          node backend/scrape_keqing_github_element_category.js
+          node backend/scrape_season_data.js
           npm run build
 
       - name: Upload Artifacts

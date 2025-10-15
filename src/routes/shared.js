@@ -79,27 +79,11 @@ export function pascalToNormalCase(pascalStr) {
 }
 
 export function pascalToSnakeCase(pascalStr) {
-	switch (pascalStr) {
-		case 'TravelerGeo':
-			return 'aether_(geo)';
-		case 'TravelerAnemo':
-			return 'aether_(anemo)';
-		case 'TravelerDendro':
-			return 'aether_(dendro)';
-		case 'TravelerElectro':
-			return 'aether_(electro)';
-		case 'TravelerHydro':
-			return 'aether_(hydro)';
-		case 'TravelerPyro':
-			return 'aether_(pyro)';
-		case 'TravelerCryo':
-			return 'aether_(cryo)';
-		default:
-			return pascalStr
-				.replace(/([a-z])([A-Z])/g, '$1_$2') // Insert an underscore before each uppercase letter that follows a lowercase letter
-				.replace(/([A-Z])([A-Z][a-z])/g, '$1_$2') // Insert an underscore before each uppercase letter that follows another uppercase letter and is followed by a lowercase letter
-				.toLowerCase(); // Convert the entire string to lowercase
-	}
+	if (pascalStr.startsWith('Traveler')) return 'aether';
+	return pascalStr
+		.replace(/([a-z])([A-Z])/g, '$1_$2') // Insert an underscore before each uppercase letter that follows a lowercase letter
+		.replace(/([A-Z])([A-Z][a-z])/g, '$1_$2') // Insert an underscore before each uppercase letter that follows another uppercase letter and is followed by a lowercase letter
+		.toLowerCase(); // Convert the entire string to lowercase
 }
 
 export function normalToPascalCase(normalStr) {
@@ -124,4 +108,8 @@ export function normalToSnakeCase(str) {
 				.map((word) => word.toLowerCase())
 				.join('_');
 	}
+}
+
+export function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
 }
